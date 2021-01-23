@@ -2,7 +2,7 @@
 	"name": "axios-ex",
 	"version": "1.0.0",
 	"description": "axios扩展",
-	"main": "lib/index.js",
+	"main": "src/axios-ex.js",
 	"module": "lib/index.esm.js",
 	"browser": "lib/index.umd.js",
 	"files": [
@@ -21,7 +21,9 @@
 		"pub": "git add . && git commit -m $npm_package_version && git pull && git push"
 	},
 	"dependencies": {
-		"core-js": "^3.8.2"
+		"axios": "0.21.1",
+		"core-js": "^3.8.2",
+		"js-cool": "^1.0.2"
 	},
 	"devDependencies": {
 		"@babel/cli": "^7.12.10",
@@ -43,10 +45,10 @@
 		"url": "git+https://github.com/saqqdy/axios-ex.git"
 	},
 	"keywords": [
-    "axios",
-    "plugin",
-    "extension",
-    "Promise",
+		"axios",
+		"plugin",
+		"extension",
+		"Promise",
 		"axios-ex",
 		"axios-plugin",
 		"axios-extend",
