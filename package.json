@@ -1,0 +1,61 @@
+{
+	"name": "axios-ex",
+	"version": "1.0.0",
+	"description": "axios扩展",
+	"main": "lib/index.js",
+	"module": "lib/index.esm.js",
+	"browser": "lib/index.umd.js",
+	"files": [
+		"lib"
+	],
+	"directories": {
+		"lib": "lib",
+		"src": "src"
+	},
+	"scripts": {
+		"build": "rm -rf ./lib && rollup -c",
+		"dev": "rollup -c -w",
+		"test": "node test/test.js",
+		"pretest": "npm run build",
+		"docs": "jsdoc2md src/**/*.js > API.md",
+		"pub": "git add . && git commit -m $npm_package_version && git pull && git push"
+	},
+	"dependencies": {
+		"core-js": "^3.8.2"
+	},
+	"devDependencies": {
+		"@babel/cli": "^7.12.10",
+		"@babel/core": "^7.12.10",
+		"@babel/plugin-transform-runtime": "^7.12.10",
+		"@babel/preset-env": "^7.12.11",
+		"@rollup/plugin-babel": "^5.2.2",
+		"@rollup/plugin-commonjs": "^17.0.0",
+		"@rollup/plugin-node-resolve": "^11.1.0",
+		"@saqqdy/prettier-config": "^1.0.3",
+		"babel-loader": "^8.2.2",
+		"eslint-config-sets": "^1.0.6",
+		"jsdoc-to-markdown": "^6.0.1",
+		"rollup": "^2.36.2",
+		"rollup-plugin-terser": "^7.0.2"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/saqqdy/axios-ex.git"
+	},
+	"keywords": [
+    "axios",
+    "plugin",
+    "extension",
+    "Promise",
+		"axios-ex",
+		"axios-plugin",
+		"axios-extend",
+		"saqqdy"
+	],
+	"author": "saqqdy@qq.com",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/saqqdy/axios-ex/issues"
+	},
+	"homepage": "https://github.com/saqqdy/axios-ex#readme"
+}
