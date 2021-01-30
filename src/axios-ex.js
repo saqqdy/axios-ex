@@ -1,7 +1,7 @@
-const axios = require('axios')
+const Axios = require('axios')
 const extend = require('js-cool/lib/extend')
 // const cleanData = require('js-cool/lib/cleanData')
-const newAxios = extend(true, {}, axios)
+const newAxios = extend(true, {}, Axios)
 const DEFAULT_MAX_CONNECTIONS = 10
 
 function bind(fn, thisArg) {
@@ -21,22 +21,28 @@ function bind(fn, thisArg) {
  * @param {Object} thisArg The object to bind function to
  * @return {Object} The resulting value of object a
  */
-function extend(a, b, thisArg) {
-	forEach(b, function assignValue(val, key) {
-		if (thisArg && typeof val === 'function') {
-			a[key] = bind(val, thisArg)
-		} else {
-			a[key] = val
-		}
-	})
-	return a
-}
+// function extend(a, b, thisArg) {
+// 	forEach(b, function assignValue(val, key) {
+// 		if (thisArg && typeof val === 'function') {
+// 			a[key] = bind(val, thisArg)
+// 		} else {
+// 			a[key] = val
+// 		}
+// 	})
+// 	return a
+// }
 
-function create(maxConcurrent = DEFAULT_MAX_CONNECTIONS, queueOptions = {}) {
-	return proxyAxios(Queue(maxConcurrent, queueOptions), axios)
-}
+// function create(maxConcurrent = DEFAULT_MAX_CONNECTIONS, queueOptions = {}) {
+// 	return proxyAxios(Queue(maxConcurrent, queueOptions), axios)
+// }
 
 // ===========
+
+const extendAxiosInstance = axios => {
+	for (const key in AxiosEx) {
+		axios[key] = AxiosEx[key].bind(axios)
+	}
+}
 
 const createAxiosInstance = axiosOptions => {
 	// Create new axios instance
@@ -76,13 +82,16 @@ const AxiosEx = {
 			this.defaults.headers[scope][name] = value
 		}
 	},
+	setToken() {},
 	onRequest() {},
 	onResponse() {},
+	onRequestError() {},
+	onResponseError() {},
 	onError() {}
 }
 
 // newAxios.create = function create(instanceConfig) {
-// 	return axios.create(instanceConfig)
+// 	return Axios.create(instanceConfig)
 // }
 
 module.exports = AxiosEx
