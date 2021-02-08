@@ -19,7 +19,9 @@
 	},
 	"dependencies": {
 		"axios": "*",
+		"axios-retry": "^3.1.9",
 		"core-js": "^3.8.2",
+		"defu": "^3.2.2",
 		"js-cool": "^1.0.3"
 	},
 	"devDependencies": {
