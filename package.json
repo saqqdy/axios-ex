@@ -15,6 +15,7 @@
 	"scripts": {
 		"build": "rm -rf ./lib && rollup -c",
 		"dev": "rollup -c -w",
+		"prettier": "prettier --write \"**/*.{js,ts,sh,json,md}\"",
 		"docs": "jsdoc2md src/**/*.js > API.md"
 	},
 	"dependencies": {
@@ -27,6 +28,7 @@
 	"devDependencies": {
 		"@babel/cli": "^7.12.13",
 		"@babel/core": "^7.12.13",
+		"@babel/eslint-parser": "^7.12.16",
 		"@babel/plugin-transform-runtime": "^7.12.15",
 		"@babel/preset-env": "^7.12.13",
 		"@rollup/plugin-babel": "^5.2.3",
@@ -35,7 +37,7 @@
 		"@saqqdy/prettier-config": "^1.0.3",
 		"babel-loader": "^8.2.2",
 		"eslint": "^7.19.0",
-		"eslint-config-sets": "^1.0.6",
+		"eslint-config-sets": "^1.0.10",
 		"jsdoc-to-markdown": "^6.0.1",
 		"prettier": "^2.2.1",
 		"rollup": "^2.38.5",
