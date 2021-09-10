@@ -80,7 +80,7 @@ export default options => {
         options.unique = options.unique ?? false
         options.orderly = options.orderly ?? false
         // 这里的unique优先级更高
-        return queue.create(options)
+        return axiosEx.create(options)
     })
 }
 ```
