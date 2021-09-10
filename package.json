@@ -87,7 +87,7 @@
         "saqqdy"
     ],
     "author": "saqqdy@qq.com",
-    "license": "ISC",
+    "license": "MIT",
     "bugs": {
         "url": "https://github.com/saqqdy/axios-ex/issues"
     },
