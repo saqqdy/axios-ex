@@ -86,7 +86,7 @@ node_modules/axios/index.d.ts:64
 
 #### Defined in
 
-[src/index.ts:23](https://github.com/saqqdy/axios-ex/blob/8e1300d/src/index.ts#L23)
+[src/index.ts:23](https://github.com/saqqdy/axios-ex/blob/ac7db21/src/index.ts#L23)
 
 ---
 
@@ -114,7 +114,7 @@ AxiosRequestConfig.cancelToken
 
 #### Defined in
 
-[src/index.ts:27](https://github.com/saqqdy/axios-ex/blob/8e1300d/src/index.ts#L27)
+[src/index.ts:27](https://github.com/saqqdy/axios-ex/blob/ac7db21/src/index.ts#L27)
 
 ---
 
@@ -250,7 +250,7 @@ node_modules/axios/index.d.ts:52
 
 #### Defined in
 
-[src/index.ts:25](https://github.com/saqqdy/axios-ex/blob/8e1300d/src/index.ts#L25)
+[src/index.ts:25](https://github.com/saqqdy/axios-ex/blob/ac7db21/src/index.ts#L25)
 
 ---
 
@@ -288,7 +288,7 @@ node_modules/axios/index.d.ts:77
 
 #### Defined in
 
-[src/index.ts:26](https://github.com/saqqdy/axios-ex/blob/8e1300d/src/index.ts#L26)
+[src/index.ts:26](https://github.com/saqqdy/axios-ex/blob/ac7db21/src/index.ts#L26)
 
 ---
 
@@ -396,7 +396,7 @@ node_modules/axios/index.d.ts:80
 
 #### Defined in
 
-[src/index.ts:24](https://github.com/saqqdy/axios-ex/blob/8e1300d/src/index.ts#L24)
+[src/index.ts:24](https://github.com/saqqdy/axios-ex/blob/ac7db21/src/index.ts#L24)
 
 ---
 

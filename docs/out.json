@@ -7,7 +7,7 @@
 	"originalName": "index.md",
 	"children": [
 		{
-			"id": 119,
+			"id": 120,
 			"name": "default",
 			"kind": 128,
 			"kindString": "Class",
@@ -23,7 +23,7 @@
 			},
 			"children": [
 				{
-					"id": 120,
+					"id": 121,
 					"name": "constructor",
 					"kind": 512,
 					"kindString": "Constructor",
@@ -37,14 +37,14 @@
 					],
 					"signatures": [
 						{
-							"id": 121,
+							"id": 122,
 							"name": "new default",
 							"kind": 16384,
 							"kindString": "Constructor signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 122,
+									"id": 123,
 									"name": "__namedParameters",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -58,14 +58,14 @@
 							],
 							"type": {
 								"type": "reference",
-								"id": 119,
+								"id": 120,
 								"name": "AxiosExtend"
 							}
 						}
 					]
 				},
 				{
-					"id": 124,
+					"id": 125,
 					"name": "maxConnections",
 					"kind": 1024,
 					"kindString": "Property",
@@ -84,7 +84,7 @@
 					"defaultValue": "0"
 				},
 				{
-					"id": 128,
+					"id": 129,
 					"name": "onCancel",
 					"kind": 1024,
 					"kindString": "Property",
@@ -106,21 +106,21 @@
 							{
 								"type": "reflection",
 								"declaration": {
-									"id": 129,
+									"id": 130,
 									"name": "__type",
 									"kind": 65536,
 									"kindString": "Type literal",
 									"flags": {},
 									"signatures": [
 										{
-											"id": 130,
+											"id": 131,
 											"name": "__type",
 											"kind": 4096,
 											"kindString": "Call signature",
 											"flags": {},
 											"parameters": [
 												{
-													"id": 131,
+													"id": 132,
 													"name": "error",
 													"kind": 32768,
 													"kindString": "Parameter",
@@ -143,7 +143,7 @@
 					}
 				},
 				{
-					"id": 125,
+					"id": 126,
 					"name": "orderly",
 					"kind": 1024,
 					"kindString": "Property",
@@ -162,7 +162,7 @@
 					"defaultValue": "true"
 				},
 				{
-					"id": 127,
+					"id": 128,
 					"name": "retries",
 					"kind": 1024,
 					"kindString": "Property",
@@ -181,7 +181,7 @@
 					"defaultValue": "3"
 				},
 				{
-					"id": 126,
+					"id": 127,
 					"name": "unique",
 					"kind": 1024,
 					"kindString": "Property",
@@ -200,7 +200,7 @@
 					"defaultValue": "false"
 				},
 				{
-					"id": 123,
+					"id": 124,
 					"name": "waiting",
 					"kind": 1024,
 					"kindString": "Property",
@@ -223,7 +223,7 @@
 					"defaultValue": "[]"
 				},
 				{
-					"id": 135,
+					"id": 136,
 					"name": "create",
 					"kind": 2048,
 					"kindString": "Method",
@@ -233,13 +233,13 @@
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 226,
+							"line": 231,
 							"character": 11
 						}
 					],
 					"signatures": [
 						{
-							"id": 136,
+							"id": 137,
 							"name": "create",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -249,7 +249,7 @@
 							},
 							"parameters": [
 								{
-									"id": 137,
+									"id": 138,
 									"name": "options",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -275,7 +275,7 @@
 					]
 				},
 				{
-					"id": 132,
+					"id": 133,
 					"name": "init",
 					"kind": 2048,
 					"kindString": "Method",
@@ -291,7 +291,7 @@
 					],
 					"signatures": [
 						{
-							"id": 133,
+							"id": 134,
 							"name": "init",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -301,7 +301,7 @@
 							},
 							"parameters": [
 								{
-									"id": 134,
+									"id": 135,
 									"name": "defaultOptions",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -326,27 +326,27 @@
 					"title": "Constructors",
 					"kind": 512,
 					"children": [
-						120
+						121
 					]
 				},
 				{
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						124,
-						128,
 						125,
-						127,
+						129,
 						126,
-						123
+						128,
+						127,
+						124
 					]
 				},
 				{
 					"title": "Methods",
 					"kind": 2048,
 					"children": [
-						135,
-						132
+						136,
+						133
 					]
 				}
 			],
@@ -466,7 +466,7 @@
 					}
 				},
 				{
-					"id": 116,
+					"id": 117,
 					"name": "onCancel",
 					"kind": 2048,
 					"kindString": "Method",
@@ -475,14 +475,14 @@
 					},
 					"signatures": [
 						{
-							"id": 117,
+							"id": 118,
 							"name": "onCancel",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 118,
+									"id": 119,
 									"name": "error",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -501,7 +501,7 @@
 					]
 				},
 				{
-					"id": 113,
+					"id": 114,
 					"name": "onError",
 					"kind": 2048,
 					"kindString": "Method",
@@ -510,14 +510,14 @@
 					},
 					"signatures": [
 						{
-							"id": 114,
+							"id": 115,
 							"name": "onError",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 115,
+									"id": 116,
 									"name": "error",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -664,6 +664,18 @@
 										],
 										"name": "AxiosResponse"
 									}
+								},
+								{
+									"id": 110,
+									"name": "requestOptions",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"id": 41,
+										"name": "AxiosExtendRequestOptions"
+									}
 								}
 							],
 							"type": {
@@ -701,7 +713,7 @@
 					]
 				},
 				{
-					"id": 110,
+					"id": 111,
 					"name": "onResponseError",
 					"kind": 2048,
 					"kindString": "Method",
@@ -710,14 +722,14 @@
 					},
 					"signatures": [
 						{
-							"id": 111,
+							"id": 112,
 							"name": "onResponseError",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 112,
+									"id": 113,
 									"name": "error",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -855,12 +867,12 @@
 					"title": "Methods",
 					"kind": 2048,
 					"children": [
-						116,
-						113,
+						117,
+						114,
 						100,
 						104,
 						107,
-						110,
+						111,
 						91,
 						93,
 						97
@@ -2622,7 +2634,7 @@
 			"title": "Classes",
 			"kind": 128,
 			"children": [
-				119
+				120
 			]
 		},
 		{

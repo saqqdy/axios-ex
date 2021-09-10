@@ -32,7 +32,7 @@
 
 #### Defined in
 
-[src/index.ts:31](https://github.com/saqqdy/axios-ex/blob/8e1300d/src/index.ts#L31)
+[src/index.ts:31](https://github.com/saqqdy/axios-ex/blob/ac7db21/src/index.ts#L31)
 
 ---
 
@@ -42,7 +42,7 @@
 
 #### Defined in
 
-[src/index.ts:34](https://github.com/saqqdy/axios-ex/blob/8e1300d/src/index.ts#L34)
+[src/index.ts:34](https://github.com/saqqdy/axios-ex/blob/ac7db21/src/index.ts#L34)
 
 ---
 
@@ -52,7 +52,7 @@
 
 #### Defined in
 
-[src/index.ts:33](https://github.com/saqqdy/axios-ex/blob/8e1300d/src/index.ts#L33)
+[src/index.ts:33](https://github.com/saqqdy/axios-ex/blob/ac7db21/src/index.ts#L33)
 
 ---
 
@@ -62,7 +62,7 @@
 
 #### Defined in
 
-[src/index.ts:35](https://github.com/saqqdy/axios-ex/blob/8e1300d/src/index.ts#L35)
+[src/index.ts:35](https://github.com/saqqdy/axios-ex/blob/ac7db21/src/index.ts#L35)
 
 ---
 
@@ -72,7 +72,7 @@
 
 #### Defined in
 
-[src/index.ts:32](https://github.com/saqqdy/axios-ex/blob/8e1300d/src/index.ts#L32)
+[src/index.ts:32](https://github.com/saqqdy/axios-ex/blob/ac7db21/src/index.ts#L32)
 
 ## Methods
 
@@ -92,7 +92,7 @@
 
 #### Defined in
 
-[src/index.ts:44](https://github.com/saqqdy/axios-ex/blob/8e1300d/src/index.ts#L44)
+[src/index.ts:44](https://github.com/saqqdy/axios-ex/blob/ac7db21/src/index.ts#L44)
 
 ---
 
@@ -112,7 +112,7 @@
 
 #### Defined in
 
-[src/index.ts:43](https://github.com/saqqdy/axios-ex/blob/8e1300d/src/index.ts#L43)
+[src/index.ts:43](https://github.com/saqqdy/axios-ex/blob/ac7db21/src/index.ts#L43)
 
 ---
 
@@ -133,7 +133,7 @@
 
 #### Defined in
 
-[src/index.ts:39](https://github.com/saqqdy/axios-ex/blob/8e1300d/src/index.ts#L39)
+[src/index.ts:39](https://github.com/saqqdy/axios-ex/blob/ac7db21/src/index.ts#L39)
 
 ---
 
@@ -153,19 +153,20 @@
 
 #### Defined in
 
-[src/index.ts:40](https://github.com/saqqdy/axios-ex/blob/8e1300d/src/index.ts#L40)
+[src/index.ts:40](https://github.com/saqqdy/axios-ex/blob/ac7db21/src/index.ts#L40)
 
 ---
 
 ### onResponse
 
-▸ `Optional` **onResponse**(`res`): `AxiosResponse`<`any`\> \| `Promise`<`AxiosResponse`<`any`\>\>
+▸ `Optional` **onResponse**(`res`, `requestOptions`): `AxiosResponse`<`any`\> \| `Promise`<`AxiosResponse`<`any`\>\>
 
 #### Parameters
 
-| Name  | Type                    |
-| :---- | :---------------------- |
-| `res` | `AxiosResponse`<`any`\> |
+| Name             | Type                                                        |
+| :--------------- | :---------------------------------------------------------- |
+| `res`            | `AxiosResponse`<`any`\>                                     |
+| `requestOptions` | [`AxiosExtendRequestOptions`](AxiosExtendRequestOptions.md) |
 
 #### Returns
 
@@ -173,7 +174,7 @@
 
 #### Defined in
 
-[src/index.ts:41](https://github.com/saqqdy/axios-ex/blob/8e1300d/src/index.ts#L41)
+[src/index.ts:41](https://github.com/saqqdy/axios-ex/blob/ac7db21/src/index.ts#L41)
 
 ---
 
@@ -193,7 +194,7 @@
 
 #### Defined in
 
-[src/index.ts:42](https://github.com/saqqdy/axios-ex/blob/8e1300d/src/index.ts#L42)
+[src/index.ts:42](https://github.com/saqqdy/axios-ex/blob/ac7db21/src/index.ts#L42)
 
 ---
 
@@ -207,7 +208,7 @@
 
 #### Defined in
 
-[src/index.ts:36](https://github.com/saqqdy/axios-ex/blob/8e1300d/src/index.ts#L36)
+[src/index.ts:36](https://github.com/saqqdy/axios-ex/blob/ac7db21/src/index.ts#L36)
 
 ---
 
@@ -228,7 +229,7 @@
 
 #### Defined in
 
-[src/index.ts:37](https://github.com/saqqdy/axios-ex/blob/8e1300d/src/index.ts#L37)
+[src/index.ts:37](https://github.com/saqqdy/axios-ex/blob/ac7db21/src/index.ts#L37)
 
 ---
 
@@ -248,4 +249,4 @@
 
 #### Defined in
 
-[src/index.ts:38](https://github.com/saqqdy/axios-ex/blob/8e1300d/src/index.ts#L38)
+[src/index.ts:38](https://github.com/saqqdy/axios-ex/blob/ac7db21/src/index.ts#L38)

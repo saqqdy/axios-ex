@@ -38,7 +38,7 @@ export interface AxiosExtendConfig {
     setHeaders?(instance: AxiosInstance): void
     onRequest?(config: AxiosRequestConfig, requestOptions: AxiosExtendRequestOptions): AxiosRequestConfig | Promise<AxiosRequestConfig>
     onRequestError?(error: any): void
-    onResponse?(res: AxiosResponse<any>): AxiosResponse<any> | Promise<AxiosResponse<any>>
+    onResponse?(res: AxiosResponse<any>, requestOptions: AxiosExtendRequestOptions): AxiosResponse<any> | Promise<AxiosResponse<any>>
     onResponseError?(error: any): void
     onError?(error: any): void
     onCancel?(error: any): void
@@ -186,39 +186,44 @@ class AxiosExtend {
             )
         // 添加一个响应拦截器
         onResponse &&
-            axios.interceptors.response.use(onResponse, (err: any): Promise<any> => {
-                const config: any = err.config
-                // If we have no information to retry the request
-                if (!config) {
+            axios.interceptors.response.use(
+                res => {
+                    onResponse(res, (res.config as any).requestOptions)
+                },
+                (err: any): Promise<any> => {
+                    const config: any = err.config
+                    // If we have no information to retry the request
+                    if (!config) {
+                        onResponseError && onResponseError(err)
+                        onError && onError(err)
+                        return Promise.reject(err)
+                    }
+                    const { retries = this.retries, retryCondition = isNetworkOrIdempotentRequestError, retryDelay = noDelay, shouldResetTimeout = false } = getRequestOptions(config, defaultOptions)
+                    const currentState = getCurrentState(config)
+                    const shouldRetry = retryCondition(err) && currentState.retryCount < retries
+                    if (shouldRetry) {
+                        currentState.retryCount += 1
+                        const delay = retryDelay(currentState.retryCount, err)
+
+                        // Axios fails merging this configuration to the default configuration because it has an issue
+                        // with circular structures: https://github.com/mzabriskie/axios/issues/370
+                        fixConfig(axios, config)
+
+                        if (!shouldResetTimeout && config.timeout && currentState.lastRequestTime) {
+                            const lastRequestDuration = Date.now() - currentState.lastRequestTime
+                            // Minimum 1ms timeout (passing 0 or less to XHR means no timeout)
+                            config.timeout = Math.max(config.timeout - lastRequestDuration - delay, 1)
+                        }
+
+                        config.transformRequest = [(data: any) => data]
+
+                        return new Promise(resolve => setTimeout(() => resolve(axios(config)), delay))
+                    }
                     onResponseError && onResponseError(err)
                     onError && onError(err)
                     return Promise.reject(err)
                 }
-                const { retries = this.retries, retryCondition = isNetworkOrIdempotentRequestError, retryDelay = noDelay, shouldResetTimeout = false } = getRequestOptions(config, defaultOptions)
-                const currentState = getCurrentState(config)
-                const shouldRetry = retryCondition(err) && currentState.retryCount < retries
-                if (shouldRetry) {
-                    currentState.retryCount += 1
-                    const delay = retryDelay(currentState.retryCount, err)
-
-                    // Axios fails merging this configuration to the default configuration because it has an issue
-                    // with circular structures: https://github.com/mzabriskie/axios/issues/370
-                    fixConfig(axios, config)
-
-                    if (!shouldResetTimeout && config.timeout && currentState.lastRequestTime) {
-                        const lastRequestDuration = Date.now() - currentState.lastRequestTime
-                        // Minimum 1ms timeout (passing 0 or less to XHR means no timeout)
-                        config.timeout = Math.max(config.timeout - lastRequestDuration - delay, 1)
-                    }
-
-                    config.transformRequest = [(data: any) => data]
-
-                    return new Promise(resolve => setTimeout(() => resolve(axios(config)), delay))
-                }
-                onResponseError && onResponseError(err)
-                onError && onError(err)
-                return Promise.reject(err)
-            })
+            )
     }
     /**
      * 创建请求

@@ -55,7 +55,7 @@ function onRequest(config, options = {}) {
     return config
 }
 // 响应拦截器
-function onResponse(res) {
+function onResponse(res, options = {}) {
     if (res.data.success) return res.data
     return Promise.reject(res.data)
 }
@@ -82,7 +82,7 @@ export default options => {
         options.unique = options.unique ?? false
         options.orderly = options.orderly ?? false
         // 这里的unique优先级更高
-        return queue.create(options)
+        return axiosEx.create(options)
     })
 }
 ```

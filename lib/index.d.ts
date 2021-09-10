@@ -40,7 +40,7 @@ export declare interface AxiosExtendConfig {
     setHeaders?(instance: AxiosInstance): void;
     onRequest?(config: AxiosRequestConfig, requestOptions: AxiosExtendRequestOptions): AxiosRequestConfig | Promise<AxiosRequestConfig>;
     onRequestError?(error: any): void;
-    onResponse?(res: AxiosResponse<any>): AxiosResponse<any> | Promise<AxiosResponse<any>>;
+    onResponse?(res: AxiosResponse<any>, requestOptions: AxiosExtendRequestOptions): AxiosResponse<any> | Promise<AxiosResponse<any>>;
     onResponseError?(error: any): void;
     onError?(error: any): void;
     onCancel?(error: any): void;

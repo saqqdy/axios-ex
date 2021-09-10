@@ -53,7 +53,7 @@ function onRequest(config, options = {}) {
     return config
 }
 // 响应拦截器
-function onResponse(res) {
+function onResponse(res, options = {}) {
     if (res.data.success) return res.data
     return Promise.reject(res.data)
 }
