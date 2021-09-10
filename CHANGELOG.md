@@ -1,3 +1,8 @@
+# 2021.09.10 v2.0.0 更新日志
+
+1. typescript重构项目
+2. 重新设计API
+
 # 2021.01.23 v1.0.2 更新日志
 
 1. 新增 nextIndex,fixNumber,delay,extend,getType,isArray,cleanData,getCache,setCache,delCache

@@ -1,3 +1,5 @@
+index.md - v1.1.2 / [Exports](modules.md)
+
 # axios-ex
 
 [![NPM version][npm-image]][npm-url]

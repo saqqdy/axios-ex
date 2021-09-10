@@ -9,6 +9,10 @@ yarn-error.log
 /test/e2e/reports/
 selenium-debug.log
 
+*.bak
+*.bak.js
+*_bak
+
 # Editor directories and files
 .idea
 .vscode

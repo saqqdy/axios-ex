@@ -9,6 +9,9 @@ test.html
 /test/unit/coverage/
 /test/e2e/reports/
 selenium-debug.log
+*.bak
+*_bak
+test.js
 
 # Editor directories and files
 .idea
