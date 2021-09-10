@@ -1,4 +1,4 @@
-index.md - v1.1.2 / [Exports](modules.md)
+index.md - v2.0.0 / [Exports](modules.md)
 
 # axios-ex
 
