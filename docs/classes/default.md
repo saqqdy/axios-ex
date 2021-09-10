@@ -40,7 +40,7 @@ axios 封装
 
 #### Defined in
 
-[src/index.ts:156](https://github.com/saqqdy/axios-ex/blob/9a4a059/src/index.ts#L156)
+[src/index.ts:156](https://github.com/saqqdy/axios-ex/blob/8e1300d/src/index.ts#L156)
 
 ## Properties
 
@@ -50,7 +50,7 @@ axios 封装
 
 #### Defined in
 
-[src/index.ts:151](https://github.com/saqqdy/axios-ex/blob/9a4a059/src/index.ts#L151)
+[src/index.ts:151](https://github.com/saqqdy/axios-ex/blob/8e1300d/src/index.ts#L151)
 
 ---
 
@@ -60,7 +60,7 @@ axios 封装
 
 #### Defined in
 
-[src/index.ts:155](https://github.com/saqqdy/axios-ex/blob/9a4a059/src/index.ts#L155)
+[src/index.ts:155](https://github.com/saqqdy/axios-ex/blob/8e1300d/src/index.ts#L155)
 
 ---
 
@@ -70,7 +70,7 @@ axios 封装
 
 #### Defined in
 
-[src/index.ts:152](https://github.com/saqqdy/axios-ex/blob/9a4a059/src/index.ts#L152)
+[src/index.ts:152](https://github.com/saqqdy/axios-ex/blob/8e1300d/src/index.ts#L152)
 
 ---
 
@@ -80,7 +80,7 @@ axios 封装
 
 #### Defined in
 
-[src/index.ts:154](https://github.com/saqqdy/axios-ex/blob/9a4a059/src/index.ts#L154)
+[src/index.ts:154](https://github.com/saqqdy/axios-ex/blob/8e1300d/src/index.ts#L154)
 
 ---
 
@@ -90,7 +90,7 @@ axios 封装
 
 #### Defined in
 
-[src/index.ts:153](https://github.com/saqqdy/axios-ex/blob/9a4a059/src/index.ts#L153)
+[src/index.ts:153](https://github.com/saqqdy/axios-ex/blob/8e1300d/src/index.ts#L153)
 
 ---
 
@@ -100,7 +100,7 @@ axios 封装
 
 #### Defined in
 
-[src/index.ts:150](https://github.com/saqqdy/axios-ex/blob/9a4a059/src/index.ts#L150)
+[src/index.ts:150](https://github.com/saqqdy/axios-ex/blob/8e1300d/src/index.ts#L150)
 
 ## Methods
 
@@ -122,7 +122,7 @@ axios 封装
 
 #### Defined in
 
-[src/index.ts:226](https://github.com/saqqdy/axios-ex/blob/9a4a059/src/index.ts#L226)
+[src/index.ts:226](https://github.com/saqqdy/axios-ex/blob/8e1300d/src/index.ts#L226)
 
 ---
 
@@ -144,4 +144,4 @@ axios 封装
 
 #### Defined in
 
-[src/index.ts:168](https://github.com/saqqdy/axios-ex/blob/9a4a059/src/index.ts#L168)
+[src/index.ts:168](https://github.com/saqqdy/axios-ex/blob/8e1300d/src/index.ts#L168)

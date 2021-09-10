@@ -17,7 +17,7 @@
 
 #### Defined in
 
-[src/index.ts:18](https://github.com/saqqdy/axios-ex/blob/9a4a059/src/index.ts#L18)
+[src/index.ts:18](https://github.com/saqqdy/axios-ex/blob/8e1300d/src/index.ts#L18)
 
 ---
 
@@ -27,4 +27,4 @@
 
 #### Defined in
 
-[src/index.ts:19](https://github.com/saqqdy/axios-ex/blob/9a4a059/src/index.ts#L19)
+[src/index.ts:19](https://github.com/saqqdy/axios-ex/blob/8e1300d/src/index.ts#L19)

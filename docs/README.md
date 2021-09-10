@@ -24,72 +24,76 @@ index.md - v2.0.0 / [Exports](modules.md)
 
 # **完整文档请查阅： [API 完整文档](./docs/modules.md)**
 
-## Install
+# 安装
+
+> `axios-ex`自带了最新版的 axios，可以不用安装`axios`包
 
 ```bash
-# use npm
-$ npm i axios-ex --save
+# 使用npm
+$ npm install axios-ex --save
 
-# use yarn
+# 使用yarn
 $ yarn add axios-ex
 ```
 
-## Usage
+# 使用
 
-#### Global configuration
+## 全局配置
 
 ```js
 // {app_root}/src/plugins/axios.js
+import { getCookie, setCookie } from 'js-cool'
 import AxiosExtend from 'axios-ex'
+
+// 设置请求头
+function setHeaders(instance) {
+    instance.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded'
+}
+// 请求拦截器
+function onRequest(config, options = {}) {
+    // some codes
+    return config
+}
+// 响应拦截器
+function onResponse(res) {
+    if (res.data.success) return res.data
+    return Promise.reject(res.data)
+}
+// 请求取消
+function onCancel(err) {
+    console.error(err.message)
+}
+
+// 实例化
+const axiosEx = new AxiosExtend({
+    maxConnections: 30, // 最大同时请求数，默认：0=不限制
+    unique: true, // 是否取消前面的相似请求，默认：false
+    retries: 0, // 重试次数，默认：0=不重试
+    orderly: false, // 是否有序返回，默认：true
+    setHeaders, // 设置请求头的方法
+    onRequest, // 请求拦截器
+    onResponse, // 响应拦截器
+    onCancel // 请求取消时的回调
+})
 
 export default options => {
     return new Promise((resolve, reject) => {
-        AxiosExtend.create(options, {
-            // retry times
-            retry: 3,
-            // max connections
-            maxConnections: 10,
-            // cancel request
-            unique: true,
-            setHeaders(instance) {
-                instance.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded'
-            },
-            // request
-            onRequest(config) {
-                //
-                return config
-            },
-            // requestError
-            onRequestError(err) {},
-            // response
-            onResponse(res) {
-                if (res.data.success) return res.data
-                return Promise.reject(res.data)
-            },
-            // responseError
-            onResponseError(err) {},
-            // error
-            onError(err) {},
-            // canceled
-            onCancel(err) {}
-        })
-            .then(res => {
-                resolve(res)
-            })
-            .catch(err => {
-                reject(err)
-            })
+        // 这里设置 unique 和 orderly 优先级高于实例化时候的配置
+        options.unique = options.unique ?? false
+        options.orderly = options.orderly ?? false
+        // 这里的unique优先级更高
+        return queue.create(options)
     })
 }
 ```
 
-## Configuration
+## 配置参数
 
 ```
 ...
 ```
 
-## Questions & Suggestions
+## 问题和支持
 
 Please open an issue [here](https://github.com/saqqdy/axios-ex/issues).
 

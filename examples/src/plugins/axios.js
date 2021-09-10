@@ -59,11 +59,6 @@ const queue = new AxiosExtend({
     onRequest,
     onResponse,
     onCancel
-    // retryDelay(retryNumber) {
-    //     const delay = Math.pow(2, retryNumber) * 1000
-    //     const randomSum = delay * 0.5 * Math.random() // 0-20% of the delay
-    //     return delay + randomSum
-    // }
 })
 // console.log(queue, queue.queue, queue.create)
 
