@@ -17,7 +17,9 @@ declare class AxiosExtend {
     unique: boolean;
     retries: number;
     onCancel: ((error: any) => void) | null;
+    context: any;
     constructor({ maxConnections, orderly, unique, retries, onCancel, ...defaultOptions }: AxiosExtendConfig);
+    bind(context: any): void;
     /**
      * 初始化
      */

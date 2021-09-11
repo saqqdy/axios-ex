@@ -14,6 +14,7 @@ axios 封装
 
 ### Properties
 
+-   [context](default.md#context)
 -   [maxConnections](default.md#maxconnections)
 -   [onCancel](default.md#oncancel)
 -   [orderly](default.md#orderly)
@@ -23,6 +24,7 @@ axios 封装
 
 ### Methods
 
+-   [bind](default.md#bind)
 -   [create](default.md#create)
 -   [init](default.md#init)
 
@@ -40,9 +42,19 @@ axios 封装
 
 #### Defined in
 
-[src/index.ts:156](https://github.com/saqqdy/axios-ex/blob/ac7db21/src/index.ts#L156)
+[src/index.ts:157](https://github.com/saqqdy/axios-ex/blob/5e23005/src/index.ts#L157)
 
 ## Properties
+
+### context
+
+• **context**: `any` = `null`
+
+#### Defined in
+
+[src/index.ts:156](https://github.com/saqqdy/axios-ex/blob/5e23005/src/index.ts#L156)
+
+---
 
 ### maxConnections
 
@@ -50,7 +62,7 @@ axios 封装
 
 #### Defined in
 
-[src/index.ts:151](https://github.com/saqqdy/axios-ex/blob/ac7db21/src/index.ts#L151)
+[src/index.ts:151](https://github.com/saqqdy/axios-ex/blob/5e23005/src/index.ts#L151)
 
 ---
 
@@ -60,7 +72,7 @@ axios 封装
 
 #### Defined in
 
-[src/index.ts:155](https://github.com/saqqdy/axios-ex/blob/ac7db21/src/index.ts#L155)
+[src/index.ts:155](https://github.com/saqqdy/axios-ex/blob/5e23005/src/index.ts#L155)
 
 ---
 
@@ -70,7 +82,7 @@ axios 封装
 
 #### Defined in
 
-[src/index.ts:152](https://github.com/saqqdy/axios-ex/blob/ac7db21/src/index.ts#L152)
+[src/index.ts:152](https://github.com/saqqdy/axios-ex/blob/5e23005/src/index.ts#L152)
 
 ---
 
@@ -80,7 +92,7 @@ axios 封装
 
 #### Defined in
 
-[src/index.ts:154](https://github.com/saqqdy/axios-ex/blob/ac7db21/src/index.ts#L154)
+[src/index.ts:154](https://github.com/saqqdy/axios-ex/blob/5e23005/src/index.ts#L154)
 
 ---
 
@@ -90,7 +102,7 @@ axios 封装
 
 #### Defined in
 
-[src/index.ts:153](https://github.com/saqqdy/axios-ex/blob/ac7db21/src/index.ts#L153)
+[src/index.ts:153](https://github.com/saqqdy/axios-ex/blob/5e23005/src/index.ts#L153)
 
 ---
 
@@ -100,9 +112,29 @@ axios 封装
 
 #### Defined in
 
-[src/index.ts:150](https://github.com/saqqdy/axios-ex/blob/ac7db21/src/index.ts#L150)
+[src/index.ts:150](https://github.com/saqqdy/axios-ex/blob/5e23005/src/index.ts#L150)
 
 ## Methods
+
+### bind
+
+▸ **bind**(`context`): `void`
+
+#### Parameters
+
+| Name      | Type  |
+| :-------- | :---- |
+| `context` | `any` |
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+[src/index.ts:166](https://github.com/saqqdy/axios-ex/blob/5e23005/src/index.ts#L166)
+
+---
 
 ### create
 
@@ -122,7 +154,7 @@ axios 封装
 
 #### Defined in
 
-[src/index.ts:231](https://github.com/saqqdy/axios-ex/blob/ac7db21/src/index.ts#L231)
+[src/index.ts:236](https://github.com/saqqdy/axios-ex/blob/5e23005/src/index.ts#L236)
 
 ---
 
@@ -144,4 +176,4 @@ axios 封装
 
 #### Defined in
 
-[src/index.ts:168](https://github.com/saqqdy/axios-ex/blob/ac7db21/src/index.ts#L168)
+[src/index.ts:172](https://github.com/saqqdy/axios-ex/blob/5e23005/src/index.ts#L172)

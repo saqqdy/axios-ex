@@ -77,13 +77,11 @@ const axiosEx = new AxiosExtend({
 })
 
 export default options => {
-    return new Promise((resolve, reject) => {
-        // 这里设置 unique 和 orderly 优先级高于实例化时候的配置
-        options.unique = options.unique ?? false
-        options.orderly = options.orderly ?? false
-        // 这里的unique优先级更高
-        return axiosEx.create(options)
-    })
+    // 这里设置 unique 和 orderly 优先级高于实例化时候的配置
+    options.unique = options.unique ?? false
+    options.orderly = options.orderly ?? false
+    // 这里的unique优先级更高
+    return axiosEx.create(options)
 }
 ```
 

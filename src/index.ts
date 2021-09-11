@@ -32,6 +32,7 @@ export interface AxiosExtendConfig {
     unique?: boolean
     retries?: number
     orderly?: boolean
+    delay?: number
     shouldResetTimeout?: boolean
     retryCondition?(): boolean
     retryDelay?(retryNumber: number, error: any): number
@@ -146,18 +147,19 @@ export function isRetryableError(error: AxiosError): boolean {
  * @return Promise
  */
 class AxiosExtend {
-    // static test = 888
     waiting: Array<AxiosExtendObject> = [] // 请求队列
-    maxConnections: number = 0 // 最大连接数，默认：0=不限制
-    orderly: boolean = true // 是否有序返回，默认：true
-    unique: boolean = false // 是否取消前面的相似请求，默认：false
-    retries: number = 3 // 重试次数
+    maxConnections: number // 最大连接数，默认：0=不限制
+    orderly: boolean // 是否有序返回，默认：true
+    unique: boolean // 是否取消前面的相似请求，默认：false
+    retries: number // 重试次数，默认：0=不重试
+    delay: number // 延迟返回值，毫秒，默认：0=不延迟
     onCancel // 请求取消时的回调
-    constructor({ maxConnections, orderly, unique, retries, onCancel, ...defaultOptions }: AxiosExtendConfig) {
+    constructor({ maxConnections, orderly, unique, retries, delay, onCancel, ...defaultOptions }: AxiosExtendConfig) {
         this.maxConnections = maxConnections ?? 0
         this.orderly = orderly ?? true
         this.unique = unique ?? false
-        this.retries = retries ?? 3
+        this.retries = retries ?? 0
+        this.delay = delay ?? 0
         this.onCancel = onCancel ?? null
         // 初始化方法
         this.init(defaultOptions)
@@ -188,7 +190,7 @@ class AxiosExtend {
         onResponse &&
             axios.interceptors.response.use(
                 res => {
-                    onResponse(res, (res.config as any).requestOptions)
+                    return onResponse(res, (res.config as any).requestOptions)
                 },
                 (err: any): Promise<any> => {
                     const config: any = err.config
@@ -244,8 +246,10 @@ class AxiosExtend {
                         if (unique) this.waiting.splice(len, 1)[0].source.cancel('request canceled')
                         else {
                             try {
-                                await this.waiting.splice(len, 1)[0].promise
+                                await this.waiting[len]
+                                // await this.waiting.splice(len, 1)[0].promise
                             } catch {
+                                this.waiting.splice(len, 1)
                                 console.info('the task has been dropped')
                             }
                         }
@@ -255,11 +259,15 @@ class AxiosExtend {
             // 有最大连接数限制，超出了最多可同时请求的数量限制，至少等待执行一条任务
             if (this.maxConnections > 0 && this.waiting.length >= this.maxConnections) {
                 try {
-                    await (this.waiting.shift() as AxiosExtendObject).promise
+                    await (this.waiting[0] as AxiosExtendObject).promise
+                    // await (this.waiting.shift() as AxiosExtendObject).promise
                 } catch {
+                    this.waiting.shift()
                     console.info('the task has been dropped')
                 }
             }
+            // 延迟时间
+            if (this.delay > 0) await this.sleep(this.delay)
             // 执行
             axios(options)
                 .then((res: any) => {
@@ -290,9 +298,9 @@ class AxiosExtend {
      * @param ms - 毫秒
      * @returns Promise<Delay>
      */
-    // private delay(ms: number): Promise<unknown> {
-    //     return new Promise(resolve => setTimeout(resolve, ms))
-    // }
+    private sleep(ms: number): Promise<unknown> {
+        return new Promise(resolve => setTimeout(resolve, ms))
+    }
 }
 
 export default AxiosExtend
