@@ -1,5 +1,7 @@
 # axios-ex
 
+企业级项目`axios`集成方案
+
 [![NPM version][npm-image]][npm-url]
 [![build status][travis-image]][travis-url]
 [![Test coverage][codecov-image]][codecov-url]
@@ -36,12 +38,12 @@ $ yarn add axios-ex
 
 # 使用
 
-## 全局配置
+## 常规用法
 
 ```js
 // {app_root}/src/plugins/axios.js
 import { getCookie, setCookie } from 'js-cool'
-import AxiosExtend from 'axios-ex'
+import axiosExtend from 'axios-ex'
 
 // 设置请求头
 function setHeaders(instance) {
@@ -63,7 +65,7 @@ function onCancel(err) {
 }
 
 // 实例化
-const axiosEx = new AxiosExtend({
+const axiosEx = new axiosExtend({
     maxConnections: 30, // 最大同时请求数，默认：0=不限制
     unique: true, // 是否取消前面的相似请求，默认：false
     retries: 0, // 重试次数，默认：0=不重试
@@ -84,10 +86,31 @@ export default options => {
 }
 ```
 
-## 配置参数
+## 其他用法
 
+1. 自定义重试延迟的时长
+
+```js
+// 实例化的时候配置
+const axiosEx = new axiosExtend({
+    // ...
+    retryDelay: retryCount => {
+        return retryCount * 1000
+    }
+    // ...
+})
 ```
-...
+
+2. 或者使用`axios-ex`内置的方法，exponentialDelay 随机递增 0%-50%
+
+```js
+import axiosExtend, { exponentialDelay } from 'axios-ex'
+// 实例化的时候配置
+const axiosEx = new axiosExtend({
+    // ...
+    retryDelay: exponentialDelay
+    // ...
+})
 ```
 
 ## 问题和支持
