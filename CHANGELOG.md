@@ -1,12 +1,12 @@
+# 2021.09.11 v2.1.0 更新日志
+
+1. 修复清理队列的问题
+2. 实例化参数新增 delay，延迟返回
+
 # 2021.09.10 v2.0.0 更新日志
 
 1. typescript 重构项目
 2. 重新设计 API
-
-# 2021.01.23 v1.0.2 更新日志
-
-1. 新增 nextIndex,fixNumber,delay,extend,getType,isArray,cleanData,getCache,setCache,delCache
-2. 删除 getLocal,setLocal,delLocal
 
 # 2020.12.14 v1.0.1 更新日志
 
