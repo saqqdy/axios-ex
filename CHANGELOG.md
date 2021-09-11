@@ -1,7 +1,7 @@
 # 2021.09.11 v2.1.1 更新日志
 
 1. 修复清理队列的问题
-2. 更改lib名称AxiosExtend => axiosExtend
+2. 更改 lib 名称 AxiosExtend => axiosExtend
 3. 实例化参数新增 delay，延迟返回
 
 # 2021.09.10 v2.0.0 更新日志

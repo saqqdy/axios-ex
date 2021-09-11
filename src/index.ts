@@ -32,7 +32,6 @@ export interface AxiosExtendConfig {
     unique?: boolean
     retries?: number
     orderly?: boolean
-    delay?: number
     shouldResetTimeout?: boolean
     retryCondition?(): boolean
     retryDelay?(retryNumber: number, error: any): number
@@ -49,7 +48,7 @@ export interface AxiosExtendConfig {
  * 获取默认延迟时间 毫秒
  * @returns number - delay in milliseconds, always 0
  */
-export function noDelay() {
+function noDelay() {
     return 0
 }
 /**
@@ -57,7 +56,7 @@ export function noDelay() {
  * @param  config - AxiosExtendRequestOptions
  * @return currentState
  */
-export function getCurrentState(config: AxiosExtendRequestOptions): AxiosExtendCurrentStateType {
+function getCurrentState(config: AxiosExtendRequestOptions): AxiosExtendCurrentStateType {
     const currentState = config[namespace] || {}
     currentState.retryCount = currentState.retryCount || 0
     config[namespace] = currentState
@@ -69,14 +68,14 @@ export function getCurrentState(config: AxiosExtendRequestOptions): AxiosExtendC
  * @param  defaultOptions - AxiosExtendConfig
  * @return options
  */
-export function getRequestOptions(config: AxiosExtendRequestOptions, defaultOptions: AxiosExtendConfig): AxiosExtendConfig {
+function getRequestOptions(config: AxiosExtendRequestOptions, defaultOptions: AxiosExtendConfig): AxiosExtendConfig {
     return Object.assign({}, defaultOptions, config[namespace])
 }
 /**
  * @param  axios - any
  * @param  config - any
  */
-export function fixConfig(axios: any, config: any): void {
+function fixConfig(axios: any, config: any): void {
     if (axios.defaults.agent === config.agent) {
         delete config.agent
     }
@@ -152,14 +151,12 @@ class AxiosExtend {
     orderly: boolean // 是否有序返回，默认：true
     unique: boolean // 是否取消前面的相似请求，默认：false
     retries: number // 重试次数，默认：0=不重试
-    delay: number // 延迟返回值，毫秒，默认：0=不延迟
     onCancel // 请求取消时的回调
-    constructor({ maxConnections, orderly, unique, retries, delay, onCancel, ...defaultOptions }: AxiosExtendConfig) {
+    constructor({ maxConnections, orderly, unique, retries, onCancel, ...defaultOptions }: AxiosExtendConfig) {
         this.maxConnections = maxConnections ?? 0
         this.orderly = orderly ?? true
         this.unique = unique ?? false
         this.retries = retries ?? 0
-        this.delay = delay ?? 0
         this.onCancel = onCancel ?? null
         // 初始化方法
         this.init(defaultOptions)
@@ -266,8 +263,6 @@ class AxiosExtend {
                     console.info('the task has been dropped')
                 }
             }
-            // 延迟时间
-            if (this.delay > 0) await this.sleep(this.delay)
             // 执行
             axios(options)
                 .then((res: any) => {
@@ -292,14 +287,6 @@ class AxiosExtend {
             source
         })
         return promise
-    }
-    /**
-     * 延迟时间ms
-     * @param ms - 毫秒
-     * @returns Promise<Delay>
-     */
-    private sleep(ms: number): Promise<unknown> {
-        return new Promise(resolve => setTimeout(resolve, ms))
     }
 }
 

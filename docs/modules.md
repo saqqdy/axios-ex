@@ -1,6 +1,6 @@
-[index.md - v2.1.0](README.md) / Exports
+[index.md - v2.2.0](README.md) / Exports
 
-# index.md - v2.1.0
+# index.md - v2.2.0
 
 ## Table of contents
 
@@ -22,15 +22,11 @@
 ### Functions
 
 -   [exponentialDelay](modules.md#exponentialdelay)
--   [fixConfig](modules.md#fixconfig)
--   [getCurrentState](modules.md#getcurrentstate)
--   [getRequestOptions](modules.md#getrequestoptions)
 -   [isIdempotentRequestError](modules.md#isidempotentrequesterror)
 -   [isNetworkError](modules.md#isnetworkerror)
 -   [isNetworkOrIdempotentRequestError](modules.md#isnetworkoridempotentrequesterror)
 -   [isRetryableError](modules.md#isretryableerror)
 -   [isSafeRequestError](modules.md#issaferequesterror)
--   [noDelay](modules.md#nodelay)
 
 ## Variables
 
@@ -40,7 +36,7 @@
 
 #### Defined in
 
-[src/index.ts:6](https://github.com/saqqdy/axios-ex/blob/623dc5f/src/index.ts#L6)
+[src/index.ts:6](https://github.com/saqqdy/axios-ex/blob/0f7e2af/src/index.ts#L6)
 
 ## Functions
 
@@ -62,77 +58,7 @@ delay 毫秒
 
 #### Defined in
 
-[src/index.ts:131](https://github.com/saqqdy/axios-ex/blob/623dc5f/src/index.ts#L131)
-
----
-
-### fixConfig
-
-▸ **fixConfig**(`axios`, `config`): `void`
-
-#### Parameters
-
-| Name     | Type  | Description |
-| :------- | :---- | :---------- |
-| `axios`  | `any` | any         |
-| `config` | `any` | any         |
-
-#### Returns
-
-`void`
-
-#### Defined in
-
-[src/index.ts:79](https://github.com/saqqdy/axios-ex/blob/623dc5f/src/index.ts#L79)
-
----
-
-### getCurrentState
-
-▸ **getCurrentState**(`config`): [`AxiosExtendCurrentStateType`](interfaces/AxiosExtendCurrentStateType.md)
-
-Initializes and returns the retry state for the given request/config
-
-#### Parameters
-
-| Name     | Type                                                                   | Description               |
-| :------- | :--------------------------------------------------------------------- | :------------------------ |
-| `config` | [`AxiosExtendRequestOptions`](interfaces/AxiosExtendRequestOptions.md) | AxiosExtendRequestOptions |
-
-#### Returns
-
-[`AxiosExtendCurrentStateType`](interfaces/AxiosExtendCurrentStateType.md)
-
-currentState
-
-#### Defined in
-
-[src/index.ts:60](https://github.com/saqqdy/axios-ex/blob/623dc5f/src/index.ts#L60)
-
----
-
-### getRequestOptions
-
-▸ **getRequestOptions**(`config`, `defaultOptions`): [`AxiosExtendConfig`](interfaces/AxiosExtendConfig.md)
-
-Returns the axios-retry options for the current request
-
-#### Parameters
-
-| Name             | Type                                                                   | Description               |
-| :--------------- | :--------------------------------------------------------------------- | :------------------------ |
-| `config`         | [`AxiosExtendRequestOptions`](interfaces/AxiosExtendRequestOptions.md) | AxiosExtendRequestOptions |
-| `defaultOptions` | [`AxiosExtendConfig`](interfaces/AxiosExtendConfig.md)                 | AxiosExtendConfig         |
-
-#### Returns
-
-[`AxiosExtendConfig`](interfaces/AxiosExtendConfig.md)
-
-options
-
-#### Defined in
-
-[src/index.ts:72](https://github.com/saqqdy/axios-ex/blob/623dc5f/src/index.ts#L72)
+[src/index.ts:130](https://github.com/saqqdy/axios-ex/blob/0f7e2af/src/index.ts#L130)
 
 ---
 
@@ -154,7 +80,7 @@ boolean
 
 #### Defined in
 
-[src/index.ts:115](https://github.com/saqqdy/axios-ex/blob/623dc5f/src/index.ts#L115)
+[src/index.ts:114](https://github.com/saqqdy/axios-ex/blob/0f7e2af/src/index.ts#L114)
 
 ---
 
@@ -176,7 +102,7 @@ boolean
 
 #### Defined in
 
-[src/index.ts:94](https://github.com/saqqdy/axios-ex/blob/623dc5f/src/index.ts#L94)
+[src/index.ts:93](https://github.com/saqqdy/axios-ex/blob/0f7e2af/src/index.ts#L93)
 
 ---
 
@@ -198,7 +124,7 @@ boolean
 
 #### Defined in
 
-[src/index.ts:124](https://github.com/saqqdy/axios-ex/blob/623dc5f/src/index.ts#L124)
+[src/index.ts:123](https://github.com/saqqdy/axios-ex/blob/0f7e2af/src/index.ts#L123)
 
 ---
 
@@ -220,7 +146,7 @@ boolean
 
 #### Defined in
 
-[src/index.ts:140](https://github.com/saqqdy/axios-ex/blob/623dc5f/src/index.ts#L140)
+[src/index.ts:139](https://github.com/saqqdy/axios-ex/blob/0f7e2af/src/index.ts#L139)
 
 ---
 
@@ -242,22 +168,4 @@ boolean
 
 #### Defined in
 
-[src/index.ts:106](https://github.com/saqqdy/axios-ex/blob/623dc5f/src/index.ts#L106)
-
----
-
-### noDelay
-
-▸ **noDelay**(): `number`
-
-获取默认延迟时间 毫秒
-
-#### Returns
-
-`number`
-
-number - delay in milliseconds, always 0
-
-#### Defined in
-
-[src/index.ts:52](https://github.com/saqqdy/axios-ex/blob/623dc5f/src/index.ts#L52)
+[src/index.ts:105](https://github.com/saqqdy/axios-ex/blob/0f7e2af/src/index.ts#L105)
