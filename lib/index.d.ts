@@ -16,10 +16,9 @@ declare class AxiosExtend {
     orderly: boolean;
     unique: boolean;
     retries: number;
+    delay: number;
     onCancel: ((error: any) => void) | null;
-    context: any;
-    constructor({ maxConnections, orderly, unique, retries, onCancel, ...defaultOptions }: AxiosExtendConfig);
-    bind(context: any): void;
+    constructor({ maxConnections, orderly, unique, retries, delay, onCancel, ...defaultOptions }: AxiosExtendConfig);
     /**
      * 初始化
      */
@@ -28,6 +27,12 @@ declare class AxiosExtend {
      * 创建请求
      */
     create(options: AxiosExtendRequestOptions): Promise<any>;
+    /**
+     * 延迟时间ms
+     * @param ms - 毫秒
+     * @returns Promise<Delay>
+     */
+    private sleep;
 }
 export default AxiosExtend;
 
@@ -36,6 +41,7 @@ export declare interface AxiosExtendConfig {
     unique?: boolean;
     retries?: number;
     orderly?: boolean;
+    delay?: number;
     shouldResetTimeout?: boolean;
     retryCondition?(): boolean;
     retryDelay?(retryNumber: number, error: any): number;

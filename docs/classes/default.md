@@ -14,7 +14,7 @@ axios 封装
 
 ### Properties
 
--   [context](default.md#context)
+-   [delay](default.md#delay)
 -   [maxConnections](default.md#maxconnections)
 -   [onCancel](default.md#oncancel)
 -   [orderly](default.md#orderly)
@@ -24,9 +24,9 @@ axios 封装
 
 ### Methods
 
--   [bind](default.md#bind)
 -   [create](default.md#create)
 -   [init](default.md#init)
+-   [sleep](default.md#sleep)
 
 ## Constructors
 
@@ -42,27 +42,27 @@ axios 封装
 
 #### Defined in
 
-[src/index.ts:157](https://github.com/saqqdy/axios-ex/blob/5e23005/src/index.ts#L157)
+[src/index.ts:157](https://github.com/saqqdy/axios-ex/blob/7279e48/src/index.ts#L157)
 
 ## Properties
 
-### context
+### delay
 
-• **context**: `any` = `null`
+• **delay**: `number`
 
 #### Defined in
 
-[src/index.ts:156](https://github.com/saqqdy/axios-ex/blob/5e23005/src/index.ts#L156)
+[src/index.ts:155](https://github.com/saqqdy/axios-ex/blob/7279e48/src/index.ts#L155)
 
 ---
 
 ### maxConnections
 
-• **maxConnections**: `number` = `0`
+• **maxConnections**: `number`
 
 #### Defined in
 
-[src/index.ts:151](https://github.com/saqqdy/axios-ex/blob/5e23005/src/index.ts#L151)
+[src/index.ts:151](https://github.com/saqqdy/axios-ex/blob/7279e48/src/index.ts#L151)
 
 ---
 
@@ -72,37 +72,37 @@ axios 封装
 
 #### Defined in
 
-[src/index.ts:155](https://github.com/saqqdy/axios-ex/blob/5e23005/src/index.ts#L155)
+[src/index.ts:156](https://github.com/saqqdy/axios-ex/blob/7279e48/src/index.ts#L156)
 
 ---
 
 ### orderly
 
-• **orderly**: `boolean` = `true`
+• **orderly**: `boolean`
 
 #### Defined in
 
-[src/index.ts:152](https://github.com/saqqdy/axios-ex/blob/5e23005/src/index.ts#L152)
+[src/index.ts:152](https://github.com/saqqdy/axios-ex/blob/7279e48/src/index.ts#L152)
 
 ---
 
 ### retries
 
-• **retries**: `number` = `3`
+• **retries**: `number`
 
 #### Defined in
 
-[src/index.ts:154](https://github.com/saqqdy/axios-ex/blob/5e23005/src/index.ts#L154)
+[src/index.ts:154](https://github.com/saqqdy/axios-ex/blob/7279e48/src/index.ts#L154)
 
 ---
 
 ### unique
 
-• **unique**: `boolean` = `false`
+• **unique**: `boolean`
 
 #### Defined in
 
-[src/index.ts:153](https://github.com/saqqdy/axios-ex/blob/5e23005/src/index.ts#L153)
+[src/index.ts:153](https://github.com/saqqdy/axios-ex/blob/7279e48/src/index.ts#L153)
 
 ---
 
@@ -112,29 +112,9 @@ axios 封装
 
 #### Defined in
 
-[src/index.ts:150](https://github.com/saqqdy/axios-ex/blob/5e23005/src/index.ts#L150)
+[src/index.ts:150](https://github.com/saqqdy/axios-ex/blob/7279e48/src/index.ts#L150)
 
 ## Methods
-
-### bind
-
-▸ **bind**(`context`): `void`
-
-#### Parameters
-
-| Name      | Type  |
-| :-------- | :---- |
-| `context` | `any` |
-
-#### Returns
-
-`void`
-
-#### Defined in
-
-[src/index.ts:166](https://github.com/saqqdy/axios-ex/blob/5e23005/src/index.ts#L166)
-
----
 
 ### create
 
@@ -154,7 +134,7 @@ axios 封装
 
 #### Defined in
 
-[src/index.ts:236](https://github.com/saqqdy/axios-ex/blob/5e23005/src/index.ts#L236)
+[src/index.ts:233](https://github.com/saqqdy/axios-ex/blob/7279e48/src/index.ts#L233)
 
 ---
 
@@ -176,4 +156,28 @@ axios 封装
 
 #### Defined in
 
-[src/index.ts:172](https://github.com/saqqdy/axios-ex/blob/5e23005/src/index.ts#L172)
+[src/index.ts:170](https://github.com/saqqdy/axios-ex/blob/7279e48/src/index.ts#L170)
+
+---
+
+### sleep
+
+▸ `Private` **sleep**(`ms`): `Promise`<`unknown`\>
+
+延迟时间 ms
+
+#### Parameters
+
+| Name | Type     | Description |
+| :--- | :------- | :---------- |
+| `ms` | `number` | 毫秒        |
+
+#### Returns
+
+`Promise`<`unknown`\>
+
+Promise<Delay>
+
+#### Defined in
+
+[src/index.ts:301](https://github.com/saqqdy/axios-ex/blob/7279e48/src/index.ts#L301)

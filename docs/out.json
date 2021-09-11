@@ -7,7 +7,7 @@
 	"originalName": "index.md",
 	"children": [
 		{
-			"id": 120,
+			"id": 121,
 			"name": "default",
 			"kind": 128,
 			"kindString": "Class",
@@ -23,7 +23,7 @@
 			},
 			"children": [
 				{
-					"id": 121,
+					"id": 122,
 					"name": "constructor",
 					"kind": 512,
 					"kindString": "Constructor",
@@ -37,14 +37,14 @@
 					],
 					"signatures": [
 						{
-							"id": 122,
+							"id": 123,
 							"name": "new default",
 							"kind": 16384,
 							"kindString": "Constructor signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 123,
+									"id": 124,
 									"name": "__namedParameters",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -58,33 +58,32 @@
 							],
 							"type": {
 								"type": "reference",
-								"id": 120,
+								"id": 121,
 								"name": "AxiosExtend"
 							}
 						}
 					]
 				},
 				{
-					"id": 133,
-					"name": "context",
+					"id": 130,
+					"name": "delay",
 					"kind": 1024,
 					"kindString": "Property",
 					"flags": {},
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 156,
+							"line": 155,
 							"character": 4
 						}
 					],
 					"type": {
 						"type": "intrinsic",
-						"name": "any"
-					},
-					"defaultValue": "null"
+						"name": "number"
+					}
 				},
 				{
-					"id": 125,
+					"id": 126,
 					"name": "maxConnections",
 					"kind": 1024,
 					"kindString": "Property",
@@ -99,11 +98,10 @@
 					"type": {
 						"type": "intrinsic",
 						"name": "number"
-					},
-					"defaultValue": "0"
+					}
 				},
 				{
-					"id": 129,
+					"id": 131,
 					"name": "onCancel",
 					"kind": 1024,
 					"kindString": "Property",
@@ -111,7 +109,7 @@
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 155,
+							"line": 156,
 							"character": 4
 						}
 					],
@@ -125,21 +123,21 @@
 							{
 								"type": "reflection",
 								"declaration": {
-									"id": 130,
+									"id": 132,
 									"name": "__type",
 									"kind": 65536,
 									"kindString": "Type literal",
 									"flags": {},
 									"signatures": [
 										{
-											"id": 131,
+											"id": 133,
 											"name": "__type",
 											"kind": 4096,
 											"kindString": "Call signature",
 											"flags": {},
 											"parameters": [
 												{
-													"id": 132,
+													"id": 134,
 													"name": "error",
 													"kind": 32768,
 													"kindString": "Parameter",
@@ -162,7 +160,7 @@
 					}
 				},
 				{
-					"id": 126,
+					"id": 127,
 					"name": "orderly",
 					"kind": 1024,
 					"kindString": "Property",
@@ -177,11 +175,10 @@
 					"type": {
 						"type": "intrinsic",
 						"name": "boolean"
-					},
-					"defaultValue": "true"
+					}
 				},
 				{
-					"id": 128,
+					"id": 129,
 					"name": "retries",
 					"kind": 1024,
 					"kindString": "Property",
@@ -196,11 +193,10 @@
 					"type": {
 						"type": "intrinsic",
 						"name": "number"
-					},
-					"defaultValue": "3"
+					}
 				},
 				{
-					"id": 127,
+					"id": 128,
 					"name": "unique",
 					"kind": 1024,
 					"kindString": "Property",
@@ -215,11 +211,10 @@
 					"type": {
 						"type": "intrinsic",
 						"name": "boolean"
-					},
-					"defaultValue": "false"
+					}
 				},
 				{
-					"id": 124,
+					"id": 125,
 					"name": "waiting",
 					"kind": 1024,
 					"kindString": "Property",
@@ -242,47 +237,7 @@
 					"defaultValue": "[]"
 				},
 				{
-					"id": 134,
-					"name": "bind",
-					"kind": 2048,
-					"kindString": "Method",
-					"flags": {},
-					"sources": [
-						{
-							"fileName": "src/index.ts",
-							"line": 166,
-							"character": 4
-						}
-					],
-					"signatures": [
-						{
-							"id": 135,
-							"name": "bind",
-							"kind": 4096,
-							"kindString": "Call signature",
-							"flags": {},
-							"parameters": [
-								{
-									"id": 136,
-									"name": "context",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"type": {
-										"type": "intrinsic",
-										"name": "any"
-									}
-								}
-							],
-							"type": {
-								"type": "intrinsic",
-								"name": "void"
-							}
-						}
-					]
-				},
-				{
-					"id": 140,
+					"id": 138,
 					"name": "create",
 					"kind": 2048,
 					"kindString": "Method",
@@ -292,13 +247,13 @@
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 236,
+							"line": 233,
 							"character": 11
 						}
 					],
 					"signatures": [
 						{
-							"id": 141,
+							"id": 139,
 							"name": "create",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -308,7 +263,7 @@
 							},
 							"parameters": [
 								{
-									"id": 142,
+									"id": 140,
 									"name": "options",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -334,7 +289,7 @@
 					]
 				},
 				{
-					"id": 137,
+					"id": 135,
 					"name": "init",
 					"kind": 2048,
 					"kindString": "Method",
@@ -344,13 +299,13 @@
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 172,
+							"line": 170,
 							"character": 11
 						}
 					],
 					"signatures": [
 						{
-							"id": 138,
+							"id": 136,
 							"name": "init",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -360,7 +315,7 @@
 							},
 							"parameters": [
 								{
-									"id": 139,
+									"id": 137,
 									"name": "defaultOptions",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -378,6 +333,61 @@
 							}
 						}
 					]
+				},
+				{
+					"id": 141,
+					"name": "sleep",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPrivate": true
+					},
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 301,
+							"character": 12
+						}
+					],
+					"signatures": [
+						{
+							"id": 142,
+							"name": "sleep",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"shortText": "延迟时间ms",
+								"returns": "Promise<Delay>\n"
+							},
+							"parameters": [
+								{
+									"id": 143,
+									"name": "ms",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"text": "毫秒"
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"typeArguments": [
+									{
+										"type": "intrinsic",
+										"name": "unknown"
+									}
+								],
+								"name": "Promise"
+							}
+						}
+					]
 				}
 			],
 			"groups": [
@@ -385,36 +395,36 @@
 					"title": "Constructors",
 					"kind": 512,
 					"children": [
-						121
+						122
 					]
 				},
 				{
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						133,
-						125,
-						129,
+						130,
 						126,
-						128,
+						131,
 						127,
-						124
+						129,
+						128,
+						125
 					]
 				},
 				{
 					"title": "Methods",
 					"kind": 2048,
 					"children": [
-						134,
-						140,
-						137
+						138,
+						135,
+						141
 					]
 				}
 			],
 			"sources": [
 				{
 					"fileName": "src/index.ts",
-					"line": 148,
+					"line": 149,
 					"character": 6
 				}
 			]
@@ -426,6 +436,26 @@
 			"kindString": "Interface",
 			"flags": {},
 			"children": [
+				{
+					"id": 90,
+					"name": "delay",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 35,
+							"character": 4
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					}
+				},
 				{
 					"id": 86,
 					"name": "maxConnections",
@@ -487,7 +517,7 @@
 					}
 				},
 				{
-					"id": 90,
+					"id": 91,
 					"name": "shouldResetTimeout",
 					"kind": 1024,
 					"kindString": "Property",
@@ -497,7 +527,7 @@
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 35,
+							"line": 36,
 							"character": 4
 						}
 					],
@@ -527,7 +557,7 @@
 					}
 				},
 				{
-					"id": 117,
+					"id": 118,
 					"name": "onCancel",
 					"kind": 2048,
 					"kindString": "Method",
@@ -536,14 +566,14 @@
 					},
 					"signatures": [
 						{
-							"id": 118,
+							"id": 119,
 							"name": "onCancel",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 119,
+									"id": 120,
 									"name": "error",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -562,7 +592,7 @@
 					]
 				},
 				{
-					"id": 114,
+					"id": 115,
 					"name": "onError",
 					"kind": 2048,
 					"kindString": "Method",
@@ -571,14 +601,14 @@
 					},
 					"signatures": [
 						{
-							"id": 115,
+							"id": 116,
 							"name": "onError",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 116,
+									"id": 117,
 									"name": "error",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -597,7 +627,7 @@
 					]
 				},
 				{
-					"id": 100,
+					"id": 101,
 					"name": "onRequest",
 					"kind": 2048,
 					"kindString": "Method",
@@ -606,14 +636,14 @@
 					},
 					"signatures": [
 						{
-							"id": 101,
+							"id": 102,
 							"name": "onRequest",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 102,
+									"id": 103,
 									"name": "config",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -624,7 +654,7 @@
 									}
 								},
 								{
-									"id": 103,
+									"id": 104,
 									"name": "requestOptions",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -659,7 +689,7 @@
 					]
 				},
 				{
-					"id": 104,
+					"id": 105,
 					"name": "onRequestError",
 					"kind": 2048,
 					"kindString": "Method",
@@ -668,14 +698,14 @@
 					},
 					"signatures": [
 						{
-							"id": 105,
+							"id": 106,
 							"name": "onRequestError",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 106,
+									"id": 107,
 									"name": "error",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -694,7 +724,7 @@
 					]
 				},
 				{
-					"id": 107,
+					"id": 108,
 					"name": "onResponse",
 					"kind": 2048,
 					"kindString": "Method",
@@ -703,14 +733,14 @@
 					},
 					"signatures": [
 						{
-							"id": 108,
+							"id": 109,
 							"name": "onResponse",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 109,
+									"id": 110,
 									"name": "res",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -727,7 +757,7 @@
 									}
 								},
 								{
-									"id": 110,
+									"id": 111,
 									"name": "requestOptions",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -774,7 +804,7 @@
 					]
 				},
 				{
-					"id": 111,
+					"id": 112,
 					"name": "onResponseError",
 					"kind": 2048,
 					"kindString": "Method",
@@ -783,14 +813,14 @@
 					},
 					"signatures": [
 						{
-							"id": 112,
+							"id": 113,
 							"name": "onResponseError",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 113,
+									"id": 114,
 									"name": "error",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -809,7 +839,7 @@
 					]
 				},
 				{
-					"id": 91,
+					"id": 92,
 					"name": "retryCondition",
 					"kind": 2048,
 					"kindString": "Method",
@@ -818,7 +848,7 @@
 					},
 					"signatures": [
 						{
-							"id": 92,
+							"id": 93,
 							"name": "retryCondition",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -831,7 +861,7 @@
 					]
 				},
 				{
-					"id": 93,
+					"id": 94,
 					"name": "retryDelay",
 					"kind": 2048,
 					"kindString": "Method",
@@ -840,14 +870,14 @@
 					},
 					"signatures": [
 						{
-							"id": 94,
+							"id": 95,
 							"name": "retryDelay",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 95,
+									"id": 96,
 									"name": "retryNumber",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -858,7 +888,7 @@
 									}
 								},
 								{
-									"id": 96,
+									"id": 97,
 									"name": "error",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -877,7 +907,7 @@
 					]
 				},
 				{
-					"id": 97,
+					"id": 98,
 					"name": "setHeaders",
 					"kind": 2048,
 					"kindString": "Method",
@@ -886,14 +916,14 @@
 					},
 					"signatures": [
 						{
-							"id": 98,
+							"id": 99,
 							"name": "setHeaders",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 99,
+									"id": 100,
 									"name": "instance",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -917,10 +947,11 @@
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
+						90,
 						86,
 						89,
 						88,
-						90,
+						91,
 						87
 					]
 				},
@@ -928,15 +959,15 @@
 					"title": "Methods",
 					"kind": 2048,
 					"children": [
-						117,
-						114,
-						100,
-						104,
-						107,
-						111,
-						91,
-						93,
-						97
+						118,
+						115,
+						101,
+						105,
+						108,
+						112,
+						92,
+						94,
+						98
 					]
 				}
 			],
@@ -2219,7 +2250,7 @@
 			"sources": [
 				{
 					"fileName": "src/index.ts",
-					"line": 130,
+					"line": 131,
 					"character": 16
 				}
 			],
@@ -2266,7 +2297,7 @@
 			"sources": [
 				{
 					"fileName": "src/index.ts",
-					"line": 78,
+					"line": 79,
 					"character": 16
 				}
 			],
@@ -2324,7 +2355,7 @@
 			"sources": [
 				{
 					"fileName": "src/index.ts",
-					"line": 59,
+					"line": 60,
 					"character": 16
 				}
 			],
@@ -2373,7 +2404,7 @@
 			"sources": [
 				{
 					"fileName": "src/index.ts",
-					"line": 71,
+					"line": 72,
 					"character": 16
 				}
 			],
@@ -2437,7 +2468,7 @@
 			"sources": [
 				{
 					"fileName": "src/index.ts",
-					"line": 114,
+					"line": 115,
 					"character": 16
 				}
 			],
@@ -2483,7 +2514,7 @@
 			"sources": [
 				{
 					"fileName": "src/index.ts",
-					"line": 93,
+					"line": 94,
 					"character": 16
 				}
 			],
@@ -2529,7 +2560,7 @@
 			"sources": [
 				{
 					"fileName": "src/index.ts",
-					"line": 123,
+					"line": 124,
 					"character": 16
 				}
 			],
@@ -2575,7 +2606,7 @@
 			"sources": [
 				{
 					"fileName": "src/index.ts",
-					"line": 139,
+					"line": 140,
 					"character": 16
 				}
 			],
@@ -2621,7 +2652,7 @@
 			"sources": [
 				{
 					"fileName": "src/index.ts",
-					"line": 105,
+					"line": 106,
 					"character": 16
 				}
 			],
@@ -2667,7 +2698,7 @@
 			"sources": [
 				{
 					"fileName": "src/index.ts",
-					"line": 51,
+					"line": 52,
 					"character": 16
 				}
 			],
@@ -2695,7 +2726,7 @@
 			"title": "Classes",
 			"kind": 128,
 			"children": [
-				120
+				121
 			]
 		},
 		{

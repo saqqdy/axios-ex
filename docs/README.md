@@ -70,6 +70,7 @@ const axiosEx = new AxiosExtend({
     unique: true, // 是否取消前面的相似请求，默认：false
     retries: 0, // 重试次数，默认：0=不重试
     orderly: false, // 是否有序返回，默认：true
+    delay: 0, // 延迟返回值，毫秒，默认：0=不延迟
     setHeaders, // 设置请求头的方法
     onRequest, // 请求拦截器
     onResponse, // 响应拦截器
