@@ -16,7 +16,7 @@ const baseConfig = {
         chunkFilename: '[id].js',
         libraryTarget: 'umd',
         libraryExport: 'default',
-        library: 'AxiosExtend',
+        library: 'axiosExtend',
         umdNamedDefine: true,
         globalObject: "typeof self !== 'undefined' ? self : this"
     },
