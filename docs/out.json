@@ -1,2471 +1,2383 @@
 {
-	"id": 0,
-	"name": "index.md - v2.2.0",
-	"kind": 0,
-	"kindString": "Project",
-	"flags": {},
-	"originalName": "index.md",
-	"children": [
-		{
-			"id": 107,
-			"name": "default",
-			"kind": 128,
-			"kindString": "Class",
-			"flags": {},
-			"comment": {
-				"shortText": "axios封装",
-				"tags": [
-					{
-						"tag": "returns",
-						"text": "Promise\n"
-					}
-				]
-			},
-			"children": [
-				{
-					"id": 108,
-					"name": "constructor",
-					"kind": 512,
-					"kindString": "Constructor",
-					"flags": {},
-					"sources": [
-						{
-							"fileName": "src/index.ts",
-							"line": 155,
-							"character": 4
-						}
-					],
-					"signatures": [
-						{
-							"id": 109,
-							"name": "new default",
-							"kind": 16384,
-							"kindString": "Constructor signature",
-							"flags": {},
-							"parameters": [
-								{
-									"id": 110,
-									"name": "__namedParameters",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"type": {
-										"type": "reference",
-										"id": 72,
-										"name": "AxiosExtendConfig"
-									}
-								}
-							],
-							"type": {
-								"type": "reference",
-								"id": 107,
-								"name": "AxiosExtend"
-							}
-						}
-					]
-				},
-				{
-					"id": 112,
-					"name": "maxConnections",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {},
-					"sources": [
-						{
-							"fileName": "src/index.ts",
-							"line": 150,
-							"character": 4
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "number"
-					}
-				},
-				{
-					"id": 116,
-					"name": "onCancel",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {},
-					"sources": [
-						{
-							"fileName": "src/index.ts",
-							"line": 154,
-							"character": 4
-						}
-					],
-					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "literal",
-								"value": null
-							},
-							{
-								"type": "reflection",
-								"declaration": {
-									"id": 117,
-									"name": "__type",
-									"kind": 65536,
-									"kindString": "Type literal",
-									"flags": {},
-									"signatures": [
-										{
-											"id": 118,
-											"name": "__type",
-											"kind": 4096,
-											"kindString": "Call signature",
-											"flags": {},
-											"parameters": [
-												{
-													"id": 119,
-													"name": "error",
-													"kind": 32768,
-													"kindString": "Parameter",
-													"flags": {},
-													"type": {
-														"type": "intrinsic",
-														"name": "any"
-													}
-												}
-											],
-											"type": {
-												"type": "intrinsic",
-												"name": "void"
-											}
-										}
-									]
-								}
-							}
-						]
-					}
-				},
-				{
-					"id": 113,
-					"name": "orderly",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {},
-					"sources": [
-						{
-							"fileName": "src/index.ts",
-							"line": 151,
-							"character": 4
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "boolean"
-					}
-				},
-				{
-					"id": 115,
-					"name": "retries",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {},
-					"sources": [
-						{
-							"fileName": "src/index.ts",
-							"line": 153,
-							"character": 4
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "number"
-					}
-				},
-				{
-					"id": 114,
-					"name": "unique",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {},
-					"sources": [
-						{
-							"fileName": "src/index.ts",
-							"line": 152,
-							"character": 4
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "boolean"
-					}
-				},
-				{
-					"id": 111,
-					"name": "waiting",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {},
-					"sources": [
-						{
-							"fileName": "src/index.ts",
-							"line": 149,
-							"character": 4
-						}
-					],
-					"type": {
-						"type": "array",
-						"elementType": {
-							"type": "reference",
-							"id": 20,
-							"name": "AxiosExtendObject"
-						}
-					},
-					"defaultValue": "[]"
-				},
-				{
-					"id": 123,
-					"name": "create",
-					"kind": 2048,
-					"kindString": "Method",
-					"flags": {
-						"isPublic": true
-					},
-					"sources": [
-						{
-							"fileName": "src/index.ts",
-							"line": 230,
-							"character": 11
-						}
-					],
-					"signatures": [
-						{
-							"id": 124,
-							"name": "create",
-							"kind": 4096,
-							"kindString": "Call signature",
-							"flags": {},
-							"comment": {
-								"shortText": "创建请求"
-							},
-							"parameters": [
-								{
-									"id": 125,
-									"name": "options",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"type": {
-										"type": "reference",
-										"id": 28,
-										"name": "AxiosExtendRequestOptions"
-									}
-								}
-							],
-							"type": {
-								"type": "reference",
-								"typeArguments": [
-									{
-										"type": "intrinsic",
-										"name": "any"
-									}
-								],
-								"name": "Promise"
-							}
-						}
-					]
-				},
-				{
-					"id": 120,
-					"name": "init",
-					"kind": 2048,
-					"kindString": "Method",
-					"flags": {
-						"isPublic": true
-					},
-					"sources": [
-						{
-							"fileName": "src/index.ts",
-							"line": 167,
-							"character": 11
-						}
-					],
-					"signatures": [
-						{
-							"id": 121,
-							"name": "init",
-							"kind": 4096,
-							"kindString": "Call signature",
-							"flags": {},
-							"comment": {
-								"shortText": "初始化"
-							},
-							"parameters": [
-								{
-									"id": 122,
-									"name": "defaultOptions",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"type": {
-										"type": "reference",
-										"id": 72,
-										"name": "AxiosExtendConfig"
-									}
-								}
-							],
-							"type": {
-								"type": "intrinsic",
-								"name": "void"
-							}
-						}
-					]
-				}
-			],
-			"groups": [
-				{
-					"title": "Constructors",
-					"kind": 512,
-					"children": [
-						108
-					]
-				},
-				{
-					"title": "Properties",
-					"kind": 1024,
-					"children": [
-						112,
-						116,
-						113,
-						115,
-						114,
-						111
-					]
-				},
-				{
-					"title": "Methods",
-					"kind": 2048,
-					"children": [
-						123,
-						120
-					]
-				}
-			],
-			"sources": [
-				{
-					"fileName": "src/index.ts",
-					"line": 148,
-					"character": 6
-				}
-			]
-		},
-		{
-			"id": 72,
-			"name": "AxiosExtendConfig",
-			"kind": 256,
-			"kindString": "Interface",
-			"flags": {},
-			"children": [
-				{
-					"id": 73,
-					"name": "maxConnections",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isOptional": true
-					},
-					"sources": [
-						{
-							"fileName": "src/index.ts",
-							"line": 31,
-							"character": 4
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "number"
-					}
-				},
-				{
-					"id": 76,
-					"name": "orderly",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isOptional": true
-					},
-					"sources": [
-						{
-							"fileName": "src/index.ts",
-							"line": 34,
-							"character": 4
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "boolean"
-					}
-				},
-				{
-					"id": 75,
-					"name": "retries",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isOptional": true
-					},
-					"sources": [
-						{
-							"fileName": "src/index.ts",
-							"line": 33,
-							"character": 4
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "number"
-					}
-				},
-				{
-					"id": 77,
-					"name": "shouldResetTimeout",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isOptional": true
-					},
-					"sources": [
-						{
-							"fileName": "src/index.ts",
-							"line": 35,
-							"character": 4
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "boolean"
-					}
-				},
-				{
-					"id": 74,
-					"name": "unique",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isOptional": true
-					},
-					"sources": [
-						{
-							"fileName": "src/index.ts",
-							"line": 32,
-							"character": 4
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "boolean"
-					}
-				},
-				{
-					"id": 104,
-					"name": "onCancel",
-					"kind": 2048,
-					"kindString": "Method",
-					"flags": {
-						"isOptional": true
-					},
-					"signatures": [
-						{
-							"id": 105,
-							"name": "onCancel",
-							"kind": 4096,
-							"kindString": "Call signature",
-							"flags": {},
-							"parameters": [
-								{
-									"id": 106,
-									"name": "error",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"type": {
-										"type": "intrinsic",
-										"name": "any"
-									}
-								}
-							],
-							"type": {
-								"type": "intrinsic",
-								"name": "void"
-							}
-						}
-					]
-				},
-				{
-					"id": 101,
-					"name": "onError",
-					"kind": 2048,
-					"kindString": "Method",
-					"flags": {
-						"isOptional": true
-					},
-					"signatures": [
-						{
-							"id": 102,
-							"name": "onError",
-							"kind": 4096,
-							"kindString": "Call signature",
-							"flags": {},
-							"parameters": [
-								{
-									"id": 103,
-									"name": "error",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"type": {
-										"type": "intrinsic",
-										"name": "any"
-									}
-								}
-							],
-							"type": {
-								"type": "intrinsic",
-								"name": "void"
-							}
-						}
-					]
-				},
-				{
-					"id": 87,
-					"name": "onRequest",
-					"kind": 2048,
-					"kindString": "Method",
-					"flags": {
-						"isOptional": true
-					},
-					"signatures": [
-						{
-							"id": 88,
-							"name": "onRequest",
-							"kind": 4096,
-							"kindString": "Call signature",
-							"flags": {},
-							"parameters": [
-								{
-									"id": 89,
-									"name": "config",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"type": {
-										"type": "reference",
-										"name": "AxiosRequestConfig"
-									}
-								},
-								{
-									"id": 90,
-									"name": "requestOptions",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"type": {
-										"type": "reference",
-										"id": 28,
-										"name": "AxiosExtendRequestOptions"
-									}
-								}
-							],
-							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "reference",
-										"name": "AxiosRequestConfig"
-									},
-									{
-										"type": "reference",
-										"typeArguments": [
-											{
-												"type": "reference",
-												"name": "AxiosRequestConfig"
-											}
-										],
-										"name": "Promise"
-									}
-								]
-							}
-						}
-					]
-				},
-				{
-					"id": 91,
-					"name": "onRequestError",
-					"kind": 2048,
-					"kindString": "Method",
-					"flags": {
-						"isOptional": true
-					},
-					"signatures": [
-						{
-							"id": 92,
-							"name": "onRequestError",
-							"kind": 4096,
-							"kindString": "Call signature",
-							"flags": {},
-							"parameters": [
-								{
-									"id": 93,
-									"name": "error",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"type": {
-										"type": "intrinsic",
-										"name": "any"
-									}
-								}
-							],
-							"type": {
-								"type": "intrinsic",
-								"name": "void"
-							}
-						}
-					]
-				},
-				{
-					"id": 94,
-					"name": "onResponse",
-					"kind": 2048,
-					"kindString": "Method",
-					"flags": {
-						"isOptional": true
-					},
-					"signatures": [
-						{
-							"id": 95,
-							"name": "onResponse",
-							"kind": 4096,
-							"kindString": "Call signature",
-							"flags": {},
-							"parameters": [
-								{
-									"id": 96,
-									"name": "res",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"type": {
-										"type": "reference",
-										"typeArguments": [
-											{
-												"type": "intrinsic",
-												"name": "any"
-											}
-										],
-										"name": "AxiosResponse"
-									}
-								},
-								{
-									"id": 97,
-									"name": "requestOptions",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"type": {
-										"type": "reference",
-										"id": 28,
-										"name": "AxiosExtendRequestOptions"
-									}
-								}
-							],
-							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "reference",
-										"typeArguments": [
-											{
-												"type": "intrinsic",
-												"name": "any"
-											}
-										],
-										"name": "AxiosResponse"
-									},
-									{
-										"type": "reference",
-										"typeArguments": [
-											{
-												"type": "reference",
-												"typeArguments": [
-													{
-														"type": "intrinsic",
-														"name": "any"
-													}
-												],
-												"name": "AxiosResponse"
-											}
-										],
-										"name": "Promise"
-									}
-								]
-							}
-						}
-					]
-				},
-				{
-					"id": 98,
-					"name": "onResponseError",
-					"kind": 2048,
-					"kindString": "Method",
-					"flags": {
-						"isOptional": true
-					},
-					"signatures": [
-						{
-							"id": 99,
-							"name": "onResponseError",
-							"kind": 4096,
-							"kindString": "Call signature",
-							"flags": {},
-							"parameters": [
-								{
-									"id": 100,
-									"name": "error",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"type": {
-										"type": "intrinsic",
-										"name": "any"
-									}
-								}
-							],
-							"type": {
-								"type": "intrinsic",
-								"name": "void"
-							}
-						}
-					]
-				},
-				{
-					"id": 78,
-					"name": "retryCondition",
-					"kind": 2048,
-					"kindString": "Method",
-					"flags": {
-						"isOptional": true
-					},
-					"signatures": [
-						{
-							"id": 79,
-							"name": "retryCondition",
-							"kind": 4096,
-							"kindString": "Call signature",
-							"flags": {},
-							"type": {
-								"type": "intrinsic",
-								"name": "boolean"
-							}
-						}
-					]
-				},
-				{
-					"id": 80,
-					"name": "retryDelay",
-					"kind": 2048,
-					"kindString": "Method",
-					"flags": {
-						"isOptional": true
-					},
-					"signatures": [
-						{
-							"id": 81,
-							"name": "retryDelay",
-							"kind": 4096,
-							"kindString": "Call signature",
-							"flags": {},
-							"parameters": [
-								{
-									"id": 82,
-									"name": "retryNumber",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"type": {
-										"type": "intrinsic",
-										"name": "number"
-									}
-								},
-								{
-									"id": 83,
-									"name": "error",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"type": {
-										"type": "intrinsic",
-										"name": "any"
-									}
-								}
-							],
-							"type": {
-								"type": "intrinsic",
-								"name": "number"
-							}
-						}
-					]
-				},
-				{
-					"id": 84,
-					"name": "setHeaders",
-					"kind": 2048,
-					"kindString": "Method",
-					"flags": {
-						"isOptional": true
-					},
-					"signatures": [
-						{
-							"id": 85,
-							"name": "setHeaders",
-							"kind": 4096,
-							"kindString": "Call signature",
-							"flags": {},
-							"parameters": [
-								{
-									"id": 86,
-									"name": "instance",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"type": {
-										"type": "reference",
-										"name": "AxiosInstance"
-									}
-								}
-							],
-							"type": {
-								"type": "intrinsic",
-								"name": "void"
-							}
-						}
-					]
-				}
-			],
-			"groups": [
-				{
-					"title": "Properties",
-					"kind": 1024,
-					"children": [
-						73,
-						76,
-						75,
-						77,
-						74
-					]
-				},
-				{
-					"title": "Methods",
-					"kind": 2048,
-					"children": [
-						104,
-						101,
-						87,
-						91,
-						94,
-						98,
-						78,
-						80,
-						84
-					]
-				}
-			],
-			"sources": [
-				{
-					"fileName": "src/index.ts",
-					"line": 30,
-					"character": 17
-				}
-			]
-		},
-		{
-			"id": 25,
-			"name": "AxiosExtendCurrentStateType",
-			"kind": 256,
-			"kindString": "Interface",
-			"flags": {},
-			"children": [
-				{
-					"id": 26,
-					"name": "lastRequestTime",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {},
-					"sources": [
-						{
-							"fileName": "src/index.ts",
-							"line": 18,
-							"character": 4
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "number"
-					}
-				},
-				{
-					"id": 27,
-					"name": "retryCount",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {},
-					"sources": [
-						{
-							"fileName": "src/index.ts",
-							"line": 19,
-							"character": 4
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "number"
-					}
-				}
-			],
-			"groups": [
-				{
-					"title": "Properties",
-					"kind": 1024,
-					"children": [
-						26,
-						27
-					]
-				}
-			],
-			"sources": [
-				{
-					"fileName": "src/index.ts",
-					"line": 17,
-					"character": 17
-				}
-			]
-		},
-		{
-			"id": 20,
-			"name": "AxiosExtendObject",
-			"kind": 256,
-			"kindString": "Interface",
-			"flags": {},
-			"children": [
-				{
-					"id": 23,
-					"name": "promise",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {},
-					"sources": [
-						{
-							"fileName": "src/index.ts",
-							"line": 13,
-							"character": 4
-						}
-					],
-					"type": {
-						"type": "reference",
-						"typeArguments": [
-							{
-								"type": "intrinsic",
-								"name": "any"
-							}
-						],
-						"name": "Promise"
-					}
-				},
-				{
-					"id": 21,
-					"name": "promiseKey",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {},
-					"sources": [
-						{
-							"fileName": "src/index.ts",
-							"line": 11,
-							"character": 4
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "string"
-					}
-				},
-				{
-					"id": 24,
-					"name": "source",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {},
-					"sources": [
-						{
-							"fileName": "src/index.ts",
-							"line": 14,
-							"character": 4
-						}
-					],
-					"type": {
-						"type": "reference",
-						"name": "CancelTokenSource"
-					}
-				},
-				{
-					"id": 22,
-					"name": "url",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {},
-					"sources": [
-						{
-							"fileName": "src/index.ts",
-							"line": 12,
-							"character": 4
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "string"
-					}
-				}
-			],
-			"groups": [
-				{
-					"title": "Properties",
-					"kind": 1024,
-					"children": [
-						23,
-						21,
-						24,
-						22
-					]
-				}
-			],
-			"sources": [
-				{
-					"fileName": "src/index.ts",
-					"line": 10,
-					"character": 17
-				}
-			]
-		},
-		{
-			"id": 28,
-			"name": "AxiosExtendRequestOptions",
-			"kind": 256,
-			"kindString": "Interface",
-			"flags": {},
-			"children": [
-				{
-					"id": 48,
-					"name": "adapter",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExternal": true,
-						"isOptional": true
-					},
-					"sources": [
-						{
-							"fileName": "node_modules/axios/index.d.ts",
-							"line": 63,
-							"character": 2
-						}
-					],
-					"type": {
-						"type": "reference",
-						"name": "AxiosAdapter"
-					},
-					"inheritedFrom": {
-						"type": "reference",
-						"name": "AxiosRequestConfig.adapter"
-					}
-				},
-				{
-					"id": 49,
-					"name": "auth",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExternal": true,
-						"isOptional": true
-					},
-					"sources": [
-						{
-							"fileName": "node_modules/axios/index.d.ts",
-							"line": 64,
-							"character": 2
-						}
-					],
-					"type": {
-						"type": "reference",
-						"name": "AxiosBasicCredentials"
-					},
-					"inheritedFrom": {
-						"type": "reference",
-						"name": "AxiosRequestConfig.auth"
-					}
-				},
-				{
-					"id": 33,
-					"name": "axios-extend",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isOptional": true
-					},
-					"sources": [
-						{
-							"fileName": "src/index.ts",
-							"line": 23,
-							"character": 4
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "any"
-					}
-				},
-				{
-					"id": 36,
-					"name": "baseURL",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExternal": true,
-						"isOptional": true
-					},
-					"sources": [
-						{
-							"fileName": "node_modules/axios/index.d.ts",
-							"line": 53,
-							"character": 2
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "string"
-					},
-					"inheritedFrom": {
-						"type": "reference",
-						"name": "AxiosRequestConfig.baseURL"
-					}
-				},
-				{
-					"id": 32,
-					"name": "cancelToken",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isOptional": true
-					},
-					"sources": [
-						{
-							"fileName": "src/index.ts",
-							"line": 27,
-							"character": 4
-						}
-					],
-					"type": {
-						"type": "reference",
-						"name": "CancelToken"
-					},
-					"overwrites": {
-						"type": "reference",
-						"name": "AxiosRequestConfig.cancelToken"
-					}
-				},
-				{
-					"id": 44,
-					"name": "data",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExternal": true,
-						"isOptional": true
-					},
-					"sources": [
-						{
-							"fileName": "node_modules/axios/index.d.ts",
-							"line": 59,
-							"character": 2
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "any"
-					},
-					"inheritedFrom": {
-						"type": "reference",
-						"name": "AxiosRequestConfig.data"
-					}
-				},
-				{
-					"id": 70,
-					"name": "decompress",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExternal": true,
-						"isOptional": true
-					},
-					"sources": [
-						{
-							"fileName": "node_modules/axios/index.d.ts",
-							"line": 79,
-							"character": 2
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "boolean"
-					},
-					"inheritedFrom": {
-						"type": "reference",
-						"name": "AxiosRequestConfig.decompress"
-					}
-				},
-				{
-					"id": 39,
-					"name": "headers",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExternal": true,
-						"isOptional": true
-					},
-					"sources": [
-						{
-							"fileName": "node_modules/axios/index.d.ts",
-							"line": 56,
-							"character": 2
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "any"
-					},
-					"inheritedFrom": {
-						"type": "reference",
-						"name": "AxiosRequestConfig.headers"
-					}
-				},
-				{
-					"id": 67,
-					"name": "httpAgent",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExternal": true,
-						"isOptional": true
-					},
-					"sources": [
-						{
-							"fileName": "node_modules/axios/index.d.ts",
-							"line": 75,
-							"character": 2
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "any"
-					},
-					"inheritedFrom": {
-						"type": "reference",
-						"name": "AxiosRequestConfig.httpAgent"
-					}
-				},
-				{
-					"id": 68,
-					"name": "httpsAgent",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExternal": true,
-						"isOptional": true
-					},
-					"sources": [
-						{
-							"fileName": "node_modules/axios/index.d.ts",
-							"line": 76,
-							"character": 2
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "any"
-					},
-					"inheritedFrom": {
-						"type": "reference",
-						"name": "AxiosRequestConfig.httpsAgent"
-					}
-				},
-				{
-					"id": 64,
-					"name": "maxBodyLength",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExternal": true,
-						"isOptional": true
-					},
-					"sources": [
-						{
-							"fileName": "node_modules/axios/index.d.ts",
-							"line": 72,
-							"character": 2
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "number"
-					},
-					"inheritedFrom": {
-						"type": "reference",
-						"name": "AxiosRequestConfig.maxBodyLength"
-					}
-				},
-				{
-					"id": 59,
-					"name": "maxContentLength",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExternal": true,
-						"isOptional": true
-					},
-					"sources": [
-						{
-							"fileName": "node_modules/axios/index.d.ts",
-							"line": 70,
-							"character": 2
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "number"
-					},
-					"inheritedFrom": {
-						"type": "reference",
-						"name": "AxiosRequestConfig.maxContentLength"
-					}
-				},
-				{
-					"id": 65,
-					"name": "maxRedirects",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExternal": true,
-						"isOptional": true
-					},
-					"sources": [
-						{
-							"fileName": "node_modules/axios/index.d.ts",
-							"line": 73,
-							"character": 2
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "number"
-					},
-					"inheritedFrom": {
-						"type": "reference",
-						"name": "AxiosRequestConfig.maxRedirects"
-					}
-				},
-				{
-					"id": 35,
-					"name": "method",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExternal": true,
-						"isOptional": true
-					},
-					"sources": [
-						{
-							"fileName": "node_modules/axios/index.d.ts",
-							"line": 52,
-							"character": 2
-						}
-					],
-					"type": {
-						"type": "reference",
-						"name": "Method"
-					},
-					"inheritedFrom": {
-						"type": "reference",
-						"name": "AxiosRequestConfig.method"
-					}
-				},
-				{
-					"id": 30,
-					"name": "orderly",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isOptional": true
-					},
-					"sources": [
-						{
-							"fileName": "src/index.ts",
-							"line": 25,
-							"character": 4
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "boolean"
-					}
-				},
-				{
-					"id": 40,
-					"name": "params",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExternal": true,
-						"isOptional": true
-					},
-					"sources": [
-						{
-							"fileName": "node_modules/axios/index.d.ts",
-							"line": 57,
-							"character": 2
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "any"
-					},
-					"inheritedFrom": {
-						"type": "reference",
-						"name": "AxiosRequestConfig.params"
-					}
-				},
-				{
-					"id": 69,
-					"name": "proxy",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExternal": true,
-						"isOptional": true
-					},
-					"sources": [
-						{
-							"fileName": "node_modules/axios/index.d.ts",
-							"line": 77,
-							"character": 2
-						}
-					],
-					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "literal",
-								"value": false
-							},
-							{
-								"type": "reference",
-								"name": "AxiosProxyConfig"
-							}
-						]
-					},
-					"inheritedFrom": {
-						"type": "reference",
-						"name": "AxiosRequestConfig.proxy"
-					}
-				},
-				{
-					"id": 31,
-					"name": "requestOptions",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isOptional": true
-					},
-					"sources": [
-						{
-							"fileName": "src/index.ts",
-							"line": 26,
-							"character": 4
-						}
-					],
-					"type": {
-						"type": "reference",
-						"id": 28,
-						"name": "AxiosExtendRequestOptions"
-					}
-				},
-				{
-					"id": 50,
-					"name": "responseType",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExternal": true,
-						"isOptional": true
-					},
-					"sources": [
-						{
-							"fileName": "node_modules/axios/index.d.ts",
-							"line": 65,
-							"character": 2
-						}
-					],
-					"type": {
-						"type": "reference",
-						"name": "ResponseType"
-					},
-					"inheritedFrom": {
-						"type": "reference",
-						"name": "AxiosRequestConfig.responseType"
-					}
-				},
-				{
-					"id": 66,
-					"name": "socketPath",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExternal": true,
-						"isOptional": true
-					},
-					"sources": [
-						{
-							"fileName": "node_modules/axios/index.d.ts",
-							"line": 74,
-							"character": 2
-						}
-					],
-					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "literal",
-								"value": null
-							},
-							{
-								"type": "intrinsic",
-								"name": "string"
-							}
-						]
-					},
-					"inheritedFrom": {
-						"type": "reference",
-						"name": "AxiosRequestConfig.socketPath"
-					}
-				},
-				{
-					"id": 45,
-					"name": "timeout",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExternal": true,
-						"isOptional": true
-					},
-					"sources": [
-						{
-							"fileName": "node_modules/axios/index.d.ts",
-							"line": 60,
-							"character": 2
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "number"
-					},
-					"inheritedFrom": {
-						"type": "reference",
-						"name": "AxiosRequestConfig.timeout"
-					}
-				},
-				{
-					"id": 46,
-					"name": "timeoutErrorMessage",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExternal": true,
-						"isOptional": true
-					},
-					"sources": [
-						{
-							"fileName": "node_modules/axios/index.d.ts",
-							"line": 61,
-							"character": 2
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "string"
-					},
-					"inheritedFrom": {
-						"type": "reference",
-						"name": "AxiosRequestConfig.timeoutErrorMessage"
-					}
-				},
-				{
-					"id": 37,
-					"name": "transformRequest",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExternal": true,
-						"isOptional": true
-					},
-					"sources": [
-						{
-							"fileName": "node_modules/axios/index.d.ts",
-							"line": 54,
-							"character": 2
-						}
-					],
-					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "reference",
-								"name": "AxiosTransformer"
-							},
-							{
-								"type": "array",
-								"elementType": {
-									"type": "reference",
-									"name": "AxiosTransformer"
-								}
-							}
-						]
-					},
-					"inheritedFrom": {
-						"type": "reference",
-						"name": "AxiosRequestConfig.transformRequest"
-					}
-				},
-				{
-					"id": 38,
-					"name": "transformResponse",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExternal": true,
-						"isOptional": true
-					},
-					"sources": [
-						{
-							"fileName": "node_modules/axios/index.d.ts",
-							"line": 55,
-							"character": 2
-						}
-					],
-					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "reference",
-								"name": "AxiosTransformer"
-							},
-							{
-								"type": "array",
-								"elementType": {
-									"type": "reference",
-									"name": "AxiosTransformer"
-								}
-							}
-						]
-					},
-					"inheritedFrom": {
-						"type": "reference",
-						"name": "AxiosRequestConfig.transformResponse"
-					}
-				},
-				{
-					"id": 71,
-					"name": "transitional",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExternal": true,
-						"isOptional": true
-					},
-					"sources": [
-						{
-							"fileName": "node_modules/axios/index.d.ts",
-							"line": 80,
-							"character": 2
-						}
-					],
-					"type": {
-						"type": "reference",
-						"name": "TransitionalOptions"
-					},
-					"inheritedFrom": {
-						"type": "reference",
-						"name": "AxiosRequestConfig.transitional"
-					}
-				},
-				{
-					"id": 29,
-					"name": "unique",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isOptional": true
-					},
-					"sources": [
-						{
-							"fileName": "src/index.ts",
-							"line": 24,
-							"character": 4
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "boolean"
-					}
-				},
-				{
-					"id": 34,
-					"name": "url",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExternal": true,
-						"isOptional": true
-					},
-					"sources": [
-						{
-							"fileName": "node_modules/axios/index.d.ts",
-							"line": 51,
-							"character": 2
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "string"
-					},
-					"inheritedFrom": {
-						"type": "reference",
-						"name": "AxiosRequestConfig.url"
-					}
-				},
-				{
-					"id": 60,
-					"name": "validateStatus",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExternal": true,
-						"isOptional": true
-					},
-					"sources": [
-						{
-							"fileName": "node_modules/axios/index.d.ts",
-							"line": 71,
-							"character": 2
-						}
-					],
-					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "literal",
-								"value": null
-							},
-							{
-								"type": "reflection",
-								"declaration": {
-									"id": 61,
-									"name": "__type",
-									"kind": 65536,
-									"kindString": "Type literal",
-									"flags": {},
-									"signatures": [
-										{
-											"id": 62,
-											"name": "__type",
-											"kind": 4096,
-											"kindString": "Call signature",
-											"flags": {},
-											"parameters": [
-												{
-													"id": 63,
-													"name": "status",
-													"kind": 32768,
-													"kindString": "Parameter",
-													"flags": {},
-													"type": {
-														"type": "intrinsic",
-														"name": "number"
-													}
-												}
-											],
-											"type": {
-												"type": "intrinsic",
-												"name": "boolean"
-											}
-										}
-									]
-								}
-							}
-						]
-					},
-					"inheritedFrom": {
-						"type": "reference",
-						"name": "AxiosRequestConfig.validateStatus"
-					}
-				},
-				{
-					"id": 47,
-					"name": "withCredentials",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExternal": true,
-						"isOptional": true
-					},
-					"sources": [
-						{
-							"fileName": "node_modules/axios/index.d.ts",
-							"line": 62,
-							"character": 2
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "boolean"
-					},
-					"inheritedFrom": {
-						"type": "reference",
-						"name": "AxiosRequestConfig.withCredentials"
-					}
-				},
-				{
-					"id": 51,
-					"name": "xsrfCookieName",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExternal": true,
-						"isOptional": true
-					},
-					"sources": [
-						{
-							"fileName": "node_modules/axios/index.d.ts",
-							"line": 66,
-							"character": 2
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "string"
-					},
-					"inheritedFrom": {
-						"type": "reference",
-						"name": "AxiosRequestConfig.xsrfCookieName"
-					}
-				},
-				{
-					"id": 52,
-					"name": "xsrfHeaderName",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExternal": true,
-						"isOptional": true
-					},
-					"sources": [
-						{
-							"fileName": "node_modules/axios/index.d.ts",
-							"line": 67,
-							"character": 2
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "string"
-					},
-					"inheritedFrom": {
-						"type": "reference",
-						"name": "AxiosRequestConfig.xsrfHeaderName"
-					}
-				},
-				{
-					"id": 56,
-					"name": "onDownloadProgress",
-					"kind": 2048,
-					"kindString": "Method",
-					"flags": {
-						"isExternal": true,
-						"isOptional": true
-					},
-					"sources": [
-						{
-							"fileName": "node_modules/axios/index.d.ts",
-							"line": 69,
-							"character": 2
-						}
-					],
-					"signatures": [
-						{
-							"id": 57,
-							"name": "onDownloadProgress",
-							"kind": 4096,
-							"kindString": "Call signature",
-							"flags": {
-								"isExternal": true
-							},
-							"parameters": [
-								{
-									"id": 58,
-									"name": "progressEvent",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {
-										"isExternal": true
-									},
-									"type": {
-										"type": "intrinsic",
-										"name": "any"
-									}
-								}
-							],
-							"type": {
-								"type": "intrinsic",
-								"name": "void"
-							},
-							"inheritedFrom": {
-								"type": "reference",
-								"name": "AxiosRequestConfig.onDownloadProgress"
-							}
-						}
-					],
-					"inheritedFrom": {
-						"type": "reference",
-						"name": "AxiosRequestConfig.onDownloadProgress"
-					}
-				},
-				{
-					"id": 53,
-					"name": "onUploadProgress",
-					"kind": 2048,
-					"kindString": "Method",
-					"flags": {
-						"isExternal": true,
-						"isOptional": true
-					},
-					"sources": [
-						{
-							"fileName": "node_modules/axios/index.d.ts",
-							"line": 68,
-							"character": 2
-						}
-					],
-					"signatures": [
-						{
-							"id": 54,
-							"name": "onUploadProgress",
-							"kind": 4096,
-							"kindString": "Call signature",
-							"flags": {
-								"isExternal": true
-							},
-							"parameters": [
-								{
-									"id": 55,
-									"name": "progressEvent",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {
-										"isExternal": true
-									},
-									"type": {
-										"type": "intrinsic",
-										"name": "any"
-									}
-								}
-							],
-							"type": {
-								"type": "intrinsic",
-								"name": "void"
-							},
-							"inheritedFrom": {
-								"type": "reference",
-								"name": "AxiosRequestConfig.onUploadProgress"
-							}
-						}
-					],
-					"inheritedFrom": {
-						"type": "reference",
-						"name": "AxiosRequestConfig.onUploadProgress"
-					}
-				},
-				{
-					"id": 41,
-					"name": "paramsSerializer",
-					"kind": 2048,
-					"kindString": "Method",
-					"flags": {
-						"isExternal": true,
-						"isOptional": true
-					},
-					"sources": [
-						{
-							"fileName": "node_modules/axios/index.d.ts",
-							"line": 58,
-							"character": 2
-						}
-					],
-					"signatures": [
-						{
-							"id": 42,
-							"name": "paramsSerializer",
-							"kind": 4096,
-							"kindString": "Call signature",
-							"flags": {
-								"isExternal": true
-							},
-							"parameters": [
-								{
-									"id": 43,
-									"name": "params",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {
-										"isExternal": true
-									},
-									"type": {
-										"type": "intrinsic",
-										"name": "any"
-									}
-								}
-							],
-							"type": {
-								"type": "intrinsic",
-								"name": "string"
-							},
-							"inheritedFrom": {
-								"type": "reference",
-								"name": "AxiosRequestConfig.paramsSerializer"
-							}
-						}
-					],
-					"inheritedFrom": {
-						"type": "reference",
-						"name": "AxiosRequestConfig.paramsSerializer"
-					}
-				}
-			],
-			"groups": [
-				{
-					"title": "Properties",
-					"kind": 1024,
-					"children": [
-						48,
-						49,
-						33,
-						36,
-						32,
-						44,
-						70,
-						39,
-						67,
-						68,
-						64,
-						59,
-						65,
-						35,
-						30,
-						40,
-						69,
-						31,
-						50,
-						66,
-						45,
-						46,
-						37,
-						38,
-						71,
-						29,
-						34,
-						60,
-						47,
-						51,
-						52
-					]
-				},
-				{
-					"title": "Methods",
-					"kind": 2048,
-					"children": [
-						56,
-						53,
-						41
-					]
-				}
-			],
-			"sources": [
-				{
-					"fileName": "src/index.ts",
-					"line": 22,
-					"character": 17
-				}
-			],
-			"extendedTypes": [
-				{
-					"type": "reference",
-					"name": "AxiosRequestConfig"
-				}
-			]
-		},
-		{
-			"id": 19,
-			"name": "namespace",
-			"kind": 32,
-			"kindString": "Variable",
-			"flags": {
-				"isConst": true
-			},
-			"sources": [
-				{
-					"fileName": "src/index.ts",
-					"line": 6,
-					"character": 13
-				}
-			],
-			"type": {
-				"type": "literal",
-				"value": "axios-extend"
-			},
-			"defaultValue": "'axios-extend'"
-		},
-		{
-			"id": 13,
-			"name": "exponentialDelay",
-			"kind": 64,
-			"kindString": "Function",
-			"flags": {},
-			"sources": [
-				{
-					"fileName": "src/index.ts",
-					"line": 130,
-					"character": 16
-				}
-			],
-			"signatures": [
-				{
-					"id": 14,
-					"name": "exponentialDelay",
-					"kind": 4096,
-					"kindString": "Call signature",
-					"flags": {},
-					"comment": {
-						"returns": "delay 毫秒\n"
-					},
-					"parameters": [
-						{
-							"id": 15,
-							"name": "retryNumber",
-							"kind": 32768,
-							"kindString": "Parameter",
-							"flags": {},
-							"comment": {
-								"text": "默认：0"
-							},
-							"type": {
-								"type": "intrinsic",
-								"name": "number"
-							},
-							"defaultValue": "0"
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "number"
-					}
-				}
-			]
-		},
-		{
-			"id": 7,
-			"name": "isIdempotentRequestError",
-			"kind": 64,
-			"kindString": "Function",
-			"flags": {},
-			"sources": [
-				{
-					"fileName": "src/index.ts",
-					"line": 114,
-					"character": 16
-				}
-			],
-			"signatures": [
-				{
-					"id": 8,
-					"name": "isIdempotentRequestError",
-					"kind": 4096,
-					"kindString": "Call signature",
-					"flags": {},
-					"comment": {
-						"returns": "boolean\n"
-					},
-					"parameters": [
-						{
-							"id": 9,
-							"name": "error",
-							"kind": 32768,
-							"kindString": "Parameter",
-							"flags": {},
-							"comment": {
-								"text": "错误类型"
-							},
-							"type": {
-								"type": "intrinsic",
-								"name": "any"
-							}
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "boolean"
-					}
-				}
-			]
-		},
-		{
-			"id": 1,
-			"name": "isNetworkError",
-			"kind": 64,
-			"kindString": "Function",
-			"flags": {},
-			"sources": [
-				{
-					"fileName": "src/index.ts",
-					"line": 93,
-					"character": 16
-				}
-			],
-			"signatures": [
-				{
-					"id": 2,
-					"name": "isNetworkError",
-					"kind": 4096,
-					"kindString": "Call signature",
-					"flags": {},
-					"comment": {
-						"returns": "boolean\n"
-					},
-					"parameters": [
-						{
-							"id": 3,
-							"name": "error",
-							"kind": 32768,
-							"kindString": "Parameter",
-							"flags": {},
-							"comment": {
-								"text": "错误类型"
-							},
-							"type": {
-								"type": "reference",
-								"name": "AxiosError"
-							}
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "boolean"
-					}
-				}
-			]
-		},
-		{
-			"id": 10,
-			"name": "isNetworkOrIdempotentRequestError",
-			"kind": 64,
-			"kindString": "Function",
-			"flags": {},
-			"sources": [
-				{
-					"fileName": "src/index.ts",
-					"line": 123,
-					"character": 16
-				}
-			],
-			"signatures": [
-				{
-					"id": 11,
-					"name": "isNetworkOrIdempotentRequestError",
-					"kind": 4096,
-					"kindString": "Call signature",
-					"flags": {},
-					"comment": {
-						"returns": "boolean\n"
-					},
-					"parameters": [
-						{
-							"id": 12,
-							"name": "error",
-							"kind": 32768,
-							"kindString": "Parameter",
-							"flags": {},
-							"comment": {
-								"text": "错误类型"
-							},
-							"type": {
-								"type": "reference",
-								"name": "AxiosError"
-							}
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "boolean"
-					}
-				}
-			]
-		},
-		{
-			"id": 16,
-			"name": "isRetryableError",
-			"kind": 64,
-			"kindString": "Function",
-			"flags": {},
-			"sources": [
-				{
-					"fileName": "src/index.ts",
-					"line": 139,
-					"character": 16
-				}
-			],
-			"signatures": [
-				{
-					"id": 17,
-					"name": "isRetryableError",
-					"kind": 4096,
-					"kindString": "Call signature",
-					"flags": {},
-					"comment": {
-						"returns": "boolean\n"
-					},
-					"parameters": [
-						{
-							"id": 18,
-							"name": "error",
-							"kind": 32768,
-							"kindString": "Parameter",
-							"flags": {},
-							"comment": {
-								"text": "错误类型"
-							},
-							"type": {
-								"type": "reference",
-								"name": "AxiosError"
-							}
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "boolean"
-					}
-				}
-			]
-		},
-		{
-			"id": 4,
-			"name": "isSafeRequestError",
-			"kind": 64,
-			"kindString": "Function",
-			"flags": {},
-			"sources": [
-				{
-					"fileName": "src/index.ts",
-					"line": 105,
-					"character": 16
-				}
-			],
-			"signatures": [
-				{
-					"id": 5,
-					"name": "isSafeRequestError",
-					"kind": 4096,
-					"kindString": "Call signature",
-					"flags": {},
-					"comment": {
-						"returns": "boolean\n"
-					},
-					"parameters": [
-						{
-							"id": 6,
-							"name": "error",
-							"kind": 32768,
-							"kindString": "Parameter",
-							"flags": {},
-							"comment": {
-								"text": "错误类型"
-							},
-							"type": {
-								"type": "intrinsic",
-								"name": "any"
-							}
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "boolean"
-					}
-				}
-			]
-		}
-	],
-	"groups": [
-		{
-			"title": "Classes",
-			"kind": 128,
-			"children": [
-				107
-			]
-		},
-		{
-			"title": "Interfaces",
-			"kind": 256,
-			"children": [
-				72,
-				25,
-				20,
-				28
-			]
-		},
-		{
-			"title": "Variables",
-			"kind": 32,
-			"children": [
-				19
-			]
-		},
-		{
-			"title": "Functions",
-			"kind": 64,
-			"children": [
-				13,
-				7,
-				1,
-				10,
-				16,
-				4
-			]
-		}
-	],
-	"sources": [
-		{
-			"fileName": "src/index.ts",
-			"line": 1,
-			"character": 0
-		}
-	]
+    "id": 0,
+    "name": "index.md - v2.2.0",
+    "kind": 0,
+    "kindString": "Project",
+    "flags": {},
+    "originalName": "index.md",
+    "children": [
+        {
+            "id": 107,
+            "name": "default",
+            "kind": 128,
+            "kindString": "Class",
+            "flags": {},
+            "comment": {
+                "shortText": "axios封装",
+                "tags": [
+                    {
+                        "tag": "returns",
+                        "text": "Promise\n"
+                    }
+                ]
+            },
+            "children": [
+                {
+                    "id": 108,
+                    "name": "constructor",
+                    "kind": 512,
+                    "kindString": "Constructor",
+                    "flags": {},
+                    "sources": [
+                        {
+                            "fileName": "src/index.ts",
+                            "line": 155,
+                            "character": 4
+                        }
+                    ],
+                    "signatures": [
+                        {
+                            "id": 109,
+                            "name": "new default",
+                            "kind": 16384,
+                            "kindString": "Constructor signature",
+                            "flags": {},
+                            "parameters": [
+                                {
+                                    "id": 110,
+                                    "name": "__namedParameters",
+                                    "kind": 32768,
+                                    "kindString": "Parameter",
+                                    "flags": {},
+                                    "type": {
+                                        "type": "reference",
+                                        "id": 72,
+                                        "name": "AxiosExtendConfig"
+                                    }
+                                }
+                            ],
+                            "type": {
+                                "type": "reference",
+                                "id": 107,
+                                "name": "AxiosExtend"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 112,
+                    "name": "maxConnections",
+                    "kind": 1024,
+                    "kindString": "Property",
+                    "flags": {},
+                    "sources": [
+                        {
+                            "fileName": "src/index.ts",
+                            "line": 150,
+                            "character": 4
+                        }
+                    ],
+                    "type": {
+                        "type": "intrinsic",
+                        "name": "number"
+                    }
+                },
+                {
+                    "id": 116,
+                    "name": "onCancel",
+                    "kind": 1024,
+                    "kindString": "Property",
+                    "flags": {},
+                    "sources": [
+                        {
+                            "fileName": "src/index.ts",
+                            "line": 154,
+                            "character": 4
+                        }
+                    ],
+                    "type": {
+                        "type": "union",
+                        "types": [
+                            {
+                                "type": "literal",
+                                "value": null
+                            },
+                            {
+                                "type": "reflection",
+                                "declaration": {
+                                    "id": 117,
+                                    "name": "__type",
+                                    "kind": 65536,
+                                    "kindString": "Type literal",
+                                    "flags": {},
+                                    "signatures": [
+                                        {
+                                            "id": 118,
+                                            "name": "__type",
+                                            "kind": 4096,
+                                            "kindString": "Call signature",
+                                            "flags": {},
+                                            "parameters": [
+                                                {
+                                                    "id": 119,
+                                                    "name": "error",
+                                                    "kind": 32768,
+                                                    "kindString": "Parameter",
+                                                    "flags": {},
+                                                    "type": {
+                                                        "type": "intrinsic",
+                                                        "name": "any"
+                                                    }
+                                                }
+                                            ],
+                                            "type": {
+                                                "type": "intrinsic",
+                                                "name": "void"
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": 113,
+                    "name": "orderly",
+                    "kind": 1024,
+                    "kindString": "Property",
+                    "flags": {},
+                    "sources": [
+                        {
+                            "fileName": "src/index.ts",
+                            "line": 151,
+                            "character": 4
+                        }
+                    ],
+                    "type": {
+                        "type": "intrinsic",
+                        "name": "boolean"
+                    }
+                },
+                {
+                    "id": 115,
+                    "name": "retries",
+                    "kind": 1024,
+                    "kindString": "Property",
+                    "flags": {},
+                    "sources": [
+                        {
+                            "fileName": "src/index.ts",
+                            "line": 153,
+                            "character": 4
+                        }
+                    ],
+                    "type": {
+                        "type": "intrinsic",
+                        "name": "number"
+                    }
+                },
+                {
+                    "id": 114,
+                    "name": "unique",
+                    "kind": 1024,
+                    "kindString": "Property",
+                    "flags": {},
+                    "sources": [
+                        {
+                            "fileName": "src/index.ts",
+                            "line": 152,
+                            "character": 4
+                        }
+                    ],
+                    "type": {
+                        "type": "intrinsic",
+                        "name": "boolean"
+                    }
+                },
+                {
+                    "id": 111,
+                    "name": "waiting",
+                    "kind": 1024,
+                    "kindString": "Property",
+                    "flags": {},
+                    "sources": [
+                        {
+                            "fileName": "src/index.ts",
+                            "line": 149,
+                            "character": 4
+                        }
+                    ],
+                    "type": {
+                        "type": "array",
+                        "elementType": {
+                            "type": "reference",
+                            "id": 20,
+                            "name": "AxiosExtendObject"
+                        }
+                    },
+                    "defaultValue": "[]"
+                },
+                {
+                    "id": 123,
+                    "name": "create",
+                    "kind": 2048,
+                    "kindString": "Method",
+                    "flags": {
+                        "isPublic": true
+                    },
+                    "sources": [
+                        {
+                            "fileName": "src/index.ts",
+                            "line": 230,
+                            "character": 11
+                        }
+                    ],
+                    "signatures": [
+                        {
+                            "id": 124,
+                            "name": "create",
+                            "kind": 4096,
+                            "kindString": "Call signature",
+                            "flags": {},
+                            "comment": {
+                                "shortText": "创建请求"
+                            },
+                            "parameters": [
+                                {
+                                    "id": 125,
+                                    "name": "options",
+                                    "kind": 32768,
+                                    "kindString": "Parameter",
+                                    "flags": {},
+                                    "type": {
+                                        "type": "reference",
+                                        "id": 28,
+                                        "name": "AxiosExtendRequestOptions"
+                                    }
+                                }
+                            ],
+                            "type": {
+                                "type": "reference",
+                                "typeArguments": [
+                                    {
+                                        "type": "intrinsic",
+                                        "name": "any"
+                                    }
+                                ],
+                                "name": "Promise"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 120,
+                    "name": "init",
+                    "kind": 2048,
+                    "kindString": "Method",
+                    "flags": {
+                        "isPublic": true
+                    },
+                    "sources": [
+                        {
+                            "fileName": "src/index.ts",
+                            "line": 167,
+                            "character": 11
+                        }
+                    ],
+                    "signatures": [
+                        {
+                            "id": 121,
+                            "name": "init",
+                            "kind": 4096,
+                            "kindString": "Call signature",
+                            "flags": {},
+                            "comment": {
+                                "shortText": "初始化"
+                            },
+                            "parameters": [
+                                {
+                                    "id": 122,
+                                    "name": "defaultOptions",
+                                    "kind": 32768,
+                                    "kindString": "Parameter",
+                                    "flags": {},
+                                    "type": {
+                                        "type": "reference",
+                                        "id": 72,
+                                        "name": "AxiosExtendConfig"
+                                    }
+                                }
+                            ],
+                            "type": {
+                                "type": "intrinsic",
+                                "name": "void"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "groups": [
+                {
+                    "title": "Constructors",
+                    "kind": 512,
+                    "children": [108]
+                },
+                {
+                    "title": "Properties",
+                    "kind": 1024,
+                    "children": [112, 116, 113, 115, 114, 111]
+                },
+                {
+                    "title": "Methods",
+                    "kind": 2048,
+                    "children": [123, 120]
+                }
+            ],
+            "sources": [
+                {
+                    "fileName": "src/index.ts",
+                    "line": 148,
+                    "character": 6
+                }
+            ]
+        },
+        {
+            "id": 72,
+            "name": "AxiosExtendConfig",
+            "kind": 256,
+            "kindString": "Interface",
+            "flags": {},
+            "children": [
+                {
+                    "id": 73,
+                    "name": "maxConnections",
+                    "kind": 1024,
+                    "kindString": "Property",
+                    "flags": {
+                        "isOptional": true
+                    },
+                    "sources": [
+                        {
+                            "fileName": "src/index.ts",
+                            "line": 31,
+                            "character": 4
+                        }
+                    ],
+                    "type": {
+                        "type": "intrinsic",
+                        "name": "number"
+                    }
+                },
+                {
+                    "id": 76,
+                    "name": "orderly",
+                    "kind": 1024,
+                    "kindString": "Property",
+                    "flags": {
+                        "isOptional": true
+                    },
+                    "sources": [
+                        {
+                            "fileName": "src/index.ts",
+                            "line": 34,
+                            "character": 4
+                        }
+                    ],
+                    "type": {
+                        "type": "intrinsic",
+                        "name": "boolean"
+                    }
+                },
+                {
+                    "id": 75,
+                    "name": "retries",
+                    "kind": 1024,
+                    "kindString": "Property",
+                    "flags": {
+                        "isOptional": true
+                    },
+                    "sources": [
+                        {
+                            "fileName": "src/index.ts",
+                            "line": 33,
+                            "character": 4
+                        }
+                    ],
+                    "type": {
+                        "type": "intrinsic",
+                        "name": "number"
+                    }
+                },
+                {
+                    "id": 77,
+                    "name": "shouldResetTimeout",
+                    "kind": 1024,
+                    "kindString": "Property",
+                    "flags": {
+                        "isOptional": true
+                    },
+                    "sources": [
+                        {
+                            "fileName": "src/index.ts",
+                            "line": 35,
+                            "character": 4
+                        }
+                    ],
+                    "type": {
+                        "type": "intrinsic",
+                        "name": "boolean"
+                    }
+                },
+                {
+                    "id": 74,
+                    "name": "unique",
+                    "kind": 1024,
+                    "kindString": "Property",
+                    "flags": {
+                        "isOptional": true
+                    },
+                    "sources": [
+                        {
+                            "fileName": "src/index.ts",
+                            "line": 32,
+                            "character": 4
+                        }
+                    ],
+                    "type": {
+                        "type": "intrinsic",
+                        "name": "boolean"
+                    }
+                },
+                {
+                    "id": 104,
+                    "name": "onCancel",
+                    "kind": 2048,
+                    "kindString": "Method",
+                    "flags": {
+                        "isOptional": true
+                    },
+                    "signatures": [
+                        {
+                            "id": 105,
+                            "name": "onCancel",
+                            "kind": 4096,
+                            "kindString": "Call signature",
+                            "flags": {},
+                            "parameters": [
+                                {
+                                    "id": 106,
+                                    "name": "error",
+                                    "kind": 32768,
+                                    "kindString": "Parameter",
+                                    "flags": {},
+                                    "type": {
+                                        "type": "intrinsic",
+                                        "name": "any"
+                                    }
+                                }
+                            ],
+                            "type": {
+                                "type": "intrinsic",
+                                "name": "void"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 101,
+                    "name": "onError",
+                    "kind": 2048,
+                    "kindString": "Method",
+                    "flags": {
+                        "isOptional": true
+                    },
+                    "signatures": [
+                        {
+                            "id": 102,
+                            "name": "onError",
+                            "kind": 4096,
+                            "kindString": "Call signature",
+                            "flags": {},
+                            "parameters": [
+                                {
+                                    "id": 103,
+                                    "name": "error",
+                                    "kind": 32768,
+                                    "kindString": "Parameter",
+                                    "flags": {},
+                                    "type": {
+                                        "type": "intrinsic",
+                                        "name": "any"
+                                    }
+                                }
+                            ],
+                            "type": {
+                                "type": "intrinsic",
+                                "name": "void"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 87,
+                    "name": "onRequest",
+                    "kind": 2048,
+                    "kindString": "Method",
+                    "flags": {
+                        "isOptional": true
+                    },
+                    "signatures": [
+                        {
+                            "id": 88,
+                            "name": "onRequest",
+                            "kind": 4096,
+                            "kindString": "Call signature",
+                            "flags": {},
+                            "parameters": [
+                                {
+                                    "id": 89,
+                                    "name": "config",
+                                    "kind": 32768,
+                                    "kindString": "Parameter",
+                                    "flags": {},
+                                    "type": {
+                                        "type": "reference",
+                                        "name": "AxiosRequestConfig"
+                                    }
+                                },
+                                {
+                                    "id": 90,
+                                    "name": "requestOptions",
+                                    "kind": 32768,
+                                    "kindString": "Parameter",
+                                    "flags": {},
+                                    "type": {
+                                        "type": "reference",
+                                        "id": 28,
+                                        "name": "AxiosExtendRequestOptions"
+                                    }
+                                }
+                            ],
+                            "type": {
+                                "type": "union",
+                                "types": [
+                                    {
+                                        "type": "reference",
+                                        "name": "AxiosRequestConfig"
+                                    },
+                                    {
+                                        "type": "reference",
+                                        "typeArguments": [
+                                            {
+                                                "type": "reference",
+                                                "name": "AxiosRequestConfig"
+                                            }
+                                        ],
+                                        "name": "Promise"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 91,
+                    "name": "onRequestError",
+                    "kind": 2048,
+                    "kindString": "Method",
+                    "flags": {
+                        "isOptional": true
+                    },
+                    "signatures": [
+                        {
+                            "id": 92,
+                            "name": "onRequestError",
+                            "kind": 4096,
+                            "kindString": "Call signature",
+                            "flags": {},
+                            "parameters": [
+                                {
+                                    "id": 93,
+                                    "name": "error",
+                                    "kind": 32768,
+                                    "kindString": "Parameter",
+                                    "flags": {},
+                                    "type": {
+                                        "type": "intrinsic",
+                                        "name": "any"
+                                    }
+                                }
+                            ],
+                            "type": {
+                                "type": "intrinsic",
+                                "name": "void"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 94,
+                    "name": "onResponse",
+                    "kind": 2048,
+                    "kindString": "Method",
+                    "flags": {
+                        "isOptional": true
+                    },
+                    "signatures": [
+                        {
+                            "id": 95,
+                            "name": "onResponse",
+                            "kind": 4096,
+                            "kindString": "Call signature",
+                            "flags": {},
+                            "parameters": [
+                                {
+                                    "id": 96,
+                                    "name": "res",
+                                    "kind": 32768,
+                                    "kindString": "Parameter",
+                                    "flags": {},
+                                    "type": {
+                                        "type": "reference",
+                                        "typeArguments": [
+                                            {
+                                                "type": "intrinsic",
+                                                "name": "any"
+                                            }
+                                        ],
+                                        "name": "AxiosResponse"
+                                    }
+                                },
+                                {
+                                    "id": 97,
+                                    "name": "requestOptions",
+                                    "kind": 32768,
+                                    "kindString": "Parameter",
+                                    "flags": {},
+                                    "type": {
+                                        "type": "reference",
+                                        "id": 28,
+                                        "name": "AxiosExtendRequestOptions"
+                                    }
+                                }
+                            ],
+                            "type": {
+                                "type": "union",
+                                "types": [
+                                    {
+                                        "type": "reference",
+                                        "typeArguments": [
+                                            {
+                                                "type": "intrinsic",
+                                                "name": "any"
+                                            }
+                                        ],
+                                        "name": "AxiosResponse"
+                                    },
+                                    {
+                                        "type": "reference",
+                                        "typeArguments": [
+                                            {
+                                                "type": "reference",
+                                                "typeArguments": [
+                                                    {
+                                                        "type": "intrinsic",
+                                                        "name": "any"
+                                                    }
+                                                ],
+                                                "name": "AxiosResponse"
+                                            }
+                                        ],
+                                        "name": "Promise"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 98,
+                    "name": "onResponseError",
+                    "kind": 2048,
+                    "kindString": "Method",
+                    "flags": {
+                        "isOptional": true
+                    },
+                    "signatures": [
+                        {
+                            "id": 99,
+                            "name": "onResponseError",
+                            "kind": 4096,
+                            "kindString": "Call signature",
+                            "flags": {},
+                            "parameters": [
+                                {
+                                    "id": 100,
+                                    "name": "error",
+                                    "kind": 32768,
+                                    "kindString": "Parameter",
+                                    "flags": {},
+                                    "type": {
+                                        "type": "intrinsic",
+                                        "name": "any"
+                                    }
+                                }
+                            ],
+                            "type": {
+                                "type": "intrinsic",
+                                "name": "void"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 78,
+                    "name": "retryCondition",
+                    "kind": 2048,
+                    "kindString": "Method",
+                    "flags": {
+                        "isOptional": true
+                    },
+                    "signatures": [
+                        {
+                            "id": 79,
+                            "name": "retryCondition",
+                            "kind": 4096,
+                            "kindString": "Call signature",
+                            "flags": {},
+                            "type": {
+                                "type": "intrinsic",
+                                "name": "boolean"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 80,
+                    "name": "retryDelay",
+                    "kind": 2048,
+                    "kindString": "Method",
+                    "flags": {
+                        "isOptional": true
+                    },
+                    "signatures": [
+                        {
+                            "id": 81,
+                            "name": "retryDelay",
+                            "kind": 4096,
+                            "kindString": "Call signature",
+                            "flags": {},
+                            "parameters": [
+                                {
+                                    "id": 82,
+                                    "name": "retryNumber",
+                                    "kind": 32768,
+                                    "kindString": "Parameter",
+                                    "flags": {},
+                                    "type": {
+                                        "type": "intrinsic",
+                                        "name": "number"
+                                    }
+                                },
+                                {
+                                    "id": 83,
+                                    "name": "error",
+                                    "kind": 32768,
+                                    "kindString": "Parameter",
+                                    "flags": {},
+                                    "type": {
+                                        "type": "intrinsic",
+                                        "name": "any"
+                                    }
+                                }
+                            ],
+                            "type": {
+                                "type": "intrinsic",
+                                "name": "number"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 84,
+                    "name": "setHeaders",
+                    "kind": 2048,
+                    "kindString": "Method",
+                    "flags": {
+                        "isOptional": true
+                    },
+                    "signatures": [
+                        {
+                            "id": 85,
+                            "name": "setHeaders",
+                            "kind": 4096,
+                            "kindString": "Call signature",
+                            "flags": {},
+                            "parameters": [
+                                {
+                                    "id": 86,
+                                    "name": "instance",
+                                    "kind": 32768,
+                                    "kindString": "Parameter",
+                                    "flags": {},
+                                    "type": {
+                                        "type": "reference",
+                                        "name": "AxiosInstance"
+                                    }
+                                }
+                            ],
+                            "type": {
+                                "type": "intrinsic",
+                                "name": "void"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "groups": [
+                {
+                    "title": "Properties",
+                    "kind": 1024,
+                    "children": [73, 76, 75, 77, 74]
+                },
+                {
+                    "title": "Methods",
+                    "kind": 2048,
+                    "children": [104, 101, 87, 91, 94, 98, 78, 80, 84]
+                }
+            ],
+            "sources": [
+                {
+                    "fileName": "src/index.ts",
+                    "line": 30,
+                    "character": 17
+                }
+            ]
+        },
+        {
+            "id": 25,
+            "name": "AxiosExtendCurrentStateType",
+            "kind": 256,
+            "kindString": "Interface",
+            "flags": {},
+            "children": [
+                {
+                    "id": 26,
+                    "name": "lastRequestTime",
+                    "kind": 1024,
+                    "kindString": "Property",
+                    "flags": {},
+                    "sources": [
+                        {
+                            "fileName": "src/index.ts",
+                            "line": 18,
+                            "character": 4
+                        }
+                    ],
+                    "type": {
+                        "type": "intrinsic",
+                        "name": "number"
+                    }
+                },
+                {
+                    "id": 27,
+                    "name": "retryCount",
+                    "kind": 1024,
+                    "kindString": "Property",
+                    "flags": {},
+                    "sources": [
+                        {
+                            "fileName": "src/index.ts",
+                            "line": 19,
+                            "character": 4
+                        }
+                    ],
+                    "type": {
+                        "type": "intrinsic",
+                        "name": "number"
+                    }
+                }
+            ],
+            "groups": [
+                {
+                    "title": "Properties",
+                    "kind": 1024,
+                    "children": [26, 27]
+                }
+            ],
+            "sources": [
+                {
+                    "fileName": "src/index.ts",
+                    "line": 17,
+                    "character": 17
+                }
+            ]
+        },
+        {
+            "id": 20,
+            "name": "AxiosExtendObject",
+            "kind": 256,
+            "kindString": "Interface",
+            "flags": {},
+            "children": [
+                {
+                    "id": 23,
+                    "name": "promise",
+                    "kind": 1024,
+                    "kindString": "Property",
+                    "flags": {},
+                    "sources": [
+                        {
+                            "fileName": "src/index.ts",
+                            "line": 13,
+                            "character": 4
+                        }
+                    ],
+                    "type": {
+                        "type": "reference",
+                        "typeArguments": [
+                            {
+                                "type": "intrinsic",
+                                "name": "any"
+                            }
+                        ],
+                        "name": "Promise"
+                    }
+                },
+                {
+                    "id": 21,
+                    "name": "promiseKey",
+                    "kind": 1024,
+                    "kindString": "Property",
+                    "flags": {},
+                    "sources": [
+                        {
+                            "fileName": "src/index.ts",
+                            "line": 11,
+                            "character": 4
+                        }
+                    ],
+                    "type": {
+                        "type": "intrinsic",
+                        "name": "string"
+                    }
+                },
+                {
+                    "id": 24,
+                    "name": "source",
+                    "kind": 1024,
+                    "kindString": "Property",
+                    "flags": {},
+                    "sources": [
+                        {
+                            "fileName": "src/index.ts",
+                            "line": 14,
+                            "character": 4
+                        }
+                    ],
+                    "type": {
+                        "type": "reference",
+                        "name": "CancelTokenSource"
+                    }
+                },
+                {
+                    "id": 22,
+                    "name": "url",
+                    "kind": 1024,
+                    "kindString": "Property",
+                    "flags": {},
+                    "sources": [
+                        {
+                            "fileName": "src/index.ts",
+                            "line": 12,
+                            "character": 4
+                        }
+                    ],
+                    "type": {
+                        "type": "intrinsic",
+                        "name": "string"
+                    }
+                }
+            ],
+            "groups": [
+                {
+                    "title": "Properties",
+                    "kind": 1024,
+                    "children": [23, 21, 24, 22]
+                }
+            ],
+            "sources": [
+                {
+                    "fileName": "src/index.ts",
+                    "line": 10,
+                    "character": 17
+                }
+            ]
+        },
+        {
+            "id": 28,
+            "name": "AxiosExtendRequestOptions",
+            "kind": 256,
+            "kindString": "Interface",
+            "flags": {},
+            "children": [
+                {
+                    "id": 48,
+                    "name": "adapter",
+                    "kind": 1024,
+                    "kindString": "Property",
+                    "flags": {
+                        "isExternal": true,
+                        "isOptional": true
+                    },
+                    "sources": [
+                        {
+                            "fileName": "node_modules/axios/index.d.ts",
+                            "line": 63,
+                            "character": 2
+                        }
+                    ],
+                    "type": {
+                        "type": "reference",
+                        "name": "AxiosAdapter"
+                    },
+                    "inheritedFrom": {
+                        "type": "reference",
+                        "name": "AxiosRequestConfig.adapter"
+                    }
+                },
+                {
+                    "id": 49,
+                    "name": "auth",
+                    "kind": 1024,
+                    "kindString": "Property",
+                    "flags": {
+                        "isExternal": true,
+                        "isOptional": true
+                    },
+                    "sources": [
+                        {
+                            "fileName": "node_modules/axios/index.d.ts",
+                            "line": 64,
+                            "character": 2
+                        }
+                    ],
+                    "type": {
+                        "type": "reference",
+                        "name": "AxiosBasicCredentials"
+                    },
+                    "inheritedFrom": {
+                        "type": "reference",
+                        "name": "AxiosRequestConfig.auth"
+                    }
+                },
+                {
+                    "id": 33,
+                    "name": "axios-extend",
+                    "kind": 1024,
+                    "kindString": "Property",
+                    "flags": {
+                        "isOptional": true
+                    },
+                    "sources": [
+                        {
+                            "fileName": "src/index.ts",
+                            "line": 23,
+                            "character": 4
+                        }
+                    ],
+                    "type": {
+                        "type": "intrinsic",
+                        "name": "any"
+                    }
+                },
+                {
+                    "id": 36,
+                    "name": "baseURL",
+                    "kind": 1024,
+                    "kindString": "Property",
+                    "flags": {
+                        "isExternal": true,
+                        "isOptional": true
+                    },
+                    "sources": [
+                        {
+                            "fileName": "node_modules/axios/index.d.ts",
+                            "line": 53,
+                            "character": 2
+                        }
+                    ],
+                    "type": {
+                        "type": "intrinsic",
+                        "name": "string"
+                    },
+                    "inheritedFrom": {
+                        "type": "reference",
+                        "name": "AxiosRequestConfig.baseURL"
+                    }
+                },
+                {
+                    "id": 32,
+                    "name": "cancelToken",
+                    "kind": 1024,
+                    "kindString": "Property",
+                    "flags": {
+                        "isOptional": true
+                    },
+                    "sources": [
+                        {
+                            "fileName": "src/index.ts",
+                            "line": 27,
+                            "character": 4
+                        }
+                    ],
+                    "type": {
+                        "type": "reference",
+                        "name": "CancelToken"
+                    },
+                    "overwrites": {
+                        "type": "reference",
+                        "name": "AxiosRequestConfig.cancelToken"
+                    }
+                },
+                {
+                    "id": 44,
+                    "name": "data",
+                    "kind": 1024,
+                    "kindString": "Property",
+                    "flags": {
+                        "isExternal": true,
+                        "isOptional": true
+                    },
+                    "sources": [
+                        {
+                            "fileName": "node_modules/axios/index.d.ts",
+                            "line": 59,
+                            "character": 2
+                        }
+                    ],
+                    "type": {
+                        "type": "intrinsic",
+                        "name": "any"
+                    },
+                    "inheritedFrom": {
+                        "type": "reference",
+                        "name": "AxiosRequestConfig.data"
+                    }
+                },
+                {
+                    "id": 70,
+                    "name": "decompress",
+                    "kind": 1024,
+                    "kindString": "Property",
+                    "flags": {
+                        "isExternal": true,
+                        "isOptional": true
+                    },
+                    "sources": [
+                        {
+                            "fileName": "node_modules/axios/index.d.ts",
+                            "line": 79,
+                            "character": 2
+                        }
+                    ],
+                    "type": {
+                        "type": "intrinsic",
+                        "name": "boolean"
+                    },
+                    "inheritedFrom": {
+                        "type": "reference",
+                        "name": "AxiosRequestConfig.decompress"
+                    }
+                },
+                {
+                    "id": 39,
+                    "name": "headers",
+                    "kind": 1024,
+                    "kindString": "Property",
+                    "flags": {
+                        "isExternal": true,
+                        "isOptional": true
+                    },
+                    "sources": [
+                        {
+                            "fileName": "node_modules/axios/index.d.ts",
+                            "line": 56,
+                            "character": 2
+                        }
+                    ],
+                    "type": {
+                        "type": "intrinsic",
+                        "name": "any"
+                    },
+                    "inheritedFrom": {
+                        "type": "reference",
+                        "name": "AxiosRequestConfig.headers"
+                    }
+                },
+                {
+                    "id": 67,
+                    "name": "httpAgent",
+                    "kind": 1024,
+                    "kindString": "Property",
+                    "flags": {
+                        "isExternal": true,
+                        "isOptional": true
+                    },
+                    "sources": [
+                        {
+                            "fileName": "node_modules/axios/index.d.ts",
+                            "line": 75,
+                            "character": 2
+                        }
+                    ],
+                    "type": {
+                        "type": "intrinsic",
+                        "name": "any"
+                    },
+                    "inheritedFrom": {
+                        "type": "reference",
+                        "name": "AxiosRequestConfig.httpAgent"
+                    }
+                },
+                {
+                    "id": 68,
+                    "name": "httpsAgent",
+                    "kind": 1024,
+                    "kindString": "Property",
+                    "flags": {
+                        "isExternal": true,
+                        "isOptional": true
+                    },
+                    "sources": [
+                        {
+                            "fileName": "node_modules/axios/index.d.ts",
+                            "line": 76,
+                            "character": 2
+                        }
+                    ],
+                    "type": {
+                        "type": "intrinsic",
+                        "name": "any"
+                    },
+                    "inheritedFrom": {
+                        "type": "reference",
+                        "name": "AxiosRequestConfig.httpsAgent"
+                    }
+                },
+                {
+                    "id": 64,
+                    "name": "maxBodyLength",
+                    "kind": 1024,
+                    "kindString": "Property",
+                    "flags": {
+                        "isExternal": true,
+                        "isOptional": true
+                    },
+                    "sources": [
+                        {
+                            "fileName": "node_modules/axios/index.d.ts",
+                            "line": 72,
+                            "character": 2
+                        }
+                    ],
+                    "type": {
+                        "type": "intrinsic",
+                        "name": "number"
+                    },
+                    "inheritedFrom": {
+                        "type": "reference",
+                        "name": "AxiosRequestConfig.maxBodyLength"
+                    }
+                },
+                {
+                    "id": 59,
+                    "name": "maxContentLength",
+                    "kind": 1024,
+                    "kindString": "Property",
+                    "flags": {
+                        "isExternal": true,
+                        "isOptional": true
+                    },
+                    "sources": [
+                        {
+                            "fileName": "node_modules/axios/index.d.ts",
+                            "line": 70,
+                            "character": 2
+                        }
+                    ],
+                    "type": {
+                        "type": "intrinsic",
+                        "name": "number"
+                    },
+                    "inheritedFrom": {
+                        "type": "reference",
+                        "name": "AxiosRequestConfig.maxContentLength"
+                    }
+                },
+                {
+                    "id": 65,
+                    "name": "maxRedirects",
+                    "kind": 1024,
+                    "kindString": "Property",
+                    "flags": {
+                        "isExternal": true,
+                        "isOptional": true
+                    },
+                    "sources": [
+                        {
+                            "fileName": "node_modules/axios/index.d.ts",
+                            "line": 73,
+                            "character": 2
+                        }
+                    ],
+                    "type": {
+                        "type": "intrinsic",
+                        "name": "number"
+                    },
+                    "inheritedFrom": {
+                        "type": "reference",
+                        "name": "AxiosRequestConfig.maxRedirects"
+                    }
+                },
+                {
+                    "id": 35,
+                    "name": "method",
+                    "kind": 1024,
+                    "kindString": "Property",
+                    "flags": {
+                        "isExternal": true,
+                        "isOptional": true
+                    },
+                    "sources": [
+                        {
+                            "fileName": "node_modules/axios/index.d.ts",
+                            "line": 52,
+                            "character": 2
+                        }
+                    ],
+                    "type": {
+                        "type": "reference",
+                        "name": "Method"
+                    },
+                    "inheritedFrom": {
+                        "type": "reference",
+                        "name": "AxiosRequestConfig.method"
+                    }
+                },
+                {
+                    "id": 30,
+                    "name": "orderly",
+                    "kind": 1024,
+                    "kindString": "Property",
+                    "flags": {
+                        "isOptional": true
+                    },
+                    "sources": [
+                        {
+                            "fileName": "src/index.ts",
+                            "line": 25,
+                            "character": 4
+                        }
+                    ],
+                    "type": {
+                        "type": "intrinsic",
+                        "name": "boolean"
+                    }
+                },
+                {
+                    "id": 40,
+                    "name": "params",
+                    "kind": 1024,
+                    "kindString": "Property",
+                    "flags": {
+                        "isExternal": true,
+                        "isOptional": true
+                    },
+                    "sources": [
+                        {
+                            "fileName": "node_modules/axios/index.d.ts",
+                            "line": 57,
+                            "character": 2
+                        }
+                    ],
+                    "type": {
+                        "type": "intrinsic",
+                        "name": "any"
+                    },
+                    "inheritedFrom": {
+                        "type": "reference",
+                        "name": "AxiosRequestConfig.params"
+                    }
+                },
+                {
+                    "id": 69,
+                    "name": "proxy",
+                    "kind": 1024,
+                    "kindString": "Property",
+                    "flags": {
+                        "isExternal": true,
+                        "isOptional": true
+                    },
+                    "sources": [
+                        {
+                            "fileName": "node_modules/axios/index.d.ts",
+                            "line": 77,
+                            "character": 2
+                        }
+                    ],
+                    "type": {
+                        "type": "union",
+                        "types": [
+                            {
+                                "type": "literal",
+                                "value": false
+                            },
+                            {
+                                "type": "reference",
+                                "name": "AxiosProxyConfig"
+                            }
+                        ]
+                    },
+                    "inheritedFrom": {
+                        "type": "reference",
+                        "name": "AxiosRequestConfig.proxy"
+                    }
+                },
+                {
+                    "id": 31,
+                    "name": "requestOptions",
+                    "kind": 1024,
+                    "kindString": "Property",
+                    "flags": {
+                        "isOptional": true
+                    },
+                    "sources": [
+                        {
+                            "fileName": "src/index.ts",
+                            "line": 26,
+                            "character": 4
+                        }
+                    ],
+                    "type": {
+                        "type": "reference",
+                        "id": 28,
+                        "name": "AxiosExtendRequestOptions"
+                    }
+                },
+                {
+                    "id": 50,
+                    "name": "responseType",
+                    "kind": 1024,
+                    "kindString": "Property",
+                    "flags": {
+                        "isExternal": true,
+                        "isOptional": true
+                    },
+                    "sources": [
+                        {
+                            "fileName": "node_modules/axios/index.d.ts",
+                            "line": 65,
+                            "character": 2
+                        }
+                    ],
+                    "type": {
+                        "type": "reference",
+                        "name": "ResponseType"
+                    },
+                    "inheritedFrom": {
+                        "type": "reference",
+                        "name": "AxiosRequestConfig.responseType"
+                    }
+                },
+                {
+                    "id": 66,
+                    "name": "socketPath",
+                    "kind": 1024,
+                    "kindString": "Property",
+                    "flags": {
+                        "isExternal": true,
+                        "isOptional": true
+                    },
+                    "sources": [
+                        {
+                            "fileName": "node_modules/axios/index.d.ts",
+                            "line": 74,
+                            "character": 2
+                        }
+                    ],
+                    "type": {
+                        "type": "union",
+                        "types": [
+                            {
+                                "type": "literal",
+                                "value": null
+                            },
+                            {
+                                "type": "intrinsic",
+                                "name": "string"
+                            }
+                        ]
+                    },
+                    "inheritedFrom": {
+                        "type": "reference",
+                        "name": "AxiosRequestConfig.socketPath"
+                    }
+                },
+                {
+                    "id": 45,
+                    "name": "timeout",
+                    "kind": 1024,
+                    "kindString": "Property",
+                    "flags": {
+                        "isExternal": true,
+                        "isOptional": true
+                    },
+                    "sources": [
+                        {
+                            "fileName": "node_modules/axios/index.d.ts",
+                            "line": 60,
+                            "character": 2
+                        }
+                    ],
+                    "type": {
+                        "type": "intrinsic",
+                        "name": "number"
+                    },
+                    "inheritedFrom": {
+                        "type": "reference",
+                        "name": "AxiosRequestConfig.timeout"
+                    }
+                },
+                {
+                    "id": 46,
+                    "name": "timeoutErrorMessage",
+                    "kind": 1024,
+                    "kindString": "Property",
+                    "flags": {
+                        "isExternal": true,
+                        "isOptional": true
+                    },
+                    "sources": [
+                        {
+                            "fileName": "node_modules/axios/index.d.ts",
+                            "line": 61,
+                            "character": 2
+                        }
+                    ],
+                    "type": {
+                        "type": "intrinsic",
+                        "name": "string"
+                    },
+                    "inheritedFrom": {
+                        "type": "reference",
+                        "name": "AxiosRequestConfig.timeoutErrorMessage"
+                    }
+                },
+                {
+                    "id": 37,
+                    "name": "transformRequest",
+                    "kind": 1024,
+                    "kindString": "Property",
+                    "flags": {
+                        "isExternal": true,
+                        "isOptional": true
+                    },
+                    "sources": [
+                        {
+                            "fileName": "node_modules/axios/index.d.ts",
+                            "line": 54,
+                            "character": 2
+                        }
+                    ],
+                    "type": {
+                        "type": "union",
+                        "types": [
+                            {
+                                "type": "reference",
+                                "name": "AxiosTransformer"
+                            },
+                            {
+                                "type": "array",
+                                "elementType": {
+                                    "type": "reference",
+                                    "name": "AxiosTransformer"
+                                }
+                            }
+                        ]
+                    },
+                    "inheritedFrom": {
+                        "type": "reference",
+                        "name": "AxiosRequestConfig.transformRequest"
+                    }
+                },
+                {
+                    "id": 38,
+                    "name": "transformResponse",
+                    "kind": 1024,
+                    "kindString": "Property",
+                    "flags": {
+                        "isExternal": true,
+                        "isOptional": true
+                    },
+                    "sources": [
+                        {
+                            "fileName": "node_modules/axios/index.d.ts",
+                            "line": 55,
+                            "character": 2
+                        }
+                    ],
+                    "type": {
+                        "type": "union",
+                        "types": [
+                            {
+                                "type": "reference",
+                                "name": "AxiosTransformer"
+                            },
+                            {
+                                "type": "array",
+                                "elementType": {
+                                    "type": "reference",
+                                    "name": "AxiosTransformer"
+                                }
+                            }
+                        ]
+                    },
+                    "inheritedFrom": {
+                        "type": "reference",
+                        "name": "AxiosRequestConfig.transformResponse"
+                    }
+                },
+                {
+                    "id": 71,
+                    "name": "transitional",
+                    "kind": 1024,
+                    "kindString": "Property",
+                    "flags": {
+                        "isExternal": true,
+                        "isOptional": true
+                    },
+                    "sources": [
+                        {
+                            "fileName": "node_modules/axios/index.d.ts",
+                            "line": 80,
+                            "character": 2
+                        }
+                    ],
+                    "type": {
+                        "type": "reference",
+                        "name": "TransitionalOptions"
+                    },
+                    "inheritedFrom": {
+                        "type": "reference",
+                        "name": "AxiosRequestConfig.transitional"
+                    }
+                },
+                {
+                    "id": 29,
+                    "name": "unique",
+                    "kind": 1024,
+                    "kindString": "Property",
+                    "flags": {
+                        "isOptional": true
+                    },
+                    "sources": [
+                        {
+                            "fileName": "src/index.ts",
+                            "line": 24,
+                            "character": 4
+                        }
+                    ],
+                    "type": {
+                        "type": "intrinsic",
+                        "name": "boolean"
+                    }
+                },
+                {
+                    "id": 34,
+                    "name": "url",
+                    "kind": 1024,
+                    "kindString": "Property",
+                    "flags": {
+                        "isExternal": true,
+                        "isOptional": true
+                    },
+                    "sources": [
+                        {
+                            "fileName": "node_modules/axios/index.d.ts",
+                            "line": 51,
+                            "character": 2
+                        }
+                    ],
+                    "type": {
+                        "type": "intrinsic",
+                        "name": "string"
+                    },
+                    "inheritedFrom": {
+                        "type": "reference",
+                        "name": "AxiosRequestConfig.url"
+                    }
+                },
+                {
+                    "id": 60,
+                    "name": "validateStatus",
+                    "kind": 1024,
+                    "kindString": "Property",
+                    "flags": {
+                        "isExternal": true,
+                        "isOptional": true
+                    },
+                    "sources": [
+                        {
+                            "fileName": "node_modules/axios/index.d.ts",
+                            "line": 71,
+                            "character": 2
+                        }
+                    ],
+                    "type": {
+                        "type": "union",
+                        "types": [
+                            {
+                                "type": "literal",
+                                "value": null
+                            },
+                            {
+                                "type": "reflection",
+                                "declaration": {
+                                    "id": 61,
+                                    "name": "__type",
+                                    "kind": 65536,
+                                    "kindString": "Type literal",
+                                    "flags": {},
+                                    "signatures": [
+                                        {
+                                            "id": 62,
+                                            "name": "__type",
+                                            "kind": 4096,
+                                            "kindString": "Call signature",
+                                            "flags": {},
+                                            "parameters": [
+                                                {
+                                                    "id": 63,
+                                                    "name": "status",
+                                                    "kind": 32768,
+                                                    "kindString": "Parameter",
+                                                    "flags": {},
+                                                    "type": {
+                                                        "type": "intrinsic",
+                                                        "name": "number"
+                                                    }
+                                                }
+                                            ],
+                                            "type": {
+                                                "type": "intrinsic",
+                                                "name": "boolean"
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "inheritedFrom": {
+                        "type": "reference",
+                        "name": "AxiosRequestConfig.validateStatus"
+                    }
+                },
+                {
+                    "id": 47,
+                    "name": "withCredentials",
+                    "kind": 1024,
+                    "kindString": "Property",
+                    "flags": {
+                        "isExternal": true,
+                        "isOptional": true
+                    },
+                    "sources": [
+                        {
+                            "fileName": "node_modules/axios/index.d.ts",
+                            "line": 62,
+                            "character": 2
+                        }
+                    ],
+                    "type": {
+                        "type": "intrinsic",
+                        "name": "boolean"
+                    },
+                    "inheritedFrom": {
+                        "type": "reference",
+                        "name": "AxiosRequestConfig.withCredentials"
+                    }
+                },
+                {
+                    "id": 51,
+                    "name": "xsrfCookieName",
+                    "kind": 1024,
+                    "kindString": "Property",
+                    "flags": {
+                        "isExternal": true,
+                        "isOptional": true
+                    },
+                    "sources": [
+                        {
+                            "fileName": "node_modules/axios/index.d.ts",
+                            "line": 66,
+                            "character": 2
+                        }
+                    ],
+                    "type": {
+                        "type": "intrinsic",
+                        "name": "string"
+                    },
+                    "inheritedFrom": {
+                        "type": "reference",
+                        "name": "AxiosRequestConfig.xsrfCookieName"
+                    }
+                },
+                {
+                    "id": 52,
+                    "name": "xsrfHeaderName",
+                    "kind": 1024,
+                    "kindString": "Property",
+                    "flags": {
+                        "isExternal": true,
+                        "isOptional": true
+                    },
+                    "sources": [
+                        {
+                            "fileName": "node_modules/axios/index.d.ts",
+                            "line": 67,
+                            "character": 2
+                        }
+                    ],
+                    "type": {
+                        "type": "intrinsic",
+                        "name": "string"
+                    },
+                    "inheritedFrom": {
+                        "type": "reference",
+                        "name": "AxiosRequestConfig.xsrfHeaderName"
+                    }
+                },
+                {
+                    "id": 56,
+                    "name": "onDownloadProgress",
+                    "kind": 2048,
+                    "kindString": "Method",
+                    "flags": {
+                        "isExternal": true,
+                        "isOptional": true
+                    },
+                    "sources": [
+                        {
+                            "fileName": "node_modules/axios/index.d.ts",
+                            "line": 69,
+                            "character": 2
+                        }
+                    ],
+                    "signatures": [
+                        {
+                            "id": 57,
+                            "name": "onDownloadProgress",
+                            "kind": 4096,
+                            "kindString": "Call signature",
+                            "flags": {
+                                "isExternal": true
+                            },
+                            "parameters": [
+                                {
+                                    "id": 58,
+                                    "name": "progressEvent",
+                                    "kind": 32768,
+                                    "kindString": "Parameter",
+                                    "flags": {
+                                        "isExternal": true
+                                    },
+                                    "type": {
+                                        "type": "intrinsic",
+                                        "name": "any"
+                                    }
+                                }
+                            ],
+                            "type": {
+                                "type": "intrinsic",
+                                "name": "void"
+                            },
+                            "inheritedFrom": {
+                                "type": "reference",
+                                "name": "AxiosRequestConfig.onDownloadProgress"
+                            }
+                        }
+                    ],
+                    "inheritedFrom": {
+                        "type": "reference",
+                        "name": "AxiosRequestConfig.onDownloadProgress"
+                    }
+                },
+                {
+                    "id": 53,
+                    "name": "onUploadProgress",
+                    "kind": 2048,
+                    "kindString": "Method",
+                    "flags": {
+                        "isExternal": true,
+                        "isOptional": true
+                    },
+                    "sources": [
+                        {
+                            "fileName": "node_modules/axios/index.d.ts",
+                            "line": 68,
+                            "character": 2
+                        }
+                    ],
+                    "signatures": [
+                        {
+                            "id": 54,
+                            "name": "onUploadProgress",
+                            "kind": 4096,
+                            "kindString": "Call signature",
+                            "flags": {
+                                "isExternal": true
+                            },
+                            "parameters": [
+                                {
+                                    "id": 55,
+                                    "name": "progressEvent",
+                                    "kind": 32768,
+                                    "kindString": "Parameter",
+                                    "flags": {
+                                        "isExternal": true
+                                    },
+                                    "type": {
+                                        "type": "intrinsic",
+                                        "name": "any"
+                                    }
+                                }
+                            ],
+                            "type": {
+                                "type": "intrinsic",
+                                "name": "void"
+                            },
+                            "inheritedFrom": {
+                                "type": "reference",
+                                "name": "AxiosRequestConfig.onUploadProgress"
+                            }
+                        }
+                    ],
+                    "inheritedFrom": {
+                        "type": "reference",
+                        "name": "AxiosRequestConfig.onUploadProgress"
+                    }
+                },
+                {
+                    "id": 41,
+                    "name": "paramsSerializer",
+                    "kind": 2048,
+                    "kindString": "Method",
+                    "flags": {
+                        "isExternal": true,
+                        "isOptional": true
+                    },
+                    "sources": [
+                        {
+                            "fileName": "node_modules/axios/index.d.ts",
+                            "line": 58,
+                            "character": 2
+                        }
+                    ],
+                    "signatures": [
+                        {
+                            "id": 42,
+                            "name": "paramsSerializer",
+                            "kind": 4096,
+                            "kindString": "Call signature",
+                            "flags": {
+                                "isExternal": true
+                            },
+                            "parameters": [
+                                {
+                                    "id": 43,
+                                    "name": "params",
+                                    "kind": 32768,
+                                    "kindString": "Parameter",
+                                    "flags": {
+                                        "isExternal": true
+                                    },
+                                    "type": {
+                                        "type": "intrinsic",
+                                        "name": "any"
+                                    }
+                                }
+                            ],
+                            "type": {
+                                "type": "intrinsic",
+                                "name": "string"
+                            },
+                            "inheritedFrom": {
+                                "type": "reference",
+                                "name": "AxiosRequestConfig.paramsSerializer"
+                            }
+                        }
+                    ],
+                    "inheritedFrom": {
+                        "type": "reference",
+                        "name": "AxiosRequestConfig.paramsSerializer"
+                    }
+                }
+            ],
+            "groups": [
+                {
+                    "title": "Properties",
+                    "kind": 1024,
+                    "children": [48, 49, 33, 36, 32, 44, 70, 39, 67, 68, 64, 59, 65, 35, 30, 40, 69, 31, 50, 66, 45, 46, 37, 38, 71, 29, 34, 60, 47, 51, 52]
+                },
+                {
+                    "title": "Methods",
+                    "kind": 2048,
+                    "children": [56, 53, 41]
+                }
+            ],
+            "sources": [
+                {
+                    "fileName": "src/index.ts",
+                    "line": 22,
+                    "character": 17
+                }
+            ],
+            "extendedTypes": [
+                {
+                    "type": "reference",
+                    "name": "AxiosRequestConfig"
+                }
+            ]
+        },
+        {
+            "id": 19,
+            "name": "namespace",
+            "kind": 32,
+            "kindString": "Variable",
+            "flags": {
+                "isConst": true
+            },
+            "sources": [
+                {
+                    "fileName": "src/index.ts",
+                    "line": 6,
+                    "character": 13
+                }
+            ],
+            "type": {
+                "type": "literal",
+                "value": "axios-extend"
+            },
+            "defaultValue": "'axios-extend'"
+        },
+        {
+            "id": 13,
+            "name": "exponentialDelay",
+            "kind": 64,
+            "kindString": "Function",
+            "flags": {},
+            "sources": [
+                {
+                    "fileName": "src/index.ts",
+                    "line": 130,
+                    "character": 16
+                }
+            ],
+            "signatures": [
+                {
+                    "id": 14,
+                    "name": "exponentialDelay",
+                    "kind": 4096,
+                    "kindString": "Call signature",
+                    "flags": {},
+                    "comment": {
+                        "returns": "delay 毫秒\n"
+                    },
+                    "parameters": [
+                        {
+                            "id": 15,
+                            "name": "retryNumber",
+                            "kind": 32768,
+                            "kindString": "Parameter",
+                            "flags": {},
+                            "comment": {
+                                "text": "默认：0"
+                            },
+                            "type": {
+                                "type": "intrinsic",
+                                "name": "number"
+                            },
+                            "defaultValue": "0"
+                        }
+                    ],
+                    "type": {
+                        "type": "intrinsic",
+                        "name": "number"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "name": "isIdempotentRequestError",
+            "kind": 64,
+            "kindString": "Function",
+            "flags": {},
+            "sources": [
+                {
+                    "fileName": "src/index.ts",
+                    "line": 114,
+                    "character": 16
+                }
+            ],
+            "signatures": [
+                {
+                    "id": 8,
+                    "name": "isIdempotentRequestError",
+                    "kind": 4096,
+                    "kindString": "Call signature",
+                    "flags": {},
+                    "comment": {
+                        "returns": "boolean\n"
+                    },
+                    "parameters": [
+                        {
+                            "id": 9,
+                            "name": "error",
+                            "kind": 32768,
+                            "kindString": "Parameter",
+                            "flags": {},
+                            "comment": {
+                                "text": "错误类型"
+                            },
+                            "type": {
+                                "type": "intrinsic",
+                                "name": "any"
+                            }
+                        }
+                    ],
+                    "type": {
+                        "type": "intrinsic",
+                        "name": "boolean"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 1,
+            "name": "isNetworkError",
+            "kind": 64,
+            "kindString": "Function",
+            "flags": {},
+            "sources": [
+                {
+                    "fileName": "src/index.ts",
+                    "line": 93,
+                    "character": 16
+                }
+            ],
+            "signatures": [
+                {
+                    "id": 2,
+                    "name": "isNetworkError",
+                    "kind": 4096,
+                    "kindString": "Call signature",
+                    "flags": {},
+                    "comment": {
+                        "returns": "boolean\n"
+                    },
+                    "parameters": [
+                        {
+                            "id": 3,
+                            "name": "error",
+                            "kind": 32768,
+                            "kindString": "Parameter",
+                            "flags": {},
+                            "comment": {
+                                "text": "错误类型"
+                            },
+                            "type": {
+                                "type": "reference",
+                                "name": "AxiosError"
+                            }
+                        }
+                    ],
+                    "type": {
+                        "type": "intrinsic",
+                        "name": "boolean"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "name": "isNetworkOrIdempotentRequestError",
+            "kind": 64,
+            "kindString": "Function",
+            "flags": {},
+            "sources": [
+                {
+                    "fileName": "src/index.ts",
+                    "line": 123,
+                    "character": 16
+                }
+            ],
+            "signatures": [
+                {
+                    "id": 11,
+                    "name": "isNetworkOrIdempotentRequestError",
+                    "kind": 4096,
+                    "kindString": "Call signature",
+                    "flags": {},
+                    "comment": {
+                        "returns": "boolean\n"
+                    },
+                    "parameters": [
+                        {
+                            "id": 12,
+                            "name": "error",
+                            "kind": 32768,
+                            "kindString": "Parameter",
+                            "flags": {},
+                            "comment": {
+                                "text": "错误类型"
+                            },
+                            "type": {
+                                "type": "reference",
+                                "name": "AxiosError"
+                            }
+                        }
+                    ],
+                    "type": {
+                        "type": "intrinsic",
+                        "name": "boolean"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 16,
+            "name": "isRetryableError",
+            "kind": 64,
+            "kindString": "Function",
+            "flags": {},
+            "sources": [
+                {
+                    "fileName": "src/index.ts",
+                    "line": 139,
+                    "character": 16
+                }
+            ],
+            "signatures": [
+                {
+                    "id": 17,
+                    "name": "isRetryableError",
+                    "kind": 4096,
+                    "kindString": "Call signature",
+                    "flags": {},
+                    "comment": {
+                        "returns": "boolean\n"
+                    },
+                    "parameters": [
+                        {
+                            "id": 18,
+                            "name": "error",
+                            "kind": 32768,
+                            "kindString": "Parameter",
+                            "flags": {},
+                            "comment": {
+                                "text": "错误类型"
+                            },
+                            "type": {
+                                "type": "reference",
+                                "name": "AxiosError"
+                            }
+                        }
+                    ],
+                    "type": {
+                        "type": "intrinsic",
+                        "name": "boolean"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "name": "isSafeRequestError",
+            "kind": 64,
+            "kindString": "Function",
+            "flags": {},
+            "sources": [
+                {
+                    "fileName": "src/index.ts",
+                    "line": 105,
+                    "character": 16
+                }
+            ],
+            "signatures": [
+                {
+                    "id": 5,
+                    "name": "isSafeRequestError",
+                    "kind": 4096,
+                    "kindString": "Call signature",
+                    "flags": {},
+                    "comment": {
+                        "returns": "boolean\n"
+                    },
+                    "parameters": [
+                        {
+                            "id": 6,
+                            "name": "error",
+                            "kind": 32768,
+                            "kindString": "Parameter",
+                            "flags": {},
+                            "comment": {
+                                "text": "错误类型"
+                            },
+                            "type": {
+                                "type": "intrinsic",
+                                "name": "any"
+                            }
+                        }
+                    ],
+                    "type": {
+                        "type": "intrinsic",
+                        "name": "boolean"
+                    }
+                }
+            ]
+        }
+    ],
+    "groups": [
+        {
+            "title": "Classes",
+            "kind": 128,
+            "children": [107]
+        },
+        {
+            "title": "Interfaces",
+            "kind": 256,
+            "children": [72, 25, 20, 28]
+        },
+        {
+            "title": "Variables",
+            "kind": 32,
+            "children": [19]
+        },
+        {
+            "title": "Functions",
+            "kind": 64,
+            "children": [13, 7, 1, 10, 16, 4]
+        }
+    ],
+    "sources": [
+        {
+            "fileName": "src/index.ts",
+            "line": 1,
+            "character": 0
+        }
+    ]
 }

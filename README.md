@@ -132,7 +132,7 @@ export default options => {
 }
 ```
 
-## 其他用法
+## 定义失败重试的延时方法
 
 1. 自定义重试延迟的时长
 
@@ -157,6 +157,59 @@ const axiosEx = new axiosExtend({
     retryDelay: exponentialDelay
     // ...
 })
+```
+
+## 在 vue2.x 里面使用
+
+有时候我们需要在`onRequest`或`onResponse`里面使用`this`（vue 实例），可以这样写
+
+```js
+import axiosExtend from 'axios-ex'
+
+let axiosEx = null
+/**
+ * 请求拦截器
+ *
+ * @param {object} config AxiosRequestConfig
+ * @param {object} options 请求参数AxiosExtendRequestOptions
+ * @returns AxiosRequestConfig
+ */
+function onRequest(config, options = {}) {
+    // some codes
+    return config
+}
+/**
+ * 响应拦截器
+ *
+ * @param {object} res AxiosResponse<any>
+ * @param {object} options 请求参数AxiosExtendRequestOptions
+ * @returns Promise<unknown>
+ */
+function onResponse(res, options = {}) {
+    // 隐藏loading动画
+    if (this instanceof Vue) {
+        this.$loader.hide()
+    }
+    if (res.data.success) return res.data
+    return Promise.reject(res.data)
+}
+
+export default options => {
+    // 只需要初始化一次
+    if (!axiosEx)
+        axiosEx = new axiosExtend({
+            // ...
+            onRequest: onRequest.bind(this),
+            onResponse: onResponse.bind(this)
+            //...
+        })
+
+    // 显示loading动画
+    if (this instanceof Vue) {
+        this.$loader.show()
+    }
+    return axiosEx.create(options)
+}
 ```
 
 ## 问题和支持
