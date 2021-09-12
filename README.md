@@ -167,24 +167,12 @@ const axiosEx = new axiosExtend({
 import axiosExtend from 'axios-ex'
 
 let axiosEx = null
-/**
- * 请求拦截器
- *
- * @param {object} config AxiosRequestConfig
- * @param {object} options 请求参数AxiosExtendRequestOptions
- * @returns AxiosRequestConfig
- */
+// 请求拦截器
 function onRequest(config, options = {}) {
     // some codes
     return config
 }
-/**
- * 响应拦截器
- *
- * @param {object} res AxiosResponse<any>
- * @param {object} options 请求参数AxiosExtendRequestOptions
- * @returns Promise<unknown>
- */
+// 响应拦截器
 function onResponse(res, options = {}) {
     // 隐藏loading动画
     if (this instanceof Vue) {
