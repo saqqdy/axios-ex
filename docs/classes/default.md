@@ -40,7 +40,7 @@ axios 封装
 
 #### Defined in
 
-[src/index.ts:155](https://github.com/saqqdy/axios-ex/blob/0f7e2af/src/index.ts#L155)
+[src/index.ts:155](https://github.com/saqqdy/axios-ex/blob/f7b7c02/src/index.ts#L155)
 
 ## Properties
 
@@ -50,7 +50,7 @@ axios 封装
 
 #### Defined in
 
-[src/index.ts:150](https://github.com/saqqdy/axios-ex/blob/0f7e2af/src/index.ts#L150)
+[src/index.ts:150](https://github.com/saqqdy/axios-ex/blob/f7b7c02/src/index.ts#L150)
 
 ---
 
@@ -60,7 +60,7 @@ axios 封装
 
 #### Defined in
 
-[src/index.ts:154](https://github.com/saqqdy/axios-ex/blob/0f7e2af/src/index.ts#L154)
+[src/index.ts:154](https://github.com/saqqdy/axios-ex/blob/f7b7c02/src/index.ts#L154)
 
 ---
 
@@ -70,7 +70,7 @@ axios 封装
 
 #### Defined in
 
-[src/index.ts:151](https://github.com/saqqdy/axios-ex/blob/0f7e2af/src/index.ts#L151)
+[src/index.ts:151](https://github.com/saqqdy/axios-ex/blob/f7b7c02/src/index.ts#L151)
 
 ---
 
@@ -80,7 +80,7 @@ axios 封装
 
 #### Defined in
 
-[src/index.ts:153](https://github.com/saqqdy/axios-ex/blob/0f7e2af/src/index.ts#L153)
+[src/index.ts:153](https://github.com/saqqdy/axios-ex/blob/f7b7c02/src/index.ts#L153)
 
 ---
 
@@ -90,7 +90,7 @@ axios 封装
 
 #### Defined in
 
-[src/index.ts:152](https://github.com/saqqdy/axios-ex/blob/0f7e2af/src/index.ts#L152)
+[src/index.ts:152](https://github.com/saqqdy/axios-ex/blob/f7b7c02/src/index.ts#L152)
 
 ---
 
@@ -100,7 +100,7 @@ axios 封装
 
 #### Defined in
 
-[src/index.ts:149](https://github.com/saqqdy/axios-ex/blob/0f7e2af/src/index.ts#L149)
+[src/index.ts:149](https://github.com/saqqdy/axios-ex/blob/f7b7c02/src/index.ts#L149)
 
 ## Methods
 
@@ -122,7 +122,7 @@ axios 封装
 
 #### Defined in
 
-[src/index.ts:230](https://github.com/saqqdy/axios-ex/blob/0f7e2af/src/index.ts#L230)
+[src/index.ts:230](https://github.com/saqqdy/axios-ex/blob/f7b7c02/src/index.ts#L230)
 
 ---
 
@@ -144,4 +144,4 @@ axios 封装
 
 #### Defined in
 
-[src/index.ts:167](https://github.com/saqqdy/axios-ex/blob/0f7e2af/src/index.ts#L167)
+[src/index.ts:167](https://github.com/saqqdy/axios-ex/blob/f7b7c02/src/index.ts#L167)

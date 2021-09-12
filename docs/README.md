@@ -47,21 +47,65 @@ $ yarn add axios-ex
 import { getCookie, setCookie } from 'js-cool'
 import axiosExtend from 'axios-ex'
 
-// 设置请求头
+/**
+ * 设置请求头
+ *
+ * @param {object} instance AxiosInstance
+ */
 function setHeaders(instance) {
     instance.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded'
 }
-// 请求拦截器
+/**
+ * 请求拦截器
+ *
+ * @param {object} config AxiosRequestConfig
+ * @param {object} options 请求参数AxiosExtendRequestOptions
+ * @returns AxiosRequestConfig
+ */
 function onRequest(config, options = {}) {
     // some codes
     return config
 }
-// 响应拦截器
+/**
+ * 请求错误时执行
+ *
+ * @param {object} err Error
+ */
+function onRequestError(err) {
+    // handler request error
+}
+/**
+ * 响应拦截器
+ *
+ * @param {object} res AxiosResponse<any>
+ * @param {object} options 请求参数AxiosExtendRequestOptions
+ * @returns Promise<unknown>
+ */
 function onResponse(res, options = {}) {
     if (res.data.success) return res.data
     return Promise.reject(res.data)
 }
-// 请求取消
+/**
+ * 响应错误时执行
+ *
+ * @param {object} err Error
+ */
+function onResponseError(err) {
+    // handler response error
+}
+/**
+ * 请求错误或响应错误都执行
+ *
+ * @param {object} err Error
+ */
+function onError(err) {
+    // handler request & response error
+}
+/**
+ * 请求取消
+ *
+ * @param {object} err Error
+ */
 function onCancel(err) {
     console.error(err.message)
 }
@@ -72,10 +116,12 @@ const axiosEx = new axiosExtend({
     unique: true, // 是否取消前面的相似请求，默认：false
     retries: 0, // 重试次数，默认：0=不重试
     orderly: false, // 是否有序返回，默认：true
-    delay: 0, // 延迟返回值，毫秒，默认：0=不延迟
     setHeaders, // 设置请求头的方法
     onRequest, // 请求拦截器
+    onRequestError, // 请求错误时执行
     onResponse, // 响应拦截器
+    onResponseError, // 响应错误时执行
+    onError, // 请求错误或响应错误都执行
     onCancel // 请求取消时的回调
 })
 
