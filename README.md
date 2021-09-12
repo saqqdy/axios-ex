@@ -169,7 +169,7 @@ import axiosExtend from 'axios-ex'
 let axiosEx = null
 // 请求拦截器
 function onRequest(config, options = {}) {
-    // some codes
+    // this => vueInstance
     return config
 }
 // 响应拦截器
@@ -186,7 +186,6 @@ export default options => {
     // 只需要初始化一次
     if (!axiosEx)
         axiosEx = new axiosExtend({
-            // ...
             onRequest: onRequest.bind(this),
             onResponse: onResponse.bind(this)
             //...
