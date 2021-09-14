@@ -1,4 +1,4 @@
-index.md - v2.2.0 / [Exports](modules.md)
+index.md - v2.2.1 / [Exports](modules.md)
 
 # axios-ex
 
@@ -10,6 +10,8 @@ index.md - v2.2.0 / [Exports](modules.md)
 [![David deps][david-image]][david-url]
 [![Known Vulnerabilities][snyk-image]][snyk-url]
 [![npm download][download-image]][download-url]
+[![gzip][gzip-image]][gzip-url]
+[![License][license-image]][license-url]
 
 [npm-image]: https://img.shields.io/npm/v/axios-ex.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/axios-ex
@@ -23,6 +25,10 @@ index.md - v2.2.0 / [Exports](modules.md)
 [snyk-url]: https://snyk.io/test/npm/axios-ex
 [download-image]: https://img.shields.io/npm/dm/axios-ex.svg?style=flat-square
 [download-url]: https://npmjs.org/package/axios-ex
+[gzip-image]: http://img.badgesize.io/https://unpkg.com/axios-ex/lib/index.js?compression=gzip&label=gzip%20size:%20JS
+[gzip-url]: http://img.badgesize.io/https://unpkg.com/axios-ex/lib/index.js?compression=gzip&label=gzip%20size:%20JS
+[license-image]: https://img.shields.io/badge/License-MIT-yellow.svg
+[license-url]: LICENSE
 
 # **完整文档请查阅： [API 完整文档](./docs/modules.md)**
 
@@ -134,7 +140,7 @@ export default options => {
 }
 ```
 
-## 其他用法
+## 定义失败重试的延时方法
 
 1. 自定义重试延迟的时长
 
@@ -159,6 +165,46 @@ const axiosEx = new axiosExtend({
     retryDelay: exponentialDelay
     // ...
 })
+```
+
+## 在 vue2.x 里面使用
+
+有时候我们需要在`onRequest`或`onResponse`里面使用`this`（vue 实例），可以这样写
+
+```js
+import axiosExtend from 'axios-ex'
+
+let axiosEx = null
+// 请求拦截器
+function onRequest(config, options = {}) {
+    // this => vueInstance
+    return config
+}
+// 响应拦截器
+function onResponse(res, options = {}) {
+    // 隐藏loading动画
+    if (this instanceof Vue) {
+        this.$loader.hide()
+    }
+    if (res.data.success) return res.data
+    return Promise.reject(res.data)
+}
+
+export default options => {
+    // 只需要初始化一次
+    if (!axiosEx)
+        axiosEx = new axiosExtend({
+            onRequest: onRequest.bind(this),
+            onResponse: onResponse.bind(this)
+            //...
+        })
+
+    // 显示loading动画
+    if (this instanceof Vue) {
+        this.$loader.show()
+    }
+    return axiosEx.create(options)
+}
 ```
 
 ## 问题和支持

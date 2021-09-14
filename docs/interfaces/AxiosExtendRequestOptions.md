@@ -1,4 +1,4 @@
-[index.md - v2.2.0](../README.md) / [Exports](../modules.md) / AxiosExtendRequestOptions
+[index.md - v2.2.1](../README.md) / [Exports](../modules.md) / AxiosExtendRequestOptions
 
 # Interface: AxiosExtendRequestOptions
 
@@ -19,6 +19,7 @@
 -   [cancelToken](AxiosExtendRequestOptions.md#canceltoken)
 -   [data](AxiosExtendRequestOptions.md#data)
 -   [decompress](AxiosExtendRequestOptions.md#decompress)
+-   [error](AxiosExtendRequestOptions.md#error)
 -   [headers](AxiosExtendRequestOptions.md#headers)
 -   [httpAgent](AxiosExtendRequestOptions.md#httpagent)
 -   [httpsAgent](AxiosExtendRequestOptions.md#httpsagent)
@@ -37,6 +38,7 @@
 -   [transformRequest](AxiosExtendRequestOptions.md#transformrequest)
 -   [transformResponse](AxiosExtendRequestOptions.md#transformresponse)
 -   [transitional](AxiosExtendRequestOptions.md#transitional)
+-   [type](AxiosExtendRequestOptions.md#type)
 -   [unique](AxiosExtendRequestOptions.md#unique)
 -   [url](AxiosExtendRequestOptions.md#url)
 -   [validateStatus](AxiosExtendRequestOptions.md#validatestatus)
@@ -86,7 +88,7 @@ node_modules/axios/index.d.ts:64
 
 #### Defined in
 
-[src/index.ts:23](https://github.com/saqqdy/axios-ex/blob/f7b7c02/src/index.ts#L23)
+[src/index.ts:23](https://github.com/saqqdy/axios-ex/blob/0e16e16/src/index.ts#L23)
 
 ---
 
@@ -114,7 +116,7 @@ AxiosRequestConfig.cancelToken
 
 #### Defined in
 
-[src/index.ts:27](https://github.com/saqqdy/axios-ex/blob/f7b7c02/src/index.ts#L27)
+[src/index.ts:27](https://github.com/saqqdy/axios-ex/blob/0e16e16/src/index.ts#L27)
 
 ---
 
@@ -143,6 +145,16 @@ AxiosRequestConfig.decompress
 #### Defined in
 
 node_modules/axios/index.d.ts:79
+
+---
+
+### error
+
+• `Optional` **error**: `string`
+
+#### Defined in
+
+[src/index.ts:29](https://github.com/saqqdy/axios-ex/blob/0e16e16/src/index.ts#L29)
 
 ---
 
@@ -250,7 +262,7 @@ node_modules/axios/index.d.ts:52
 
 #### Defined in
 
-[src/index.ts:25](https://github.com/saqqdy/axios-ex/blob/f7b7c02/src/index.ts#L25)
+[src/index.ts:25](https://github.com/saqqdy/axios-ex/blob/0e16e16/src/index.ts#L25)
 
 ---
 
@@ -288,7 +300,7 @@ node_modules/axios/index.d.ts:77
 
 #### Defined in
 
-[src/index.ts:26](https://github.com/saqqdy/axios-ex/blob/f7b7c02/src/index.ts#L26)
+[src/index.ts:26](https://github.com/saqqdy/axios-ex/blob/0e16e16/src/index.ts#L26)
 
 ---
 
@@ -390,13 +402,23 @@ node_modules/axios/index.d.ts:80
 
 ---
 
+### type
+
+• `Optional` **type**: `string`
+
+#### Defined in
+
+[src/index.ts:28](https://github.com/saqqdy/axios-ex/blob/0e16e16/src/index.ts#L28)
+
+---
+
 ### unique
 
 • `Optional` **unique**: `boolean`
 
 #### Defined in
 
-[src/index.ts:24](https://github.com/saqqdy/axios-ex/blob/f7b7c02/src/index.ts#L24)
+[src/index.ts:24](https://github.com/saqqdy/axios-ex/blob/0e16e16/src/index.ts#L24)
 
 ---
 

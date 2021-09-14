@@ -25,6 +25,8 @@ export interface AxiosExtendRequestOptions extends AxiosRequestConfig {
     orderly?: boolean
     requestOptions?: AxiosExtendRequestOptions
     cancelToken?: CancelToken
+    type?: string
+    error?: string
 }
 
 export interface AxiosExtendConfig {
