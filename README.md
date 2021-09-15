@@ -3,7 +3,7 @@
 企业级项目`axios`集成方案
 
 [![NPM version][npm-image]][npm-url]
-[![Codacy Badge](codacy-image)](codacy-url)
+[![Codacy Badge][codacy-image]][codacy-url]
 [![build status][travis-image]][travis-url]
 [![Test coverage][codecov-image]][codecov-url]
 [![David deps][david-image]][david-url]
