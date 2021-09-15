@@ -28,9 +28,9 @@
 [license-image]: https://img.shields.io/badge/License-MIT-yellow.svg
 [license-url]: LICENSE
 
-# **完整文档请查阅： [API 完整文档](./docs/modules.md)**
+## **完整文档请查阅： [API 完整文档](./docs/modules.md)**
 
-# 安装
+## 安装
 
 > `axios-ex`自带了最新版的 axios，可以不用安装`axios`包
 
@@ -42,9 +42,9 @@ $ npm install axios-ex --save
 $ yarn add axios-ex
 ```
 
-# 使用
+## 使用
 
-## 常规用法
+### 常规用法
 
 ```js
 // {app_root}/src/plugins/axios.js
@@ -138,7 +138,7 @@ export default options => {
 }
 ```
 
-## 定义失败重试的延时方法
+### 定义失败重试的延时方法
 
 1. 自定义重试延迟的时长
 
@@ -165,7 +165,7 @@ const axiosEx = new axiosExtend({
 })
 ```
 
-## 在 vue2.x 里面使用
+### 在 vue2.x 里面使用
 
 有时候我们需要在`onRequest`或`onResponse`里面使用`this`（vue 实例），可以这样写
 
