@@ -3,6 +3,7 @@
 企业级项目`axios`集成方案
 
 [![NPM version][npm-image]][npm-url]
+[![Codacy Badge](codacy-image)](codacy-url)
 [![build status][travis-image]][travis-url]
 [![Test coverage][codecov-image]][codecov-url]
 [![David deps][david-image]][david-url]
@@ -13,6 +14,8 @@
 
 [npm-image]: https://img.shields.io/npm/v/axios-ex.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/axios-ex
+[codacy-image]: https://app.codacy.com/project/badge/Grade/f70d4880e4ad4f40aa970eb9ee9d0696
+[codacy-url]: https://www.codacy.com/gh/saqqdy/axios-ex/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=saqqdy/axios-ex&amp;utm_campaign=Badge_Grade
 [travis-image]: https://travis-ci.com/saqqdy/axios-ex.svg?branch=master
 [travis-url]: https://travis-ci.com/saqqdy/axios-ex
 [codecov-image]: https://img.shields.io/codecov/c/github/saqqdy/axios-ex.svg?style=flat-square
