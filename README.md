@@ -31,8 +31,8 @@
 [gzip-url]: http://img.badgesize.io/https://unpkg.com/axios-ex/lib/index.js?compression=gzip&label=gzip%20size:%20JS
 [license-image]: https://img.shields.io/badge/License-MIT-yellow.svg
 [license-url]: LICENSE
-[sonar-image]: https://sonarcloud.io/api/project_badges/quality_gate?project=axios-ex
-[sonar-url]: https://sonarcloud.io/dashboard?id=axios-ex
+[sonar-image]: https://sonarcloud.io/api/project_badges/quality_gate?project=saqqdy_axios-ex
+[sonar-url]: https://sonarcloud.io/dashboard?id=saqqdy_axios-ex
 
 ## **完整文档请查阅： [API 完整文档](./docs/modules.md)**
 
