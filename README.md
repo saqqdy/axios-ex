@@ -11,6 +11,7 @@
 [![npm download][download-image]][download-url]
 [![gzip][gzip-image]][gzip-url]
 [![License][license-image]][license-url]
+[![Sonar][sonar-image]][sonar-url]
 
 [npm-image]: https://img.shields.io/npm/v/axios-ex.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/axios-ex
@@ -30,6 +31,8 @@
 [gzip-url]: http://img.badgesize.io/https://unpkg.com/axios-ex/lib/index.js?compression=gzip&label=gzip%20size:%20JS
 [license-image]: https://img.shields.io/badge/License-MIT-yellow.svg
 [license-url]: LICENSE
+[license-image]: https://sonarcloud.io/api/project_badges/quality_gate?project=axios-ex
+[license-url]: https://sonarcloud.io/dashboard?id=axios-ex
 
 ## **完整文档请查阅： [API 完整文档](./docs/modules.md)**
 
@@ -145,28 +148,28 @@ export default options => {
 
 1. 自定义重试延迟的时长
 
-```js
-// 实例化的时候配置
-const axiosEx = new axiosExtend({
-    // ...
-    retryDelay: retryCount => {
-        return retryCount * 1000
-    }
-    // ...
-})
-```
+    ```js
+    // 实例化的时候配置
+    const axiosEx = new axiosExtend({
+        // ...
+        retryDelay: retryCount => {
+            return retryCount * 1000
+        }
+        // ...
+    })
+    ```
 
 2. 或者使用`axios-ex`内置的方法，exponentialDelay 随机递增 0%-50%
 
-```js
-import axiosExtend, { exponentialDelay } from 'axios-ex'
-// 实例化的时候配置
-const axiosEx = new axiosExtend({
-    // ...
-    retryDelay: exponentialDelay
-    // ...
-})
-```
+    ```js
+    import axiosExtend, { exponentialDelay } from 'axios-ex'
+    // 实例化的时候配置
+    const axiosEx = new axiosExtend({
+        // ...
+        retryDelay: exponentialDelay
+        // ...
+    })
+    ```
 
 ### 在 vue2.x 里面使用
 
