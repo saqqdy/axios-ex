@@ -11,6 +11,7 @@
 [![npm download][download-image]][download-url]
 [![gzip][gzip-image]][gzip-url]
 [![License][license-image]][license-url]
+
 [![Sonar][sonar-image]][sonar-url]
 
 [npm-image]: https://img.shields.io/npm/v/axios-ex.svg?style=flat-square
