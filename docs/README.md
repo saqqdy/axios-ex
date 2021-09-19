@@ -5,6 +5,7 @@ index.md - v2.2.1 / [Exports](modules.md)
 企业级项目`axios`集成方案
 
 [![NPM version][npm-image]][npm-url]
+[![Codacy Badge][codacy-image]][codacy-url]
 [![build status][travis-image]][travis-url]
 [![Test coverage][codecov-image]][codecov-url]
 [![David deps][david-image]][david-url]
@@ -13,8 +14,12 @@ index.md - v2.2.1 / [Exports](modules.md)
 [![gzip][gzip-image]][gzip-url]
 [![License][license-image]][license-url]
 
+[![Sonar][sonar-image]][sonar-url]
+
 [npm-image]: https://img.shields.io/npm/v/axios-ex.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/axios-ex
+[codacy-image]: https://app.codacy.com/project/badge/Grade/f70d4880e4ad4f40aa970eb9ee9d0696
+[codacy-url]: https://www.codacy.com/gh/saqqdy/axios-ex/dashboard?utm_source=github.com&utm_medium=referral&utm_content=saqqdy/axios-ex&utm_campaign=Badge_Grade
 [travis-image]: https://travis-ci.com/saqqdy/axios-ex.svg?branch=master
 [travis-url]: https://travis-ci.com/saqqdy/axios-ex
 [codecov-image]: https://img.shields.io/codecov/c/github/saqqdy/axios-ex.svg?style=flat-square
@@ -29,10 +34,12 @@ index.md - v2.2.1 / [Exports](modules.md)
 [gzip-url]: http://img.badgesize.io/https://unpkg.com/axios-ex/lib/index.js?compression=gzip&label=gzip%20size:%20JS
 [license-image]: https://img.shields.io/badge/License-MIT-yellow.svg
 [license-url]: LICENSE
+[sonar-image]: https://sonarcloud.io/api/project_badges/quality_gate?project=saqqdy_axios-ex
+[sonar-url]: https://sonarcloud.io/dashboard?id=saqqdy_axios-ex
 
-# **完整文档请查阅： [API 完整文档](./docs/modules.md)**
+## **完整文档请查阅： [API 完整文档](./docs/modules.md)**
 
-# 安装
+## 安装
 
 > `axios-ex`自带了最新版的 axios，可以不用安装`axios`包
 
@@ -44,9 +51,9 @@ $ npm install axios-ex --save
 $ yarn add axios-ex
 ```
 
-# 使用
+## 使用
 
-## 常规用法
+### 常规用法
 
 ```js
 // {app_root}/src/plugins/axios.js
@@ -140,34 +147,34 @@ export default options => {
 }
 ```
 
-## 定义失败重试的延时方法
+### 定义失败重试的延时方法
 
 1. 自定义重试延迟的时长
 
-```js
-// 实例化的时候配置
-const axiosEx = new axiosExtend({
-    // ...
-    retryDelay: retryCount => {
-        return retryCount * 1000
-    }
-    // ...
-})
-```
+    ```js
+    // 实例化的时候配置
+    const axiosEx = new axiosExtend({
+        // ...
+        retryDelay: retryCount => {
+            return retryCount * 1000
+        }
+        // ...
+    })
+    ```
 
 2. 或者使用`axios-ex`内置的方法，exponentialDelay 随机递增 0%-50%
 
-```js
-import axiosExtend, { exponentialDelay } from 'axios-ex'
-// 实例化的时候配置
-const axiosEx = new axiosExtend({
-    // ...
-    retryDelay: exponentialDelay
-    // ...
-})
-```
+    ```js
+    import axiosExtend, { exponentialDelay } from 'axios-ex'
+    // 实例化的时候配置
+    const axiosEx = new axiosExtend({
+        // ...
+        retryDelay: exponentialDelay
+        // ...
+    })
+    ```
 
-## 在 vue2.x 里面使用
+### 在 vue2.x 里面使用
 
 有时候我们需要在`onRequest`或`onResponse`里面使用`this`（vue 实例），可以这样写
 
