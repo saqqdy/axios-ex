@@ -1,7 +1,7 @@
 {
 	"id": 0,
-	"name": "index.md - v2.2.1",
-	"kind": 0,
+	"name": "index.md - v2.2.2",
+	"kind": 1,
 	"kindString": "Project",
 	"flags": {},
 	"originalName": "index.md",
@@ -2171,9 +2171,7 @@
 			"name": "namespace",
 			"kind": 32,
 			"kindString": "Variable",
-			"flags": {
-				"isConst": true
-			},
+			"flags": {},
 			"sources": [
 				{
 					"fileName": "src/index.ts",
@@ -2218,7 +2216,7 @@
 							"kindString": "Parameter",
 							"flags": {},
 							"comment": {
-								"text": "默认：0"
+								"shortText": "默认：0"
 							},
 							"type": {
 								"type": "intrinsic",
@@ -2265,7 +2263,7 @@
 							"kindString": "Parameter",
 							"flags": {},
 							"comment": {
-								"text": "错误类型"
+								"shortText": "错误类型"
 							},
 							"type": {
 								"type": "intrinsic",
@@ -2311,10 +2309,16 @@
 							"kindString": "Parameter",
 							"flags": {},
 							"comment": {
-								"text": "错误类型"
+								"shortText": "错误类型"
 							},
 							"type": {
 								"type": "reference",
+								"typeArguments": [
+									{
+										"type": "intrinsic",
+										"name": "any"
+									}
+								],
 								"name": "AxiosError"
 							}
 						}
@@ -2357,10 +2361,16 @@
 							"kindString": "Parameter",
 							"flags": {},
 							"comment": {
-								"text": "错误类型"
+								"shortText": "错误类型"
 							},
 							"type": {
 								"type": "reference",
+								"typeArguments": [
+									{
+										"type": "intrinsic",
+										"name": "any"
+									}
+								],
 								"name": "AxiosError"
 							}
 						}
@@ -2403,10 +2413,16 @@
 							"kindString": "Parameter",
 							"flags": {},
 							"comment": {
-								"text": "错误类型"
+								"shortText": "错误类型"
 							},
 							"type": {
 								"type": "reference",
+								"typeArguments": [
+									{
+										"type": "intrinsic",
+										"name": "any"
+									}
+								],
 								"name": "AxiosError"
 							}
 						}
@@ -2449,7 +2465,7 @@
 							"kindString": "Parameter",
 							"flags": {},
 							"comment": {
-								"text": "错误类型"
+								"shortText": "错误类型"
 							},
 							"type": {
 								"type": "intrinsic",
