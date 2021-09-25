@@ -130,7 +130,6 @@ export function isIdempotentRequestError(error: any): boolean {
  * @return boolean
  */
 export function isNetworkOrIdempotentRequestError(error: AxiosError): boolean {
-    
     return isNetworkError(error) || isIdempotentRequestError(error)
 }
 /**

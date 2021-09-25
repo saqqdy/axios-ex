@@ -36,7 +36,7 @@
 
 #### Defined in
 
-[src/index.ts:6](https://github.com/saqqdy/axios-ex/blob/d37f87a/src/index.ts#L6)
+[src/index.ts:6](https://github.com/saqqdy/axios-ex/blob/70c2408/src/index.ts#L6)
 
 ## Functions
 
@@ -58,7 +58,7 @@ delay 毫秒
 
 #### Defined in
 
-[src/index.ts:132](https://github.com/saqqdy/axios-ex/blob/d37f87a/src/index.ts#L132)
+[src/index.ts:139](https://github.com/saqqdy/axios-ex/blob/70c2408/src/index.ts#L139)
 
 ---
 
@@ -80,7 +80,7 @@ boolean
 
 #### Defined in
 
-[src/index.ts:116](https://github.com/saqqdy/axios-ex/blob/d37f87a/src/index.ts#L116)
+[src/index.ts:123](https://github.com/saqqdy/axios-ex/blob/70c2408/src/index.ts#L123)
 
 ---
 
@@ -102,7 +102,7 @@ boolean
 
 #### Defined in
 
-[src/index.ts:95](https://github.com/saqqdy/axios-ex/blob/d37f87a/src/index.ts#L95)
+[src/index.ts:102](https://github.com/saqqdy/axios-ex/blob/70c2408/src/index.ts#L102)
 
 ---
 
@@ -124,7 +124,7 @@ boolean
 
 #### Defined in
 
-[src/index.ts:125](https://github.com/saqqdy/axios-ex/blob/d37f87a/src/index.ts#L125)
+[src/index.ts:132](https://github.com/saqqdy/axios-ex/blob/70c2408/src/index.ts#L132)
 
 ---
 
@@ -146,7 +146,7 @@ boolean
 
 #### Defined in
 
-[src/index.ts:141](https://github.com/saqqdy/axios-ex/blob/d37f87a/src/index.ts#L141)
+[src/index.ts:148](https://github.com/saqqdy/axios-ex/blob/70c2408/src/index.ts#L148)
 
 ---
 
@@ -168,4 +168,4 @@ boolean
 
 #### Defined in
 
-[src/index.ts:107](https://github.com/saqqdy/axios-ex/blob/d37f87a/src/index.ts#L107)
+[src/index.ts:114](https://github.com/saqqdy/axios-ex/blob/70c2408/src/index.ts#L114)
