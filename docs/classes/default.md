@@ -1,4 +1,4 @@
-[index.md - v2.2.2](../README.md) / [Exports](../modules.md) / default
+[index.md - v2.2.3](../README.md) / [Exports](../modules.md) / default
 
 # Class: default
 
@@ -40,7 +40,7 @@ axios 封装
 
 #### Defined in
 
-[src/index.ts:164](https://github.com/saqqdy/axios-ex/blob/70c2408/src/index.ts#L164)
+[src/index.ts:164](https://github.com/saqqdy/axios-ex/blob/72d4d86/src/index.ts#L164)
 
 ## Properties
 
@@ -50,7 +50,7 @@ axios 封装
 
 #### Defined in
 
-[src/index.ts:159](https://github.com/saqqdy/axios-ex/blob/70c2408/src/index.ts#L159)
+[src/index.ts:159](https://github.com/saqqdy/axios-ex/blob/72d4d86/src/index.ts#L159)
 
 ---
 
@@ -60,7 +60,7 @@ axios 封装
 
 #### Defined in
 
-[src/index.ts:163](https://github.com/saqqdy/axios-ex/blob/70c2408/src/index.ts#L163)
+[src/index.ts:163](https://github.com/saqqdy/axios-ex/blob/72d4d86/src/index.ts#L163)
 
 ---
 
@@ -70,7 +70,7 @@ axios 封装
 
 #### Defined in
 
-[src/index.ts:160](https://github.com/saqqdy/axios-ex/blob/70c2408/src/index.ts#L160)
+[src/index.ts:160](https://github.com/saqqdy/axios-ex/blob/72d4d86/src/index.ts#L160)
 
 ---
 
@@ -80,7 +80,7 @@ axios 封装
 
 #### Defined in
 
-[src/index.ts:162](https://github.com/saqqdy/axios-ex/blob/70c2408/src/index.ts#L162)
+[src/index.ts:162](https://github.com/saqqdy/axios-ex/blob/72d4d86/src/index.ts#L162)
 
 ---
 
@@ -90,7 +90,7 @@ axios 封装
 
 #### Defined in
 
-[src/index.ts:161](https://github.com/saqqdy/axios-ex/blob/70c2408/src/index.ts#L161)
+[src/index.ts:161](https://github.com/saqqdy/axios-ex/blob/72d4d86/src/index.ts#L161)
 
 ---
 
@@ -100,7 +100,7 @@ axios 封装
 
 #### Defined in
 
-[src/index.ts:158](https://github.com/saqqdy/axios-ex/blob/70c2408/src/index.ts#L158)
+[src/index.ts:158](https://github.com/saqqdy/axios-ex/blob/72d4d86/src/index.ts#L158)
 
 ## Methods
 
@@ -122,7 +122,7 @@ axios 封装
 
 #### Defined in
 
-[src/index.ts:238](https://github.com/saqqdy/axios-ex/blob/70c2408/src/index.ts#L238)
+[src/index.ts:238](https://github.com/saqqdy/axios-ex/blob/72d4d86/src/index.ts#L238)
 
 ---
 
@@ -144,4 +144,4 @@ axios 封装
 
 #### Defined in
 
-[src/index.ts:176](https://github.com/saqqdy/axios-ex/blob/70c2408/src/index.ts#L176)
+[src/index.ts:176](https://github.com/saqqdy/axios-ex/blob/72d4d86/src/index.ts#L176)

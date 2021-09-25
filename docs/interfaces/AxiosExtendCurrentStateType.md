@@ -1,4 +1,4 @@
-[index.md - v2.2.2](../README.md) / [Exports](../modules.md) / AxiosExtendCurrentStateType
+[index.md - v2.2.3](../README.md) / [Exports](../modules.md) / AxiosExtendCurrentStateType
 
 # Interface: AxiosExtendCurrentStateType
 
@@ -17,7 +17,7 @@
 
 #### Defined in
 
-[src/index.ts:19](https://github.com/saqqdy/axios-ex/blob/70c2408/src/index.ts#L19)
+[src/index.ts:19](https://github.com/saqqdy/axios-ex/blob/72d4d86/src/index.ts#L19)
 
 ---
 
@@ -27,4 +27,4 @@
 
 #### Defined in
 
-[src/index.ts:20](https://github.com/saqqdy/axios-ex/blob/70c2408/src/index.ts#L20)
+[src/index.ts:20](https://github.com/saqqdy/axios-ex/blob/72d4d86/src/index.ts#L20)
