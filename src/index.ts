@@ -4,6 +4,7 @@ import extend from 'js-cool/lib/extend'
 import getRandomStr from 'js-cool/lib/getRandomStr'
 
 export const namespace = 'axios-extend'
+
 const SAFE_HTTP_METHODS = ['get', 'head', 'options']
 const IDEMPOTENT_HTTP_METHODS = SAFE_HTTP_METHODS.concat(['put', 'delete'])
 
@@ -48,13 +49,16 @@ export interface AxiosExtendConfig {
 
 /**
  * 获取默认延迟时间 毫秒
+ *
+ * @private
  * @returns number - delay in milliseconds, always 0
  */
-function noDelay() {
+function noRetryDelay() {
     return 0
 }
 /**
- * Initializes and returns the retry state for the given request/config
+ * 初始化和返回用于retry的config
+ *
  * @param  config - AxiosExtendRequestOptions
  * @return currentState
  */
@@ -65,7 +69,8 @@ function getCurrentState(config: AxiosExtendRequestOptions): AxiosExtendCurrentS
     return currentState
 }
 /**
- * Returns the axios-retry options for the current request
+ * 获取请求数据
+ *
  * @param  config - AxiosExtendRequestOptions
  * @param  defaultOptions - AxiosExtendConfig
  * @return options
@@ -74,6 +79,8 @@ function getRequestOptions(config: AxiosExtendRequestOptions, defaultOptions: Ax
     return Object.assign({}, defaultOptions, config[namespace])
 }
 /**
+ * 清理agent防止死循环
+ *
  * @param  axios - any
  * @param  config - any
  */
@@ -123,6 +130,7 @@ export function isIdempotentRequestError(error: any): boolean {
  * @return boolean
  */
 export function isNetworkOrIdempotentRequestError(error: AxiosError): boolean {
+    
     return isNetworkError(error) || isIdempotentRequestError(error)
 }
 /**
@@ -193,21 +201,20 @@ class AxiosExtend {
                 },
                 (err: any): Promise<any> => {
                     const config: any = err.config
-                    // If we have no information to retry the request
+                    // 没有请求配置
                     if (!config) {
                         onResponseError && onResponseError(err)
                         onError && onError(err)
                         return Promise.reject(err)
                     }
-                    const { retries = this.retries, retryCondition = isNetworkOrIdempotentRequestError, retryDelay = noDelay, shouldResetTimeout = false } = getRequestOptions(config, defaultOptions)
+                    const { retries = this.retries, retryCondition = isNetworkOrIdempotentRequestError, retryDelay = noRetryDelay, shouldResetTimeout = false } = getRequestOptions(config, defaultOptions)
                     const currentState = getCurrentState(config)
                     const shouldRetry = retryCondition(err) && currentState.retryCount < retries
                     if (shouldRetry) {
                         currentState.retryCount += 1
                         const delay = retryDelay(currentState.retryCount, err)
 
-                        // Axios fails merging this configuration to the default configuration because it has an issue
-                        // with circular structures: https://github.com/mzabriskie/axios/issues/370
+                        // 清理agent防止死循环
                         fixConfig(axios, config)
 
                         if (!shouldResetTimeout && config.timeout && currentState.lastRequestTime) {
@@ -215,7 +222,7 @@ class AxiosExtend {
                             // Minimum 1ms timeout (passing 0 or less to XHR means no timeout)
                             config.timeout = Math.max(config.timeout - lastRequestDuration - delay, 1)
                         }
-
+                        // 初始化请求数据
                         config.transformRequest = [(data: any) => data]
 
                         return new Promise(resolve => setTimeout(() => resolve(axios(config)), delay))
