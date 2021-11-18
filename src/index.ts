@@ -1,4 +1,11 @@
-import axios, { AxiosRequestConfig, CancelTokenSource, CancelToken, AxiosInstance, AxiosResponse, AxiosError } from 'axios'
+import axios, {
+    AxiosRequestConfig,
+    CancelTokenSource,
+    CancelToken,
+    AxiosInstance,
+    AxiosResponse,
+    AxiosError
+} from 'axios'
 import isRetryAllowed from 'is-retry-allowed'
 import extend from 'js-cool/lib/extend'
 import getRandomStr from 'js-cool/lib/getRandomStr'
@@ -39,9 +46,15 @@ export interface AxiosExtendConfig {
     retryCondition?(): boolean
     retryDelay?(retryNumber: number, error: any): number
     setHeaders?(instance: AxiosInstance): void
-    onRequest?(config: AxiosRequestConfig, requestOptions: AxiosExtendRequestOptions): AxiosRequestConfig | Promise<AxiosRequestConfig>
+    onRequest?(
+        config: AxiosRequestConfig,
+        requestOptions: AxiosExtendRequestOptions
+    ): AxiosRequestConfig | Promise<AxiosRequestConfig>
     onRequestError?(error: any): void
-    onResponse?(res: AxiosResponse<any>, requestOptions: AxiosExtendRequestOptions): AxiosResponse<any> | Promise<AxiosResponse<any>>
+    onResponse?(
+        res: AxiosResponse<any>,
+        requestOptions: AxiosExtendRequestOptions
+    ): AxiosResponse<any> | Promise<AxiosResponse<any>>
     onResponseError?(error: any): void
     onError?(error: any): void
     onCancel?(error: any): void
@@ -62,7 +75,9 @@ function noRetryDelay() {
  * @param  config - AxiosExtendRequestOptions
  * @return currentState
  */
-function getCurrentState(config: AxiosExtendRequestOptions): AxiosExtendCurrentStateType {
+function getCurrentState(
+    config: AxiosExtendRequestOptions
+): AxiosExtendCurrentStateType {
     const currentState = config[namespace] || {}
     currentState.retryCount = currentState.retryCount || 0
     config[namespace] = currentState
@@ -75,7 +90,10 @@ function getCurrentState(config: AxiosExtendRequestOptions): AxiosExtendCurrentS
  * @param  defaultOptions - AxiosExtendConfig
  * @return options
  */
-function getRequestOptions(config: AxiosExtendRequestOptions, defaultOptions: AxiosExtendConfig): AxiosExtendConfig {
+function getRequestOptions(
+    config: AxiosExtendRequestOptions,
+    defaultOptions: AxiosExtendConfig
+): AxiosExtendConfig {
     return Object.assign({}, defaultOptions, config[namespace])
 }
 /**
@@ -114,7 +132,10 @@ export function isNetworkError(error: AxiosError): boolean {
 export function isSafeRequestError(error: any): boolean {
     // Cannot determine if the request can be retried
     if (!error.config) return false
-    return isRetryableError(error) && SAFE_HTTP_METHODS.indexOf(error.config.method) !== -1
+    return (
+        isRetryableError(error) &&
+        SAFE_HTTP_METHODS.indexOf(error.config.method) !== -1
+    )
 }
 /**
  * @param error - 错误类型
@@ -123,7 +144,10 @@ export function isSafeRequestError(error: any): boolean {
 export function isIdempotentRequestError(error: any): boolean {
     // Cannot determine if the request can be retried
     if (!error.config) return false
-    return isRetryableError(error) && IDEMPOTENT_HTTP_METHODS.indexOf(error.config.method) !== -1
+    return (
+        isRetryableError(error) &&
+        IDEMPOTENT_HTTP_METHODS.indexOf(error.config.method) !== -1
+    )
 }
 /**
  * @param error - 错误类型
@@ -146,7 +170,11 @@ export function exponentialDelay(retryNumber = 0) {
  * @return boolean
  */
 export function isRetryableError(error: AxiosError): boolean {
-    return error.code !== 'ECONNABORTED' && (!error.response || (error.response.status >= 500 && error.response.status <= 599))
+    return (
+        error.code !== 'ECONNABORTED' &&
+        (!error.response ||
+            (error.response.status >= 500 && error.response.status <= 599))
+    )
 }
 
 /**
@@ -161,7 +189,14 @@ class AxiosExtend {
     unique: boolean // 是否取消前面的相似请求，默认：false
     retries: number // 重试次数，默认：0=不重试
     onCancel // 请求取消时的回调
-    constructor({ maxConnections, orderly, unique, retries, onCancel, ...defaultOptions }: AxiosExtendConfig) {
+    constructor({
+        maxConnections,
+        orderly,
+        unique,
+        retries,
+        onCancel,
+        ...defaultOptions
+    }: AxiosExtendConfig) {
         this.maxConnections = maxConnections ?? 0
         this.orderly = orderly ?? true
         this.unique = unique ?? false
@@ -174,7 +209,14 @@ class AxiosExtend {
      * 初始化
      */
     public init(defaultOptions: AxiosExtendConfig): void {
-        const { setHeaders, onRequest, onRequestError, onResponse, onResponseError, onError } = defaultOptions
+        const {
+            setHeaders,
+            onRequest,
+            onRequestError,
+            onResponse,
+            onResponseError,
+            onError
+        } = defaultOptions
         // 设置请求头
         setHeaders && setHeaders(axios)
         // 添加一个请求拦截器
@@ -206,9 +248,15 @@ class AxiosExtend {
                         onError && onError(err)
                         return Promise.reject(err)
                     }
-                    const { retries = this.retries, retryCondition = isNetworkOrIdempotentRequestError, retryDelay = noRetryDelay, shouldResetTimeout = false } = getRequestOptions(config, defaultOptions)
+                    const {
+                        retries = this.retries,
+                        retryCondition = isNetworkOrIdempotentRequestError,
+                        retryDelay = noRetryDelay,
+                        shouldResetTimeout = false
+                    } = getRequestOptions(config, defaultOptions)
                     const currentState = getCurrentState(config)
-                    const shouldRetry = retryCondition(err) && currentState.retryCount < retries
+                    const shouldRetry =
+                        retryCondition(err) && currentState.retryCount < retries
                     if (shouldRetry) {
                         currentState.retryCount += 1
                         const delay = retryDelay(currentState.retryCount, err)
@@ -216,15 +264,25 @@ class AxiosExtend {
                         // 清理agent防止死循环
                         fixConfig(axios, config)
 
-                        if (!shouldResetTimeout && config.timeout && currentState.lastRequestTime) {
-                            const lastRequestDuration = Date.now() - currentState.lastRequestTime
+                        if (
+                            !shouldResetTimeout &&
+                            config.timeout &&
+                            currentState.lastRequestTime
+                        ) {
+                            const lastRequestDuration =
+                                Date.now() - currentState.lastRequestTime
                             // Minimum 1ms timeout (passing 0 or less to XHR means no timeout)
-                            config.timeout = Math.max(config.timeout - lastRequestDuration - delay, 1)
+                            config.timeout = Math.max(
+                                config.timeout - lastRequestDuration - delay,
+                                1
+                            )
                         }
                         // 初始化请求数据
                         config.transformRequest = [(data: any) => data]
 
-                        return new Promise(resolve => setTimeout(() => resolve(axios(config)), delay))
+                        return new Promise(resolve =>
+                            setTimeout(() => resolve(axios(config)), delay)
+                        )
                     }
                     onResponseError && onResponseError(err)
                     onError && onError(err)
@@ -236,10 +294,18 @@ class AxiosExtend {
      * 创建请求
      */
     public create(options: AxiosExtendRequestOptions): Promise<any> {
-        const { unique = this.unique, orderly = this.orderly, url = '' } = options
+        const {
+            unique = this.unique,
+            orderly = this.orderly,
+            url = ''
+        } = options
         const promiseKey = getRandomStr(6) + '_' + Date.now()
         const source: CancelTokenSource = axios.CancelToken.source()
-        options.requestOptions = extend(true, {}, options) as AxiosExtendRequestOptions
+        options.requestOptions = extend(
+            true,
+            {},
+            options
+        ) as AxiosExtendRequestOptions
         options.cancelToken = source.token
         const promise = new Promise(async (resolve, reject) => {
             // 接口必须有序返回 或 需要取消url相同请求
@@ -248,7 +314,10 @@ class AxiosExtend {
                 while (len > 0) {
                     len--
                     if (this.waiting[len].url === url) {
-                        if (unique) this.waiting.splice(len, 1)[0].source.cancel('request canceled')
+                        if (unique)
+                            this.waiting
+                                .splice(len, 1)[0]
+                                .source.cancel('request canceled')
                         else {
                             try {
                                 await this.waiting[len]
@@ -262,7 +331,10 @@ class AxiosExtend {
                 }
             }
             // 有最大连接数限制，超出了最多可同时请求的数量限制，至少等待执行一条任务
-            if (this.maxConnections > 0 && this.waiting.length >= this.maxConnections) {
+            if (
+                this.maxConnections > 0 &&
+                this.waiting.length >= this.maxConnections
+            ) {
                 try {
                     await (this.waiting[0] as AxiosExtendObject).promise
                     // await (this.waiting.shift() as AxiosExtendObject).promise
@@ -284,7 +356,9 @@ class AxiosExtend {
                     else reject(err)
                 })
                 .finally(() => {
-                    let index = this.waiting.findIndex((el: any) => el.promiseKey === promiseKey)
+                    let index = this.waiting.findIndex(
+                        (el: any) => el.promiseKey === promiseKey
+                    )
                     index > -1 && this.waiting.splice(index, 1)
                 })
         })

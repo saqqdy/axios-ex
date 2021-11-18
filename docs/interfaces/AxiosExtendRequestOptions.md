@@ -1,4 +1,4 @@
-[index.md - v2.2.3](../README.md) / [Exports](../modules.md) / AxiosExtendRequestOptions
+[index.md - v2.2.4](../README.md) / [Exports](../modules.md) / AxiosExtendRequestOptions
 
 # Interface: AxiosExtendRequestOptions
 
@@ -23,6 +23,7 @@
 -   [headers](AxiosExtendRequestOptions.md#headers)
 -   [httpAgent](AxiosExtendRequestOptions.md#httpagent)
 -   [httpsAgent](AxiosExtendRequestOptions.md#httpsagent)
+-   [insecureHTTPParser](AxiosExtendRequestOptions.md#insecurehttpparser)
 -   [maxBodyLength](AxiosExtendRequestOptions.md#maxbodylength)
 -   [maxContentLength](AxiosExtendRequestOptions.md#maxcontentlength)
 -   [maxRedirects](AxiosExtendRequestOptions.md#maxredirects)
@@ -32,6 +33,7 @@
 -   [proxy](AxiosExtendRequestOptions.md#proxy)
 -   [requestOptions](AxiosExtendRequestOptions.md#requestoptions)
 -   [responseType](AxiosExtendRequestOptions.md#responsetype)
+-   [signal](AxiosExtendRequestOptions.md#signal)
 -   [socketPath](AxiosExtendRequestOptions.md#socketpath)
 -   [timeout](AxiosExtendRequestOptions.md#timeout)
 -   [timeoutErrorMessage](AxiosExtendRequestOptions.md#timeouterrormessage)
@@ -64,7 +66,7 @@ AxiosRequestConfig.adapter
 
 #### Defined in
 
-node_modules/axios/index.d.ts:63
+node_modules/axios/index.d.ts:75
 
 ---
 
@@ -78,7 +80,7 @@ AxiosRequestConfig.auth
 
 #### Defined in
 
-node_modules/axios/index.d.ts:64
+node_modules/axios/index.d.ts:76
 
 ---
 
@@ -88,7 +90,7 @@ node_modules/axios/index.d.ts:64
 
 #### Defined in
 
-[src/index.ts:24](https://github.com/saqqdy/axios-ex/blob/72d4d86/src/index.ts#L24)
+[src/index.ts:31](https://github.com/saqqdy/axios-ex/blob/e5622c7/src/index.ts#L31)
 
 ---
 
@@ -102,7 +104,7 @@ AxiosRequestConfig.baseURL
 
 #### Defined in
 
-node_modules/axios/index.d.ts:53
+node_modules/axios/index.d.ts:65
 
 ---
 
@@ -116,7 +118,7 @@ AxiosRequestConfig.cancelToken
 
 #### Defined in
 
-[src/index.ts:28](https://github.com/saqqdy/axios-ex/blob/72d4d86/src/index.ts#L28)
+[src/index.ts:35](https://github.com/saqqdy/axios-ex/blob/e5622c7/src/index.ts#L35)
 
 ---
 
@@ -130,7 +132,7 @@ AxiosRequestConfig.data
 
 #### Defined in
 
-node_modules/axios/index.d.ts:59
+node_modules/axios/index.d.ts:71
 
 ---
 
@@ -144,7 +146,7 @@ AxiosRequestConfig.decompress
 
 #### Defined in
 
-node_modules/axios/index.d.ts:79
+node_modules/axios/index.d.ts:91
 
 ---
 
@@ -154,13 +156,13 @@ node_modules/axios/index.d.ts:79
 
 #### Defined in
 
-[src/index.ts:30](https://github.com/saqqdy/axios-ex/blob/72d4d86/src/index.ts#L30)
+[src/index.ts:37](https://github.com/saqqdy/axios-ex/blob/e5622c7/src/index.ts#L37)
 
 ---
 
 ### headers
 
-• `Optional` **headers**: `any`
+• `Optional` **headers**: `AxiosRequestHeaders`
 
 #### Inherited from
 
@@ -168,7 +170,7 @@ AxiosRequestConfig.headers
 
 #### Defined in
 
-node_modules/axios/index.d.ts:56
+node_modules/axios/index.d.ts:68
 
 ---
 
@@ -182,7 +184,7 @@ AxiosRequestConfig.httpAgent
 
 #### Defined in
 
-node_modules/axios/index.d.ts:75
+node_modules/axios/index.d.ts:87
 
 ---
 
@@ -196,7 +198,21 @@ AxiosRequestConfig.httpsAgent
 
 #### Defined in
 
-node_modules/axios/index.d.ts:76
+node_modules/axios/index.d.ts:88
+
+---
+
+### insecureHTTPParser
+
+• `Optional` **insecureHTTPParser**: `boolean`
+
+#### Inherited from
+
+AxiosRequestConfig.insecureHTTPParser
+
+#### Defined in
+
+node_modules/axios/index.d.ts:94
 
 ---
 
@@ -210,7 +226,7 @@ AxiosRequestConfig.maxBodyLength
 
 #### Defined in
 
-node_modules/axios/index.d.ts:72
+node_modules/axios/index.d.ts:84
 
 ---
 
@@ -224,7 +240,7 @@ AxiosRequestConfig.maxContentLength
 
 #### Defined in
 
-node_modules/axios/index.d.ts:70
+node_modules/axios/index.d.ts:82
 
 ---
 
@@ -238,7 +254,7 @@ AxiosRequestConfig.maxRedirects
 
 #### Defined in
 
-node_modules/axios/index.d.ts:73
+node_modules/axios/index.d.ts:85
 
 ---
 
@@ -252,7 +268,7 @@ AxiosRequestConfig.method
 
 #### Defined in
 
-node_modules/axios/index.d.ts:52
+node_modules/axios/index.d.ts:64
 
 ---
 
@@ -262,7 +278,7 @@ node_modules/axios/index.d.ts:52
 
 #### Defined in
 
-[src/index.ts:26](https://github.com/saqqdy/axios-ex/blob/72d4d86/src/index.ts#L26)
+[src/index.ts:33](https://github.com/saqqdy/axios-ex/blob/e5622c7/src/index.ts#L33)
 
 ---
 
@@ -276,7 +292,7 @@ AxiosRequestConfig.params
 
 #### Defined in
 
-node_modules/axios/index.d.ts:57
+node_modules/axios/index.d.ts:69
 
 ---
 
@@ -290,7 +306,7 @@ AxiosRequestConfig.proxy
 
 #### Defined in
 
-node_modules/axios/index.d.ts:77
+node_modules/axios/index.d.ts:89
 
 ---
 
@@ -300,7 +316,7 @@ node_modules/axios/index.d.ts:77
 
 #### Defined in
 
-[src/index.ts:27](https://github.com/saqqdy/axios-ex/blob/72d4d86/src/index.ts#L27)
+[src/index.ts:34](https://github.com/saqqdy/axios-ex/blob/e5622c7/src/index.ts#L34)
 
 ---
 
@@ -314,7 +330,21 @@ AxiosRequestConfig.responseType
 
 #### Defined in
 
-node_modules/axios/index.d.ts:65
+node_modules/axios/index.d.ts:77
+
+---
+
+### signal
+
+• `Optional` **signal**: `AbortSignal`
+
+#### Inherited from
+
+AxiosRequestConfig.signal
+
+#### Defined in
+
+node_modules/axios/index.d.ts:93
 
 ---
 
@@ -328,7 +358,7 @@ AxiosRequestConfig.socketPath
 
 #### Defined in
 
-node_modules/axios/index.d.ts:74
+node_modules/axios/index.d.ts:86
 
 ---
 
@@ -342,7 +372,7 @@ AxiosRequestConfig.timeout
 
 #### Defined in
 
-node_modules/axios/index.d.ts:60
+node_modules/axios/index.d.ts:72
 
 ---
 
@@ -356,13 +386,13 @@ AxiosRequestConfig.timeoutErrorMessage
 
 #### Defined in
 
-node_modules/axios/index.d.ts:61
+node_modules/axios/index.d.ts:73
 
 ---
 
 ### transformRequest
 
-• `Optional` **transformRequest**: `AxiosTransformer` \| `AxiosTransformer`[]
+• `Optional` **transformRequest**: `AxiosRequestTransformer` \| `AxiosRequestTransformer`[]
 
 #### Inherited from
 
@@ -370,13 +400,13 @@ AxiosRequestConfig.transformRequest
 
 #### Defined in
 
-node_modules/axios/index.d.ts:54
+node_modules/axios/index.d.ts:66
 
 ---
 
 ### transformResponse
 
-• `Optional` **transformResponse**: `AxiosTransformer` \| `AxiosTransformer`[]
+• `Optional` **transformResponse**: `AxiosResponseTransformer` \| `AxiosResponseTransformer`[]
 
 #### Inherited from
 
@@ -384,7 +414,7 @@ AxiosRequestConfig.transformResponse
 
 #### Defined in
 
-node_modules/axios/index.d.ts:55
+node_modules/axios/index.d.ts:67
 
 ---
 
@@ -398,7 +428,7 @@ AxiosRequestConfig.transitional
 
 #### Defined in
 
-node_modules/axios/index.d.ts:80
+node_modules/axios/index.d.ts:92
 
 ---
 
@@ -408,7 +438,7 @@ node_modules/axios/index.d.ts:80
 
 #### Defined in
 
-[src/index.ts:29](https://github.com/saqqdy/axios-ex/blob/72d4d86/src/index.ts#L29)
+[src/index.ts:36](https://github.com/saqqdy/axios-ex/blob/e5622c7/src/index.ts#L36)
 
 ---
 
@@ -418,7 +448,7 @@ node_modules/axios/index.d.ts:80
 
 #### Defined in
 
-[src/index.ts:25](https://github.com/saqqdy/axios-ex/blob/72d4d86/src/index.ts#L25)
+[src/index.ts:32](https://github.com/saqqdy/axios-ex/blob/e5622c7/src/index.ts#L32)
 
 ---
 
@@ -432,7 +462,7 @@ AxiosRequestConfig.url
 
 #### Defined in
 
-node_modules/axios/index.d.ts:51
+node_modules/axios/index.d.ts:63
 
 ---
 
@@ -446,7 +476,7 @@ AxiosRequestConfig.validateStatus
 
 #### Defined in
 
-node_modules/axios/index.d.ts:71
+node_modules/axios/index.d.ts:83
 
 ---
 
@@ -460,7 +490,7 @@ AxiosRequestConfig.withCredentials
 
 #### Defined in
 
-node_modules/axios/index.d.ts:62
+node_modules/axios/index.d.ts:74
 
 ---
 
@@ -474,7 +504,7 @@ AxiosRequestConfig.xsrfCookieName
 
 #### Defined in
 
-node_modules/axios/index.d.ts:66
+node_modules/axios/index.d.ts:78
 
 ---
 
@@ -488,7 +518,7 @@ AxiosRequestConfig.xsrfHeaderName
 
 #### Defined in
 
-node_modules/axios/index.d.ts:67
+node_modules/axios/index.d.ts:79
 
 ## Methods
 
@@ -512,7 +542,7 @@ AxiosRequestConfig.onDownloadProgress
 
 #### Defined in
 
-node_modules/axios/index.d.ts:69
+node_modules/axios/index.d.ts:81
 
 ---
 
@@ -536,7 +566,7 @@ AxiosRequestConfig.onUploadProgress
 
 #### Defined in
 
-node_modules/axios/index.d.ts:68
+node_modules/axios/index.d.ts:80
 
 ---
 
@@ -560,4 +590,4 @@ AxiosRequestConfig.paramsSerializer
 
 #### Defined in
 
-node_modules/axios/index.d.ts:58
+node_modules/axios/index.d.ts:70
