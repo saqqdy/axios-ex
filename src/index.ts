@@ -1,11 +1,12 @@
-import axios, {
-    AxiosRequestConfig,
-    CancelTokenSource,
-    CancelToken,
+import type {
+    AxiosError,
     AxiosInstance,
+    AxiosRequestConfig,
     AxiosResponse,
-    AxiosError
+    CancelToken,
+    CancelTokenSource
 } from 'axios'
+import axios from 'axios'
 import isRetryAllowed from 'is-retry-allowed'
 import extend from 'js-cool/lib/extend'
 import getRandomStr from 'js-cool/lib/getRandomStr'
@@ -134,7 +135,7 @@ export function isSafeRequestError(error: any): boolean {
     if (!error.config) return false
     return (
         isRetryableError(error) &&
-        SAFE_HTTP_METHODS.indexOf(error.config.method) !== -1
+        SAFE_HTTP_METHODS.includes(error.config.method)
     )
 }
 /**
@@ -146,7 +147,7 @@ export function isIdempotentRequestError(error: any): boolean {
     if (!error.config) return false
     return (
         isRetryableError(error) &&
-        IDEMPOTENT_HTTP_METHODS.indexOf(error.config.method) !== -1
+        IDEMPOTENT_HTTP_METHODS.includes(error.config.method)
     )
 }
 /**
@@ -218,6 +219,7 @@ class AxiosExtend {
         this.init(defaultOptions)
         return this
     }
+
     /**
      * 初始化
      */
@@ -303,6 +305,7 @@ class AxiosExtend {
                 }
             )
     }
+
     /**
      * 创建请求
      */
@@ -369,7 +372,7 @@ class AxiosExtend {
                     else reject(err)
                 })
                 .finally(() => {
-                    let index = this.waiting.findIndex(
+                    const index = this.waiting.findIndex(
                         (el: any) => el.promiseKey === promiseKey
                     )
                     index > -1 && this.waiting.splice(index, 1)
