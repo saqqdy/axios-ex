@@ -149,6 +149,18 @@ export function isRetryableError(error: AxiosError): boolean {
     return error.code !== 'ECONNABORTED' && (!error.response || (error.response.status >= 500 && error.response.status <= 599))
 }
 
+// export interface Instance {
+//     waiting: Array<AxiosExtendObject> // 请求队列
+//     maxConnections: number // 最大连接数，默认：0=不限制
+//     orderly: boolean // 是否有序返回，默认：true
+//     unique: boolean // 是否取消前面的相似请求，默认：false
+//     retries: number // 重试次数，默认：0=不重试
+//     // onCancel // 请求取消时的回调
+//     // constructor(config: AxiosExtendConfig): AxiosExtend
+//     init(defaultOptions: AxiosExtendConfig): void
+//     create(options: AxiosExtendRequestOptions): Promise<any>
+// }
+
 /**
  * axios封装
  *
@@ -169,6 +181,7 @@ class AxiosExtend {
         this.onCancel = onCancel ?? null
         // 初始化方法
         this.init(defaultOptions)
+        return this
     }
     /**
      * 初始化
