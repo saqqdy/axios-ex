@@ -1,13 +1,13 @@
 {
 	"id": 0,
-	"name": "index.md - v2.2.3",
+	"name": "index.md - v2.2.4",
 	"kind": 1,
 	"kindString": "Project",
 	"flags": {},
 	"originalName": "index.md",
 	"children": [
 		{
-			"id": 109,
+			"id": 111,
 			"name": "default",
 			"kind": 128,
 			"kindString": "Class",
@@ -23,7 +23,7 @@
 			},
 			"children": [
 				{
-					"id": 110,
+					"id": 112,
 					"name": "constructor",
 					"kind": 512,
 					"kindString": "Constructor",
@@ -31,41 +31,41 @@
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 164,
+							"line": 192,
 							"character": 4
 						}
 					],
 					"signatures": [
 						{
-							"id": 111,
+							"id": 113,
 							"name": "new default",
 							"kind": 16384,
 							"kindString": "Constructor signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 112,
+									"id": 114,
 									"name": "__namedParameters",
 									"kind": 32768,
 									"kindString": "Parameter",
 									"flags": {},
 									"type": {
 										"type": "reference",
-										"id": 74,
+										"id": 76,
 										"name": "AxiosExtendConfig"
 									}
 								}
 							],
 							"type": {
 								"type": "reference",
-								"id": 109,
+								"id": 111,
 								"name": "AxiosExtend"
 							}
 						}
 					]
 				},
 				{
-					"id": 114,
+					"id": 116,
 					"name": "maxConnections",
 					"kind": 1024,
 					"kindString": "Property",
@@ -73,7 +73,7 @@
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 159,
+							"line": 187,
 							"character": 4
 						}
 					],
@@ -83,7 +83,7 @@
 					}
 				},
 				{
-					"id": 118,
+					"id": 120,
 					"name": "onCancel",
 					"kind": 1024,
 					"kindString": "Property",
@@ -91,7 +91,7 @@
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 163,
+							"line": 191,
 							"character": 4
 						}
 					],
@@ -105,21 +105,21 @@
 							{
 								"type": "reflection",
 								"declaration": {
-									"id": 119,
+									"id": 121,
 									"name": "__type",
 									"kind": 65536,
 									"kindString": "Type literal",
 									"flags": {},
 									"signatures": [
 										{
-											"id": 120,
+											"id": 122,
 											"name": "__type",
 											"kind": 4096,
 											"kindString": "Call signature",
 											"flags": {},
 											"parameters": [
 												{
-													"id": 121,
+													"id": 123,
 													"name": "error",
 													"kind": 32768,
 													"kindString": "Parameter",
@@ -142,7 +142,7 @@
 					}
 				},
 				{
-					"id": 115,
+					"id": 117,
 					"name": "orderly",
 					"kind": 1024,
 					"kindString": "Property",
@@ -150,7 +150,7 @@
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 160,
+							"line": 188,
 							"character": 4
 						}
 					],
@@ -160,7 +160,7 @@
 					}
 				},
 				{
-					"id": 117,
+					"id": 119,
 					"name": "retries",
 					"kind": 1024,
 					"kindString": "Property",
@@ -168,7 +168,7 @@
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 162,
+							"line": 190,
 							"character": 4
 						}
 					],
@@ -178,7 +178,7 @@
 					}
 				},
 				{
-					"id": 116,
+					"id": 118,
 					"name": "unique",
 					"kind": 1024,
 					"kindString": "Property",
@@ -186,7 +186,7 @@
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 161,
+							"line": 189,
 							"character": 4
 						}
 					],
@@ -196,7 +196,7 @@
 					}
 				},
 				{
-					"id": 113,
+					"id": 115,
 					"name": "waiting",
 					"kind": 1024,
 					"kindString": "Property",
@@ -204,7 +204,7 @@
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 158,
+							"line": 186,
 							"character": 4
 						}
 					],
@@ -219,7 +219,7 @@
 					"defaultValue": "[]"
 				},
 				{
-					"id": 125,
+					"id": 127,
 					"name": "create",
 					"kind": 2048,
 					"kindString": "Method",
@@ -229,13 +229,13 @@
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 238,
+							"line": 296,
 							"character": 11
 						}
 					],
 					"signatures": [
 						{
-							"id": 126,
+							"id": 128,
 							"name": "create",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -245,7 +245,7 @@
 							},
 							"parameters": [
 								{
-									"id": 127,
+									"id": 129,
 									"name": "options",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -271,7 +271,7 @@
 					]
 				},
 				{
-					"id": 122,
+					"id": 124,
 					"name": "init",
 					"kind": 2048,
 					"kindString": "Method",
@@ -281,13 +281,13 @@
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 176,
+							"line": 211,
 							"character": 11
 						}
 					],
 					"signatures": [
 						{
-							"id": 123,
+							"id": 125,
 							"name": "init",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -297,14 +297,14 @@
 							},
 							"parameters": [
 								{
-									"id": 124,
+									"id": 126,
 									"name": "defaultOptions",
 									"kind": 32768,
 									"kindString": "Parameter",
 									"flags": {},
 									"type": {
 										"type": "reference",
-										"id": 74,
+										"id": 76,
 										"name": "AxiosExtendConfig"
 									}
 								}
@@ -322,47 +322,47 @@
 					"title": "Constructors",
 					"kind": 512,
 					"children": [
-						110
+						112
 					]
 				},
 				{
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						114,
-						118,
-						115,
-						117,
 						116,
-						113
+						120,
+						117,
+						119,
+						118,
+						115
 					]
 				},
 				{
 					"title": "Methods",
 					"kind": 2048,
 					"children": [
-						125,
-						122
+						127,
+						124
 					]
 				}
 			],
 			"sources": [
 				{
 					"fileName": "src/index.ts",
-					"line": 157,
+					"line": 185,
 					"character": 6
 				}
 			]
 		},
 		{
-			"id": 74,
+			"id": 76,
 			"name": "AxiosExtendConfig",
 			"kind": 256,
 			"kindString": "Interface",
 			"flags": {},
 			"children": [
 				{
-					"id": 75,
+					"id": 77,
 					"name": "maxConnections",
 					"kind": 1024,
 					"kindString": "Property",
@@ -372,7 +372,7 @@
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 34,
+							"line": 41,
 							"character": 4
 						}
 					],
@@ -382,7 +382,7 @@
 					}
 				},
 				{
-					"id": 78,
+					"id": 80,
 					"name": "orderly",
 					"kind": 1024,
 					"kindString": "Property",
@@ -392,7 +392,7 @@
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 37,
+							"line": 44,
 							"character": 4
 						}
 					],
@@ -402,7 +402,7 @@
 					}
 				},
 				{
-					"id": 77,
+					"id": 79,
 					"name": "retries",
 					"kind": 1024,
 					"kindString": "Property",
@@ -412,7 +412,7 @@
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 36,
+							"line": 43,
 							"character": 4
 						}
 					],
@@ -422,7 +422,7 @@
 					}
 				},
 				{
-					"id": 79,
+					"id": 81,
 					"name": "shouldResetTimeout",
 					"kind": 1024,
 					"kindString": "Property",
@@ -432,7 +432,7 @@
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 38,
+							"line": 45,
 							"character": 4
 						}
 					],
@@ -442,7 +442,7 @@
 					}
 				},
 				{
-					"id": 76,
+					"id": 78,
 					"name": "unique",
 					"kind": 1024,
 					"kindString": "Property",
@@ -452,7 +452,7 @@
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 35,
+							"line": 42,
 							"character": 4
 						}
 					],
@@ -462,7 +462,7 @@
 					}
 				},
 				{
-					"id": 106,
+					"id": 108,
 					"name": "onCancel",
 					"kind": 2048,
 					"kindString": "Method",
@@ -471,14 +471,14 @@
 					},
 					"signatures": [
 						{
-							"id": 107,
+							"id": 109,
 							"name": "onCancel",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 108,
+									"id": 110,
 									"name": "error",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -497,7 +497,7 @@
 					]
 				},
 				{
-					"id": 103,
+					"id": 105,
 					"name": "onError",
 					"kind": 2048,
 					"kindString": "Method",
@@ -506,14 +506,14 @@
 					},
 					"signatures": [
 						{
-							"id": 104,
+							"id": 106,
 							"name": "onError",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 105,
+									"id": 107,
 									"name": "error",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -532,7 +532,7 @@
 					]
 				},
 				{
-					"id": 89,
+					"id": 91,
 					"name": "onRequest",
 					"kind": 2048,
 					"kindString": "Method",
@@ -541,112 +541,15 @@
 					},
 					"signatures": [
 						{
-							"id": 90,
+							"id": 92,
 							"name": "onRequest",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 91,
+									"id": 93,
 									"name": "config",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"type": {
-										"type": "reference",
-										"name": "AxiosRequestConfig"
-									}
-								},
-								{
-									"id": 92,
-									"name": "requestOptions",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"type": {
-										"type": "reference",
-										"id": 28,
-										"name": "AxiosExtendRequestOptions"
-									}
-								}
-							],
-							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "reference",
-										"name": "AxiosRequestConfig"
-									},
-									{
-										"type": "reference",
-										"typeArguments": [
-											{
-												"type": "reference",
-												"name": "AxiosRequestConfig"
-											}
-										],
-										"name": "Promise"
-									}
-								]
-							}
-						}
-					]
-				},
-				{
-					"id": 93,
-					"name": "onRequestError",
-					"kind": 2048,
-					"kindString": "Method",
-					"flags": {
-						"isOptional": true
-					},
-					"signatures": [
-						{
-							"id": 94,
-							"name": "onRequestError",
-							"kind": 4096,
-							"kindString": "Call signature",
-							"flags": {},
-							"parameters": [
-								{
-									"id": 95,
-									"name": "error",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"type": {
-										"type": "intrinsic",
-										"name": "any"
-									}
-								}
-							],
-							"type": {
-								"type": "intrinsic",
-								"name": "void"
-							}
-						}
-					]
-				},
-				{
-					"id": 96,
-					"name": "onResponse",
-					"kind": 2048,
-					"kindString": "Method",
-					"flags": {
-						"isOptional": true
-					},
-					"signatures": [
-						{
-							"id": 97,
-							"name": "onResponse",
-							"kind": 4096,
-							"kindString": "Call signature",
-							"flags": {},
-							"parameters": [
-								{
-									"id": 98,
-									"name": "res",
 									"kind": 32768,
 									"kindString": "Parameter",
 									"flags": {},
@@ -658,11 +561,11 @@
 												"name": "any"
 											}
 										],
-										"name": "AxiosResponse"
+										"name": "AxiosRequestConfig"
 									}
 								},
 								{
-									"id": 99,
+									"id": 94,
 									"name": "requestOptions",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -680,6 +583,129 @@
 									{
 										"type": "reference",
 										"typeArguments": [
+											{
+												"type": "intrinsic",
+												"name": "any"
+											}
+										],
+										"name": "AxiosRequestConfig"
+									},
+									{
+										"type": "reference",
+										"typeArguments": [
+											{
+												"type": "reference",
+												"typeArguments": [
+													{
+														"type": "intrinsic",
+														"name": "any"
+													}
+												],
+												"name": "AxiosRequestConfig"
+											}
+										],
+										"name": "Promise"
+									}
+								]
+							}
+						}
+					]
+				},
+				{
+					"id": 95,
+					"name": "onRequestError",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isOptional": true
+					},
+					"signatures": [
+						{
+							"id": 96,
+							"name": "onRequestError",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 97,
+									"name": "error",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "any"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 98,
+					"name": "onResponse",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isOptional": true
+					},
+					"signatures": [
+						{
+							"id": 99,
+							"name": "onResponse",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 100,
+									"name": "res",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"typeArguments": [
+											{
+												"type": "intrinsic",
+												"name": "any"
+											},
+											{
+												"type": "intrinsic",
+												"name": "any"
+											}
+										],
+										"name": "AxiosResponse"
+									}
+								},
+								{
+									"id": 101,
+									"name": "requestOptions",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"id": 28,
+										"name": "AxiosExtendRequestOptions"
+									}
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "reference",
+										"typeArguments": [
+											{
+												"type": "intrinsic",
+												"name": "any"
+											},
 											{
 												"type": "intrinsic",
 												"name": "any"
@@ -696,6 +722,10 @@
 													{
 														"type": "intrinsic",
 														"name": "any"
+													},
+													{
+														"type": "intrinsic",
+														"name": "any"
 													}
 												],
 												"name": "AxiosResponse"
@@ -709,7 +739,7 @@
 					]
 				},
 				{
-					"id": 100,
+					"id": 102,
 					"name": "onResponseError",
 					"kind": 2048,
 					"kindString": "Method",
@@ -718,14 +748,14 @@
 					},
 					"signatures": [
 						{
-							"id": 101,
+							"id": 103,
 							"name": "onResponseError",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 102,
+									"id": 104,
 									"name": "error",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -744,7 +774,7 @@
 					]
 				},
 				{
-					"id": 80,
+					"id": 82,
 					"name": "retryCondition",
 					"kind": 2048,
 					"kindString": "Method",
@@ -753,7 +783,7 @@
 					},
 					"signatures": [
 						{
-							"id": 81,
+							"id": 83,
 							"name": "retryCondition",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -766,7 +796,7 @@
 					]
 				},
 				{
-					"id": 82,
+					"id": 84,
 					"name": "retryDelay",
 					"kind": 2048,
 					"kindString": "Method",
@@ -775,14 +805,14 @@
 					},
 					"signatures": [
 						{
-							"id": 83,
+							"id": 85,
 							"name": "retryDelay",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 84,
+									"id": 86,
 									"name": "retryNumber",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -793,7 +823,7 @@
 									}
 								},
 								{
-									"id": 85,
+									"id": 87,
 									"name": "error",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -812,7 +842,7 @@
 					]
 				},
 				{
-					"id": 86,
+					"id": 88,
 					"name": "setHeaders",
 					"kind": 2048,
 					"kindString": "Method",
@@ -821,14 +851,14 @@
 					},
 					"signatures": [
 						{
-							"id": 87,
+							"id": 89,
 							"name": "setHeaders",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 88,
+									"id": 90,
 									"name": "instance",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -852,33 +882,33 @@
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						75,
-						78,
 						77,
+						80,
 						79,
-						76
+						81,
+						78
 					]
 				},
 				{
 					"title": "Methods",
 					"kind": 2048,
 					"children": [
-						106,
-						103,
-						89,
-						93,
-						96,
-						100,
-						80,
+						108,
+						105,
+						91,
+						95,
+						98,
+						102,
 						82,
-						86
+						84,
+						88
 					]
 				}
 			],
 			"sources": [
 				{
 					"fileName": "src/index.ts",
-					"line": 33,
+					"line": 40,
 					"character": 17
 				}
 			]
@@ -899,7 +929,7 @@
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 19,
+							"line": 26,
 							"character": 4
 						}
 					],
@@ -917,7 +947,7 @@
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 20,
+							"line": 27,
 							"character": 4
 						}
 					],
@@ -940,7 +970,7 @@
 			"sources": [
 				{
 					"fileName": "src/index.ts",
-					"line": 18,
+					"line": 25,
 					"character": 17
 				}
 			]
@@ -961,7 +991,7 @@
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 14,
+							"line": 21,
 							"character": 4
 						}
 					],
@@ -985,7 +1015,7 @@
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 12,
+							"line": 19,
 							"character": 4
 						}
 					],
@@ -1003,7 +1033,7 @@
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 15,
+							"line": 22,
 							"character": 4
 						}
 					],
@@ -1021,7 +1051,7 @@
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 13,
+							"line": 20,
 							"character": 4
 						}
 					],
@@ -1046,7 +1076,7 @@
 			"sources": [
 				{
 					"fileName": "src/index.ts",
-					"line": 11,
+					"line": 18,
 					"character": 17
 				}
 			]
@@ -1070,7 +1100,7 @@
 					"sources": [
 						{
 							"fileName": "node_modules/axios/index.d.ts",
-							"line": 63,
+							"line": 75,
 							"character": 2
 						}
 					],
@@ -1095,7 +1125,7 @@
 					"sources": [
 						{
 							"fileName": "node_modules/axios/index.d.ts",
-							"line": 64,
+							"line": 76,
 							"character": 2
 						}
 					],
@@ -1119,7 +1149,7 @@
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 24,
+							"line": 31,
 							"character": 4
 						}
 					],
@@ -1140,7 +1170,7 @@
 					"sources": [
 						{
 							"fileName": "node_modules/axios/index.d.ts",
-							"line": 53,
+							"line": 65,
 							"character": 2
 						}
 					],
@@ -1164,7 +1194,7 @@
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 28,
+							"line": 35,
 							"character": 4
 						}
 					],
@@ -1189,7 +1219,7 @@
 					"sources": [
 						{
 							"fileName": "node_modules/axios/index.d.ts",
-							"line": 59,
+							"line": 71,
 							"character": 2
 						}
 					],
@@ -1214,7 +1244,7 @@
 					"sources": [
 						{
 							"fileName": "node_modules/axios/index.d.ts",
-							"line": 79,
+							"line": 91,
 							"character": 2
 						}
 					],
@@ -1238,7 +1268,7 @@
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 30,
+							"line": 37,
 							"character": 4
 						}
 					],
@@ -1259,13 +1289,13 @@
 					"sources": [
 						{
 							"fileName": "node_modules/axios/index.d.ts",
-							"line": 56,
+							"line": 68,
 							"character": 2
 						}
 					],
 					"type": {
-						"type": "intrinsic",
-						"name": "any"
+						"type": "reference",
+						"name": "AxiosRequestHeaders"
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -1284,7 +1314,7 @@
 					"sources": [
 						{
 							"fileName": "node_modules/axios/index.d.ts",
-							"line": 75,
+							"line": 87,
 							"character": 2
 						}
 					],
@@ -1309,7 +1339,7 @@
 					"sources": [
 						{
 							"fileName": "node_modules/axios/index.d.ts",
-							"line": 76,
+							"line": 88,
 							"character": 2
 						}
 					],
@@ -1320,6 +1350,31 @@
 					"inheritedFrom": {
 						"type": "reference",
 						"name": "AxiosRequestConfig.httpsAgent"
+					}
+				},
+				{
+					"id": 75,
+					"name": "insecureHTTPParser",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/axios/index.d.ts",
+							"line": 94,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"name": "AxiosRequestConfig.insecureHTTPParser"
 					}
 				},
 				{
@@ -1334,7 +1389,7 @@
 					"sources": [
 						{
 							"fileName": "node_modules/axios/index.d.ts",
-							"line": 72,
+							"line": 84,
 							"character": 2
 						}
 					],
@@ -1359,7 +1414,7 @@
 					"sources": [
 						{
 							"fileName": "node_modules/axios/index.d.ts",
-							"line": 70,
+							"line": 82,
 							"character": 2
 						}
 					],
@@ -1384,7 +1439,7 @@
 					"sources": [
 						{
 							"fileName": "node_modules/axios/index.d.ts",
-							"line": 73,
+							"line": 85,
 							"character": 2
 						}
 					],
@@ -1409,7 +1464,7 @@
 					"sources": [
 						{
 							"fileName": "node_modules/axios/index.d.ts",
-							"line": 52,
+							"line": 64,
 							"character": 2
 						}
 					],
@@ -1433,7 +1488,7 @@
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 26,
+							"line": 33,
 							"character": 4
 						}
 					],
@@ -1454,7 +1509,7 @@
 					"sources": [
 						{
 							"fileName": "node_modules/axios/index.d.ts",
-							"line": 57,
+							"line": 69,
 							"character": 2
 						}
 					],
@@ -1479,7 +1534,7 @@
 					"sources": [
 						{
 							"fileName": "node_modules/axios/index.d.ts",
-							"line": 77,
+							"line": 89,
 							"character": 2
 						}
 					],
@@ -1512,7 +1567,7 @@
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 27,
+							"line": 34,
 							"character": 4
 						}
 					],
@@ -1534,7 +1589,7 @@
 					"sources": [
 						{
 							"fileName": "node_modules/axios/index.d.ts",
-							"line": 65,
+							"line": 77,
 							"character": 2
 						}
 					],
@@ -1545,6 +1600,31 @@
 					"inheritedFrom": {
 						"type": "reference",
 						"name": "AxiosRequestConfig.responseType"
+					}
+				},
+				{
+					"id": 74,
+					"name": "signal",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/axios/index.d.ts",
+							"line": 93,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "AbortSignal"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"name": "AxiosRequestConfig.signal"
 					}
 				},
 				{
@@ -1559,7 +1639,7 @@
 					"sources": [
 						{
 							"fileName": "node_modules/axios/index.d.ts",
-							"line": 74,
+							"line": 86,
 							"character": 2
 						}
 					],
@@ -1593,7 +1673,7 @@
 					"sources": [
 						{
 							"fileName": "node_modules/axios/index.d.ts",
-							"line": 60,
+							"line": 72,
 							"character": 2
 						}
 					],
@@ -1618,7 +1698,7 @@
 					"sources": [
 						{
 							"fileName": "node_modules/axios/index.d.ts",
-							"line": 61,
+							"line": 73,
 							"character": 2
 						}
 					],
@@ -1643,7 +1723,7 @@
 					"sources": [
 						{
 							"fileName": "node_modules/axios/index.d.ts",
-							"line": 54,
+							"line": 66,
 							"character": 2
 						}
 					],
@@ -1652,13 +1732,13 @@
 						"types": [
 							{
 								"type": "reference",
-								"name": "AxiosTransformer"
+								"name": "AxiosRequestTransformer"
 							},
 							{
 								"type": "array",
 								"elementType": {
 									"type": "reference",
-									"name": "AxiosTransformer"
+									"name": "AxiosRequestTransformer"
 								}
 							}
 						]
@@ -1680,7 +1760,7 @@
 					"sources": [
 						{
 							"fileName": "node_modules/axios/index.d.ts",
-							"line": 55,
+							"line": 67,
 							"character": 2
 						}
 					],
@@ -1689,13 +1769,13 @@
 						"types": [
 							{
 								"type": "reference",
-								"name": "AxiosTransformer"
+								"name": "AxiosResponseTransformer"
 							},
 							{
 								"type": "array",
 								"elementType": {
 									"type": "reference",
-									"name": "AxiosTransformer"
+									"name": "AxiosResponseTransformer"
 								}
 							}
 						]
@@ -1717,7 +1797,7 @@
 					"sources": [
 						{
 							"fileName": "node_modules/axios/index.d.ts",
-							"line": 80,
+							"line": 92,
 							"character": 2
 						}
 					],
@@ -1741,7 +1821,7 @@
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 29,
+							"line": 36,
 							"character": 4
 						}
 					],
@@ -1761,7 +1841,7 @@
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 25,
+							"line": 32,
 							"character": 4
 						}
 					],
@@ -1782,7 +1862,7 @@
 					"sources": [
 						{
 							"fileName": "node_modules/axios/index.d.ts",
-							"line": 51,
+							"line": 63,
 							"character": 2
 						}
 					],
@@ -1807,7 +1887,7 @@
 					"sources": [
 						{
 							"fileName": "node_modules/axios/index.d.ts",
-							"line": 71,
+							"line": 83,
 							"character": 2
 						}
 					],
@@ -1873,7 +1953,7 @@
 					"sources": [
 						{
 							"fileName": "node_modules/axios/index.d.ts",
-							"line": 62,
+							"line": 74,
 							"character": 2
 						}
 					],
@@ -1898,7 +1978,7 @@
 					"sources": [
 						{
 							"fileName": "node_modules/axios/index.d.ts",
-							"line": 66,
+							"line": 78,
 							"character": 2
 						}
 					],
@@ -1923,7 +2003,7 @@
 					"sources": [
 						{
 							"fileName": "node_modules/axios/index.d.ts",
-							"line": 67,
+							"line": 79,
 							"character": 2
 						}
 					],
@@ -1948,7 +2028,7 @@
 					"sources": [
 						{
 							"fileName": "node_modules/axios/index.d.ts",
-							"line": 69,
+							"line": 81,
 							"character": 2
 						}
 					],
@@ -2003,7 +2083,7 @@
 					"sources": [
 						{
 							"fileName": "node_modules/axios/index.d.ts",
-							"line": 68,
+							"line": 80,
 							"character": 2
 						}
 					],
@@ -2058,7 +2138,7 @@
 					"sources": [
 						{
 							"fileName": "node_modules/axios/index.d.ts",
-							"line": 58,
+							"line": 70,
 							"character": 2
 						}
 					],
@@ -2118,6 +2198,7 @@
 						41,
 						69,
 						70,
+						75,
 						66,
 						61,
 						67,
@@ -2127,6 +2208,7 @@
 						71,
 						31,
 						52,
+						74,
 						68,
 						47,
 						48,
@@ -2155,7 +2237,7 @@
 			"sources": [
 				{
 					"fileName": "src/index.ts",
-					"line": 23,
+					"line": 30,
 					"character": 17
 				}
 			],
@@ -2175,7 +2257,7 @@
 			"sources": [
 				{
 					"fileName": "src/index.ts",
-					"line": 6,
+					"line": 13,
 					"character": 13
 				}
 			],
@@ -2194,7 +2276,7 @@
 			"sources": [
 				{
 					"fileName": "src/index.ts",
-					"line": 139,
+					"line": 163,
 					"character": 16
 				}
 			],
@@ -2241,7 +2323,7 @@
 			"sources": [
 				{
 					"fileName": "src/index.ts",
-					"line": 123,
+					"line": 144,
 					"character": 16
 				}
 			],
@@ -2287,7 +2369,7 @@
 			"sources": [
 				{
 					"fileName": "src/index.ts",
-					"line": 102,
+					"line": 120,
 					"character": 16
 				}
 			],
@@ -2317,6 +2399,10 @@
 									{
 										"type": "intrinsic",
 										"name": "any"
+									},
+									{
+										"type": "intrinsic",
+										"name": "any"
 									}
 								],
 								"name": "AxiosError"
@@ -2339,7 +2425,7 @@
 			"sources": [
 				{
 					"fileName": "src/index.ts",
-					"line": 132,
+					"line": 156,
 					"character": 16
 				}
 			],
@@ -2369,6 +2455,10 @@
 									{
 										"type": "intrinsic",
 										"name": "any"
+									},
+									{
+										"type": "intrinsic",
+										"name": "any"
 									}
 								],
 								"name": "AxiosError"
@@ -2391,7 +2481,7 @@
 			"sources": [
 				{
 					"fileName": "src/index.ts",
-					"line": 148,
+					"line": 172,
 					"character": 16
 				}
 			],
@@ -2421,6 +2511,10 @@
 									{
 										"type": "intrinsic",
 										"name": "any"
+									},
+									{
+										"type": "intrinsic",
+										"name": "any"
 									}
 								],
 								"name": "AxiosError"
@@ -2443,7 +2537,7 @@
 			"sources": [
 				{
 					"fileName": "src/index.ts",
-					"line": 114,
+					"line": 132,
 					"character": 16
 				}
 			],
@@ -2486,14 +2580,14 @@
 			"title": "Classes",
 			"kind": 128,
 			"children": [
-				109
+				111
 			]
 		},
 		{
 			"title": "Interfaces",
 			"kind": 256,
 			"children": [
-				74,
+				76,
 				25,
 				20,
 				28

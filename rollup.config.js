@@ -49,7 +49,13 @@ export default [
                         target: 'es6'
                     },
                     include: ['src/**/*.ts'],
-                    exclude: ['node_modules', '__tests__', 'core-js', 'js-cool', 'axios']
+                    exclude: [
+                        'node_modules',
+                        '__tests__',
+                        'core-js',
+                        'js-cool',
+                        'axios'
+                    ]
                 },
                 abortOnError: false
             }),
@@ -63,7 +69,9 @@ export default [
             visualizer()
         ],
         external(id) {
-            return ['core-js', 'axios', 'js-cool', 'regenerator-runtime'].some(k => new RegExp('^' + k).test(id))
+            return ['core-js', 'axios', 'js-cool', 'regenerator-runtime'].some(
+                k => new RegExp('^' + k).test(id)
+            )
         }
     }
 ]

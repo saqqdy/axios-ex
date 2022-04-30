@@ -64,7 +64,8 @@ import axiosExtend from 'axios-ex'
  * @param {object} instance AxiosInstance
  */
 function setHeaders(instance) {
-    instance.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded'
+    instance.defaults.headers.post['Content-Type'] =
+        'application/x-www-form-urlencoded'
 }
 /**
  * 请求拦截器

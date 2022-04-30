@@ -1,4 +1,4 @@
-[index.md - v2.2.3](../README.md) / [Exports](../modules.md) / AxiosExtendObject
+[index.md - v2.2.4](../README.md) / [Exports](../modules.md) / AxiosExtendObject
 
 # Interface: AxiosExtendObject
 
@@ -19,7 +19,7 @@
 
 #### Defined in
 
-[src/index.ts:14](https://github.com/saqqdy/axios-ex/blob/72d4d86/src/index.ts#L14)
+[src/index.ts:21](https://github.com/saqqdy/axios-ex/blob/e5622c7/src/index.ts#L21)
 
 ---
 
@@ -29,7 +29,7 @@
 
 #### Defined in
 
-[src/index.ts:12](https://github.com/saqqdy/axios-ex/blob/72d4d86/src/index.ts#L12)
+[src/index.ts:19](https://github.com/saqqdy/axios-ex/blob/e5622c7/src/index.ts#L19)
 
 ---
 
@@ -39,7 +39,7 @@
 
 #### Defined in
 
-[src/index.ts:15](https://github.com/saqqdy/axios-ex/blob/72d4d86/src/index.ts#L15)
+[src/index.ts:22](https://github.com/saqqdy/axios-ex/blob/e5622c7/src/index.ts#L22)
 
 ---
 
@@ -49,4 +49,4 @@
 
 #### Defined in
 
-[src/index.ts:13](https://github.com/saqqdy/axios-ex/blob/72d4d86/src/index.ts#L13)
+[src/index.ts:20](https://github.com/saqqdy/axios-ex/blob/e5622c7/src/index.ts#L20)
