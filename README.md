@@ -8,7 +8,6 @@
 [![Codacy Badge][codacy-image]][codacy-url]
 [![build status][travis-image]][travis-url]
 [![Test coverage][codecov-image]][codecov-url]
-[![Known Vulnerabilities][snyk-image]][snyk-url]
 [![npm download][download-image]][download-url]
 [![gzip][gzip-image]][gzip-url]
 [![License][license-image]][license-url]
@@ -211,8 +210,6 @@ Please open an issue [here](https://github.com/saqqdy/axios-ex/issues).
 [travis-url]: https://travis-ci.com/saqqdy/axios-ex
 [codecov-image]: https://img.shields.io/codecov/c/github/saqqdy/axios-ex.svg?style=flat-square
 [codecov-url]: https://codecov.io/github/saqqdy/axios-ex?branch=master
-[snyk-image]: https://snyk.io/test/npm/axios-ex/badge.svg?style=flat-square
-[snyk-url]: https://snyk.io/test/npm/axios-ex
 [download-image]: https://img.shields.io/npm/dm/axios-ex.svg?style=flat-square
 [download-url]: https://npmjs.org/package/axios-ex
 [gzip-image]: http://img.badgesize.io/https://unpkg.com/axios-ex/lib/index.js?compression=gzip&label=gzip%20size:%20JS
