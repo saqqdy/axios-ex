@@ -37,7 +37,7 @@ $ yarn add axios-ex
 ```js
 // {app_root}/src/plugins/axios.js
 import { getCookie, setCookie } from 'js-cool'
-import axiosExtend from 'axios-ex'
+import AxiosExtend from 'axios-ex'
 
 /**
  * 设置请求头
@@ -65,7 +65,7 @@ function onRequest(config, options = {}) {
  * @param {object} err Error
  */
 function onRequestError(err) {
-    // handler request error
+    console.error(err)
 }
 /**
  * 响应拦截器
@@ -84,7 +84,7 @@ function onResponse(res, options = {}) {
  * @param {object} err Error
  */
 function onResponseError(err) {
-    // handler response error
+    console.error(err)
 }
 /**
  * 请求错误或响应错误都执行
@@ -92,7 +92,7 @@ function onResponseError(err) {
  * @param {object} err Error
  */
 function onError(err) {
-    // handler request & response error
+    console.error(err)
 }
 /**
  * 请求取消
@@ -104,7 +104,7 @@ function onCancel(err) {
 }
 
 // 实例化
-const axiosEx = new axiosExtend({
+const axiosEx = new AxiosExtend({
     maxConnections: 30, // 最大同时请求数，默认：0=不限制
     unique: true, // 是否取消前面的相似请求，默认：false
     retries: 0, // 重试次数，默认：0=不重试
@@ -133,7 +133,7 @@ export default options => {
 
     ```js
     // 实例化的时候配置
-    const axiosEx = new axiosExtend({
+    const axiosEx = new AxiosExtend({
         // ...
         retryDelay: retryCount => {
             return retryCount * 1000
@@ -145,9 +145,9 @@ export default options => {
 2. 或者使用`axios-ex`内置的方法，exponentialDelay 随机递增 0%-50%
 
     ```js
-    import axiosExtend, { exponentialDelay } from 'axios-ex'
+    import AxiosExtend, { exponentialDelay } from 'axios-ex'
     // 实例化的时候配置
-    const axiosEx = new axiosExtend({
+    const axiosEx = new AxiosExtend({
         // ...
         retryDelay: exponentialDelay
         // ...
@@ -159,7 +159,7 @@ export default options => {
 有时候我们需要在`onRequest`或`onResponse`里面使用`this`（vue 实例），可以这样写
 
 ```js
-import axiosExtend from 'axios-ex'
+import AxiosExtend from 'axios-ex'
 
 let axiosEx = null
 // 请求拦截器
@@ -180,10 +180,9 @@ function onResponse(res, options = {}) {
 export default options => {
     // 只需要初始化一次
     if (!axiosEx)
-        axiosEx = new axiosExtend({
+        axiosEx = new AxiosExtend({
             onRequest: onRequest.bind(this),
             onResponse: onResponse.bind(this)
-            //...
         })
 
     // 显示loading动画
