@@ -5,16 +5,19 @@ const ProgressBarPlugin = require('progress-bar-webpack-plugin')
 const TerserPlugin = require('terser-webpack-plugin')
 
 const config = require('./config')
-let plugins = [new ProgressBarPlugin()]
+const plugins = [new ProgressBarPlugin()]
 
 const baseConfig = {
     mode: 'production',
     target: 'web',
-    entry: './src/index.ts',
+    entry: {
+        index: ['./src/index.ts'],
+        'index.min': ['./src/index.ts']
+    },
     output: {
         // path: path.resolve(process.cwd(), './lib'),
         publicPath: '/',
-        filename: 'index.umd.js',
+        filename: '[name].js',
         chunkFilename: '[id].js',
         libraryTarget: 'umd',
         libraryExport: 'default',
@@ -38,7 +41,9 @@ const baseConfig = {
         minimize: true,
         minimizer: [
             new TerserPlugin({
+                test: /\.js(\?.*)?$/i,
                 parallel: true,
+                include: /min/,
                 extractComments: false
             }),
             // 注意位置，必须放在 TerserPlugin 后面，否则生成的注释描述会被 TerserPlugin 或其它压缩插件清掉
@@ -48,7 +53,7 @@ const baseConfig = {
             })
         ]
     },
-    plugins: plugins
+    plugins
 }
 
 module.exports = [

@@ -1,11 +1,19 @@
 {
     "name": "axios-ex",
-    "version": "2.3.0-beta.1",
+    "version": "2.3.0-beta.2",
     "description": "axios extend",
     "packageManager": "pnpm@7.7.0",
-    "main": "lib/index.js",
-    "unpkg": "lib/index.js",
-    "module": "lib/index.esm.js",
+    "main": "lib/index.cjs",
+    "unpkg": "lib/index.min.js",
+    "module": "lib/index.mjs",
+    "exports": {
+        ".": {
+            "require": "./lib/index.cjs",
+            "import": "./lib/index.mjs"
+        },
+        "./lib": "./lib/index.cjs",
+        "./*": "./*"
+    },
     "files": [
         "es",
         "lib",

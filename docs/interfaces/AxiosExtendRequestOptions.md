@@ -1,4 +1,4 @@
-[index.md - v2.3.0-beta.1](../README.md) / [Exports](../modules.md) / AxiosExtendRequestOptions
+[index.md - v2.3.0-beta.2](../README.md) / [Exports](../modules.md) / AxiosExtendRequestOptions
 
 # Interface: AxiosExtendRequestOptions
 
@@ -90,7 +90,7 @@ node_modules/.pnpm/axios@0.27.2/node_modules/axios/index.d.ts:89
 
 #### Defined in
 
-[src/index.ts:32](https://github.com/saqqdy/axios-ex/blob/41c4f04/src/index.ts#L32)
+[src/index.ts:32](https://github.com/saqqdy/axios-ex/blob/205d468/src/index.ts#L32)
 
 ---
 
@@ -148,7 +148,7 @@ AxiosRequestConfig.cancelToken
 
 #### Defined in
 
-[src/index.ts:36](https://github.com/saqqdy/axios-ex/blob/41c4f04/src/index.ts#L36)
+[src/index.ts:36](https://github.com/saqqdy/axios-ex/blob/205d468/src/index.ts#L36)
 
 ---
 
@@ -206,7 +206,7 @@ node_modules/.pnpm/axios@0.27.2/node_modules/axios/index.d.ts:110
 
 #### Defined in
 
-[src/index.ts:38](https://github.com/saqqdy/axios-ex/blob/41c4f04/src/index.ts#L38)
+[src/index.ts:38](https://github.com/saqqdy/axios-ex/blob/205d468/src/index.ts#L38)
 
 ---
 
@@ -384,7 +384,7 @@ node_modules/.pnpm/axios@0.27.2/node_modules/axios/index.d.ts:94
 
 #### Defined in
 
-[src/index.ts:34](https://github.com/saqqdy/axios-ex/blob/41c4f04/src/index.ts#L34)
+[src/index.ts:34](https://github.com/saqqdy/axios-ex/blob/205d468/src/index.ts#L34)
 
 ---
 
@@ -450,7 +450,7 @@ node_modules/.pnpm/axios@0.27.2/node_modules/axios/index.d.ts:104
 
 #### Defined in
 
-[src/index.ts:35](https://github.com/saqqdy/axios-ex/blob/41c4f04/src/index.ts#L35)
+[src/index.ts:35](https://github.com/saqqdy/axios-ex/blob/205d468/src/index.ts#L35)
 
 ---
 
@@ -586,7 +586,7 @@ node_modules/.pnpm/axios@0.27.2/node_modules/axios/index.d.ts:107
 
 #### Defined in
 
-[src/index.ts:37](https://github.com/saqqdy/axios-ex/blob/41c4f04/src/index.ts#L37)
+[src/index.ts:37](https://github.com/saqqdy/axios-ex/blob/205d468/src/index.ts#L37)
 
 ---
 
@@ -596,7 +596,7 @@ node_modules/.pnpm/axios@0.27.2/node_modules/axios/index.d.ts:107
 
 #### Defined in
 
-[src/index.ts:33](https://github.com/saqqdy/axios-ex/blob/41c4f04/src/index.ts#L33)
+[src/index.ts:33](https://github.com/saqqdy/axios-ex/blob/205d468/src/index.ts#L33)
 
 ---
 

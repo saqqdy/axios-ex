@@ -21,7 +21,7 @@ export default [
                 banner: config.banner
             },
             {
-                file: 'lib/index.esm.js',
+                file: pkg.module,
                 exports: 'auto',
                 format: 'es',
                 banner: config.banner
