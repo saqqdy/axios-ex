@@ -118,7 +118,6 @@
     },
     "homepage": "https://github.com/saqqdy/axios-ex#readme",
     "publishConfig": {
-        "@saqqdy:registry": "https://npm.pkg.github.com",
         "registry": "https://registry.npmjs.org",
         "access": "public"
     }
