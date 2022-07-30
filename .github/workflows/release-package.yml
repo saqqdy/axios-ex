@@ -32,9 +32,9 @@ jobs:
             #   env:
             #     NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
-            - run: pnpm run dist
-              env:
-                  NODE_OPTIONS: --max-old-space-size=6144
+            # - run: pnpm run dist
+            #   env:
+            #       NODE_OPTIONS: --max-old-space-size=6144
 
     publish-gpr:
         needs: build
@@ -48,8 +48,8 @@ jobs:
               with:
                   fetch-depth: 0
 
-            - name: Use Node.js ${{ matrix.node-version }}
-              uses: actions/setup-node@v3
+            - uses: actions/setup-node@v3
+              name: Use Node.js ${{ matrix.node-version }}
               with:
                   node-version: 16
                   registry-url: https://npm.pkg.github.com/
