@@ -2,6 +2,7 @@
     "name": "axios-ex",
     "version": "2.3.0-beta.1",
     "description": "axios extend",
+    "packageManager": "pnpm@7.7.0",
     "main": "lib/index.js",
     "unpkg": "lib/index.js",
     "module": "lib/index.esm.js",
