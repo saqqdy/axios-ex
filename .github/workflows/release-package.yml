@@ -60,7 +60,7 @@ jobs:
               name: Use Node.js ${{ matrix.node-version }}
               with:
                   node-version: 16
-                  registry-url: https://npm.pkg.github.org/
+                  registry-url: https://registry.npmmirror.com
 
             - name: Gen .npmrc
               run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" >> ./.npmrc
