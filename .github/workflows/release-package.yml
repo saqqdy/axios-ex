@@ -1,59 +1,59 @@
 name: Node.js Package
 
 on:
-  push:
-      branches: [master]
-  # release:
-  #   types: [created]
+    push:
+        branches: [master]
+    # release:
+    #   types: [created]
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v3
+              with:
+                  fetch-depth: 0
 
-      - name: Install pnpm
-        uses: pnpm/action-setup@v2
+            - name: Install pnpm
+              uses: pnpm/action-setup@v2
 
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v3
-        with:
-          node-version: ${{ matrix.node-version }}
-          cache: pnpm
+            - name: Use Node.js ${{ matrix.node-version }}
+              uses: actions/setup-node@v3
+              with:
+                  node-version: ${{ matrix.node-version }}
+                  cache: pnpm
 
-      - run: pnpm install
+            - run: pnpm install
 
-      # - run: npx changelogithub --no-group
-      #   continue-on-error: true
-      #   env:
-      #     NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+            # - run: npx changelogithub --no-group
+            #   continue-on-error: true
+            #   env:
+            #     NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
-      - run: pnpm run dist
-        env:
-          NODE_OPTIONS: --max-old-space-size=6144
+            - run: pnpm run dist
+              env:
+                  NODE_OPTIONS: --max-old-space-size=6144
 
-  publish-gpr:
-    needs: build
-    runs-on: ubuntu-latest
-    permissions:
-      packages: write
-      contents: read
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
+    publish-gpr:
+        needs: build
+        runs-on: ubuntu-latest
+        permissions:
+            packages: write
+            contents: read
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v3
+              with:
+                  fetch-depth: 0
 
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v3
-        with:
-          node-version: 16
+            - name: Use Node.js ${{ matrix.node-version }}
+              uses: actions/setup-node@v3
+              with:
+                  node-version: 16
 
-      - run: npm publish
-        with:
-          registry-url: https://npm.pkg.github.com/
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+            - run: npm publish
+              with:
+                  registry-url: https://npm.pkg.github.com/
+              env:
+                  NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
