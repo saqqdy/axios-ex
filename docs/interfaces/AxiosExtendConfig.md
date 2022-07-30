@@ -1,4 +1,4 @@
-[index.md - v2.2.4](../README.md) / [Exports](../modules.md) / AxiosExtendConfig
+[index.md - v2.3.0](../README.md) / [Exports](../modules.md) / AxiosExtendConfig
 
 # Interface: AxiosExtendConfig
 
@@ -32,7 +32,7 @@
 
 #### Defined in
 
-[src/index.ts:41](https://github.com/saqqdy/axios-ex/blob/e5622c7/src/index.ts#L41)
+[src/index.ts:42](https://github.com/saqqdy/axios-ex/blob/b8757f7/src/index.ts#L42)
 
 ---
 
@@ -42,7 +42,7 @@
 
 #### Defined in
 
-[src/index.ts:44](https://github.com/saqqdy/axios-ex/blob/e5622c7/src/index.ts#L44)
+[src/index.ts:45](https://github.com/saqqdy/axios-ex/blob/b8757f7/src/index.ts#L45)
 
 ---
 
@@ -52,7 +52,7 @@
 
 #### Defined in
 
-[src/index.ts:43](https://github.com/saqqdy/axios-ex/blob/e5622c7/src/index.ts#L43)
+[src/index.ts:44](https://github.com/saqqdy/axios-ex/blob/b8757f7/src/index.ts#L44)
 
 ---
 
@@ -62,7 +62,7 @@
 
 #### Defined in
 
-[src/index.ts:45](https://github.com/saqqdy/axios-ex/blob/e5622c7/src/index.ts#L45)
+[src/index.ts:46](https://github.com/saqqdy/axios-ex/blob/b8757f7/src/index.ts#L46)
 
 ---
 
@@ -72,7 +72,7 @@
 
 #### Defined in
 
-[src/index.ts:42](https://github.com/saqqdy/axios-ex/blob/e5622c7/src/index.ts#L42)
+[src/index.ts:43](https://github.com/saqqdy/axios-ex/blob/b8757f7/src/index.ts#L43)
 
 ## Methods
 
@@ -92,7 +92,7 @@
 
 #### Defined in
 
-[src/index.ts:60](https://github.com/saqqdy/axios-ex/blob/e5622c7/src/index.ts#L60)
+[src/index.ts:61](https://github.com/saqqdy/axios-ex/blob/b8757f7/src/index.ts#L61)
 
 ---
 
@@ -112,7 +112,7 @@
 
 #### Defined in
 
-[src/index.ts:59](https://github.com/saqqdy/axios-ex/blob/e5622c7/src/index.ts#L59)
+[src/index.ts:60](https://github.com/saqqdy/axios-ex/blob/b8757f7/src/index.ts#L60)
 
 ---
 
@@ -133,7 +133,7 @@
 
 #### Defined in
 
-[src/index.ts:49](https://github.com/saqqdy/axios-ex/blob/e5622c7/src/index.ts#L49)
+[src/index.ts:50](https://github.com/saqqdy/axios-ex/blob/b8757f7/src/index.ts#L50)
 
 ---
 
@@ -153,7 +153,7 @@
 
 #### Defined in
 
-[src/index.ts:53](https://github.com/saqqdy/axios-ex/blob/e5622c7/src/index.ts#L53)
+[src/index.ts:54](https://github.com/saqqdy/axios-ex/blob/b8757f7/src/index.ts#L54)
 
 ---
 
@@ -174,7 +174,7 @@
 
 #### Defined in
 
-[src/index.ts:54](https://github.com/saqqdy/axios-ex/blob/e5622c7/src/index.ts#L54)
+[src/index.ts:55](https://github.com/saqqdy/axios-ex/blob/b8757f7/src/index.ts#L55)
 
 ---
 
@@ -194,7 +194,7 @@
 
 #### Defined in
 
-[src/index.ts:58](https://github.com/saqqdy/axios-ex/blob/e5622c7/src/index.ts#L58)
+[src/index.ts:59](https://github.com/saqqdy/axios-ex/blob/b8757f7/src/index.ts#L59)
 
 ---
 
@@ -208,7 +208,7 @@
 
 #### Defined in
 
-[src/index.ts:46](https://github.com/saqqdy/axios-ex/blob/e5622c7/src/index.ts#L46)
+[src/index.ts:47](https://github.com/saqqdy/axios-ex/blob/b8757f7/src/index.ts#L47)
 
 ---
 
@@ -229,7 +229,7 @@
 
 #### Defined in
 
-[src/index.ts:47](https://github.com/saqqdy/axios-ex/blob/e5622c7/src/index.ts#L47)
+[src/index.ts:48](https://github.com/saqqdy/axios-ex/blob/b8757f7/src/index.ts#L48)
 
 ---
 
@@ -249,4 +249,4 @@
 
 #### Defined in
 
-[src/index.ts:48](https://github.com/saqqdy/axios-ex/blob/e5622c7/src/index.ts#L48)
+[src/index.ts:49](https://github.com/saqqdy/axios-ex/blob/b8757f7/src/index.ts#L49)

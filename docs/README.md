@@ -1,4 +1,6 @@
-index.md - v2.2.4 / [Exports](modules.md)
+index.md - v2.3.0 / [Exports](modules.md)
+
+<div style="text-align: center;" align="center">
 
 # axios-ex
 
@@ -8,34 +10,13 @@ index.md - v2.2.4 / [Exports](modules.md)
 [![Codacy Badge][codacy-image]][codacy-url]
 [![build status][travis-image]][travis-url]
 [![Test coverage][codecov-image]][codecov-url]
-[![David deps][david-image]][david-url]
-[![Known Vulnerabilities][snyk-image]][snyk-url]
 [![npm download][download-image]][download-url]
 [![gzip][gzip-image]][gzip-url]
 [![License][license-image]][license-url]
 
 [![Sonar][sonar-image]][sonar-url]
 
-[npm-image]: https://img.shields.io/npm/v/axios-ex.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/axios-ex
-[codacy-image]: https://app.codacy.com/project/badge/Grade/f70d4880e4ad4f40aa970eb9ee9d0696
-[codacy-url]: https://www.codacy.com/gh/saqqdy/axios-ex/dashboard?utm_source=github.com&utm_medium=referral&utm_content=saqqdy/axios-ex&utm_campaign=Badge_Grade
-[travis-image]: https://travis-ci.com/saqqdy/axios-ex.svg?branch=master
-[travis-url]: https://travis-ci.com/saqqdy/axios-ex
-[codecov-image]: https://img.shields.io/codecov/c/github/saqqdy/axios-ex.svg?style=flat-square
-[codecov-url]: https://codecov.io/github/saqqdy/axios-ex?branch=master
-[david-image]: https://img.shields.io/david/saqqdy/axios-ex.svg?style=flat-square
-[david-url]: https://david-dm.org/saqqdy/axios-ex
-[snyk-image]: https://snyk.io/test/npm/axios-ex/badge.svg?style=flat-square
-[snyk-url]: https://snyk.io/test/npm/axios-ex
-[download-image]: https://img.shields.io/npm/dm/axios-ex.svg?style=flat-square
-[download-url]: https://npmjs.org/package/axios-ex
-[gzip-image]: http://img.badgesize.io/https://unpkg.com/axios-ex/lib/index.js?compression=gzip&label=gzip%20size:%20JS
-[gzip-url]: http://img.badgesize.io/https://unpkg.com/axios-ex/lib/index.js?compression=gzip&label=gzip%20size:%20JS
-[license-image]: https://img.shields.io/badge/License-MIT-yellow.svg
-[license-url]: LICENSE
-[sonar-image]: https://sonarcloud.io/api/project_badges/quality_gate?project=saqqdy_axios-ex
-[sonar-url]: https://sonarcloud.io/dashboard?id=saqqdy_axios-ex
+</div>
 
 ## **完整文档请查阅： [API 完整文档](./docs/modules.md)**
 
@@ -58,7 +39,7 @@ $ yarn add axios-ex
 ```js
 // {app_root}/src/plugins/axios.js
 import { getCookie, setCookie } from 'js-cool'
-import axiosExtend from 'axios-ex'
+import AxiosExtend from 'axios-ex'
 
 /**
  * 设置请求头
@@ -86,7 +67,7 @@ function onRequest(config, options = {}) {
  * @param {object} err Error
  */
 function onRequestError(err) {
-    // handler request error
+    console.error(err)
 }
 /**
  * 响应拦截器
@@ -105,7 +86,7 @@ function onResponse(res, options = {}) {
  * @param {object} err Error
  */
 function onResponseError(err) {
-    // handler response error
+    console.error(err)
 }
 /**
  * 请求错误或响应错误都执行
@@ -113,7 +94,7 @@ function onResponseError(err) {
  * @param {object} err Error
  */
 function onError(err) {
-    // handler request & response error
+    console.error(err)
 }
 /**
  * 请求取消
@@ -125,7 +106,7 @@ function onCancel(err) {
 }
 
 // 实例化
-const axiosEx = new axiosExtend({
+const axiosEx = new AxiosExtend({
     maxConnections: 30, // 最大同时请求数，默认：0=不限制
     unique: true, // 是否取消前面的相似请求，默认：false
     retries: 0, // 重试次数，默认：0=不重试
@@ -154,7 +135,7 @@ export default options => {
 
     ```js
     // 实例化的时候配置
-    const axiosEx = new axiosExtend({
+    const axiosEx = new AxiosExtend({
         // ...
         retryDelay: retryCount => {
             return retryCount * 1000
@@ -166,9 +147,9 @@ export default options => {
 2. 或者使用`axios-ex`内置的方法，exponentialDelay 随机递增 0%-50%
 
     ```js
-    import axiosExtend, { exponentialDelay } from 'axios-ex'
+    import AxiosExtend, { exponentialDelay } from 'axios-ex'
     // 实例化的时候配置
-    const axiosEx = new axiosExtend({
+    const axiosEx = new AxiosExtend({
         // ...
         retryDelay: exponentialDelay
         // ...
@@ -180,7 +161,7 @@ export default options => {
 有时候我们需要在`onRequest`或`onResponse`里面使用`this`（vue 实例），可以这样写
 
 ```js
-import axiosExtend from 'axios-ex'
+import AxiosExtend from 'axios-ex'
 
 let axiosEx = null
 // 请求拦截器
@@ -201,10 +182,9 @@ function onResponse(res, options = {}) {
 export default options => {
     // 只需要初始化一次
     if (!axiosEx)
-        axiosEx = new axiosExtend({
+        axiosEx = new AxiosExtend({
             onRequest: onRequest.bind(this),
             onResponse: onResponse.bind(this)
-            //...
         })
 
     // 显示loading动画
@@ -222,3 +202,20 @@ Please open an issue [here](https://github.com/saqqdy/axios-ex/issues).
 ## License
 
 [MIT](LICENSE)
+
+[npm-image]: https://img.shields.io/npm/v/axios-ex.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/axios-ex
+[codacy-image]: https://app.codacy.com/project/badge/Grade/f70d4880e4ad4f40aa970eb9ee9d0696
+[codacy-url]: https://www.codacy.com/gh/saqqdy/axios-ex/dashboard?utm_source=github.com&utm_medium=referral&utm_content=saqqdy/axios-ex&utm_campaign=Badge_Grade
+[travis-image]: https://travis-ci.com/saqqdy/axios-ex.svg?branch=master
+[travis-url]: https://travis-ci.com/saqqdy/axios-ex
+[codecov-image]: https://img.shields.io/codecov/c/github/saqqdy/axios-ex.svg?style=flat-square
+[codecov-url]: https://codecov.io/github/saqqdy/axios-ex?branch=master
+[download-image]: https://img.shields.io/npm/dm/axios-ex.svg?style=flat-square
+[download-url]: https://npmjs.org/package/axios-ex
+[gzip-image]: http://img.badgesize.io/https://unpkg.com/axios-ex/lib/index.js?compression=gzip&label=gzip%20size:%20JS
+[gzip-url]: http://img.badgesize.io/https://unpkg.com/axios-ex/lib/index.js?compression=gzip&label=gzip%20size:%20JS
+[license-image]: https://img.shields.io/badge/License-MIT-yellow.svg
+[license-url]: LICENSE
+[sonar-image]: https://sonarcloud.io/api/project_badges/quality_gate?project=saqqdy_axios-ex
+[sonar-url]: https://sonarcloud.io/dashboard?id=saqqdy_axios-ex

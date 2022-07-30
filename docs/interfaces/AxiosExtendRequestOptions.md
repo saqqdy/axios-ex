@@ -1,4 +1,4 @@
-[index.md - v2.2.4](../README.md) / [Exports](../modules.md) / AxiosExtendRequestOptions
+[index.md - v2.3.0](../README.md) / [Exports](../modules.md) / AxiosExtendRequestOptions
 
 # Interface: AxiosExtendRequestOptions
 
@@ -16,9 +16,11 @@
 -   [auth](AxiosExtendRequestOptions.md#auth)
 -   [axios-extend](AxiosExtendRequestOptions.md#axios-extend)
 -   [baseURL](AxiosExtendRequestOptions.md#baseurl)
+-   [beforeRedirect](AxiosExtendRequestOptions.md#beforeredirect)
 -   [cancelToken](AxiosExtendRequestOptions.md#canceltoken)
 -   [data](AxiosExtendRequestOptions.md#data)
 -   [decompress](AxiosExtendRequestOptions.md#decompress)
+-   [env](AxiosExtendRequestOptions.md#env)
 -   [error](AxiosExtendRequestOptions.md#error)
 -   [headers](AxiosExtendRequestOptions.md#headers)
 -   [httpAgent](AxiosExtendRequestOptions.md#httpagent)
@@ -28,10 +30,14 @@
 -   [maxContentLength](AxiosExtendRequestOptions.md#maxcontentlength)
 -   [maxRedirects](AxiosExtendRequestOptions.md#maxredirects)
 -   [method](AxiosExtendRequestOptions.md#method)
+-   [onDownloadProgress](AxiosExtendRequestOptions.md#ondownloadprogress)
+-   [onUploadProgress](AxiosExtendRequestOptions.md#onuploadprogress)
 -   [orderly](AxiosExtendRequestOptions.md#orderly)
 -   [params](AxiosExtendRequestOptions.md#params)
+-   [paramsSerializer](AxiosExtendRequestOptions.md#paramsserializer)
 -   [proxy](AxiosExtendRequestOptions.md#proxy)
 -   [requestOptions](AxiosExtendRequestOptions.md#requestoptions)
+-   [responseEncoding](AxiosExtendRequestOptions.md#responseencoding)
 -   [responseType](AxiosExtendRequestOptions.md#responsetype)
 -   [signal](AxiosExtendRequestOptions.md#signal)
 -   [socketPath](AxiosExtendRequestOptions.md#socketpath)
@@ -48,12 +54,6 @@
 -   [xsrfCookieName](AxiosExtendRequestOptions.md#xsrfcookiename)
 -   [xsrfHeaderName](AxiosExtendRequestOptions.md#xsrfheadername)
 
-### Methods
-
--   [onDownloadProgress](AxiosExtendRequestOptions.md#ondownloadprogress)
--   [onUploadProgress](AxiosExtendRequestOptions.md#onuploadprogress)
--   [paramsSerializer](AxiosExtendRequestOptions.md#paramsserializer)
-
 ## Properties
 
 ### adapter
@@ -66,7 +66,7 @@ AxiosRequestConfig.adapter
 
 #### Defined in
 
-node_modules/axios/index.d.ts:75
+node_modules/.pnpm/axios@0.27.2/node_modules/axios/index.d.ts:88
 
 ---
 
@@ -80,7 +80,7 @@ AxiosRequestConfig.auth
 
 #### Defined in
 
-node_modules/axios/index.d.ts:76
+node_modules/.pnpm/axios@0.27.2/node_modules/axios/index.d.ts:89
 
 ---
 
@@ -90,7 +90,7 @@ node_modules/axios/index.d.ts:76
 
 #### Defined in
 
-[src/index.ts:31](https://github.com/saqqdy/axios-ex/blob/e5622c7/src/index.ts#L31)
+[src/index.ts:32](https://github.com/saqqdy/axios-ex/blob/b8757f7/src/index.ts#L32)
 
 ---
 
@@ -104,7 +104,37 @@ AxiosRequestConfig.baseURL
 
 #### Defined in
 
-node_modules/axios/index.d.ts:65
+node_modules/.pnpm/axios@0.27.2/node_modules/axios/index.d.ts:78
+
+---
+
+### beforeRedirect
+
+• `Optional` **beforeRedirect**: (`options`: `Record`<`string`, `any`\>, `responseDetails`: { `headers`: `Record`<`string`, `string`\> }) => `void`
+
+#### Type declaration
+
+▸ (`options`, `responseDetails`): `void`
+
+##### Parameters
+
+| Name                      | Type                          |
+| :------------------------ | :---------------------------- |
+| `options`                 | `Record`<`string`, `any`\>    |
+| `responseDetails`         | `Object`                      |
+| `responseDetails.headers` | `Record`<`string`, `string`\> |
+
+##### Returns
+
+`void`
+
+#### Inherited from
+
+AxiosRequestConfig.beforeRedirect
+
+#### Defined in
+
+node_modules/.pnpm/axios@0.27.2/node_modules/axios/index.d.ts:100
 
 ---
 
@@ -118,7 +148,7 @@ AxiosRequestConfig.cancelToken
 
 #### Defined in
 
-[src/index.ts:35](https://github.com/saqqdy/axios-ex/blob/e5622c7/src/index.ts#L35)
+[src/index.ts:36](https://github.com/saqqdy/axios-ex/blob/b8757f7/src/index.ts#L36)
 
 ---
 
@@ -132,7 +162,7 @@ AxiosRequestConfig.data
 
 #### Defined in
 
-node_modules/axios/index.d.ts:71
+node_modules/.pnpm/axios@0.27.2/node_modules/axios/index.d.ts:84
 
 ---
 
@@ -146,7 +176,27 @@ AxiosRequestConfig.decompress
 
 #### Defined in
 
-node_modules/axios/index.d.ts:91
+node_modules/.pnpm/axios@0.27.2/node_modules/axios/index.d.ts:106
+
+---
+
+### env
+
+• `Optional` **env**: `Object`
+
+#### Type declaration
+
+| Name        | Type                             |
+| :---------- | :------------------------------- |
+| `FormData?` | (...`args`: `any`[]) => `object` |
+
+#### Inherited from
+
+AxiosRequestConfig.env
+
+#### Defined in
+
+node_modules/.pnpm/axios@0.27.2/node_modules/axios/index.d.ts:110
 
 ---
 
@@ -156,7 +206,7 @@ node_modules/axios/index.d.ts:91
 
 #### Defined in
 
-[src/index.ts:37](https://github.com/saqqdy/axios-ex/blob/e5622c7/src/index.ts#L37)
+[src/index.ts:38](https://github.com/saqqdy/axios-ex/blob/b8757f7/src/index.ts#L38)
 
 ---
 
@@ -170,7 +220,7 @@ AxiosRequestConfig.headers
 
 #### Defined in
 
-node_modules/axios/index.d.ts:68
+node_modules/.pnpm/axios@0.27.2/node_modules/axios/index.d.ts:81
 
 ---
 
@@ -184,7 +234,7 @@ AxiosRequestConfig.httpAgent
 
 #### Defined in
 
-node_modules/axios/index.d.ts:87
+node_modules/.pnpm/axios@0.27.2/node_modules/axios/index.d.ts:102
 
 ---
 
@@ -198,7 +248,7 @@ AxiosRequestConfig.httpsAgent
 
 #### Defined in
 
-node_modules/axios/index.d.ts:88
+node_modules/.pnpm/axios@0.27.2/node_modules/axios/index.d.ts:103
 
 ---
 
@@ -212,7 +262,7 @@ AxiosRequestConfig.insecureHTTPParser
 
 #### Defined in
 
-node_modules/axios/index.d.ts:94
+node_modules/.pnpm/axios@0.27.2/node_modules/axios/index.d.ts:109
 
 ---
 
@@ -226,7 +276,7 @@ AxiosRequestConfig.maxBodyLength
 
 #### Defined in
 
-node_modules/axios/index.d.ts:84
+node_modules/.pnpm/axios@0.27.2/node_modules/axios/index.d.ts:98
 
 ---
 
@@ -240,7 +290,7 @@ AxiosRequestConfig.maxContentLength
 
 #### Defined in
 
-node_modules/axios/index.d.ts:82
+node_modules/.pnpm/axios@0.27.2/node_modules/axios/index.d.ts:96
 
 ---
 
@@ -254,13 +304,13 @@ AxiosRequestConfig.maxRedirects
 
 #### Defined in
 
-node_modules/axios/index.d.ts:85
+node_modules/.pnpm/axios@0.27.2/node_modules/axios/index.d.ts:99
 
 ---
 
 ### method
 
-• `Optional` **method**: `Method`
+• `Optional` **method**: `string`
 
 #### Inherited from
 
@@ -268,7 +318,63 @@ AxiosRequestConfig.method
 
 #### Defined in
 
-node_modules/axios/index.d.ts:64
+node_modules/.pnpm/axios@0.27.2/node_modules/axios/index.d.ts:77
+
+---
+
+### onDownloadProgress
+
+• `Optional` **onDownloadProgress**: (`progressEvent`: `any`) => `void`
+
+#### Type declaration
+
+▸ (`progressEvent`): `void`
+
+##### Parameters
+
+| Name            | Type  |
+| :-------------- | :---- |
+| `progressEvent` | `any` |
+
+##### Returns
+
+`void`
+
+#### Inherited from
+
+AxiosRequestConfig.onDownloadProgress
+
+#### Defined in
+
+node_modules/.pnpm/axios@0.27.2/node_modules/axios/index.d.ts:95
+
+---
+
+### onUploadProgress
+
+• `Optional` **onUploadProgress**: (`progressEvent`: `any`) => `void`
+
+#### Type declaration
+
+▸ (`progressEvent`): `void`
+
+##### Parameters
+
+| Name            | Type  |
+| :-------------- | :---- |
+| `progressEvent` | `any` |
+
+##### Returns
+
+`void`
+
+#### Inherited from
+
+AxiosRequestConfig.onUploadProgress
+
+#### Defined in
+
+node_modules/.pnpm/axios@0.27.2/node_modules/axios/index.d.ts:94
 
 ---
 
@@ -278,7 +384,7 @@ node_modules/axios/index.d.ts:64
 
 #### Defined in
 
-[src/index.ts:33](https://github.com/saqqdy/axios-ex/blob/e5622c7/src/index.ts#L33)
+[src/index.ts:34](https://github.com/saqqdy/axios-ex/blob/b8757f7/src/index.ts#L34)
 
 ---
 
@@ -292,7 +398,35 @@ AxiosRequestConfig.params
 
 #### Defined in
 
-node_modules/axios/index.d.ts:69
+node_modules/.pnpm/axios@0.27.2/node_modules/axios/index.d.ts:82
+
+---
+
+### paramsSerializer
+
+• `Optional` **paramsSerializer**: (`params`: `any`) => `string`
+
+#### Type declaration
+
+▸ (`params`): `string`
+
+##### Parameters
+
+| Name     | Type  |
+| :------- | :---- |
+| `params` | `any` |
+
+##### Returns
+
+`string`
+
+#### Inherited from
+
+AxiosRequestConfig.paramsSerializer
+
+#### Defined in
+
+node_modules/.pnpm/axios@0.27.2/node_modules/axios/index.d.ts:83
 
 ---
 
@@ -306,7 +440,7 @@ AxiosRequestConfig.proxy
 
 #### Defined in
 
-node_modules/axios/index.d.ts:89
+node_modules/.pnpm/axios@0.27.2/node_modules/axios/index.d.ts:104
 
 ---
 
@@ -316,7 +450,21 @@ node_modules/axios/index.d.ts:89
 
 #### Defined in
 
-[src/index.ts:34](https://github.com/saqqdy/axios-ex/blob/e5622c7/src/index.ts#L34)
+[src/index.ts:35](https://github.com/saqqdy/axios-ex/blob/b8757f7/src/index.ts#L35)
+
+---
+
+### responseEncoding
+
+• `Optional` **responseEncoding**: `string`
+
+#### Inherited from
+
+AxiosRequestConfig.responseEncoding
+
+#### Defined in
+
+node_modules/.pnpm/axios@0.27.2/node_modules/axios/index.d.ts:91
 
 ---
 
@@ -330,7 +478,7 @@ AxiosRequestConfig.responseType
 
 #### Defined in
 
-node_modules/axios/index.d.ts:77
+node_modules/.pnpm/axios@0.27.2/node_modules/axios/index.d.ts:90
 
 ---
 
@@ -344,7 +492,7 @@ AxiosRequestConfig.signal
 
 #### Defined in
 
-node_modules/axios/index.d.ts:93
+node_modules/.pnpm/axios@0.27.2/node_modules/axios/index.d.ts:108
 
 ---
 
@@ -358,7 +506,7 @@ AxiosRequestConfig.socketPath
 
 #### Defined in
 
-node_modules/axios/index.d.ts:86
+node_modules/.pnpm/axios@0.27.2/node_modules/axios/index.d.ts:101
 
 ---
 
@@ -372,7 +520,7 @@ AxiosRequestConfig.timeout
 
 #### Defined in
 
-node_modules/axios/index.d.ts:72
+node_modules/.pnpm/axios@0.27.2/node_modules/axios/index.d.ts:85
 
 ---
 
@@ -386,7 +534,7 @@ AxiosRequestConfig.timeoutErrorMessage
 
 #### Defined in
 
-node_modules/axios/index.d.ts:73
+node_modules/.pnpm/axios@0.27.2/node_modules/axios/index.d.ts:86
 
 ---
 
@@ -400,7 +548,7 @@ AxiosRequestConfig.transformRequest
 
 #### Defined in
 
-node_modules/axios/index.d.ts:66
+node_modules/.pnpm/axios@0.27.2/node_modules/axios/index.d.ts:79
 
 ---
 
@@ -414,7 +562,7 @@ AxiosRequestConfig.transformResponse
 
 #### Defined in
 
-node_modules/axios/index.d.ts:67
+node_modules/.pnpm/axios@0.27.2/node_modules/axios/index.d.ts:80
 
 ---
 
@@ -428,7 +576,7 @@ AxiosRequestConfig.transitional
 
 #### Defined in
 
-node_modules/axios/index.d.ts:92
+node_modules/.pnpm/axios@0.27.2/node_modules/axios/index.d.ts:107
 
 ---
 
@@ -438,7 +586,7 @@ node_modules/axios/index.d.ts:92
 
 #### Defined in
 
-[src/index.ts:36](https://github.com/saqqdy/axios-ex/blob/e5622c7/src/index.ts#L36)
+[src/index.ts:37](https://github.com/saqqdy/axios-ex/blob/b8757f7/src/index.ts#L37)
 
 ---
 
@@ -448,7 +596,7 @@ node_modules/axios/index.d.ts:92
 
 #### Defined in
 
-[src/index.ts:32](https://github.com/saqqdy/axios-ex/blob/e5622c7/src/index.ts#L32)
+[src/index.ts:33](https://github.com/saqqdy/axios-ex/blob/b8757f7/src/index.ts#L33)
 
 ---
 
@@ -462,7 +610,7 @@ AxiosRequestConfig.url
 
 #### Defined in
 
-node_modules/axios/index.d.ts:63
+node_modules/.pnpm/axios@0.27.2/node_modules/axios/index.d.ts:76
 
 ---
 
@@ -476,7 +624,7 @@ AxiosRequestConfig.validateStatus
 
 #### Defined in
 
-node_modules/axios/index.d.ts:83
+node_modules/.pnpm/axios@0.27.2/node_modules/axios/index.d.ts:97
 
 ---
 
@@ -490,7 +638,7 @@ AxiosRequestConfig.withCredentials
 
 #### Defined in
 
-node_modules/axios/index.d.ts:74
+node_modules/.pnpm/axios@0.27.2/node_modules/axios/index.d.ts:87
 
 ---
 
@@ -504,7 +652,7 @@ AxiosRequestConfig.xsrfCookieName
 
 #### Defined in
 
-node_modules/axios/index.d.ts:78
+node_modules/.pnpm/axios@0.27.2/node_modules/axios/index.d.ts:92
 
 ---
 
@@ -518,76 +666,4 @@ AxiosRequestConfig.xsrfHeaderName
 
 #### Defined in
 
-node_modules/axios/index.d.ts:79
-
-## Methods
-
-### onDownloadProgress
-
-▸ `Optional` **onDownloadProgress**(`progressEvent`): `void`
-
-#### Parameters
-
-| Name            | Type  |
-| :-------------- | :---- |
-| `progressEvent` | `any` |
-
-#### Returns
-
-`void`
-
-#### Inherited from
-
-AxiosRequestConfig.onDownloadProgress
-
-#### Defined in
-
-node_modules/axios/index.d.ts:81
-
----
-
-### onUploadProgress
-
-▸ `Optional` **onUploadProgress**(`progressEvent`): `void`
-
-#### Parameters
-
-| Name            | Type  |
-| :-------------- | :---- |
-| `progressEvent` | `any` |
-
-#### Returns
-
-`void`
-
-#### Inherited from
-
-AxiosRequestConfig.onUploadProgress
-
-#### Defined in
-
-node_modules/axios/index.d.ts:80
-
----
-
-### paramsSerializer
-
-▸ `Optional` **paramsSerializer**(`params`): `string`
-
-#### Parameters
-
-| Name     | Type  |
-| :------- | :---- |
-| `params` | `any` |
-
-#### Returns
-
-`string`
-
-#### Inherited from
-
-AxiosRequestConfig.paramsSerializer
-
-#### Defined in
-
-node_modules/axios/index.d.ts:70
+node_modules/.pnpm/axios@0.27.2/node_modules/axios/index.d.ts:93

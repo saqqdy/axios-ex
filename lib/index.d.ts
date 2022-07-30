@@ -1,9 +1,9 @@
-import { AxiosError } from 'axios';
-import { AxiosInstance } from 'axios';
-import { AxiosRequestConfig } from 'axios';
-import { AxiosResponse } from 'axios';
-import { CancelToken } from 'axios';
-import { CancelTokenSource } from 'axios';
+import type { AxiosError } from 'axios';
+import type { AxiosInstance } from 'axios';
+import type { AxiosRequestConfig } from 'axios';
+import type { AxiosResponse } from 'axios';
+import type { CancelToken } from 'axios';
+import type { CancelTokenSource } from 'axios';
 
 /**
  * axios封装
