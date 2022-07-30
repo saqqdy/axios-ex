@@ -20,7 +20,7 @@ jobs:
               uses: actions/setup-node@v3
               with:
                   node-version: ${{ matrix.node-version }}
-                  # registry-url: https://registry.npmmirror.com
+                  registry-url: https://registry.npmmirror.com
                   cache: pnpm
 
             - run: pnpm install
@@ -50,7 +50,7 @@ jobs:
               name: Use Node.js ${{ matrix.node-version }}
               with:
                   node-version: 16
-                  # registry-url: https://npm.pkg.github.com/
+                  registry-url: https://npm.pkg.github.org/
 
             - name: Gen .npmrc
               run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" >> ./.npmrc
