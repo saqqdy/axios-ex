@@ -1,11 +1,11 @@
 {
     "name": "axios-ex",
-    "version": "2.3.0-beta.2",
     "description": "axios extend",
+    "version": "2.3.0-beta.2",
     "packageManager": "pnpm@7.7.0",
     "main": "lib/index.cjs",
-    "unpkg": "lib/index.min.js",
     "module": "lib/index.mjs",
+    "unpkg": "lib/index.min.js",
     "exports": {
         ".": {
             "require": "./lib/index.cjs",
@@ -40,8 +40,8 @@
         "jest": "cross-env NODE_OPTIONS=--experimental-vm-modules npx jest --coverage",
         "coveralls": "cat coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
         "docs": "rimraf docs && typedoc",
-        "eslint": "eslint --fix --ext .ts,.js",
-        "prettier": "prettier --write \"**/*.{js,ts,json,md}\"",
+        "eslint": "eslint --fix .",
+        "prettier": "prettier --write \"**/*.{js,ts,jsx,tsx,yml,json,md}\"",
         "prettier:docs": "prettier --write \"**/*.md\""
     },
     "dependencies": {
@@ -93,10 +93,6 @@
         "webpack-merge": "^5.8.0",
         "webpack-node-externals": "^3.0.0"
     },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/saqqdy/axios-ex.git"
-    },
     "keywords": [
         "axios",
         "plugin",
@@ -107,8 +103,12 @@
         "axios-extend",
         "saqqdy"
     ],
-    "author": "saqqdy@qq.com",
     "license": "MIT",
+    "author": "saqqdy@qq.com",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/saqqdy/axios-ex.git"
+    },
     "bugs": {
         "url": "https://github.com/saqqdy/axios-ex/issues"
     },
