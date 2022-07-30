@@ -1,10 +1,8 @@
 name: Node.js Package
 
 on:
-    push:
-        branches: [master]
-    # release:
-    #   types: [created]
+    release:
+      types: [created]
 
 jobs:
     build:
@@ -32,9 +30,9 @@ jobs:
             #   env:
             #     NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
-            # - run: pnpm run dist
-            #   env:
-            #       NODE_OPTIONS: --max-old-space-size=6144
+            - run: pnpm run dist
+              env:
+                  NODE_OPTIONS: --max-old-space-size=6144
 
     publish-gpr:
         needs: build
@@ -56,8 +54,6 @@ jobs:
 
             - name: Gen .npmrc
               run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" >> ./.npmrc
-            - name: Gen .npmrc
-              run: echo "//registry.npmjs.com/:_authToken=${{ secrets.NPM_TOKEN }}" >> ./.npmrc
 
             - run: npm publish
               env:

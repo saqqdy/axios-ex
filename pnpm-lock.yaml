@@ -5,7 +5,6 @@ specifiers:
   '@babel/core': ^7.18.9
   '@babel/plugin-proposal-class-properties': ^7.18.6
   '@babel/plugin-proposal-decorators': ^7.18.9
-  '@babel/plugin-transform-runtime': ^7.18.9
   '@babel/preset-env': ^7.18.9
   '@babel/preset-typescript': ^7.18.6
   '@eslint-sets/eslint-config-simple-ts': ^3.0.4
@@ -31,6 +30,7 @@ specifiers:
   prettier: ^2.7.1
   prettier-config-common: ^1.2.0
   progress-bar-webpack-plugin: ^2.1.0
+  regenerator-runtime: ^0.13.9
   rimraf: ^3.0.2
   rollup: ^2.77.2
   rollup-plugin-terser: ^7.0.2
@@ -53,13 +53,13 @@ dependencies:
   core-js: 3.24.1
   is-retry-allowed: 3.0.0
   js-cool: 2.3.2
+  regenerator-runtime: 0.13.9
 
 devDependencies:
   '@babel/cli': 7.18.9_@babel+core@7.18.9
   '@babel/core': 7.18.9
   '@babel/plugin-proposal-class-properties': 7.18.6_@babel+core@7.18.9
   '@babel/plugin-proposal-decorators': 7.18.9_@babel+core@7.18.9
-  '@babel/plugin-transform-runtime': 7.18.9_@babel+core@7.18.9
   '@babel/preset-env': 7.18.9_@babel+core@7.18.9
   '@babel/preset-typescript': 7.18.6_@babel+core@7.18.9
   '@eslint-sets/eslint-config-simple-ts': 3.0.4_r2fvqfuoeydpw3g73cntftn3ju
@@ -1114,23 +1114,6 @@ packages:
       '@babel/helper-plugin-utils': 7.18.9
     dev: true
 
-  /@babel/plugin-transform-runtime/7.18.9_@babel+core@7.18.9:
-    resolution: {integrity: sha512-wS8uJwBt7/b/mzE13ktsJdmS4JP/j7PQSaADtnb4I2wL0zK51MQ0pmF8/Jy0wUIS96fr+fXT6S/ifiPXnvrlSg==}
-    engines: {node: '>=6.9.0'}
-    peerDependencies:
-      '@babel/core': ^7.0.0-0
-    dependencies:
-      '@babel/core': 7.18.9
-      '@babel/helper-module-imports': 7.18.6
-      '@babel/helper-plugin-utils': 7.18.9
-      babel-plugin-polyfill-corejs2: 0.3.2_@babel+core@7.18.9
-      babel-plugin-polyfill-corejs3: 0.5.3_@babel+core@7.18.9
-      babel-plugin-polyfill-regenerator: 0.3.1_@babel+core@7.18.9
-      semver: 6.3.0
-    transitivePeerDependencies:
-      - supports-color
-    dev: true
-
   /@babel/plugin-transform-shorthand-properties/7.18.6_@babel+core@7.18.9:
     resolution: {integrity: sha512-eCLXXJqv8okzg86ywZJbRn19YJHU4XUa55oz2wbHhaQVn/MM+XhukiT7SYqp/7o00dg52Rj51Ny+Ecw4oyoygw==}
     engines: {node: '>=6.9.0'}
@@ -1804,7 +1787,7 @@ packages:
     dev: true
 
   /@nicolo-ribaudo/chokidar-2/2.1.8-no-fsevents.3:
-    resolution: {integrity: sha1-Mj1y3SUQPQxPvc6J2t9XSnh7H5s=, tarball: '@nicolo-ribaudo/chokidar-2/download/@nicolo-ribaudo/chokidar-2-2.1.8-no-fsevents.3.tgz'}
+    resolution: {integrity: sha512-s88O1aVtXftvp5bCPB7WnmXc5IwOZZ7YPuwNPt+GtOOXpPvad1LfbmjYv+qII7zP6RU2QGnqve27dnLycEnyEQ==}
     requiresBuild: true
     dev: true
     optional: true
@@ -5778,7 +5761,6 @@ packages:
 
   /regenerator-runtime/0.13.9:
     resolution: {integrity: sha512-p3VT+cOEgxFsRRA9X4lkI1E+k2/CtnKtU4gcxyaCUreilL/vqI6CdZ3wxVUx3UOUg+gnUOQQcRI7BmSI656MYA==}
-    dev: true
 
   /regenerator-transform/0.15.0:
     resolution: {integrity: sha512-LsrGtPmbYg19bcPHwdtmXwbW+TqNvtY4riE3P83foeHRroMbH6/2ddFBfab3t7kbzc7v7p4wbkIecHImqt0QNg==}

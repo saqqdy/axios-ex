@@ -1,14 +1,14 @@
 import resolve from '@rollup/plugin-node-resolve'
 import babel from '@rollup/plugin-babel'
 import commonjs from '@rollup/plugin-commonjs'
-import { terser } from 'rollup-plugin-terser'
+// import { terser } from 'rollup-plugin-terser'
 import typescript from 'rollup-plugin-typescript2'
 import { visualizer } from 'rollup-plugin-visualizer'
 import pkg from './package.json'
 
 const config = require('./config')
 
-const production = !process.env.ROLLUP_WATCH
+// const production = !process.env.ROLLUP_WATCH
 
 export default [
     {
@@ -63,15 +63,18 @@ export default [
                 babelHelpers: 'bundled',
                 extensions: config.extensions,
                 exclude: [/\/core-js\//, 'node_modules/**'],
-                // runtimeHelpers: true,
                 sourceMap: true
             }),
             visualizer()
         ],
         external(id) {
-            return ['core-js', 'axios', 'js-cool', 'regenerator-runtime'].some(
-                k => new RegExp('^' + k).test(id)
-            )
+            return [
+                'core-js',
+                'axios',
+                // 'js-cool',
+                'regenerator-runtime',
+                '@babel/runtime'
+            ].some(k => new RegExp('^' + k).test(id))
         }
     }
 ]

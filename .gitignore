@@ -3,6 +3,8 @@
 coverage
 node_modules/
 dist/
+es/
+lib/
 npm-debug.log
 yarn-error.log
 /test/unit/coverage/
