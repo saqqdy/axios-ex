@@ -7,6 +7,7 @@
         "noLib": false,
         "lib": ["ESNext", "dom"],
         "sourceMap": true,
+        "resolveJsonModule": true,
         // "module": "commonjs",
         "module": "ESNext",
         "strict": true,

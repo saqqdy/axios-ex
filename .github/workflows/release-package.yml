@@ -55,6 +55,8 @@ jobs:
             - name: Gen .npmrc
               run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" >> ./.npmrc
 
-            - run: npm publish
+            - run: pnpm pub
               env:
                   NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+
+            - run: curl -X PUT -d "sync_upstream=true" "https://registry-direct.npmmirror.com/axios-ex/sync"
