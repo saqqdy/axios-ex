@@ -45,7 +45,7 @@
         "prettier:docs": "prettier --write \"**/*.md\""
     },
     "dependencies": {
-        "axios": "0.27.2",
+        "axios": "1.0.0",
         "core-decorators": "^0.20.0",
         "core-js": "^3.24.1",
         "is-retry-allowed": "^3.0.0",
