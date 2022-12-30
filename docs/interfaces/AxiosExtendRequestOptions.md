@@ -1,4 +1,4 @@
-[index.md - v2.3.0-beta.5](../README.md) / [Exports](../modules.md) / AxiosExtendRequestOptions
+[index.md - v2.3.0](../README.md) / [Exports](../modules.md) / AxiosExtendRequestOptions
 
 # Interface: AxiosExtendRequestOptions
 
@@ -92,7 +92,7 @@ node_modules/.pnpm/axios@1.2.2_debug@4.3.4/node_modules/axios/index.d.ts:300
 
 #### Defined in
 
-[src/index.ts:32](https://github.com/saqqdy/axios-ex/blob/c4edae2/src/index.ts#L32)
+[src/index.ts:32](https://github.com/saqqdy/axios-ex/blob/62a5905/src/index.ts#L32)
 
 ---
 
@@ -150,7 +150,7 @@ AxiosRequestConfig.cancelToken
 
 #### Defined in
 
-[src/index.ts:36](https://github.com/saqqdy/axios-ex/blob/c4edae2/src/index.ts#L36)
+[src/index.ts:36](https://github.com/saqqdy/axios-ex/blob/62a5905/src/index.ts#L36)
 
 ---
 
@@ -208,7 +208,7 @@ node_modules/.pnpm/axios@1.2.2_debug@4.3.4/node_modules/axios/index.d.ts:322
 
 #### Defined in
 
-[src/index.ts:38](https://github.com/saqqdy/axios-ex/blob/c4edae2/src/index.ts#L38)
+[src/index.ts:38](https://github.com/saqqdy/axios-ex/blob/62a5905/src/index.ts#L38)
 
 ---
 
@@ -414,7 +414,7 @@ node_modules/.pnpm/axios@1.2.2_debug@4.3.4/node_modules/axios/index.d.ts:305
 
 #### Defined in
 
-[src/index.ts:34](https://github.com/saqqdy/axios-ex/blob/c4edae2/src/index.ts#L34)
+[src/index.ts:34](https://github.com/saqqdy/axios-ex/blob/62a5905/src/index.ts#L34)
 
 ---
 
@@ -466,7 +466,7 @@ node_modules/.pnpm/axios@1.2.2_debug@4.3.4/node_modules/axios/index.d.ts:316
 
 #### Defined in
 
-[src/index.ts:35](https://github.com/saqqdy/axios-ex/blob/c4edae2/src/index.ts#L35)
+[src/index.ts:35](https://github.com/saqqdy/axios-ex/blob/62a5905/src/index.ts#L35)
 
 ---
 
@@ -602,7 +602,7 @@ node_modules/.pnpm/axios@1.2.2_debug@4.3.4/node_modules/axios/index.d.ts:319
 
 #### Defined in
 
-[src/index.ts:37](https://github.com/saqqdy/axios-ex/blob/c4edae2/src/index.ts#L37)
+[src/index.ts:37](https://github.com/saqqdy/axios-ex/blob/62a5905/src/index.ts#L37)
 
 ---
 
@@ -612,7 +612,7 @@ node_modules/.pnpm/axios@1.2.2_debug@4.3.4/node_modules/axios/index.d.ts:319
 
 #### Defined in
 
-[src/index.ts:33](https://github.com/saqqdy/axios-ex/blob/c4edae2/src/index.ts#L33)
+[src/index.ts:33](https://github.com/saqqdy/axios-ex/blob/62a5905/src/index.ts#L33)
 
 ---
 
