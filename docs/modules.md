@@ -6,27 +6,27 @@
 
 ### Classes
 
--   [default](classes/default.md)
+- [default](classes/default.md)
 
 ### Interfaces
 
--   [AxiosExtendConfig](interfaces/AxiosExtendConfig.md)
--   [AxiosExtendCurrentStateType](interfaces/AxiosExtendCurrentStateType.md)
--   [AxiosExtendObject](interfaces/AxiosExtendObject.md)
--   [AxiosExtendRequestOptions](interfaces/AxiosExtendRequestOptions.md)
+- [AxiosExtendConfig](interfaces/AxiosExtendConfig.md)
+- [AxiosExtendCurrentStateType](interfaces/AxiosExtendCurrentStateType.md)
+- [AxiosExtendObject](interfaces/AxiosExtendObject.md)
+- [AxiosExtendRequestOptions](interfaces/AxiosExtendRequestOptions.md)
 
 ### Variables
 
--   [namespace](modules.md#namespace)
+- [namespace](modules.md#namespace)
 
 ### Functions
 
--   [exponentialDelay](modules.md#exponentialdelay)
--   [isIdempotentRequestError](modules.md#isidempotentrequesterror)
--   [isNetworkError](modules.md#isnetworkerror)
--   [isNetworkOrIdempotentRequestError](modules.md#isnetworkoridempotentrequesterror)
--   [isRetryableError](modules.md#isretryableerror)
--   [isSafeRequestError](modules.md#issaferequesterror)
+- [exponentialDelay](modules.md#exponentialdelay)
+- [isIdempotentRequestError](modules.md#isidempotentrequesterror)
+- [isNetworkError](modules.md#isnetworkerror)
+- [isNetworkOrIdempotentRequestError](modules.md#isnetworkoridempotentrequesterror)
+- [isRetryableError](modules.md#isretryableerror)
+- [isSafeRequestError](modules.md#issaferequesterror)
 
 ## Variables
 

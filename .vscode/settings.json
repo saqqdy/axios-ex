@@ -1,13 +1,19 @@
 {
-    "cSpell.words": [
-        "Codacy",
-        "esbuild",
-        "instanceof",
-        "lcov",
-        "pnpm",
-        "Retryable",
-        "saqqdy",
-        "tsnd",
-        "typedoc"
-    ]
+	"cSpell.words": [
+		"Codacy",
+		"esbuild",
+		"filesize",
+		"iife",
+		"instanceof",
+		"jsdelivr",
+		"lcov",
+		"pnpm",
+		"Retryable",
+		"saqqdy",
+		"tscjs",
+		"tsnd",
+		"typedoc",
+		"unpub",
+		"unpublish"
+	]
 }

@@ -9,8 +9,8 @@ const REGISTRY_URL = 'https://registry.npmjs.org'
 const command = `npm --registry=${REGISTRY_URL} unpublish`
 
 for (const version of versions) {
-    execSync(`${command} axios-ex@${version}`, {
-        stdio: 'inherit'
-    })
-    console.info(`UnPublished axios-ex@${version}`)
+	execSync(`${command} axios-ex@${version}`, {
+		stdio: 'inherit'
+	})
+	console.info(`UnPublished axios-ex@${version}`)
 }

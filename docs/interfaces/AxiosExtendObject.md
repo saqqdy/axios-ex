@@ -6,10 +6,10 @@
 
 ### Properties
 
--   [promise](AxiosExtendObject.md#promise)
--   [promiseKey](AxiosExtendObject.md#promisekey)
--   [source](AxiosExtendObject.md#source)
--   [url](AxiosExtendObject.md#url)
+- [promise](AxiosExtendObject.md#promise)
+- [promiseKey](AxiosExtendObject.md#promisekey)
+- [source](AxiosExtendObject.md#source)
+- [url](AxiosExtendObject.md#url)
 
 ## Properties
 

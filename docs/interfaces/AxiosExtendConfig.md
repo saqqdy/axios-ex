@@ -6,23 +6,23 @@
 
 ### Properties
 
--   [maxConnections](AxiosExtendConfig.md#maxconnections)
--   [orderly](AxiosExtendConfig.md#orderly)
--   [retries](AxiosExtendConfig.md#retries)
--   [shouldResetTimeout](AxiosExtendConfig.md#shouldresettimeout)
--   [unique](AxiosExtendConfig.md#unique)
+- [maxConnections](AxiosExtendConfig.md#maxconnections)
+- [orderly](AxiosExtendConfig.md#orderly)
+- [retries](AxiosExtendConfig.md#retries)
+- [shouldResetTimeout](AxiosExtendConfig.md#shouldresettimeout)
+- [unique](AxiosExtendConfig.md#unique)
 
 ### Methods
 
--   [onCancel](AxiosExtendConfig.md#oncancel)
--   [onError](AxiosExtendConfig.md#onerror)
--   [onRequest](AxiosExtendConfig.md#onrequest)
--   [onRequestError](AxiosExtendConfig.md#onrequesterror)
--   [onResponse](AxiosExtendConfig.md#onresponse)
--   [onResponseError](AxiosExtendConfig.md#onresponseerror)
--   [retryCondition](AxiosExtendConfig.md#retrycondition)
--   [retryDelay](AxiosExtendConfig.md#retrydelay)
--   [setHeaders](AxiosExtendConfig.md#setheaders)
+- [onCancel](AxiosExtendConfig.md#oncancel)
+- [onError](AxiosExtendConfig.md#onerror)
+- [onRequest](AxiosExtendConfig.md#onrequest)
+- [onRequestError](AxiosExtendConfig.md#onrequesterror)
+- [onResponse](AxiosExtendConfig.md#onresponse)
+- [onResponseError](AxiosExtendConfig.md#onresponseerror)
+- [retryCondition](AxiosExtendConfig.md#retrycondition)
+- [retryDelay](AxiosExtendConfig.md#retrydelay)
+- [setHeaders](AxiosExtendConfig.md#setheaders)
 
 ## Properties
 

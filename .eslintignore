@@ -1,7 +1,10 @@
+/dist
 /lib
 /es
 coverage
+/typings
 *.bak
 *.bak.js
 *_bak
 pnpm-lock.yaml
+stats.html

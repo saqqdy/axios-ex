@@ -1,24 +1,21 @@
 {
-    "compilerOptions": {
-        "allowJs": true,
-        "target": "es5",
-        "moduleResolution": "node",
-        // "lib": ["es5", "es6", "dom", "dom.iterable", "esnext"],
-        "noLib": false,
-        "lib": ["ESNext", "dom"],
-        "sourceMap": true,
-        "resolveJsonModule": true,
-        // "module": "commonjs",
-        "module": "ESNext",
-        "strict": true,
-        "declaration": true,
-        "noImplicitOverride": true,
-        "noUnusedLocals": true,
-        "esModuleInterop": true,
-        "emitDecoratorMetadata": true,
-        "experimentalDecorators": true,
-        "allowSyntheticDefaultImports": true
-    },
-    "include": ["**/*.ts"],
-    "exclude": ["node_modules/**", "**/__tests__", "temp"]
+	"compilerOptions": {
+		"allowJs": true,
+		"target": "ES5",
+		"moduleResolution": "node",
+		"lib": ["ES5", "ES6", "DOM", "DOM.Iterable", "ESNext"],
+		"noLib": false,
+		"sourceMap": false,
+		"resolveJsonModule": true,
+		"module": "ESNext",
+		"strict": true,
+		"noImplicitOverride": true,
+		"noUnusedLocals": true,
+		"esModuleInterop": true,
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"allowSyntheticDefaultImports": true,
+		"downlevelIteration": true
+	},
+	"exclude": ["**/__tests__", "temp"]
 }

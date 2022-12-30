@@ -6,8 +6,8 @@
 
 ### Properties
 
--   [lastRequestTime](AxiosExtendCurrentStateType.md#lastrequesttime)
--   [retryCount](AxiosExtendCurrentStateType.md#retrycount)
+- [lastRequestTime](AxiosExtendCurrentStateType.md#lastrequesttime)
+- [retryCount](AxiosExtendCurrentStateType.md#retrycount)
 
 ## Properties
 

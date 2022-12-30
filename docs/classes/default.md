@@ -8,21 +8,21 @@ axios 封装
 
 ### Constructors
 
--   [constructor](default.md#constructor)
+- [constructor](default.md#constructor)
 
 ### Properties
 
--   [maxConnections](default.md#maxconnections)
--   [onCancel](default.md#oncancel)
--   [orderly](default.md#orderly)
--   [retries](default.md#retries)
--   [unique](default.md#unique)
--   [waiting](default.md#waiting)
+- [maxConnections](default.md#maxconnections)
+- [onCancel](default.md#oncancel)
+- [orderly](default.md#orderly)
+- [retries](default.md#retries)
+- [unique](default.md#unique)
+- [waiting](default.md#waiting)
 
 ### Methods
 
--   [create](default.md#create)
--   [init](default.md#init)
+- [create](default.md#create)
+- [init](default.md#init)
 
 ## Constructors
 
