@@ -1,12 +1,16 @@
-[index.md - v2.3.0-beta.2](README.md) / Exports
+[index.md - v2.3.0-beta.5](README.md) / Exports
 
-# index.md - v2.3.0-beta.2
+# index.md - v2.3.0-beta.5
 
 ## Table of contents
 
+### References
+
+- [default](modules.md#default)
+
 ### Classes
 
-- [default](classes/default.md)
+- [AxiosExtend](classes/AxiosExtend.md)
 
 ### Interfaces
 
@@ -28,6 +32,12 @@
 - [isRetryableError](modules.md#isretryableerror)
 - [isSafeRequestError](modules.md#issaferequesterror)
 
+## References
+
+### default
+
+Renames and re-exports [AxiosExtend](classes/AxiosExtend.md)
+
 ## Variables
 
 ### namespace
@@ -36,7 +46,7 @@
 
 #### Defined in
 
-[src/index.ts:14](https://github.com/saqqdy/axios-ex/blob/205d468/src/index.ts#L14)
+[src/index.ts:14](https://github.com/saqqdy/axios-ex/blob/c4edae2/src/index.ts#L14)
 
 ## Functions
 
@@ -58,7 +68,7 @@ delay 毫秒
 
 #### Defined in
 
-[src/index.ts:164](https://github.com/saqqdy/axios-ex/blob/205d468/src/index.ts#L164)
+[src/index.ts:156](https://github.com/saqqdy/axios-ex/blob/c4edae2/src/index.ts#L156)
 
 ---
 
@@ -80,7 +90,7 @@ boolean
 
 #### Defined in
 
-[src/index.ts:145](https://github.com/saqqdy/axios-ex/blob/205d468/src/index.ts#L145)
+[src/index.ts:140](https://github.com/saqqdy/axios-ex/blob/c4edae2/src/index.ts#L140)
 
 ---
 
@@ -102,7 +112,7 @@ boolean
 
 #### Defined in
 
-[src/index.ts:121](https://github.com/saqqdy/axios-ex/blob/205d468/src/index.ts#L121)
+[src/index.ts:119](https://github.com/saqqdy/axios-ex/blob/c4edae2/src/index.ts#L119)
 
 ---
 
@@ -124,7 +134,7 @@ boolean
 
 #### Defined in
 
-[src/index.ts:157](https://github.com/saqqdy/axios-ex/blob/205d468/src/index.ts#L157)
+[src/index.ts:149](https://github.com/saqqdy/axios-ex/blob/c4edae2/src/index.ts#L149)
 
 ---
 
@@ -146,7 +156,7 @@ boolean
 
 #### Defined in
 
-[src/index.ts:173](https://github.com/saqqdy/axios-ex/blob/205d468/src/index.ts#L173)
+[src/index.ts:165](https://github.com/saqqdy/axios-ex/blob/c4edae2/src/index.ts#L165)
 
 ---
 
@@ -168,4 +178,4 @@ boolean
 
 #### Defined in
 
-[src/index.ts:133](https://github.com/saqqdy/axios-ex/blob/205d468/src/index.ts#L133)
+[src/index.ts:131](https://github.com/saqqdy/axios-ex/blob/c4edae2/src/index.ts#L131)

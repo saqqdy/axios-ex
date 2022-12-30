@@ -1,7 +1,7 @@
 {
 	"name": "axios-ex",
 	"description": "axios extend",
-	"version": "2.3.0-beta.3",
+	"version": "2.3.0-beta.5",
 	"packageManager": "pnpm@7.18.0",
 	"main": "dist/index.cjs",
 	"module": "dist/index.mjs",
@@ -28,7 +28,7 @@
 		"src": "src"
 	},
 	"scripts": {
-		"build": "run-s clean build:{bundle,umd,types} roll-types",
+		"build": "run-s clean build:{bundle,types} roll-types",
 		"build:bundle": "rollup -c build/rollup.config.ts --configPlugin @rollup/plugin-typescript",
 		"build:umd": "webpack --config build/webpack.config.js",
 		"build:types": "tsc --emitDeclarationOnly --outDir temp -p src",
@@ -38,7 +38,7 @@
 		"unpub": "tscjs scripts/unpublish",
 		"sync": "tscjs scripts/sync",
 		"clean": "rimraf dist",
-		"dist": "run-s clean build build:umd docs prettier:docs",
+		"dist": "run-s clean build docs prettier:docs",
 		"test-unit": "jest --filter ./scripts/filter-unit.js",
 		"jest": "cross-env NODE_OPTIONS=--experimental-vm-modules npx jest --coverage",
 		"coveralls": "cat coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
