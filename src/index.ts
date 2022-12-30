@@ -8,8 +8,8 @@ import type {
 } from 'axios'
 import axios from 'axios'
 import isRetryAllowed from 'is-retry-allowed'
-import extend from 'js-cool/es/extend'
-import getRandomStr from 'js-cool/es/getRandomStr'
+import extend from 'js-cool/lib/extend'
+import getRandomStr from 'js-cool/lib/getRandomStr'
 
 export const namespace = 'axios-extend'
 

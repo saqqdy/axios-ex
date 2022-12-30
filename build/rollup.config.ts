@@ -1,3 +1,4 @@
+import { resolve } from 'node:path'
 import type { RollupOptions } from 'rollup'
 import nodeResolve from '@rollup/plugin-node-resolve'
 import babel from '@rollup/plugin-babel'
@@ -29,10 +30,10 @@ const options: RollupOptions = {
 		alias({
 			customResolver: nodeResolver as ResolverObject,
 			entries: [
-				// {
-				//     find: /^#lib(.+)$/,
-				//     replacement: resolve(__dirname, '..', 'src', '$1.mjs')
-				// }
+				{
+					find: /^js-cool\/es\/(.+)$/,
+					replacement: resolve('js-cool', 'lib', '$1')
+				}
 			]
 		}),
 		nodeResolver,
