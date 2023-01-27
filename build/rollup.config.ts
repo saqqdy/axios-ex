@@ -12,6 +12,10 @@ import { visualizer } from 'rollup-plugin-visualizer'
 import pkg from '../package.json' assert { type: 'json' }
 import { banner, extensions, reporter } from './config'
 
+const externals = [
+	...Object.keys(pkg.dependencies || {}),
+	...Object.keys(pkg.devDependencies || {})
+]
 const nodeResolver = nodeResolve({
 	// Use the `package.json` "browser" field
 	browser: true,
@@ -56,14 +60,9 @@ const options: RollupOptions = {
 		filesize({ reporter })
 	],
 	external(id) {
-		return [
-			'core-js',
-			'axios',
-			'js-cool',
-			'debug',
-			'regenerator-runtime',
-			'@babel/runtime'
-		].some(k => new RegExp('^' + k).test(id))
+		return ['core-js', 'axios', 'js-cool', 'debug', 'regenerator-runtime', '@babel/runtime']
+			.concat(externals)
+			.some(k => new RegExp('^' + k).test(id))
 	}
 }
 

@@ -8,6 +8,7 @@
 		"jsdelivr",
 		"lcov",
 		"pnpm",
+		"reinstaller",
 		"Retryable",
 		"saqqdy",
 		"tscjs",

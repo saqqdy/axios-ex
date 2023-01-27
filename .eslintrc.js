@@ -1,6 +1,6 @@
 module.exports = {
-	extends: ['@eslint-sets/simple-ts'],
+	extends: '@eslint-sets/ts',
 	rules: {
-		semi: [2, 'never']
+		'no-only-tests/no-only-tests': 0
 	}
 }
