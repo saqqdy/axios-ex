@@ -2,7 +2,7 @@
 
 # axios-ex
 
-A integration solution of axios for large enterprise projects
+A integration solution of axios for large enterprise projects. Support request concurrency control & cancel requests & automatic retry & requests times limit, etc.
 
 [![NPM version][npm-image]][npm-url]
 [![Codacy Badge][codacy-image]][codacy-url]

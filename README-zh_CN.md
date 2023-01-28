@@ -2,7 +2,7 @@
 
 # axios-ex
 
-企业级项目`axios`集成方案
+axios-ex是一款企业级项目`axios`集成方案，采用typescript开发的axios扩展，集成了接口并发控制（可取消请求）、请求失败自动重试、最大请求数量限制等功能
 
 [![NPM version][npm-image]][npm-url]
 [![Codacy Badge][codacy-image]][codacy-url]
