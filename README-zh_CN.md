@@ -16,7 +16,11 @@ axios-ex是一款企业级项目`axios`集成方案，采用typescript开发的a
 
 </div>
 
+<div style="text-align: center;" align="center">
+
 ## **完整文档请查阅： [API 完整文档](./docs/modules.md)**
+
+</div>
 
 ## 安装
 
