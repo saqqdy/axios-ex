@@ -1,16 +1,16 @@
-[index.md - v2.3.1](../README.md) / [Exports](../modules.md) / AxiosExtendRequestOptions
+[index.md - v3.0.0-beta.1](../README.md) / [Exports](../modules.md) / AxiosExtendRequestOptions
 
 # Interface: AxiosExtendRequestOptions<D\>
 
 ## Type parameters
 
-| Name | Type |
-| :------ | :------ |
-| `D` | `any` |
+| Name | Type  |
+| :--- | :---- |
+| `D`  | `any` |
 
 ## Hierarchy
 
-- `AxiosRequestConfig`<`D`\>
+- `InternalAxiosRequestConfig`<`D`\>
 
   ↳ **`AxiosExtendRequestOptions`**
 
@@ -28,12 +28,14 @@
 - [decompress](AxiosExtendRequestOptions.md#decompress)
 - [env](AxiosExtendRequestOptions.md#env)
 - [error](AxiosExtendRequestOptions.md#error)
+- [formSerializer](AxiosExtendRequestOptions.md#formserializer)
 - [headers](AxiosExtendRequestOptions.md#headers)
 - [httpAgent](AxiosExtendRequestOptions.md#httpagent)
 - [httpsAgent](AxiosExtendRequestOptions.md#httpsagent)
 - [insecureHTTPParser](AxiosExtendRequestOptions.md#insecurehttpparser)
 - [maxBodyLength](AxiosExtendRequestOptions.md#maxbodylength)
 - [maxContentLength](AxiosExtendRequestOptions.md#maxcontentlength)
+- [maxRate](AxiosExtendRequestOptions.md#maxrate)
 - [maxRedirects](AxiosExtendRequestOptions.md#maxredirects)
 - [method](AxiosExtendRequestOptions.md#method)
 - [onDownloadProgress](AxiosExtendRequestOptions.md#ondownloadprogress)
@@ -64,17 +66,17 @@
 
 ### adapter
 
-• `Optional` **adapter**: `AxiosAdapter`
+• `Optional` **adapter**: `AxiosAdapterConfig` \| `AxiosAdapterConfig`[]
 
 #### Inherited from
 
-AxiosRequestConfig.adapter
+InternalAxiosRequestConfig.adapter
 
 #### Defined in
 
-node_modules/.pnpm/axios@0.27.2/node_modules/axios/index.d.ts:88
+node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts:315
 
-___
+---
 
 ### auth
 
@@ -82,13 +84,13 @@ ___
 
 #### Inherited from
 
-AxiosRequestConfig.auth
+InternalAxiosRequestConfig.auth
 
 #### Defined in
 
-node_modules/.pnpm/axios@0.27.2/node_modules/axios/index.d.ts:89
+node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts:316
 
-___
+---
 
 ### axios-extend
 
@@ -96,9 +98,9 @@ ___
 
 #### Defined in
 
-[src/index.ts:32](https://github.com/saqqdy/axios-ex/blob/5d9d522/src/index.ts#L32)
+[src/index.ts:32](https://github.com/saqqdy/axios-ex/blob/e01ff9c/src/index.ts#L32)
 
-___
+---
 
 ### baseURL
 
@@ -106,17 +108,17 @@ ___
 
 #### Inherited from
 
-AxiosRequestConfig.baseURL
+InternalAxiosRequestConfig.baseURL
 
 #### Defined in
 
-node_modules/.pnpm/axios@0.27.2/node_modules/axios/index.d.ts:78
+node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts:305
 
-___
+---
 
 ### beforeRedirect
 
-• `Optional` **beforeRedirect**: (`options`: `Record`<`string`, `any`\>, `responseDetails`: { `headers`: `Record`<`string`, `string`\>  }) => `void`
+• `Optional` **beforeRedirect**: (`options`: `Record`<`string`, `any`\>, `responseDetails`: { `headers`: `Record`<`string`, `string`\> }) => `void`
 
 #### Type declaration
 
@@ -124,10 +126,10 @@ ___
 
 ##### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `options` | `Record`<`string`, `any`\> |
-| `responseDetails` | `Object` |
+| Name                      | Type                          |
+| :------------------------ | :---------------------------- |
+| `options`                 | `Record`<`string`, `any`\>    |
+| `responseDetails`         | `Object`                      |
 | `responseDetails.headers` | `Record`<`string`, `string`\> |
 
 ##### Returns
@@ -136,13 +138,13 @@ ___
 
 #### Inherited from
 
-AxiosRequestConfig.beforeRedirect
+InternalAxiosRequestConfig.beforeRedirect
 
 #### Defined in
 
-node_modules/.pnpm/axios@0.27.2/node_modules/axios/index.d.ts:100
+node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts:328
 
-___
+---
 
 ### cancelToken
 
@@ -150,13 +152,13 @@ ___
 
 #### Overrides
 
-AxiosRequestConfig.cancelToken
+InternalAxiosRequestConfig.cancelToken
 
 #### Defined in
 
-[src/index.ts:36](https://github.com/saqqdy/axios-ex/blob/5d9d522/src/index.ts#L36)
+[src/index.ts:36](https://github.com/saqqdy/axios-ex/blob/e01ff9c/src/index.ts#L36)
 
-___
+---
 
 ### data
 
@@ -164,13 +166,13 @@ ___
 
 #### Inherited from
 
-AxiosRequestConfig.data
+InternalAxiosRequestConfig.data
 
 #### Defined in
 
-node_modules/.pnpm/axios@0.27.2/node_modules/axios/index.d.ts:84
+node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts:311
 
-___
+---
 
 ### decompress
 
@@ -178,13 +180,13 @@ ___
 
 #### Inherited from
 
-AxiosRequestConfig.decompress
+InternalAxiosRequestConfig.decompress
 
 #### Defined in
 
-node_modules/.pnpm/axios@0.27.2/node_modules/axios/index.d.ts:106
+node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts:334
 
-___
+---
 
 ### env
 
@@ -192,19 +194,19 @@ ___
 
 #### Type declaration
 
-| Name | Type |
-| :------ | :------ |
+| Name        | Type                             |
+| :---------- | :------------------------------- |
 | `FormData?` | (...`args`: `any`[]) => `object` |
 
 #### Inherited from
 
-AxiosRequestConfig.env
+InternalAxiosRequestConfig.env
 
 #### Defined in
 
-node_modules/.pnpm/axios@0.27.2/node_modules/axios/index.d.ts:110
+node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts:338
 
-___
+---
 
 ### error
 
@@ -212,23 +214,37 @@ ___
 
 #### Defined in
 
-[src/index.ts:38](https://github.com/saqqdy/axios-ex/blob/5d9d522/src/index.ts#L38)
+[src/index.ts:38](https://github.com/saqqdy/axios-ex/blob/e01ff9c/src/index.ts#L38)
 
-___
+---
 
-### headers
+### formSerializer
 
-• `Optional` **headers**: `AxiosRequestHeaders`
+• `Optional` **formSerializer**: `FormSerializerOptions`
 
 #### Inherited from
 
-AxiosRequestConfig.headers
+InternalAxiosRequestConfig.formSerializer
 
 #### Defined in
 
-node_modules/.pnpm/axios@0.27.2/node_modules/axios/index.d.ts:81
+node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts:341
 
-___
+---
+
+### headers
+
+• **headers**: `AxiosRequestHeaders`
+
+#### Inherited from
+
+InternalAxiosRequestConfig.headers
+
+#### Defined in
+
+node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts:348
+
+---
 
 ### httpAgent
 
@@ -236,13 +252,13 @@ ___
 
 #### Inherited from
 
-AxiosRequestConfig.httpAgent
+InternalAxiosRequestConfig.httpAgent
 
 #### Defined in
 
-node_modules/.pnpm/axios@0.27.2/node_modules/axios/index.d.ts:102
+node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts:330
 
-___
+---
 
 ### httpsAgent
 
@@ -250,13 +266,13 @@ ___
 
 #### Inherited from
 
-AxiosRequestConfig.httpsAgent
+InternalAxiosRequestConfig.httpsAgent
 
 #### Defined in
 
-node_modules/.pnpm/axios@0.27.2/node_modules/axios/index.d.ts:103
+node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts:331
 
-___
+---
 
 ### insecureHTTPParser
 
@@ -264,13 +280,13 @@ ___
 
 #### Inherited from
 
-AxiosRequestConfig.insecureHTTPParser
+InternalAxiosRequestConfig.insecureHTTPParser
 
 #### Defined in
 
-node_modules/.pnpm/axios@0.27.2/node_modules/axios/index.d.ts:109
+node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts:337
 
-___
+---
 
 ### maxBodyLength
 
@@ -278,13 +294,13 @@ ___
 
 #### Inherited from
 
-AxiosRequestConfig.maxBodyLength
+InternalAxiosRequestConfig.maxBodyLength
 
 #### Defined in
 
-node_modules/.pnpm/axios@0.27.2/node_modules/axios/index.d.ts:98
+node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts:325
 
-___
+---
 
 ### maxContentLength
 
@@ -292,13 +308,27 @@ ___
 
 #### Inherited from
 
-AxiosRequestConfig.maxContentLength
+InternalAxiosRequestConfig.maxContentLength
 
 #### Defined in
 
-node_modules/.pnpm/axios@0.27.2/node_modules/axios/index.d.ts:96
+node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts:323
 
-___
+---
+
+### maxRate
+
+• `Optional` **maxRate**: `number` \| [`number`, `number`]
+
+#### Inherited from
+
+InternalAxiosRequestConfig.maxRate
+
+#### Defined in
+
+node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts:327
+
+---
 
 ### maxRedirects
 
@@ -306,13 +336,13 @@ ___
 
 #### Inherited from
 
-AxiosRequestConfig.maxRedirects
+InternalAxiosRequestConfig.maxRedirects
 
 #### Defined in
 
-node_modules/.pnpm/axios@0.27.2/node_modules/axios/index.d.ts:99
+node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts:326
 
-___
+---
 
 ### method
 
@@ -320,17 +350,17 @@ ___
 
 #### Inherited from
 
-AxiosRequestConfig.method
+InternalAxiosRequestConfig.method
 
 #### Defined in
 
-node_modules/.pnpm/axios@0.27.2/node_modules/axios/index.d.ts:77
+node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts:304
 
-___
+---
 
 ### onDownloadProgress
 
-• `Optional` **onDownloadProgress**: (`progressEvent`: `any`) => `void`
+• `Optional` **onDownloadProgress**: (`progressEvent`: `AxiosProgressEvent`) => `void`
 
 #### Type declaration
 
@@ -338,9 +368,9 @@ ___
 
 ##### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `progressEvent` | `any` |
+| Name            | Type                 |
+| :-------------- | :------------------- |
+| `progressEvent` | `AxiosProgressEvent` |
 
 ##### Returns
 
@@ -348,17 +378,17 @@ ___
 
 #### Inherited from
 
-AxiosRequestConfig.onDownloadProgress
+InternalAxiosRequestConfig.onDownloadProgress
 
 #### Defined in
 
-node_modules/.pnpm/axios@0.27.2/node_modules/axios/index.d.ts:95
+node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts:322
 
-___
+---
 
 ### onUploadProgress
 
-• `Optional` **onUploadProgress**: (`progressEvent`: `any`) => `void`
+• `Optional` **onUploadProgress**: (`progressEvent`: `AxiosProgressEvent`) => `void`
 
 #### Type declaration
 
@@ -366,9 +396,9 @@ ___
 
 ##### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `progressEvent` | `any` |
+| Name            | Type                 |
+| :-------------- | :------------------- |
+| `progressEvent` | `AxiosProgressEvent` |
 
 ##### Returns
 
@@ -376,13 +406,13 @@ ___
 
 #### Inherited from
 
-AxiosRequestConfig.onUploadProgress
+InternalAxiosRequestConfig.onUploadProgress
 
 #### Defined in
 
-node_modules/.pnpm/axios@0.27.2/node_modules/axios/index.d.ts:94
+node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts:321
 
-___
+---
 
 ### orderly
 
@@ -390,9 +420,9 @@ ___
 
 #### Defined in
 
-[src/index.ts:34](https://github.com/saqqdy/axios-ex/blob/5d9d522/src/index.ts#L34)
+[src/index.ts:34](https://github.com/saqqdy/axios-ex/blob/e01ff9c/src/index.ts#L34)
 
-___
+---
 
 ### params
 
@@ -400,55 +430,41 @@ ___
 
 #### Inherited from
 
-AxiosRequestConfig.params
+InternalAxiosRequestConfig.params
 
 #### Defined in
 
-node_modules/.pnpm/axios@0.27.2/node_modules/axios/index.d.ts:82
+node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts:309
 
-___
+---
 
 ### paramsSerializer
 
-• `Optional` **paramsSerializer**: (`params`: `any`) => `string`
-
-#### Type declaration
-
-▸ (`params`): `string`
-
-##### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `params` | `any` |
-
-##### Returns
-
-`string`
+• `Optional` **paramsSerializer**: `ParamsSerializerOptions`
 
 #### Inherited from
 
-AxiosRequestConfig.paramsSerializer
+InternalAxiosRequestConfig.paramsSerializer
 
 #### Defined in
 
-node_modules/.pnpm/axios@0.27.2/node_modules/axios/index.d.ts:83
+node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts:310
 
-___
+---
 
 ### proxy
 
-• `Optional` **proxy**: ``false`` \| `AxiosProxyConfig`
+• `Optional` **proxy**: `false` \| `AxiosProxyConfig`
 
 #### Inherited from
 
-AxiosRequestConfig.proxy
+InternalAxiosRequestConfig.proxy
 
 #### Defined in
 
-node_modules/.pnpm/axios@0.27.2/node_modules/axios/index.d.ts:104
+node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts:332
 
-___
+---
 
 ### requestOptions
 
@@ -456,9 +472,9 @@ ___
 
 #### Defined in
 
-[src/index.ts:35](https://github.com/saqqdy/axios-ex/blob/5d9d522/src/index.ts#L35)
+[src/index.ts:35](https://github.com/saqqdy/axios-ex/blob/e01ff9c/src/index.ts#L35)
 
-___
+---
 
 ### responseEncoding
 
@@ -466,13 +482,13 @@ ___
 
 #### Inherited from
 
-AxiosRequestConfig.responseEncoding
+InternalAxiosRequestConfig.responseEncoding
 
 #### Defined in
 
-node_modules/.pnpm/axios@0.27.2/node_modules/axios/index.d.ts:91
+node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts:318
 
-___
+---
 
 ### responseType
 
@@ -480,41 +496,41 @@ ___
 
 #### Inherited from
 
-AxiosRequestConfig.responseType
+InternalAxiosRequestConfig.responseType
 
 #### Defined in
 
-node_modules/.pnpm/axios@0.27.2/node_modules/axios/index.d.ts:90
+node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts:317
 
-___
+---
 
 ### signal
 
-• `Optional` **signal**: `AbortSignal`
+• `Optional` **signal**: `GenericAbortSignal`
 
 #### Inherited from
 
-AxiosRequestConfig.signal
+InternalAxiosRequestConfig.signal
 
 #### Defined in
 
-node_modules/.pnpm/axios@0.27.2/node_modules/axios/index.d.ts:108
+node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts:336
 
-___
+---
 
 ### socketPath
 
-• `Optional` **socketPath**: ``null`` \| `string`
+• `Optional` **socketPath**: `null` \| `string`
 
 #### Inherited from
 
-AxiosRequestConfig.socketPath
+InternalAxiosRequestConfig.socketPath
 
 #### Defined in
 
-node_modules/.pnpm/axios@0.27.2/node_modules/axios/index.d.ts:101
+node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts:329
 
-___
+---
 
 ### timeout
 
@@ -522,13 +538,13 @@ ___
 
 #### Inherited from
 
-AxiosRequestConfig.timeout
+InternalAxiosRequestConfig.timeout
 
 #### Defined in
 
-node_modules/.pnpm/axios@0.27.2/node_modules/axios/index.d.ts:85
+node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts:312
 
-___
+---
 
 ### timeoutErrorMessage
 
@@ -536,13 +552,13 @@ ___
 
 #### Inherited from
 
-AxiosRequestConfig.timeoutErrorMessage
+InternalAxiosRequestConfig.timeoutErrorMessage
 
 #### Defined in
 
-node_modules/.pnpm/axios@0.27.2/node_modules/axios/index.d.ts:86
+node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts:313
 
-___
+---
 
 ### transformRequest
 
@@ -550,13 +566,13 @@ ___
 
 #### Inherited from
 
-AxiosRequestConfig.transformRequest
+InternalAxiosRequestConfig.transformRequest
 
 #### Defined in
 
-node_modules/.pnpm/axios@0.27.2/node_modules/axios/index.d.ts:79
+node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts:306
 
-___
+---
 
 ### transformResponse
 
@@ -564,13 +580,13 @@ ___
 
 #### Inherited from
 
-AxiosRequestConfig.transformResponse
+InternalAxiosRequestConfig.transformResponse
 
 #### Defined in
 
-node_modules/.pnpm/axios@0.27.2/node_modules/axios/index.d.ts:80
+node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts:307
 
-___
+---
 
 ### transitional
 
@@ -578,13 +594,13 @@ ___
 
 #### Inherited from
 
-AxiosRequestConfig.transitional
+InternalAxiosRequestConfig.transitional
 
 #### Defined in
 
-node_modules/.pnpm/axios@0.27.2/node_modules/axios/index.d.ts:107
+node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts:335
 
-___
+---
 
 ### type
 
@@ -592,9 +608,9 @@ ___
 
 #### Defined in
 
-[src/index.ts:37](https://github.com/saqqdy/axios-ex/blob/5d9d522/src/index.ts#L37)
+[src/index.ts:37](https://github.com/saqqdy/axios-ex/blob/e01ff9c/src/index.ts#L37)
 
-___
+---
 
 ### unique
 
@@ -602,9 +618,9 @@ ___
 
 #### Defined in
 
-[src/index.ts:33](https://github.com/saqqdy/axios-ex/blob/5d9d522/src/index.ts#L33)
+[src/index.ts:33](https://github.com/saqqdy/axios-ex/blob/e01ff9c/src/index.ts#L33)
 
-___
+---
 
 ### url
 
@@ -612,27 +628,27 @@ ___
 
 #### Inherited from
 
-AxiosRequestConfig.url
+InternalAxiosRequestConfig.url
 
 #### Defined in
 
-node_modules/.pnpm/axios@0.27.2/node_modules/axios/index.d.ts:76
+node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts:303
 
-___
+---
 
 ### validateStatus
 
-• `Optional` **validateStatus**: ``null`` \| (`status`: `number`) => `boolean`
+• `Optional` **validateStatus**: `null` \| (`status`: `number`) => `boolean`
 
 #### Inherited from
 
-AxiosRequestConfig.validateStatus
+InternalAxiosRequestConfig.validateStatus
 
 #### Defined in
 
-node_modules/.pnpm/axios@0.27.2/node_modules/axios/index.d.ts:97
+node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts:324
 
-___
+---
 
 ### withCredentials
 
@@ -640,13 +656,13 @@ ___
 
 #### Inherited from
 
-AxiosRequestConfig.withCredentials
+InternalAxiosRequestConfig.withCredentials
 
 #### Defined in
 
-node_modules/.pnpm/axios@0.27.2/node_modules/axios/index.d.ts:87
+node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts:314
 
-___
+---
 
 ### xsrfCookieName
 
@@ -654,13 +670,13 @@ ___
 
 #### Inherited from
 
-AxiosRequestConfig.xsrfCookieName
+InternalAxiosRequestConfig.xsrfCookieName
 
 #### Defined in
 
-node_modules/.pnpm/axios@0.27.2/node_modules/axios/index.d.ts:92
+node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts:319
 
-___
+---
 
 ### xsrfHeaderName
 
@@ -668,8 +684,8 @@ ___
 
 #### Inherited from
 
-AxiosRequestConfig.xsrfHeaderName
+InternalAxiosRequestConfig.xsrfHeaderName
 
 #### Defined in
 
-node_modules/.pnpm/axios@0.27.2/node_modules/axios/index.d.ts:93
+node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts:320

@@ -1,4 +1,4 @@
-[index.md - v2.3.1](../README.md) / [Exports](../modules.md) / AxiosExtendCurrentStateType
+[index.md - v3.0.0-beta.1](../README.md) / [Exports](../modules.md) / AxiosExtendCurrentStateType
 
 # Interface: AxiosExtendCurrentStateType
 
@@ -17,9 +17,9 @@
 
 #### Defined in
 
-[src/index.ts:27](https://github.com/saqqdy/axios-ex/blob/5d9d522/src/index.ts#L27)
+[src/index.ts:27](https://github.com/saqqdy/axios-ex/blob/e01ff9c/src/index.ts#L27)
 
-___
+---
 
 ### retryCount
 
@@ -27,4 +27,4 @@ ___
 
 #### Defined in
 
-[src/index.ts:28](https://github.com/saqqdy/axios-ex/blob/5d9d522/src/index.ts#L28)
+[src/index.ts:28](https://github.com/saqqdy/axios-ex/blob/e01ff9c/src/index.ts#L28)

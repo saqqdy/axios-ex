@@ -1,6 +1,6 @@
-[index.md - v2.3.1](README.md) / Exports
+[index.md - v3.0.0-beta.1](README.md) / Exports
 
-# index.md - v2.3.1
+# index.md - v3.0.0-beta.1
 
 ## Table of contents
 
@@ -42,11 +42,11 @@ Renames and re-exports [AxiosExtend](classes/AxiosExtend.md)
 
 ### namespace
 
-• `Const` **namespace**: ``"axios-extend"``
+• `Const` **namespace**: `"axios-extend"`
 
 #### Defined in
 
-[src/index.ts:14](https://github.com/saqqdy/axios-ex/blob/5d9d522/src/index.ts#L14)
+[src/index.ts:14](https://github.com/saqqdy/axios-ex/blob/e01ff9c/src/index.ts#L14)
 
 ## Functions
 
@@ -56,9 +56,9 @@ Renames and re-exports [AxiosExtend](classes/AxiosExtend.md)
 
 #### Parameters
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `retryNumber` | `number` | `0` | default: 0 |
+| Name          | Type     | Default value | Description |
+| :------------ | :------- | :------------ | :---------- |
+| `retryNumber` | `number` | `0`           | default: 0  |
 
 #### Returns
 
@@ -68,9 +68,9 @@ delay milliseconds
 
 #### Defined in
 
-[src/index.ts:156](https://github.com/saqqdy/axios-ex/blob/5d9d522/src/index.ts#L156)
+[src/index.ts:156](https://github.com/saqqdy/axios-ex/blob/e01ff9c/src/index.ts#L156)
 
-___
+---
 
 ### isIdempotentRequestError
 
@@ -78,9 +78,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `error` | `any` | Error |
+| Name    | Type  | Description |
+| :------ | :---- | :---------- |
+| `error` | `any` | Error       |
 
 #### Returns
 
@@ -90,9 +90,9 @@ boolean
 
 #### Defined in
 
-[src/index.ts:140](https://github.com/saqqdy/axios-ex/blob/5d9d522/src/index.ts#L140)
+[src/index.ts:140](https://github.com/saqqdy/axios-ex/blob/e01ff9c/src/index.ts#L140)
 
-___
+---
 
 ### isNetworkError
 
@@ -100,9 +100,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `error` | `AxiosError`<`unknown`, `any`\> | Error |
+| Name    | Type                            | Description |
+| :------ | :------------------------------ | :---------- |
+| `error` | `AxiosError`<`unknown`, `any`\> | Error       |
 
 #### Returns
 
@@ -112,9 +112,9 @@ boolean
 
 #### Defined in
 
-[src/index.ts:119](https://github.com/saqqdy/axios-ex/blob/5d9d522/src/index.ts#L119)
+[src/index.ts:119](https://github.com/saqqdy/axios-ex/blob/e01ff9c/src/index.ts#L119)
 
-___
+---
 
 ### isNetworkOrIdempotentRequestError
 
@@ -122,9 +122,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `error` | `AxiosError`<`unknown`, `any`\> | Error |
+| Name    | Type                            | Description |
+| :------ | :------------------------------ | :---------- |
+| `error` | `AxiosError`<`unknown`, `any`\> | Error       |
 
 #### Returns
 
@@ -134,9 +134,9 @@ boolean
 
 #### Defined in
 
-[src/index.ts:149](https://github.com/saqqdy/axios-ex/blob/5d9d522/src/index.ts#L149)
+[src/index.ts:149](https://github.com/saqqdy/axios-ex/blob/e01ff9c/src/index.ts#L149)
 
-___
+---
 
 ### isRetryableError
 
@@ -144,9 +144,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `error` | `AxiosError`<`unknown`, `any`\> | Error |
+| Name    | Type                            | Description |
+| :------ | :------------------------------ | :---------- |
+| `error` | `AxiosError`<`unknown`, `any`\> | Error       |
 
 #### Returns
 
@@ -156,9 +156,9 @@ boolean
 
 #### Defined in
 
-[src/index.ts:165](https://github.com/saqqdy/axios-ex/blob/5d9d522/src/index.ts#L165)
+[src/index.ts:165](https://github.com/saqqdy/axios-ex/blob/e01ff9c/src/index.ts#L165)
 
-___
+---
 
 ### isSafeRequestError
 
@@ -166,9 +166,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `error` | `any` | Error |
+| Name    | Type  | Description |
+| :------ | :---- | :---------- |
+| `error` | `any` | Error       |
 
 #### Returns
 
@@ -178,4 +178,4 @@ boolean
 
 #### Defined in
 
-[src/index.ts:131](https://github.com/saqqdy/axios-ex/blob/5d9d522/src/index.ts#L131)
+[src/index.ts:131](https://github.com/saqqdy/axios-ex/blob/e01ff9c/src/index.ts#L131)

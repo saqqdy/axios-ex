@@ -1,5 +1,11 @@
 # Changelog
 
+## 2023.01.29 v3.0.0
+
+1. upgrade to `axios v1.x`
+2. fix types
+3. deprecate webpack build
+
 ## 2023.01.28 v2.3.1
 
 1. improve TS type

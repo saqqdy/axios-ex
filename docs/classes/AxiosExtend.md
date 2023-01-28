@@ -1,4 +1,4 @@
-[index.md - v2.3.1](../README.md) / [Exports](../modules.md) / AxiosExtend
+[index.md - v3.0.0-beta.1](../README.md) / [Exports](../modules.md) / AxiosExtend
 
 # Class: AxiosExtend
 
@@ -32,13 +32,13 @@ AxiosExtend class
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name             | Type                                                      |
+| :--------------- | :-------------------------------------------------------- |
 | `«destructured»` | [`AxiosExtendConfig`](../interfaces/AxiosExtendConfig.md) |
 
 #### Defined in
 
-[src/index.ts:184](https://github.com/saqqdy/axios-ex/blob/5d9d522/src/index.ts#L184)
+[src/index.ts:184](https://github.com/saqqdy/axios-ex/blob/e01ff9c/src/index.ts#L184)
 
 ## Properties
 
@@ -48,19 +48,19 @@ AxiosExtend class
 
 #### Defined in
 
-[src/index.ts:179](https://github.com/saqqdy/axios-ex/blob/5d9d522/src/index.ts#L179)
+[src/index.ts:179](https://github.com/saqqdy/axios-ex/blob/e01ff9c/src/index.ts#L179)
 
-___
+---
 
 ### onCancel
 
-• **onCancel**: ``null`` \| (`error`: `any`) => `void`
+• **onCancel**: `null` \| (`error`: `any`) => `void`
 
 #### Defined in
 
-[src/index.ts:183](https://github.com/saqqdy/axios-ex/blob/5d9d522/src/index.ts#L183)
+[src/index.ts:183](https://github.com/saqqdy/axios-ex/blob/e01ff9c/src/index.ts#L183)
 
-___
+---
 
 ### orderly
 
@@ -68,9 +68,9 @@ ___
 
 #### Defined in
 
-[src/index.ts:180](https://github.com/saqqdy/axios-ex/blob/5d9d522/src/index.ts#L180)
+[src/index.ts:180](https://github.com/saqqdy/axios-ex/blob/e01ff9c/src/index.ts#L180)
 
-___
+---
 
 ### retries
 
@@ -78,9 +78,9 @@ ___
 
 #### Defined in
 
-[src/index.ts:182](https://github.com/saqqdy/axios-ex/blob/5d9d522/src/index.ts#L182)
+[src/index.ts:182](https://github.com/saqqdy/axios-ex/blob/e01ff9c/src/index.ts#L182)
 
-___
+---
 
 ### unique
 
@@ -88,9 +88,9 @@ ___
 
 #### Defined in
 
-[src/index.ts:181](https://github.com/saqqdy/axios-ex/blob/5d9d522/src/index.ts#L181)
+[src/index.ts:181](https://github.com/saqqdy/axios-ex/blob/e01ff9c/src/index.ts#L181)
 
-___
+---
 
 ### waiting
 
@@ -98,7 +98,7 @@ ___
 
 #### Defined in
 
-[src/index.ts:178](https://github.com/saqqdy/axios-ex/blob/5d9d522/src/index.ts#L178)
+[src/index.ts:178](https://github.com/saqqdy/axios-ex/blob/e01ff9c/src/index.ts#L178)
 
 ## Methods
 
@@ -110,8 +110,8 @@ Create request
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name      | Type                                                                              |
+| :-------- | :-------------------------------------------------------------------------------- |
 | `options` | [`AxiosExtendRequestOptions`](../interfaces/AxiosExtendRequestOptions.md)<`any`\> |
 
 #### Returns
@@ -120,9 +120,9 @@ Create request
 
 #### Defined in
 
-[src/index.ts:279](https://github.com/saqqdy/axios-ex/blob/5d9d522/src/index.ts#L279)
+[src/index.ts:279](https://github.com/saqqdy/axios-ex/blob/e01ff9c/src/index.ts#L279)
 
-___
+---
 
 ### init
 
@@ -132,8 +132,8 @@ Initialization
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name             | Type                                                      |
+| :--------------- | :-------------------------------------------------------- |
 | `defaultOptions` | [`AxiosExtendConfig`](../interfaces/AxiosExtendConfig.md) |
 
 #### Returns
@@ -142,4 +142,4 @@ Initialization
 
 #### Defined in
 
-[src/index.ts:205](https://github.com/saqqdy/axios-ex/blob/5d9d522/src/index.ts#L205)
+[src/index.ts:205](https://github.com/saqqdy/axios-ex/blob/e01ff9c/src/index.ts#L205)

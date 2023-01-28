@@ -1,10 +1,10 @@
 import type {
 	AxiosError,
 	AxiosInstance,
-	AxiosRequestConfig,
 	AxiosResponse,
 	CancelToken,
-	CancelTokenSource
+	CancelTokenSource,
+	InternalAxiosRequestConfig
 } from 'axios'
 import axios from 'axios'
 import isRetryAllowed from 'is-retry-allowed'
@@ -28,7 +28,7 @@ export interface AxiosExtendCurrentStateType {
 	retryCount: number
 }
 
-export interface AxiosExtendRequestOptions<D = any> extends AxiosRequestConfig<D> {
+export interface AxiosExtendRequestOptions<D = any> extends InternalAxiosRequestConfig<D> {
 	[namespace]?: any
 	unique?: boolean
 	orderly?: boolean
@@ -48,9 +48,9 @@ export interface AxiosExtendConfig {
 	retryDelay?(retryNumber: number, error: any): number
 	setHeaders?(instance: AxiosInstance): void
 	onRequest?(
-		config: AxiosRequestConfig,
+		config: InternalAxiosRequestConfig,
 		requestOptions: AxiosExtendRequestOptions
-	): AxiosRequestConfig | Promise<AxiosRequestConfig>
+	): InternalAxiosRequestConfig | Promise<InternalAxiosRequestConfig>
 	onRequestError?(error: any): void
 	onResponse?(
 		res: AxiosResponse<any>,
@@ -210,7 +210,7 @@ export class AxiosExtend {
 		// Adding a request interceptor
 		onRequest &&
 			axios.interceptors.request.use(
-				(config: AxiosRequestConfig) => {
+				(config: InternalAxiosRequestConfig) => {
 					const currentState = getCurrentState(config)
 					currentState.lastRequestTime = Date.now()
 					if (currentState.retryCount > 0) return config // retry re-requests the interface without executing onRequest again
