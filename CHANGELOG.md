@@ -1,11 +1,10 @@
 # Changelog
 
-## 2022.12.31 v2.3.0
+## 2023.01.28 v2.3.1
 
 1. improve TS type
 2. upgrade to `rollup v3.x`
-3. deprecate webpack build
-4. upgrade dependency packages
+3. upgrade dependency packages
 
 ## 2021.11.18 v2.2.4
 

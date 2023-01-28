@@ -1,7 +1,7 @@
 {
 	"name": "axios-ex",
-	"description": "axios extend",
-	"version": "2.3.1-beta.1",
+	"description": "A integration solution of axios for large enterprise projects",
+	"version": "2.3.1",
 	"packageManager": "pnpm@7.26.1",
 	"main": "./dist/index.cjs",
 	"module": "./dist/index.mjs",
@@ -47,7 +47,7 @@
 		"prettier:docs": "prettier --write \"**/*.md\""
 	},
 	"dependencies": {
-		"axios": "^1.2.5",
+		"axios": "^0.27.2",
 		"core-js": "^3.27.2",
 		"is-retry-allowed": "^3.0.0",
 		"js-cool": "^2.8.0",
@@ -98,7 +98,7 @@
 		"webpack-node-externals": "^3.0.0"
 	},
 	"peerDependencies": {
-		"axios": "*",
+		"axios": "< 1",
 		"core-js": ">= 3",
 		"js-cool": ">= 2"
 	},

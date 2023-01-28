@@ -1,4 +1,4 @@
-[index.md - v2.3.1-beta.1](../README.md) / [Exports](../modules.md) / AxiosExtendConfig
+[index.md - v2.3.1](../README.md) / [Exports](../modules.md) / AxiosExtendConfig
 
 # Interface: AxiosExtendConfig
 
@@ -32,9 +32,9 @@
 
 #### Defined in
 
-[src/index.ts:42](https://github.com/saqqdy/axios-ex/blob/e57c340/src/index.ts#L42)
+[src/index.ts:42](https://github.com/saqqdy/axios-ex/blob/5d9d522/src/index.ts#L42)
 
----
+___
 
 ### orderly
 
@@ -42,9 +42,9 @@
 
 #### Defined in
 
-[src/index.ts:45](https://github.com/saqqdy/axios-ex/blob/e57c340/src/index.ts#L45)
+[src/index.ts:45](https://github.com/saqqdy/axios-ex/blob/5d9d522/src/index.ts#L45)
 
----
+___
 
 ### retries
 
@@ -52,9 +52,9 @@
 
 #### Defined in
 
-[src/index.ts:44](https://github.com/saqqdy/axios-ex/blob/e57c340/src/index.ts#L44)
+[src/index.ts:44](https://github.com/saqqdy/axios-ex/blob/5d9d522/src/index.ts#L44)
 
----
+___
 
 ### shouldResetTimeout
 
@@ -62,9 +62,9 @@
 
 #### Defined in
 
-[src/index.ts:46](https://github.com/saqqdy/axios-ex/blob/e57c340/src/index.ts#L46)
+[src/index.ts:46](https://github.com/saqqdy/axios-ex/blob/5d9d522/src/index.ts#L46)
 
----
+___
 
 ### unique
 
@@ -72,7 +72,7 @@
 
 #### Defined in
 
-[src/index.ts:43](https://github.com/saqqdy/axios-ex/blob/e57c340/src/index.ts#L43)
+[src/index.ts:43](https://github.com/saqqdy/axios-ex/blob/5d9d522/src/index.ts#L43)
 
 ## Methods
 
@@ -82,8 +82,8 @@
 
 #### Parameters
 
-| Name    | Type  |
-| :------ | :---- |
+| Name | Type |
+| :------ | :------ |
 | `error` | `any` |
 
 #### Returns
@@ -92,9 +92,9 @@
 
 #### Defined in
 
-[src/index.ts:61](https://github.com/saqqdy/axios-ex/blob/e57c340/src/index.ts#L61)
+[src/index.ts:61](https://github.com/saqqdy/axios-ex/blob/5d9d522/src/index.ts#L61)
 
----
+___
 
 ### onError
 
@@ -102,8 +102,8 @@
 
 #### Parameters
 
-| Name    | Type  |
-| :------ | :---- |
+| Name | Type |
+| :------ | :------ |
 | `error` | `any` |
 
 #### Returns
@@ -112,30 +112,30 @@
 
 #### Defined in
 
-[src/index.ts:60](https://github.com/saqqdy/axios-ex/blob/e57c340/src/index.ts#L60)
+[src/index.ts:60](https://github.com/saqqdy/axios-ex/blob/5d9d522/src/index.ts#L60)
 
----
+___
 
 ### onRequest
 
-▸ `Optional` **onRequest**(`config`, `requestOptions`): `InternalAxiosRequestConfig`<`any`\> \| `Promise`<`InternalAxiosRequestConfig`<`any`\>\>
+▸ `Optional` **onRequest**(`config`, `requestOptions`): `AxiosRequestConfig`<`any`\> \| `Promise`<`AxiosRequestConfig`<`any`\>\>
 
 #### Parameters
 
-| Name             | Type                                                                |
-| :--------------- | :------------------------------------------------------------------ |
-| `config`         | `InternalAxiosRequestConfig`<`any`\>                                |
+| Name | Type |
+| :------ | :------ |
+| `config` | `AxiosRequestConfig`<`any`\> |
 | `requestOptions` | [`AxiosExtendRequestOptions`](AxiosExtendRequestOptions.md)<`any`\> |
 
 #### Returns
 
-`InternalAxiosRequestConfig`<`any`\> \| `Promise`<`InternalAxiosRequestConfig`<`any`\>\>
+`AxiosRequestConfig`<`any`\> \| `Promise`<`AxiosRequestConfig`<`any`\>\>
 
 #### Defined in
 
-[src/index.ts:50](https://github.com/saqqdy/axios-ex/blob/e57c340/src/index.ts#L50)
+[src/index.ts:50](https://github.com/saqqdy/axios-ex/blob/5d9d522/src/index.ts#L50)
 
----
+___
 
 ### onRequestError
 
@@ -143,8 +143,8 @@
 
 #### Parameters
 
-| Name    | Type  |
-| :------ | :---- |
+| Name | Type |
+| :------ | :------ |
 | `error` | `any` |
 
 #### Returns
@@ -153,9 +153,9 @@
 
 #### Defined in
 
-[src/index.ts:54](https://github.com/saqqdy/axios-ex/blob/e57c340/src/index.ts#L54)
+[src/index.ts:54](https://github.com/saqqdy/axios-ex/blob/5d9d522/src/index.ts#L54)
 
----
+___
 
 ### onResponse
 
@@ -163,9 +163,9 @@
 
 #### Parameters
 
-| Name             | Type                                                                |
-| :--------------- | :------------------------------------------------------------------ |
-| `res`            | `AxiosResponse`<`any`, `any`\>                                      |
+| Name | Type |
+| :------ | :------ |
+| `res` | `AxiosResponse`<`any`, `any`\> |
 | `requestOptions` | [`AxiosExtendRequestOptions`](AxiosExtendRequestOptions.md)<`any`\> |
 
 #### Returns
@@ -174,9 +174,9 @@
 
 #### Defined in
 
-[src/index.ts:55](https://github.com/saqqdy/axios-ex/blob/e57c340/src/index.ts#L55)
+[src/index.ts:55](https://github.com/saqqdy/axios-ex/blob/5d9d522/src/index.ts#L55)
 
----
+___
 
 ### onResponseError
 
@@ -184,8 +184,8 @@
 
 #### Parameters
 
-| Name    | Type  |
-| :------ | :---- |
+| Name | Type |
+| :------ | :------ |
 | `error` | `any` |
 
 #### Returns
@@ -194,9 +194,9 @@
 
 #### Defined in
 
-[src/index.ts:59](https://github.com/saqqdy/axios-ex/blob/e57c340/src/index.ts#L59)
+[src/index.ts:59](https://github.com/saqqdy/axios-ex/blob/5d9d522/src/index.ts#L59)
 
----
+___
 
 ### retryCondition
 
@@ -208,9 +208,9 @@
 
 #### Defined in
 
-[src/index.ts:47](https://github.com/saqqdy/axios-ex/blob/e57c340/src/index.ts#L47)
+[src/index.ts:47](https://github.com/saqqdy/axios-ex/blob/5d9d522/src/index.ts#L47)
 
----
+___
 
 ### retryDelay
 
@@ -218,10 +218,10 @@
 
 #### Parameters
 
-| Name          | Type     |
-| :------------ | :------- |
+| Name | Type |
+| :------ | :------ |
 | `retryNumber` | `number` |
-| `error`       | `any`    |
+| `error` | `any` |
 
 #### Returns
 
@@ -229,9 +229,9 @@
 
 #### Defined in
 
-[src/index.ts:48](https://github.com/saqqdy/axios-ex/blob/e57c340/src/index.ts#L48)
+[src/index.ts:48](https://github.com/saqqdy/axios-ex/blob/5d9d522/src/index.ts#L48)
 
----
+___
 
 ### setHeaders
 
@@ -239,8 +239,8 @@
 
 #### Parameters
 
-| Name       | Type            |
-| :--------- | :-------------- |
+| Name | Type |
+| :------ | :------ |
 | `instance` | `AxiosInstance` |
 
 #### Returns
@@ -249,4 +249,4 @@
 
 #### Defined in
 
-[src/index.ts:49](https://github.com/saqqdy/axios-ex/blob/e57c340/src/index.ts#L49)
+[src/index.ts:49](https://github.com/saqqdy/axios-ex/blob/5d9d522/src/index.ts#L49)
