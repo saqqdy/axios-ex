@@ -4,7 +4,7 @@ index.md - v2.3.1-beta.1 / [Exports](modules.md)
 
 # axios-ex
 
-企业级项目`axios`集成方案
+A integration solution of axios for large enterprise projects. Support request concurrency control & cancel requests & automatic retry & requests times limit, etc.
 
 [![NPM version][npm-image]][npm-url]
 [![Codacy Badge][codacy-image]][codacy-url]
@@ -18,23 +18,30 @@ index.md - v2.3.1-beta.1 / [Exports](modules.md)
 
 </div>
 
-## **完整文档请查阅： [API 完整文档](./docs/modules.md)**
+<div style="text-align: center;" align="center">
 
-## 安装
+## **For API documentation, see: [API Docs](./docs/modules.md)**
 
-> `axios-ex`自带了最新版的 axios，可以不用安装`axios`包
+</div>
+
+## Installation
+
+> `axios-ex` comes with the latest version of axios, so you can install it without the `axios` package
 
 ```bash
-# 使用npm
+# use pnpm
+$ pnpm install axios-ex
+
+# use npm
 $ npm install axios-ex --save
 
-# 使用yarn
+# use yarn
 $ yarn add axios-ex
 ```
 
-## 使用
+## Usage
 
-### 常规用法
+### General use
 
 ```js
 // {app_root}/src/plugins/axios.js
@@ -42,7 +49,7 @@ import { getCookie, setCookie } from 'js-cool'
 import AxiosExtend from 'axios-ex'
 
 /**
- * 设置请求头
+ * Set the request header
  *
  * @param {object} instance AxiosInstance
  */
@@ -50,10 +57,10 @@ function setHeaders(instance) {
   instance.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded'
 }
 /**
- * 请求拦截器
+ * Request Interceptor
  *
  * @param {object} config AxiosRequestConfig
- * @param {object} options 请求参数AxiosExtendRequestOptions
+ * @param {object} options request options AxiosExtendRequestOptions
  * @returns AxiosRequestConfig
  */
 function onRequest(config, options = {}) {
@@ -61,7 +68,7 @@ function onRequest(config, options = {}) {
   return config
 }
 /**
- * 请求错误时执行
+ * Execute on request error
  *
  * @param {object} err Error
  */
@@ -69,10 +76,10 @@ function onRequestError(err) {
   console.error(err)
 }
 /**
- * 响应拦截器
+ * Response Interceptor
  *
  * @param {object} res AxiosResponse<any>
- * @param {object} options 请求参数AxiosExtendRequestOptions
+ * @param {object} options request options AxiosExtendRequestOptions
  * @returns Promise<unknown>
  */
 function onResponse(res, options = {}) {
@@ -80,7 +87,7 @@ function onResponse(res, options = {}) {
   return Promise.reject(res.data)
 }
 /**
- * 响应错误时执行
+ * Execute in response error
  *
  * @param {object} err Error
  */
@@ -88,7 +95,7 @@ function onResponseError(err) {
   console.error(err)
 }
 /**
- * 请求错误或响应错误都执行
+ * Execute on request error & response error
  *
  * @param {object} err Error
  */
@@ -96,7 +103,7 @@ function onError(err) {
   console.error(err)
 }
 /**
- * 请求取消
+ * Request Cancelled
  *
  * @param {object} err Error
  */
@@ -104,36 +111,36 @@ function onCancel(err) {
   console.error(err.message)
 }
 
-// 实例化
+// Instantiation
 const axiosEx = new AxiosExtend({
-  maxConnections: 30, // 最大同时请求数，默认：0=不限制
-  unique: true, // 是否取消前面的相似请求，默认：false
-  retries: 0, // 重试次数，默认：0=不重试
-  orderly: false, // 是否有序返回，默认：true
-  setHeaders, // 设置请求头的方法
-  onRequest, // 请求拦截器
-  onRequestError, // 请求错误时执行
-  onResponse, // 响应拦截器
-  onResponseError, // 响应错误时执行
-  onError, // 请求错误或响应错误都执行
-  onCancel // 请求取消时的回调
+  maxConnections: 30, // Maximum number of connections, default: 0, no limit
+  unique: true, // Whether to cancel the previous similar requests, default: false
+  retries: 0, // Number of retries, default: 0, no retries
+  orderly: false, // Whether to return in order, default: true
+  setHeaders, // function for setting request headers
+  onRequest, // Request Interceptor
+  onRequestError, // Execute on request error
+  onResponse, // Response Interceptor
+  onResponseError, // Execute on response error
+  onError, // Execute on request error & response error
+  onCancel // Callback when request is cancelled
 })
 
 export default options => {
-  // 这里设置 unique 和 orderly 优先级高于实例化时候的配置
+  // Here set the unique and orderly priority higher than the instantiation configuration
   options.unique = options.unique ?? false
   options.orderly = options.orderly ?? false
-  // 这里的unique优先级更高
+  // Here the unique has a higher priority
   return axiosEx.create(options)
 }
 ```
 
-### 定义失败重试的延时方法
+### Define the delay function for failed retries
 
-1. 自定义重试延迟的时长
+1. Customize the retry delay time
 
    ```js
-   // 实例化的时候配置
+   // Configuration when instantiating
    const axiosEx = new AxiosExtend({
      // ...
      retryDelay: retryCount => {
@@ -143,11 +150,11 @@ export default options => {
    })
    ```
 
-2. 或者使用`axios-ex`内置的方法，exponentialDelay 随机递增 0%-50%
+2. Or use `axios-ex` built-in function, exponentialDelay randomly incremented by 0%-50%
 
    ```js
    import AxiosExtend, { exponentialDelay } from 'axios-ex'
-   // 实例化的时候配置
+   // Configuration when instantiating
    const axiosEx = new AxiosExtend({
      // ...
      retryDelay: exponentialDelay
@@ -155,22 +162,22 @@ export default options => {
    })
    ```
 
-### 在 vue2.x 里面使用
+### Using with `vue2.0`
 
-有时候我们需要在`onRequest`或`onResponse`里面使用`this`（vue 实例），可以这样写
+Sometimes we need to use `this` (vue instance) inside `onRequest` or `onResponse`, we can use it like this
 
 ```js
 import AxiosExtend from 'axios-ex'
 
 let axiosEx = null
-// 请求拦截器
+// Request Interceptor
 function onRequest(config, options = {}) {
   // this => vueInstance
   return config
 }
-// 响应拦截器
+// Response Interceptor
 function onResponse(res, options = {}) {
-  // 隐藏loading动画
+  // hide loading
   if (this instanceof Vue) {
     this.$loader.hide()
   }
@@ -179,14 +186,14 @@ function onResponse(res, options = {}) {
 }
 
 export default options => {
-  // 只需要初始化一次
+  // Only need to initialize once
   if (!axiosEx)
     axiosEx = new AxiosExtend({
       onRequest: onRequest.bind(this),
       onResponse: onResponse.bind(this)
     })
 
-  // 显示loading动画
+  // show loading
   if (this instanceof Vue) {
     this.$loader.show()
   }
@@ -194,7 +201,7 @@ export default options => {
 }
 ```
 
-## 问题和支持
+## Support & Issues
 
 Please open an issue [here](https://github.com/saqqdy/axios-ex/issues).
 

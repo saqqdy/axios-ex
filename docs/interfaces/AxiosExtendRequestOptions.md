@@ -98,7 +98,7 @@ node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts:316
 
 #### Defined in
 
-[src/index.ts:32](https://github.com/saqqdy/axios-ex/blob/99f1fa6/src/index.ts#L32)
+[src/index.ts:32](https://github.com/saqqdy/axios-ex/blob/e57c340/src/index.ts#L32)
 
 ---
 
@@ -156,7 +156,7 @@ InternalAxiosRequestConfig.cancelToken
 
 #### Defined in
 
-[src/index.ts:36](https://github.com/saqqdy/axios-ex/blob/99f1fa6/src/index.ts#L36)
+[src/index.ts:36](https://github.com/saqqdy/axios-ex/blob/e57c340/src/index.ts#L36)
 
 ---
 
@@ -214,7 +214,7 @@ node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts:338
 
 #### Defined in
 
-[src/index.ts:38](https://github.com/saqqdy/axios-ex/blob/99f1fa6/src/index.ts#L38)
+[src/index.ts:38](https://github.com/saqqdy/axios-ex/blob/e57c340/src/index.ts#L38)
 
 ---
 
@@ -420,7 +420,7 @@ node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts:321
 
 #### Defined in
 
-[src/index.ts:34](https://github.com/saqqdy/axios-ex/blob/99f1fa6/src/index.ts#L34)
+[src/index.ts:34](https://github.com/saqqdy/axios-ex/blob/e57c340/src/index.ts#L34)
 
 ---
 
@@ -472,7 +472,7 @@ node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts:332
 
 #### Defined in
 
-[src/index.ts:35](https://github.com/saqqdy/axios-ex/blob/99f1fa6/src/index.ts#L35)
+[src/index.ts:35](https://github.com/saqqdy/axios-ex/blob/e57c340/src/index.ts#L35)
 
 ---
 
@@ -608,7 +608,7 @@ node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts:335
 
 #### Defined in
 
-[src/index.ts:37](https://github.com/saqqdy/axios-ex/blob/99f1fa6/src/index.ts#L37)
+[src/index.ts:37](https://github.com/saqqdy/axios-ex/blob/e57c340/src/index.ts#L37)
 
 ---
 
@@ -618,7 +618,7 @@ node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts:335
 
 #### Defined in
 
-[src/index.ts:33](https://github.com/saqqdy/axios-ex/blob/99f1fa6/src/index.ts#L33)
+[src/index.ts:33](https://github.com/saqqdy/axios-ex/blob/e57c340/src/index.ts#L33)
 
 ---
 

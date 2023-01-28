@@ -38,7 +38,7 @@ AxiosExtend class
 
 #### Defined in
 
-[src/index.ts:184](https://github.com/saqqdy/axios-ex/blob/99f1fa6/src/index.ts#L184)
+[src/index.ts:184](https://github.com/saqqdy/axios-ex/blob/e57c340/src/index.ts#L184)
 
 ## Properties
 
@@ -48,7 +48,7 @@ AxiosExtend class
 
 #### Defined in
 
-[src/index.ts:179](https://github.com/saqqdy/axios-ex/blob/99f1fa6/src/index.ts#L179)
+[src/index.ts:179](https://github.com/saqqdy/axios-ex/blob/e57c340/src/index.ts#L179)
 
 ---
 
@@ -58,7 +58,7 @@ AxiosExtend class
 
 #### Defined in
 
-[src/index.ts:183](https://github.com/saqqdy/axios-ex/blob/99f1fa6/src/index.ts#L183)
+[src/index.ts:183](https://github.com/saqqdy/axios-ex/blob/e57c340/src/index.ts#L183)
 
 ---
 
@@ -68,7 +68,7 @@ AxiosExtend class
 
 #### Defined in
 
-[src/index.ts:180](https://github.com/saqqdy/axios-ex/blob/99f1fa6/src/index.ts#L180)
+[src/index.ts:180](https://github.com/saqqdy/axios-ex/blob/e57c340/src/index.ts#L180)
 
 ---
 
@@ -78,7 +78,7 @@ AxiosExtend class
 
 #### Defined in
 
-[src/index.ts:182](https://github.com/saqqdy/axios-ex/blob/99f1fa6/src/index.ts#L182)
+[src/index.ts:182](https://github.com/saqqdy/axios-ex/blob/e57c340/src/index.ts#L182)
 
 ---
 
@@ -88,7 +88,7 @@ AxiosExtend class
 
 #### Defined in
 
-[src/index.ts:181](https://github.com/saqqdy/axios-ex/blob/99f1fa6/src/index.ts#L181)
+[src/index.ts:181](https://github.com/saqqdy/axios-ex/blob/e57c340/src/index.ts#L181)
 
 ---
 
@@ -98,7 +98,7 @@ AxiosExtend class
 
 #### Defined in
 
-[src/index.ts:178](https://github.com/saqqdy/axios-ex/blob/99f1fa6/src/index.ts#L178)
+[src/index.ts:178](https://github.com/saqqdy/axios-ex/blob/e57c340/src/index.ts#L178)
 
 ## Methods
 
@@ -120,7 +120,7 @@ Create request
 
 #### Defined in
 
-[src/index.ts:279](https://github.com/saqqdy/axios-ex/blob/99f1fa6/src/index.ts#L279)
+[src/index.ts:279](https://github.com/saqqdy/axios-ex/blob/e57c340/src/index.ts#L279)
 
 ---
 
@@ -142,4 +142,4 @@ Initialization
 
 #### Defined in
 
-[src/index.ts:205](https://github.com/saqqdy/axios-ex/blob/99f1fa6/src/index.ts#L205)
+[src/index.ts:205](https://github.com/saqqdy/axios-ex/blob/e57c340/src/index.ts#L205)
