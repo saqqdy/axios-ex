@@ -1,5 +1,3 @@
-index.md - v2.3.1-beta.1 / [Exports](modules.md)
-
 <div style="text-align: center;" align="center">
 
 # axios-ex

@@ -1,6 +1,6 @@
-[index.md - v2.3.0](README.md) / Exports
+[index.md - v2.3.1-beta.1](README.md) / Exports
 
-# index.md - v2.3.0
+# index.md - v2.3.1-beta.1
 
 ## Table of contents
 
@@ -46,7 +46,7 @@ Renames and re-exports [AxiosExtend](classes/AxiosExtend.md)
 
 #### Defined in
 
-[src/index.ts:14](https://github.com/saqqdy/axios-ex/blob/62a5905/src/index.ts#L14)
+[src/index.ts:14](https://github.com/saqqdy/axios-ex/blob/99f1fa6/src/index.ts#L14)
 
 ## Functions
 
@@ -58,17 +58,17 @@ Renames and re-exports [AxiosExtend](classes/AxiosExtend.md)
 
 | Name          | Type     | Default value | Description |
 | :------------ | :------- | :------------ | :---------- |
-| `retryNumber` | `number` | `0`           | 默认：0     |
+| `retryNumber` | `number` | `0`           | default: 0  |
 
 #### Returns
 
 `number`
 
-delay 毫秒
+delay milliseconds
 
 #### Defined in
 
-[src/index.ts:156](https://github.com/saqqdy/axios-ex/blob/62a5905/src/index.ts#L156)
+[src/index.ts:156](https://github.com/saqqdy/axios-ex/blob/99f1fa6/src/index.ts#L156)
 
 ---
 
@@ -80,7 +80,7 @@ delay 毫秒
 
 | Name    | Type  | Description |
 | :------ | :---- | :---------- |
-| `error` | `any` | 错误类型    |
+| `error` | `any` | Error       |
 
 #### Returns
 
@@ -90,7 +90,7 @@ boolean
 
 #### Defined in
 
-[src/index.ts:140](https://github.com/saqqdy/axios-ex/blob/62a5905/src/index.ts#L140)
+[src/index.ts:140](https://github.com/saqqdy/axios-ex/blob/99f1fa6/src/index.ts#L140)
 
 ---
 
@@ -102,7 +102,7 @@ boolean
 
 | Name    | Type                            | Description |
 | :------ | :------------------------------ | :---------- |
-| `error` | `AxiosError`<`unknown`, `any`\> | 错误类型    |
+| `error` | `AxiosError`<`unknown`, `any`\> | Error       |
 
 #### Returns
 
@@ -112,7 +112,7 @@ boolean
 
 #### Defined in
 
-[src/index.ts:119](https://github.com/saqqdy/axios-ex/blob/62a5905/src/index.ts#L119)
+[src/index.ts:119](https://github.com/saqqdy/axios-ex/blob/99f1fa6/src/index.ts#L119)
 
 ---
 
@@ -124,7 +124,7 @@ boolean
 
 | Name    | Type                            | Description |
 | :------ | :------------------------------ | :---------- |
-| `error` | `AxiosError`<`unknown`, `any`\> | 错误类型    |
+| `error` | `AxiosError`<`unknown`, `any`\> | Error       |
 
 #### Returns
 
@@ -134,7 +134,7 @@ boolean
 
 #### Defined in
 
-[src/index.ts:149](https://github.com/saqqdy/axios-ex/blob/62a5905/src/index.ts#L149)
+[src/index.ts:149](https://github.com/saqqdy/axios-ex/blob/99f1fa6/src/index.ts#L149)
 
 ---
 
@@ -146,7 +146,7 @@ boolean
 
 | Name    | Type                            | Description |
 | :------ | :------------------------------ | :---------- |
-| `error` | `AxiosError`<`unknown`, `any`\> | 错误类型    |
+| `error` | `AxiosError`<`unknown`, `any`\> | Error       |
 
 #### Returns
 
@@ -156,7 +156,7 @@ boolean
 
 #### Defined in
 
-[src/index.ts:165](https://github.com/saqqdy/axios-ex/blob/62a5905/src/index.ts#L165)
+[src/index.ts:165](https://github.com/saqqdy/axios-ex/blob/99f1fa6/src/index.ts#L165)
 
 ---
 
@@ -168,7 +168,7 @@ boolean
 
 | Name    | Type  | Description |
 | :------ | :---- | :---------- |
-| `error` | `any` | 错误类型    |
+| `error` | `any` | Error       |
 
 #### Returns
 
@@ -178,4 +178,4 @@ boolean
 
 #### Defined in
 
-[src/index.ts:131](https://github.com/saqqdy/axios-ex/blob/62a5905/src/index.ts#L131)
+[src/index.ts:131](https://github.com/saqqdy/axios-ex/blob/99f1fa6/src/index.ts#L131)

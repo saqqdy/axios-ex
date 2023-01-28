@@ -1,8 +1,8 @@
-[index.md - v2.3.0](../README.md) / [Exports](../modules.md) / AxiosExtend
+[index.md - v2.3.1-beta.1](../README.md) / [Exports](../modules.md) / AxiosExtend
 
 # Class: AxiosExtend
 
-axios 封装
+AxiosExtend class
 
 ## Table of contents
 
@@ -38,7 +38,7 @@ axios 封装
 
 #### Defined in
 
-[src/index.ts:196](https://github.com/saqqdy/axios-ex/blob/62a5905/src/index.ts#L196)
+[src/index.ts:184](https://github.com/saqqdy/axios-ex/blob/99f1fa6/src/index.ts#L184)
 
 ## Properties
 
@@ -48,7 +48,7 @@ axios 封装
 
 #### Defined in
 
-[src/index.ts:191](https://github.com/saqqdy/axios-ex/blob/62a5905/src/index.ts#L191)
+[src/index.ts:179](https://github.com/saqqdy/axios-ex/blob/99f1fa6/src/index.ts#L179)
 
 ---
 
@@ -58,7 +58,7 @@ axios 封装
 
 #### Defined in
 
-[src/index.ts:195](https://github.com/saqqdy/axios-ex/blob/62a5905/src/index.ts#L195)
+[src/index.ts:183](https://github.com/saqqdy/axios-ex/blob/99f1fa6/src/index.ts#L183)
 
 ---
 
@@ -68,7 +68,7 @@ axios 封装
 
 #### Defined in
 
-[src/index.ts:192](https://github.com/saqqdy/axios-ex/blob/62a5905/src/index.ts#L192)
+[src/index.ts:180](https://github.com/saqqdy/axios-ex/blob/99f1fa6/src/index.ts#L180)
 
 ---
 
@@ -78,7 +78,7 @@ axios 封装
 
 #### Defined in
 
-[src/index.ts:194](https://github.com/saqqdy/axios-ex/blob/62a5905/src/index.ts#L194)
+[src/index.ts:182](https://github.com/saqqdy/axios-ex/blob/99f1fa6/src/index.ts#L182)
 
 ---
 
@@ -88,7 +88,7 @@ axios 封装
 
 #### Defined in
 
-[src/index.ts:193](https://github.com/saqqdy/axios-ex/blob/62a5905/src/index.ts#L193)
+[src/index.ts:181](https://github.com/saqqdy/axios-ex/blob/99f1fa6/src/index.ts#L181)
 
 ---
 
@@ -98,7 +98,7 @@ axios 封装
 
 #### Defined in
 
-[src/index.ts:190](https://github.com/saqqdy/axios-ex/blob/62a5905/src/index.ts#L190)
+[src/index.ts:178](https://github.com/saqqdy/axios-ex/blob/99f1fa6/src/index.ts#L178)
 
 ## Methods
 
@@ -106,13 +106,13 @@ axios 封装
 
 ▸ **create**(`options`): `Promise`<`any`\>
 
-创建请求
+Create request
 
 #### Parameters
 
-| Name      | Type                                                                      |
-| :-------- | :------------------------------------------------------------------------ |
-| `options` | [`AxiosExtendRequestOptions`](../interfaces/AxiosExtendRequestOptions.md) |
+| Name      | Type                                                                              |
+| :-------- | :-------------------------------------------------------------------------------- |
+| `options` | [`AxiosExtendRequestOptions`](../interfaces/AxiosExtendRequestOptions.md)<`any`\> |
 
 #### Returns
 
@@ -120,7 +120,7 @@ axios 封装
 
 #### Defined in
 
-[src/index.ts:291](https://github.com/saqqdy/axios-ex/blob/62a5905/src/index.ts#L291)
+[src/index.ts:279](https://github.com/saqqdy/axios-ex/blob/99f1fa6/src/index.ts#L279)
 
 ---
 
@@ -128,7 +128,7 @@ axios 封装
 
 ▸ **init**(`defaultOptions`): `void`
 
-初始化
+Initialization
 
 #### Parameters
 
@@ -142,4 +142,4 @@ axios 封装
 
 #### Defined in
 
-[src/index.ts:217](https://github.com/saqqdy/axios-ex/blob/62a5905/src/index.ts#L217)
+[src/index.ts:205](https://github.com/saqqdy/axios-ex/blob/99f1fa6/src/index.ts#L205)

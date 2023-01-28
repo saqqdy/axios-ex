@@ -1,43 +1,43 @@
-# 更新日志
+# Changelog
 
-## 2022.12.31 v2.3.0 更新日志
+## 2022.12.31 v2.3.0
 
-1. 完善 TS 类型
-2. 升级到`rollup v3.x`
-3. 弃用 webpack 构建
-4. 升级依赖包
+1. improve TS type
+2. upgrade to `rollup v3.x`
+3. deprecate webpack build
+4. upgrade dependency packages
 
-## 2021.11.18 v2.2.4 更新日志
+## 2021.11.18 v2.2.4
 
-1. 升级依赖包
+1. upgrade dependencies
 
-## 2021.09.25 v2.2.3 更新日志
+## 2021.09.25 v2.2.3
 
-1. 优化代码
+1. Optimize the code
 
-## 2021.09.21 v2.2.2 更新日志
+## 2021.09.21 v2.2.2
 
-1. 构建输出 banner
+Build output banner
 
-## 2021.09.14 v2.2.1 更新日志
+## 2021.09.14 v2.2.1
 
-1. 完善 TS 类型
+Refine TS type
 
-## 2021.09.11 v2.2.0 更新日志
+## 2021.09.11 v2.2.0
 
-1. 删除 delay 配置
+Remove delay configuration
 
-## 2021.09.11 v2.1.1 更新日志
+## 2021.09.11 v2.1.1
 
-1. 修复清理队列的问题
-2. 更改 lib 名称 AxiosExtend => axiosExtend
-3. 实例化参数新增 delay，延迟返回
+1. fix the problem of cleaning up the queue
+2. change lib name AxiosExtend => axiosExtend
+3. add delay to instantiation parameter, delay return
 
-## 2021.09.10 v2.0.0 更新日志
+## 2021.09.10 v2.0.0
 
-1. typescript 重构项目
-2. 重新设计 API
+1. typescript refactoring project
+2. redesign API
 
-## 2020.12.14 v1.0.1 更新日志
+## 2020.12.14 v1.0.1
 
-1. 创建项目
+1. create project

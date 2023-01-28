@@ -1,13 +1,13 @@
 {
 	"id": 0,
-	"name": "index.md - v2.3.0",
+	"name": "index.md - v2.3.1-beta.1",
 	"kind": 1,
 	"kindString": "Project",
 	"flags": {},
 	"originalName": "index.md",
 	"children": [
 		{
-			"id": 146,
+			"id": 147,
 			"name": "default",
 			"kind": 8388608,
 			"kindString": "Reference",
@@ -15,15 +15,15 @@
 			"sources": [
 				{
 					"fileName": "src/index.ts",
-					"line": 355,
+					"line": 343,
 					"character": 24,
-					"url": "https://github.com/saqqdy/axios-ex/blob/62a5905/src/index.ts#L355"
+					"url": "https://github.com/saqqdy/axios-ex/blob/99f1fa6/src/index.ts#L343"
 				}
 			],
-			"target": 127
+			"target": 128
 		},
 		{
-			"id": 127,
+			"id": 128,
 			"name": "AxiosExtend",
 			"kind": 128,
 			"kindString": "Class",
@@ -32,7 +32,7 @@
 				"summary": [
 					{
 						"kind": "text",
-						"text": "axios封装"
+						"text": "AxiosExtend class"
 					}
 				],
 				"blockTags": [
@@ -49,7 +49,7 @@
 			},
 			"children": [
 				{
-					"id": 128,
+					"id": 129,
 					"name": "constructor",
 					"kind": 512,
 					"kindString": "Constructor",
@@ -57,42 +57,42 @@
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 196,
+							"line": 184,
 							"character": 1,
-							"url": "https://github.com/saqqdy/axios-ex/blob/62a5905/src/index.ts#L196"
+							"url": "https://github.com/saqqdy/axios-ex/blob/99f1fa6/src/index.ts#L184"
 						}
 					],
 					"signatures": [
 						{
-							"id": 129,
+							"id": 130,
 							"name": "new AxiosExtend",
 							"kind": 16384,
 							"kindString": "Constructor signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 130,
+									"id": 131,
 									"name": "__namedParameters",
 									"kind": 32768,
 									"kindString": "Parameter",
 									"flags": {},
 									"type": {
 										"type": "reference",
-										"id": 92,
+										"id": 93,
 										"name": "AxiosExtendConfig"
 									}
 								}
 							],
 							"type": {
 								"type": "reference",
-								"id": 127,
+								"id": 128,
 								"name": "AxiosExtend"
 							}
 						}
 					]
 				},
 				{
-					"id": 132,
+					"id": 133,
 					"name": "maxConnections",
 					"kind": 1024,
 					"kindString": "Property",
@@ -100,9 +100,9 @@
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 191,
+							"line": 179,
 							"character": 1,
-							"url": "https://github.com/saqqdy/axios-ex/blob/62a5905/src/index.ts#L191"
+							"url": "https://github.com/saqqdy/axios-ex/blob/99f1fa6/src/index.ts#L179"
 						}
 					],
 					"type": {
@@ -111,7 +111,7 @@
 					}
 				},
 				{
-					"id": 136,
+					"id": 137,
 					"name": "onCancel",
 					"kind": 1024,
 					"kindString": "Property",
@@ -119,9 +119,9 @@
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 195,
+							"line": 183,
 							"character": 1,
-							"url": "https://github.com/saqqdy/axios-ex/blob/62a5905/src/index.ts#L195"
+							"url": "https://github.com/saqqdy/axios-ex/blob/99f1fa6/src/index.ts#L183"
 						}
 					],
 					"type": {
@@ -134,7 +134,7 @@
 							{
 								"type": "reflection",
 								"declaration": {
-									"id": 137,
+									"id": 138,
 									"name": "__type",
 									"kind": 65536,
 									"kindString": "Type literal",
@@ -144,19 +144,19 @@
 											"fileName": "src/index.ts",
 											"line": 61,
 											"character": 1,
-											"url": "https://github.com/saqqdy/axios-ex/blob/62a5905/src/index.ts#L61"
+											"url": "https://github.com/saqqdy/axios-ex/blob/99f1fa6/src/index.ts#L61"
 										}
 									],
 									"signatures": [
 										{
-											"id": 138,
+											"id": 139,
 											"name": "__type",
 											"kind": 4096,
 											"kindString": "Call signature",
 											"flags": {},
 											"parameters": [
 												{
-													"id": 139,
+													"id": 140,
 													"name": "error",
 													"kind": 32768,
 													"kindString": "Parameter",
@@ -179,7 +179,7 @@
 					}
 				},
 				{
-					"id": 133,
+					"id": 134,
 					"name": "orderly",
 					"kind": 1024,
 					"kindString": "Property",
@@ -187,9 +187,9 @@
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 192,
+							"line": 180,
 							"character": 1,
-							"url": "https://github.com/saqqdy/axios-ex/blob/62a5905/src/index.ts#L192"
+							"url": "https://github.com/saqqdy/axios-ex/blob/99f1fa6/src/index.ts#L180"
 						}
 					],
 					"type": {
@@ -198,7 +198,7 @@
 					}
 				},
 				{
-					"id": 135,
+					"id": 136,
 					"name": "retries",
 					"kind": 1024,
 					"kindString": "Property",
@@ -206,9 +206,9 @@
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 194,
+							"line": 182,
 							"character": 1,
-							"url": "https://github.com/saqqdy/axios-ex/blob/62a5905/src/index.ts#L194"
+							"url": "https://github.com/saqqdy/axios-ex/blob/99f1fa6/src/index.ts#L182"
 						}
 					],
 					"type": {
@@ -217,7 +217,7 @@
 					}
 				},
 				{
-					"id": 134,
+					"id": 135,
 					"name": "unique",
 					"kind": 1024,
 					"kindString": "Property",
@@ -225,9 +225,9 @@
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 193,
+							"line": 181,
 							"character": 1,
-							"url": "https://github.com/saqqdy/axios-ex/blob/62a5905/src/index.ts#L193"
+							"url": "https://github.com/saqqdy/axios-ex/blob/99f1fa6/src/index.ts#L181"
 						}
 					],
 					"type": {
@@ -236,7 +236,7 @@
 					}
 				},
 				{
-					"id": 131,
+					"id": 132,
 					"name": "waiting",
 					"kind": 1024,
 					"kindString": "Property",
@@ -244,9 +244,9 @@
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 190,
+							"line": 178,
 							"character": 1,
-							"url": "https://github.com/saqqdy/axios-ex/blob/62a5905/src/index.ts#L190"
+							"url": "https://github.com/saqqdy/axios-ex/blob/99f1fa6/src/index.ts#L178"
 						}
 					],
 					"type": {
@@ -260,7 +260,7 @@
 					"defaultValue": "[]"
 				},
 				{
-					"id": 143,
+					"id": 144,
 					"name": "create",
 					"kind": 2048,
 					"kindString": "Method",
@@ -270,14 +270,14 @@
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 291,
+							"line": 279,
 							"character": 8,
-							"url": "https://github.com/saqqdy/axios-ex/blob/62a5905/src/index.ts#L291"
+							"url": "https://github.com/saqqdy/axios-ex/blob/99f1fa6/src/index.ts#L279"
 						}
 					],
 					"signatures": [
 						{
-							"id": 144,
+							"id": 145,
 							"name": "create",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -286,13 +286,13 @@
 								"summary": [
 									{
 										"kind": "text",
-										"text": "创建请求"
+										"text": "Create request"
 									}
 								]
 							},
 							"parameters": [
 								{
-									"id": 145,
+									"id": 146,
 									"name": "options",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -300,6 +300,12 @@
 									"type": {
 										"type": "reference",
 										"id": 28,
+										"typeArguments": [
+											{
+												"type": "intrinsic",
+												"name": "any"
+											}
+										],
 										"name": "AxiosExtendRequestOptions"
 									}
 								}
@@ -320,7 +326,7 @@
 					]
 				},
 				{
-					"id": 140,
+					"id": 141,
 					"name": "init",
 					"kind": 2048,
 					"kindString": "Method",
@@ -330,14 +336,14 @@
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 217,
+							"line": 205,
 							"character": 8,
-							"url": "https://github.com/saqqdy/axios-ex/blob/62a5905/src/index.ts#L217"
+							"url": "https://github.com/saqqdy/axios-ex/blob/99f1fa6/src/index.ts#L205"
 						}
 					],
 					"signatures": [
 						{
-							"id": 141,
+							"id": 142,
 							"name": "init",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -346,20 +352,20 @@
 								"summary": [
 									{
 										"kind": "text",
-										"text": "初始化"
+										"text": "Initialization"
 									}
 								]
 							},
 							"parameters": [
 								{
-									"id": 142,
+									"id": 143,
 									"name": "defaultOptions",
 									"kind": 32768,
 									"kindString": "Parameter",
 									"flags": {},
 									"type": {
 										"type": "reference",
-										"id": 92,
+										"id": 93,
 										"name": "AxiosExtendConfig"
 									}
 								}
@@ -375,35 +381,35 @@
 			"groups": [
 				{
 					"title": "Constructors",
-					"children": [128]
+					"children": [129]
 				},
 				{
 					"title": "Properties",
-					"children": [132, 136, 133, 135, 134, 131]
+					"children": [133, 137, 134, 136, 135, 132]
 				},
 				{
 					"title": "Methods",
-					"children": [143, 140]
+					"children": [144, 141]
 				}
 			],
 			"sources": [
 				{
 					"fileName": "src/index.ts",
-					"line": 189,
+					"line": 177,
 					"character": 13,
-					"url": "https://github.com/saqqdy/axios-ex/blob/62a5905/src/index.ts#L189"
+					"url": "https://github.com/saqqdy/axios-ex/blob/99f1fa6/src/index.ts#L177"
 				}
 			]
 		},
 		{
-			"id": 92,
+			"id": 93,
 			"name": "AxiosExtendConfig",
 			"kind": 256,
 			"kindString": "Interface",
 			"flags": {},
 			"children": [
 				{
-					"id": 93,
+					"id": 94,
 					"name": "maxConnections",
 					"kind": 1024,
 					"kindString": "Property",
@@ -415,7 +421,7 @@
 							"fileName": "src/index.ts",
 							"line": 42,
 							"character": 1,
-							"url": "https://github.com/saqqdy/axios-ex/blob/62a5905/src/index.ts#L42"
+							"url": "https://github.com/saqqdy/axios-ex/blob/99f1fa6/src/index.ts#L42"
 						}
 					],
 					"type": {
@@ -424,7 +430,7 @@
 					}
 				},
 				{
-					"id": 96,
+					"id": 97,
 					"name": "orderly",
 					"kind": 1024,
 					"kindString": "Property",
@@ -436,7 +442,7 @@
 							"fileName": "src/index.ts",
 							"line": 45,
 							"character": 1,
-							"url": "https://github.com/saqqdy/axios-ex/blob/62a5905/src/index.ts#L45"
+							"url": "https://github.com/saqqdy/axios-ex/blob/99f1fa6/src/index.ts#L45"
 						}
 					],
 					"type": {
@@ -445,7 +451,7 @@
 					}
 				},
 				{
-					"id": 95,
+					"id": 96,
 					"name": "retries",
 					"kind": 1024,
 					"kindString": "Property",
@@ -457,7 +463,7 @@
 							"fileName": "src/index.ts",
 							"line": 44,
 							"character": 1,
-							"url": "https://github.com/saqqdy/axios-ex/blob/62a5905/src/index.ts#L44"
+							"url": "https://github.com/saqqdy/axios-ex/blob/99f1fa6/src/index.ts#L44"
 						}
 					],
 					"type": {
@@ -466,7 +472,7 @@
 					}
 				},
 				{
-					"id": 97,
+					"id": 98,
 					"name": "shouldResetTimeout",
 					"kind": 1024,
 					"kindString": "Property",
@@ -478,7 +484,7 @@
 							"fileName": "src/index.ts",
 							"line": 46,
 							"character": 1,
-							"url": "https://github.com/saqqdy/axios-ex/blob/62a5905/src/index.ts#L46"
+							"url": "https://github.com/saqqdy/axios-ex/blob/99f1fa6/src/index.ts#L46"
 						}
 					],
 					"type": {
@@ -487,7 +493,7 @@
 					}
 				},
 				{
-					"id": 94,
+					"id": 95,
 					"name": "unique",
 					"kind": 1024,
 					"kindString": "Property",
@@ -499,7 +505,7 @@
 							"fileName": "src/index.ts",
 							"line": 43,
 							"character": 1,
-							"url": "https://github.com/saqqdy/axios-ex/blob/62a5905/src/index.ts#L43"
+							"url": "https://github.com/saqqdy/axios-ex/blob/99f1fa6/src/index.ts#L43"
 						}
 					],
 					"type": {
@@ -508,7 +514,7 @@
 					}
 				},
 				{
-					"id": 124,
+					"id": 125,
 					"name": "onCancel",
 					"kind": 2048,
 					"kindString": "Method",
@@ -520,19 +526,19 @@
 							"fileName": "src/index.ts",
 							"line": 61,
 							"character": 1,
-							"url": "https://github.com/saqqdy/axios-ex/blob/62a5905/src/index.ts#L61"
+							"url": "https://github.com/saqqdy/axios-ex/blob/99f1fa6/src/index.ts#L61"
 						}
 					],
 					"signatures": [
 						{
-							"id": 125,
+							"id": 126,
 							"name": "onCancel",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 126,
+									"id": 127,
 									"name": "error",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -551,7 +557,7 @@
 					]
 				},
 				{
-					"id": 121,
+					"id": 122,
 					"name": "onError",
 					"kind": 2048,
 					"kindString": "Method",
@@ -563,19 +569,19 @@
 							"fileName": "src/index.ts",
 							"line": 60,
 							"character": 1,
-							"url": "https://github.com/saqqdy/axios-ex/blob/62a5905/src/index.ts#L60"
+							"url": "https://github.com/saqqdy/axios-ex/blob/99f1fa6/src/index.ts#L60"
 						}
 					],
 					"signatures": [
 						{
-							"id": 122,
+							"id": 123,
 							"name": "onError",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 123,
+									"id": 124,
 									"name": "error",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -594,7 +600,7 @@
 					]
 				},
 				{
-					"id": 107,
+					"id": 108,
 					"name": "onRequest",
 					"kind": 2048,
 					"kindString": "Method",
@@ -606,19 +612,19 @@
 							"fileName": "src/index.ts",
 							"line": 50,
 							"character": 1,
-							"url": "https://github.com/saqqdy/axios-ex/blob/62a5905/src/index.ts#L50"
+							"url": "https://github.com/saqqdy/axios-ex/blob/99f1fa6/src/index.ts#L50"
 						}
 					],
 					"signatures": [
 						{
-							"id": 108,
+							"id": 109,
 							"name": "onRequest",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 109,
+									"id": 110,
 									"name": "config",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -631,13 +637,13 @@
 												"name": "any"
 											}
 										],
-										"name": "AxiosRequestConfig",
-										"qualifiedName": "AxiosRequestConfig",
+										"name": "InternalAxiosRequestConfig",
+										"qualifiedName": "InternalAxiosRequestConfig",
 										"package": "axios"
 									}
 								},
 								{
-									"id": 110,
+									"id": 111,
 									"name": "requestOptions",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -645,6 +651,12 @@
 									"type": {
 										"type": "reference",
 										"id": 28,
+										"typeArguments": [
+											{
+												"type": "intrinsic",
+												"name": "any"
+											}
+										],
 										"name": "AxiosExtendRequestOptions"
 									}
 								}
@@ -660,8 +672,8 @@
 												"name": "any"
 											}
 										],
-										"name": "AxiosRequestConfig",
-										"qualifiedName": "AxiosRequestConfig",
+										"name": "InternalAxiosRequestConfig",
+										"qualifiedName": "InternalAxiosRequestConfig",
 										"package": "axios"
 									},
 									{
@@ -675,8 +687,8 @@
 														"name": "any"
 													}
 												],
-												"name": "AxiosRequestConfig",
-												"qualifiedName": "AxiosRequestConfig",
+												"name": "InternalAxiosRequestConfig",
+												"qualifiedName": "InternalAxiosRequestConfig",
 												"package": "axios"
 											}
 										],
@@ -690,7 +702,7 @@
 					]
 				},
 				{
-					"id": 111,
+					"id": 112,
 					"name": "onRequestError",
 					"kind": 2048,
 					"kindString": "Method",
@@ -702,19 +714,19 @@
 							"fileName": "src/index.ts",
 							"line": 54,
 							"character": 1,
-							"url": "https://github.com/saqqdy/axios-ex/blob/62a5905/src/index.ts#L54"
+							"url": "https://github.com/saqqdy/axios-ex/blob/99f1fa6/src/index.ts#L54"
 						}
 					],
 					"signatures": [
 						{
-							"id": 112,
+							"id": 113,
 							"name": "onRequestError",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 113,
+									"id": 114,
 									"name": "error",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -733,7 +745,7 @@
 					]
 				},
 				{
-					"id": 114,
+					"id": 115,
 					"name": "onResponse",
 					"kind": 2048,
 					"kindString": "Method",
@@ -745,19 +757,19 @@
 							"fileName": "src/index.ts",
 							"line": 55,
 							"character": 1,
-							"url": "https://github.com/saqqdy/axios-ex/blob/62a5905/src/index.ts#L55"
+							"url": "https://github.com/saqqdy/axios-ex/blob/99f1fa6/src/index.ts#L55"
 						}
 					],
 					"signatures": [
 						{
-							"id": 115,
+							"id": 116,
 							"name": "onResponse",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 116,
+									"id": 117,
 									"name": "res",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -780,7 +792,7 @@
 									}
 								},
 								{
-									"id": 117,
+									"id": 118,
 									"name": "requestOptions",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -788,6 +800,12 @@
 									"type": {
 										"type": "reference",
 										"id": 28,
+										"typeArguments": [
+											{
+												"type": "intrinsic",
+												"name": "any"
+											}
+										],
 										"name": "AxiosExtendRequestOptions"
 									}
 								}
@@ -841,7 +859,7 @@
 					]
 				},
 				{
-					"id": 118,
+					"id": 119,
 					"name": "onResponseError",
 					"kind": 2048,
 					"kindString": "Method",
@@ -853,19 +871,19 @@
 							"fileName": "src/index.ts",
 							"line": 59,
 							"character": 1,
-							"url": "https://github.com/saqqdy/axios-ex/blob/62a5905/src/index.ts#L59"
+							"url": "https://github.com/saqqdy/axios-ex/blob/99f1fa6/src/index.ts#L59"
 						}
 					],
 					"signatures": [
 						{
-							"id": 119,
+							"id": 120,
 							"name": "onResponseError",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 120,
+									"id": 121,
 									"name": "error",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -884,7 +902,7 @@
 					]
 				},
 				{
-					"id": 98,
+					"id": 99,
 					"name": "retryCondition",
 					"kind": 2048,
 					"kindString": "Method",
@@ -896,12 +914,12 @@
 							"fileName": "src/index.ts",
 							"line": 47,
 							"character": 1,
-							"url": "https://github.com/saqqdy/axios-ex/blob/62a5905/src/index.ts#L47"
+							"url": "https://github.com/saqqdy/axios-ex/blob/99f1fa6/src/index.ts#L47"
 						}
 					],
 					"signatures": [
 						{
-							"id": 99,
+							"id": 100,
 							"name": "retryCondition",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -914,7 +932,7 @@
 					]
 				},
 				{
-					"id": 100,
+					"id": 101,
 					"name": "retryDelay",
 					"kind": 2048,
 					"kindString": "Method",
@@ -926,19 +944,19 @@
 							"fileName": "src/index.ts",
 							"line": 48,
 							"character": 1,
-							"url": "https://github.com/saqqdy/axios-ex/blob/62a5905/src/index.ts#L48"
+							"url": "https://github.com/saqqdy/axios-ex/blob/99f1fa6/src/index.ts#L48"
 						}
 					],
 					"signatures": [
 						{
-							"id": 101,
+							"id": 102,
 							"name": "retryDelay",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 102,
+									"id": 103,
 									"name": "retryNumber",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -949,7 +967,7 @@
 									}
 								},
 								{
-									"id": 103,
+									"id": 104,
 									"name": "error",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -968,7 +986,7 @@
 					]
 				},
 				{
-					"id": 104,
+					"id": 105,
 					"name": "setHeaders",
 					"kind": 2048,
 					"kindString": "Method",
@@ -980,19 +998,19 @@
 							"fileName": "src/index.ts",
 							"line": 49,
 							"character": 1,
-							"url": "https://github.com/saqqdy/axios-ex/blob/62a5905/src/index.ts#L49"
+							"url": "https://github.com/saqqdy/axios-ex/blob/99f1fa6/src/index.ts#L49"
 						}
 					],
 					"signatures": [
 						{
-							"id": 105,
+							"id": 106,
 							"name": "setHeaders",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 106,
+									"id": 107,
 									"name": "instance",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -1016,11 +1034,11 @@
 			"groups": [
 				{
 					"title": "Properties",
-					"children": [93, 96, 95, 97, 94]
+					"children": [94, 97, 96, 98, 95]
 				},
 				{
 					"title": "Methods",
-					"children": [124, 121, 107, 111, 114, 118, 98, 100, 104]
+					"children": [125, 122, 108, 112, 115, 119, 99, 101, 105]
 				}
 			],
 			"sources": [
@@ -1028,7 +1046,7 @@
 					"fileName": "src/index.ts",
 					"line": 41,
 					"character": 17,
-					"url": "https://github.com/saqqdy/axios-ex/blob/62a5905/src/index.ts#L41"
+					"url": "https://github.com/saqqdy/axios-ex/blob/99f1fa6/src/index.ts#L41"
 				}
 			]
 		},
@@ -1050,7 +1068,7 @@
 							"fileName": "src/index.ts",
 							"line": 27,
 							"character": 1,
-							"url": "https://github.com/saqqdy/axios-ex/blob/62a5905/src/index.ts#L27"
+							"url": "https://github.com/saqqdy/axios-ex/blob/99f1fa6/src/index.ts#L27"
 						}
 					],
 					"type": {
@@ -1069,7 +1087,7 @@
 							"fileName": "src/index.ts",
 							"line": 28,
 							"character": 1,
-							"url": "https://github.com/saqqdy/axios-ex/blob/62a5905/src/index.ts#L28"
+							"url": "https://github.com/saqqdy/axios-ex/blob/99f1fa6/src/index.ts#L28"
 						}
 					],
 					"type": {
@@ -1089,7 +1107,7 @@
 					"fileName": "src/index.ts",
 					"line": 26,
 					"character": 17,
-					"url": "https://github.com/saqqdy/axios-ex/blob/62a5905/src/index.ts#L26"
+					"url": "https://github.com/saqqdy/axios-ex/blob/99f1fa6/src/index.ts#L26"
 				}
 			]
 		},
@@ -1111,7 +1129,7 @@
 							"fileName": "src/index.ts",
 							"line": 22,
 							"character": 1,
-							"url": "https://github.com/saqqdy/axios-ex/blob/62a5905/src/index.ts#L22"
+							"url": "https://github.com/saqqdy/axios-ex/blob/99f1fa6/src/index.ts#L22"
 						}
 					],
 					"type": {
@@ -1138,7 +1156,7 @@
 							"fileName": "src/index.ts",
 							"line": 20,
 							"character": 1,
-							"url": "https://github.com/saqqdy/axios-ex/blob/62a5905/src/index.ts#L20"
+							"url": "https://github.com/saqqdy/axios-ex/blob/99f1fa6/src/index.ts#L20"
 						}
 					],
 					"type": {
@@ -1157,7 +1175,7 @@
 							"fileName": "src/index.ts",
 							"line": 23,
 							"character": 1,
-							"url": "https://github.com/saqqdy/axios-ex/blob/62a5905/src/index.ts#L23"
+							"url": "https://github.com/saqqdy/axios-ex/blob/99f1fa6/src/index.ts#L23"
 						}
 					],
 					"type": {
@@ -1178,7 +1196,7 @@
 							"fileName": "src/index.ts",
 							"line": 21,
 							"character": 1,
-							"url": "https://github.com/saqqdy/axios-ex/blob/62a5905/src/index.ts#L21"
+							"url": "https://github.com/saqqdy/axios-ex/blob/99f1fa6/src/index.ts#L21"
 						}
 					],
 					"type": {
@@ -1198,7 +1216,7 @@
 					"fileName": "src/index.ts",
 					"line": 19,
 					"character": 17,
-					"url": "https://github.com/saqqdy/axios-ex/blob/62a5905/src/index.ts#L19"
+					"url": "https://github.com/saqqdy/axios-ex/blob/99f1fa6/src/index.ts#L19"
 				}
 			]
 		},
@@ -1220,8 +1238,8 @@
 					},
 					"sources": [
 						{
-							"fileName": "node_modules/.pnpm/axios@1.2.2_debug@4.3.4/node_modules/axios/index.d.ts",
-							"line": 299,
+							"fileName": "node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts",
+							"line": 315,
 							"character": 2
 						}
 					],
@@ -1247,7 +1265,7 @@
 					},
 					"inheritedFrom": {
 						"type": "reference",
-						"name": "AxiosRequestConfig.adapter"
+						"name": "InternalAxiosRequestConfig.adapter"
 					}
 				},
 				{
@@ -1261,8 +1279,8 @@
 					},
 					"sources": [
 						{
-							"fileName": "node_modules/.pnpm/axios@1.2.2_debug@4.3.4/node_modules/axios/index.d.ts",
-							"line": 300,
+							"fileName": "node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts",
+							"line": 316,
 							"character": 2
 						}
 					],
@@ -1274,7 +1292,7 @@
 					},
 					"inheritedFrom": {
 						"type": "reference",
-						"name": "AxiosRequestConfig.auth"
+						"name": "InternalAxiosRequestConfig.auth"
 					}
 				},
 				{
@@ -1290,7 +1308,7 @@
 							"fileName": "src/index.ts",
 							"line": 32,
 							"character": 1,
-							"url": "https://github.com/saqqdy/axios-ex/blob/62a5905/src/index.ts#L32"
+							"url": "https://github.com/saqqdy/axios-ex/blob/99f1fa6/src/index.ts#L32"
 						}
 					],
 					"type": {
@@ -1299,7 +1317,7 @@
 					}
 				},
 				{
-					"id": 38,
+					"id": 39,
 					"name": "baseURL",
 					"kind": 1024,
 					"kindString": "Property",
@@ -1309,8 +1327,8 @@
 					},
 					"sources": [
 						{
-							"fileName": "node_modules/.pnpm/axios@1.2.2_debug@4.3.4/node_modules/axios/index.d.ts",
-							"line": 289,
+							"fileName": "node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts",
+							"line": 305,
 							"character": 2
 						}
 					],
@@ -1320,7 +1338,7 @@
 					},
 					"inheritedFrom": {
 						"type": "reference",
-						"name": "AxiosRequestConfig.baseURL"
+						"name": "InternalAxiosRequestConfig.baseURL"
 					}
 				},
 				{
@@ -1334,8 +1352,8 @@
 					},
 					"sources": [
 						{
-							"fileName": "node_modules/.pnpm/axios@1.2.2_debug@4.3.4/node_modules/axios/index.d.ts",
-							"line": 312,
+							"fileName": "node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts",
+							"line": 328,
 							"character": 2
 						}
 					],
@@ -1346,11 +1364,13 @@
 							"name": "__type",
 							"kind": 65536,
 							"kindString": "Type literal",
-							"flags": {},
+							"flags": {
+								"isExternal": true
+							},
 							"sources": [
 								{
-									"fileName": "node_modules/.pnpm/axios@1.2.2_debug@4.3.4/node_modules/axios/index.d.ts",
-									"line": 312,
+									"fileName": "node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts",
+									"line": 328,
 									"character": 19
 								}
 							],
@@ -1360,14 +1380,18 @@
 									"name": "__type",
 									"kind": 4096,
 									"kindString": "Call signature",
-									"flags": {},
+									"flags": {
+										"isExternal": true
+									},
 									"parameters": [
 										{
 											"id": 73,
 											"name": "options",
 											"kind": 32768,
 											"kindString": "Parameter",
-											"flags": {},
+											"flags": {
+												"isExternal": true
+											},
 											"type": {
 												"type": "reference",
 												"typeArguments": [
@@ -1390,7 +1414,9 @@
 											"name": "responseDetails",
 											"kind": 32768,
 											"kindString": "Parameter",
-											"flags": {},
+											"flags": {
+												"isExternal": true
+											},
 											"type": {
 												"type": "reflection",
 												"declaration": {
@@ -1398,7 +1424,9 @@
 													"name": "__type",
 													"kind": 65536,
 													"kindString": "Type literal",
-													"flags": {},
+													"flags": {
+														"isExternal": true
+													},
 													"children": [
 														{
 															"id": 76,
@@ -1410,8 +1438,8 @@
 															},
 															"sources": [
 																{
-																	"fileName": "node_modules/.pnpm/axios@1.2.2_debug@4.3.4/node_modules/axios/index.d.ts",
-																	"line": 312,
+																	"fileName": "node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts",
+																	"line": 328,
 																	"character": 68
 																}
 															],
@@ -1441,8 +1469,8 @@
 													],
 													"sources": [
 														{
-															"fileName": "node_modules/.pnpm/axios@1.2.2_debug@4.3.4/node_modules/axios/index.d.ts",
-															"line": 312,
+															"fileName": "node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts",
+															"line": 328,
 															"character": 67
 														}
 													]
@@ -1460,7 +1488,7 @@
 					},
 					"inheritedFrom": {
 						"type": "reference",
-						"name": "AxiosRequestConfig.beforeRedirect"
+						"name": "InternalAxiosRequestConfig.beforeRedirect"
 					}
 				},
 				{
@@ -1476,7 +1504,7 @@
 							"fileName": "src/index.ts",
 							"line": 36,
 							"character": 1,
-							"url": "https://github.com/saqqdy/axios-ex/blob/62a5905/src/index.ts#L36"
+							"url": "https://github.com/saqqdy/axios-ex/blob/99f1fa6/src/index.ts#L36"
 						}
 					],
 					"type": {
@@ -1487,7 +1515,7 @@
 					},
 					"overwrites": {
 						"type": "reference",
-						"name": "AxiosRequestConfig.cancelToken"
+						"name": "InternalAxiosRequestConfig.cancelToken"
 					}
 				},
 				{
@@ -1501,18 +1529,19 @@
 					},
 					"sources": [
 						{
-							"fileName": "node_modules/.pnpm/axios@1.2.2_debug@4.3.4/node_modules/axios/index.d.ts",
-							"line": 295,
+							"fileName": "node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts",
+							"line": 311,
 							"character": 2
 						}
 					],
 					"type": {
-						"type": "intrinsic",
-						"name": "any"
+						"type": "reference",
+						"id": 92,
+						"name": "D"
 					},
 					"inheritedFrom": {
 						"type": "reference",
-						"name": "AxiosRequestConfig.data"
+						"name": "InternalAxiosRequestConfig.data"
 					}
 				},
 				{
@@ -1526,8 +1555,8 @@
 					},
 					"sources": [
 						{
-							"fileName": "node_modules/.pnpm/axios@1.2.2_debug@4.3.4/node_modules/axios/index.d.ts",
-							"line": 318,
+							"fileName": "node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts",
+							"line": 334,
 							"character": 2
 						}
 					],
@@ -1537,7 +1566,7 @@
 					},
 					"inheritedFrom": {
 						"type": "reference",
-						"name": "AxiosRequestConfig.decompress"
+						"name": "InternalAxiosRequestConfig.decompress"
 					}
 				},
 				{
@@ -1551,8 +1580,8 @@
 					},
 					"sources": [
 						{
-							"fileName": "node_modules/.pnpm/axios@1.2.2_debug@4.3.4/node_modules/axios/index.d.ts",
-							"line": 322,
+							"fileName": "node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts",
+							"line": 338,
 							"character": 2
 						}
 					],
@@ -1563,7 +1592,9 @@
 							"name": "__type",
 							"kind": 65536,
 							"kindString": "Type literal",
-							"flags": {},
+							"flags": {
+								"isExternal": true
+							},
 							"children": [
 								{
 									"id": 87,
@@ -1576,8 +1607,8 @@
 									},
 									"sources": [
 										{
-											"fileName": "node_modules/.pnpm/axios@1.2.2_debug@4.3.4/node_modules/axios/index.d.ts",
-											"line": 323,
+											"fileName": "node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts",
+											"line": 339,
 											"character": 4
 										}
 									],
@@ -1588,21 +1619,25 @@
 											"name": "__type",
 											"kind": 512,
 											"kindString": "Constructor",
-											"flags": {},
+											"flags": {
+												"isExternal": true
+											},
 											"sources": [
 												{
-													"fileName": "node_modules/.pnpm/axios@1.2.2_debug@4.3.4/node_modules/axios/index.d.ts",
-													"line": 323,
+													"fileName": "node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts",
+													"line": 339,
 													"character": 15
 												}
 											],
 											"signatures": [
 												{
 													"id": 89,
-													"name": "new __type",
+													"name": "new FormData",
 													"kind": 16384,
 													"kindString": "Constructor signature",
-													"flags": {},
+													"flags": {
+														"isExternal": true
+													},
 													"parameters": [
 														{
 															"id": 90,
@@ -1610,6 +1645,7 @@
 															"kind": 32768,
 															"kindString": "Parameter",
 															"flags": {
+																"isExternal": true,
 																"isRest": true
 															},
 															"type": {
@@ -1639,8 +1675,8 @@
 							],
 							"sources": [
 								{
-									"fileName": "node_modules/.pnpm/axios@1.2.2_debug@4.3.4/node_modules/axios/index.d.ts",
-									"line": 322,
+									"fileName": "node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts",
+									"line": 338,
 									"character": 8
 								}
 							]
@@ -1648,7 +1684,7 @@
 					},
 					"inheritedFrom": {
 						"type": "reference",
-						"name": "AxiosRequestConfig.env"
+						"name": "InternalAxiosRequestConfig.env"
 					}
 				},
 				{
@@ -1664,7 +1700,7 @@
 							"fileName": "src/index.ts",
 							"line": 38,
 							"character": 1,
-							"url": "https://github.com/saqqdy/axios-ex/blob/62a5905/src/index.ts#L38"
+							"url": "https://github.com/saqqdy/axios-ex/blob/99f1fa6/src/index.ts#L38"
 						}
 					],
 					"type": {
@@ -1683,8 +1719,8 @@
 					},
 					"sources": [
 						{
-							"fileName": "node_modules/.pnpm/axios@1.2.2_debug@4.3.4/node_modules/axios/index.d.ts",
-							"line": 325,
+							"fileName": "node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts",
+							"line": 341,
 							"character": 2
 						}
 					],
@@ -1696,70 +1732,33 @@
 					},
 					"inheritedFrom": {
 						"type": "reference",
-						"name": "AxiosRequestConfig.formSerializer"
+						"name": "InternalAxiosRequestConfig.formSerializer"
 					}
 				},
 				{
-					"id": 41,
+					"id": 36,
 					"name": "headers",
 					"kind": 1024,
 					"kindString": "Property",
 					"flags": {
-						"isExternal": true,
-						"isOptional": true
+						"isExternal": true
 					},
 					"sources": [
 						{
-							"fileName": "node_modules/.pnpm/axios@1.2.2_debug@4.3.4/node_modules/axios/index.d.ts",
-							"line": 292,
+							"fileName": "node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts",
+							"line": 348,
 							"character": 2
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "reference",
-								"name": "AxiosHeaders",
-								"qualifiedName": "AxiosHeaders",
-								"package": "axios"
-							},
-							{
-								"type": "reference",
-								"typeArguments": [
-									{
-										"type": "intersection",
-										"types": [
-											{
-												"type": "reference",
-												"name": "RawAxiosHeaders",
-												"qualifiedName": "RawAxiosHeaders",
-												"package": "axios"
-											},
-											{
-												"type": "reference",
-												"name": "MethodsHeaders",
-												"qualifiedName": "MethodsHeaders",
-												"package": "axios"
-											},
-											{
-												"type": "reference",
-												"name": "CommonHeaders",
-												"qualifiedName": "CommonHeaders",
-												"package": "axios"
-											}
-										]
-									}
-								],
-								"name": "Partial",
-								"qualifiedName": "Partial",
-								"package": "typescript"
-							}
-						]
+						"type": "reference",
+						"name": "AxiosRequestHeaders",
+						"qualifiedName": "AxiosRequestHeaders",
+						"package": "axios"
 					},
 					"inheritedFrom": {
 						"type": "reference",
-						"name": "AxiosRequestConfig.headers"
+						"name": "InternalAxiosRequestConfig.headers"
 					}
 				},
 				{
@@ -1773,8 +1772,8 @@
 					},
 					"sources": [
 						{
-							"fileName": "node_modules/.pnpm/axios@1.2.2_debug@4.3.4/node_modules/axios/index.d.ts",
-							"line": 314,
+							"fileName": "node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts",
+							"line": 330,
 							"character": 2
 						}
 					],
@@ -1784,7 +1783,7 @@
 					},
 					"inheritedFrom": {
 						"type": "reference",
-						"name": "AxiosRequestConfig.httpAgent"
+						"name": "InternalAxiosRequestConfig.httpAgent"
 					}
 				},
 				{
@@ -1798,8 +1797,8 @@
 					},
 					"sources": [
 						{
-							"fileName": "node_modules/.pnpm/axios@1.2.2_debug@4.3.4/node_modules/axios/index.d.ts",
-							"line": 315,
+							"fileName": "node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts",
+							"line": 331,
 							"character": 2
 						}
 					],
@@ -1809,7 +1808,7 @@
 					},
 					"inheritedFrom": {
 						"type": "reference",
-						"name": "AxiosRequestConfig.httpsAgent"
+						"name": "InternalAxiosRequestConfig.httpsAgent"
 					}
 				},
 				{
@@ -1823,8 +1822,8 @@
 					},
 					"sources": [
 						{
-							"fileName": "node_modules/.pnpm/axios@1.2.2_debug@4.3.4/node_modules/axios/index.d.ts",
-							"line": 321,
+							"fileName": "node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts",
+							"line": 337,
 							"character": 2
 						}
 					],
@@ -1834,7 +1833,7 @@
 					},
 					"inheritedFrom": {
 						"type": "reference",
-						"name": "AxiosRequestConfig.insecureHTTPParser"
+						"name": "InternalAxiosRequestConfig.insecureHTTPParser"
 					}
 				},
 				{
@@ -1848,8 +1847,8 @@
 					},
 					"sources": [
 						{
-							"fileName": "node_modules/.pnpm/axios@1.2.2_debug@4.3.4/node_modules/axios/index.d.ts",
-							"line": 309,
+							"fileName": "node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts",
+							"line": 325,
 							"character": 2
 						}
 					],
@@ -1859,7 +1858,7 @@
 					},
 					"inheritedFrom": {
 						"type": "reference",
-						"name": "AxiosRequestConfig.maxBodyLength"
+						"name": "InternalAxiosRequestConfig.maxBodyLength"
 					}
 				},
 				{
@@ -1873,8 +1872,8 @@
 					},
 					"sources": [
 						{
-							"fileName": "node_modules/.pnpm/axios@1.2.2_debug@4.3.4/node_modules/axios/index.d.ts",
-							"line": 307,
+							"fileName": "node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts",
+							"line": 323,
 							"character": 2
 						}
 					],
@@ -1884,7 +1883,7 @@
 					},
 					"inheritedFrom": {
 						"type": "reference",
-						"name": "AxiosRequestConfig.maxContentLength"
+						"name": "InternalAxiosRequestConfig.maxContentLength"
 					}
 				},
 				{
@@ -1898,8 +1897,8 @@
 					},
 					"sources": [
 						{
-							"fileName": "node_modules/.pnpm/axios@1.2.2_debug@4.3.4/node_modules/axios/index.d.ts",
-							"line": 311,
+							"fileName": "node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts",
+							"line": 327,
 							"character": 2
 						}
 					],
@@ -1927,7 +1926,7 @@
 					},
 					"inheritedFrom": {
 						"type": "reference",
-						"name": "AxiosRequestConfig.maxRate"
+						"name": "InternalAxiosRequestConfig.maxRate"
 					}
 				},
 				{
@@ -1941,8 +1940,8 @@
 					},
 					"sources": [
 						{
-							"fileName": "node_modules/.pnpm/axios@1.2.2_debug@4.3.4/node_modules/axios/index.d.ts",
-							"line": 310,
+							"fileName": "node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts",
+							"line": 326,
 							"character": 2
 						}
 					],
@@ -1952,11 +1951,11 @@
 					},
 					"inheritedFrom": {
 						"type": "reference",
-						"name": "AxiosRequestConfig.maxRedirects"
+						"name": "InternalAxiosRequestConfig.maxRedirects"
 					}
 				},
 				{
-					"id": 37,
+					"id": 38,
 					"name": "method",
 					"kind": 1024,
 					"kindString": "Property",
@@ -1966,8 +1965,8 @@
 					},
 					"sources": [
 						{
-							"fileName": "node_modules/.pnpm/axios@1.2.2_debug@4.3.4/node_modules/axios/index.d.ts",
-							"line": 288,
+							"fileName": "node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts",
+							"line": 304,
 							"character": 2
 						}
 					],
@@ -1977,7 +1976,7 @@
 					},
 					"inheritedFrom": {
 						"type": "reference",
-						"name": "AxiosRequestConfig.method"
+						"name": "InternalAxiosRequestConfig.method"
 					}
 				},
 				{
@@ -1991,8 +1990,8 @@
 					},
 					"sources": [
 						{
-							"fileName": "node_modules/.pnpm/axios@1.2.2_debug@4.3.4/node_modules/axios/index.d.ts",
-							"line": 306,
+							"fileName": "node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts",
+							"line": 322,
 							"character": 2
 						}
 					],
@@ -2003,11 +2002,13 @@
 							"name": "__type",
 							"kind": 65536,
 							"kindString": "Type literal",
-							"flags": {},
+							"flags": {
+								"isExternal": true
+							},
 							"sources": [
 								{
-									"fileName": "node_modules/.pnpm/axios@1.2.2_debug@4.3.4/node_modules/axios/index.d.ts",
-									"line": 306,
+									"fileName": "node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts",
+									"line": 322,
 									"character": 23
 								}
 							],
@@ -2017,14 +2018,18 @@
 									"name": "__type",
 									"kind": 4096,
 									"kindString": "Call signature",
-									"flags": {},
+									"flags": {
+										"isExternal": true
+									},
 									"parameters": [
 										{
 											"id": 61,
 											"name": "progressEvent",
 											"kind": 32768,
 											"kindString": "Parameter",
-											"flags": {},
+											"flags": {
+												"isExternal": true
+											},
 											"type": {
 												"type": "reference",
 												"name": "AxiosProgressEvent",
@@ -2043,7 +2048,7 @@
 					},
 					"inheritedFrom": {
 						"type": "reference",
-						"name": "AxiosRequestConfig.onDownloadProgress"
+						"name": "InternalAxiosRequestConfig.onDownloadProgress"
 					}
 				},
 				{
@@ -2057,8 +2062,8 @@
 					},
 					"sources": [
 						{
-							"fileName": "node_modules/.pnpm/axios@1.2.2_debug@4.3.4/node_modules/axios/index.d.ts",
-							"line": 305,
+							"fileName": "node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts",
+							"line": 321,
 							"character": 2
 						}
 					],
@@ -2069,11 +2074,13 @@
 							"name": "__type",
 							"kind": 65536,
 							"kindString": "Type literal",
-							"flags": {},
+							"flags": {
+								"isExternal": true
+							},
 							"sources": [
 								{
-									"fileName": "node_modules/.pnpm/axios@1.2.2_debug@4.3.4/node_modules/axios/index.d.ts",
-									"line": 305,
+									"fileName": "node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts",
+									"line": 321,
 									"character": 21
 								}
 							],
@@ -2083,14 +2090,18 @@
 									"name": "__type",
 									"kind": 4096,
 									"kindString": "Call signature",
-									"flags": {},
+									"flags": {
+										"isExternal": true
+									},
 									"parameters": [
 										{
 											"id": 57,
 											"name": "progressEvent",
 											"kind": 32768,
 											"kindString": "Parameter",
-											"flags": {},
+											"flags": {
+												"isExternal": true
+											},
 											"type": {
 												"type": "reference",
 												"name": "AxiosProgressEvent",
@@ -2109,7 +2120,7 @@
 					},
 					"inheritedFrom": {
 						"type": "reference",
-						"name": "AxiosRequestConfig.onUploadProgress"
+						"name": "InternalAxiosRequestConfig.onUploadProgress"
 					}
 				},
 				{
@@ -2125,7 +2136,7 @@
 							"fileName": "src/index.ts",
 							"line": 34,
 							"character": 1,
-							"url": "https://github.com/saqqdy/axios-ex/blob/62a5905/src/index.ts#L34"
+							"url": "https://github.com/saqqdy/axios-ex/blob/99f1fa6/src/index.ts#L34"
 						}
 					],
 					"type": {
@@ -2144,8 +2155,8 @@
 					},
 					"sources": [
 						{
-							"fileName": "node_modules/.pnpm/axios@1.2.2_debug@4.3.4/node_modules/axios/index.d.ts",
-							"line": 293,
+							"fileName": "node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts",
+							"line": 309,
 							"character": 2
 						}
 					],
@@ -2155,7 +2166,7 @@
 					},
 					"inheritedFrom": {
 						"type": "reference",
-						"name": "AxiosRequestConfig.params"
+						"name": "InternalAxiosRequestConfig.params"
 					}
 				},
 				{
@@ -2169,8 +2180,8 @@
 					},
 					"sources": [
 						{
-							"fileName": "node_modules/.pnpm/axios@1.2.2_debug@4.3.4/node_modules/axios/index.d.ts",
-							"line": 294,
+							"fileName": "node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts",
+							"line": 310,
 							"character": 2
 						}
 					],
@@ -2182,7 +2193,7 @@
 					},
 					"inheritedFrom": {
 						"type": "reference",
-						"name": "AxiosRequestConfig.paramsSerializer"
+						"name": "InternalAxiosRequestConfig.paramsSerializer"
 					}
 				},
 				{
@@ -2196,8 +2207,8 @@
 					},
 					"sources": [
 						{
-							"fileName": "node_modules/.pnpm/axios@1.2.2_debug@4.3.4/node_modules/axios/index.d.ts",
-							"line": 316,
+							"fileName": "node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts",
+							"line": 332,
 							"character": 2
 						}
 					],
@@ -2218,7 +2229,7 @@
 					},
 					"inheritedFrom": {
 						"type": "reference",
-						"name": "AxiosRequestConfig.proxy"
+						"name": "InternalAxiosRequestConfig.proxy"
 					}
 				},
 				{
@@ -2234,12 +2245,18 @@
 							"fileName": "src/index.ts",
 							"line": 35,
 							"character": 1,
-							"url": "https://github.com/saqqdy/axios-ex/blob/62a5905/src/index.ts#L35"
+							"url": "https://github.com/saqqdy/axios-ex/blob/99f1fa6/src/index.ts#L35"
 						}
 					],
 					"type": {
 						"type": "reference",
 						"id": 28,
+						"typeArguments": [
+							{
+								"type": "intrinsic",
+								"name": "any"
+							}
+						],
 						"name": "AxiosExtendRequestOptions"
 					}
 				},
@@ -2254,8 +2271,8 @@
 					},
 					"sources": [
 						{
-							"fileName": "node_modules/.pnpm/axios@1.2.2_debug@4.3.4/node_modules/axios/index.d.ts",
-							"line": 302,
+							"fileName": "node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts",
+							"line": 318,
 							"character": 2
 						}
 					],
@@ -2265,7 +2282,7 @@
 					},
 					"inheritedFrom": {
 						"type": "reference",
-						"name": "AxiosRequestConfig.responseEncoding"
+						"name": "InternalAxiosRequestConfig.responseEncoding"
 					}
 				},
 				{
@@ -2279,8 +2296,8 @@
 					},
 					"sources": [
 						{
-							"fileName": "node_modules/.pnpm/axios@1.2.2_debug@4.3.4/node_modules/axios/index.d.ts",
-							"line": 301,
+							"fileName": "node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts",
+							"line": 317,
 							"character": 2
 						}
 					],
@@ -2292,7 +2309,7 @@
 					},
 					"inheritedFrom": {
 						"type": "reference",
-						"name": "AxiosRequestConfig.responseType"
+						"name": "InternalAxiosRequestConfig.responseType"
 					}
 				},
 				{
@@ -2306,8 +2323,8 @@
 					},
 					"sources": [
 						{
-							"fileName": "node_modules/.pnpm/axios@1.2.2_debug@4.3.4/node_modules/axios/index.d.ts",
-							"line": 320,
+							"fileName": "node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts",
+							"line": 336,
 							"character": 2
 						}
 					],
@@ -2319,7 +2336,7 @@
 					},
 					"inheritedFrom": {
 						"type": "reference",
-						"name": "AxiosRequestConfig.signal"
+						"name": "InternalAxiosRequestConfig.signal"
 					}
 				},
 				{
@@ -2333,8 +2350,8 @@
 					},
 					"sources": [
 						{
-							"fileName": "node_modules/.pnpm/axios@1.2.2_debug@4.3.4/node_modules/axios/index.d.ts",
-							"line": 313,
+							"fileName": "node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts",
+							"line": 329,
 							"character": 2
 						}
 					],
@@ -2353,7 +2370,7 @@
 					},
 					"inheritedFrom": {
 						"type": "reference",
-						"name": "AxiosRequestConfig.socketPath"
+						"name": "InternalAxiosRequestConfig.socketPath"
 					}
 				},
 				{
@@ -2367,8 +2384,8 @@
 					},
 					"sources": [
 						{
-							"fileName": "node_modules/.pnpm/axios@1.2.2_debug@4.3.4/node_modules/axios/index.d.ts",
-							"line": 296,
+							"fileName": "node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts",
+							"line": 312,
 							"character": 2
 						}
 					],
@@ -2378,7 +2395,7 @@
 					},
 					"inheritedFrom": {
 						"type": "reference",
-						"name": "AxiosRequestConfig.timeout"
+						"name": "InternalAxiosRequestConfig.timeout"
 					}
 				},
 				{
@@ -2392,8 +2409,8 @@
 					},
 					"sources": [
 						{
-							"fileName": "node_modules/.pnpm/axios@1.2.2_debug@4.3.4/node_modules/axios/index.d.ts",
-							"line": 297,
+							"fileName": "node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts",
+							"line": 313,
 							"character": 2
 						}
 					],
@@ -2403,11 +2420,11 @@
 					},
 					"inheritedFrom": {
 						"type": "reference",
-						"name": "AxiosRequestConfig.timeoutErrorMessage"
+						"name": "InternalAxiosRequestConfig.timeoutErrorMessage"
 					}
 				},
 				{
-					"id": 39,
+					"id": 40,
 					"name": "transformRequest",
 					"kind": 1024,
 					"kindString": "Property",
@@ -2417,8 +2434,8 @@
 					},
 					"sources": [
 						{
-							"fileName": "node_modules/.pnpm/axios@1.2.2_debug@4.3.4/node_modules/axios/index.d.ts",
-							"line": 290,
+							"fileName": "node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts",
+							"line": 306,
 							"character": 2
 						}
 					],
@@ -2444,11 +2461,11 @@
 					},
 					"inheritedFrom": {
 						"type": "reference",
-						"name": "AxiosRequestConfig.transformRequest"
+						"name": "InternalAxiosRequestConfig.transformRequest"
 					}
 				},
 				{
-					"id": 40,
+					"id": 41,
 					"name": "transformResponse",
 					"kind": 1024,
 					"kindString": "Property",
@@ -2458,8 +2475,8 @@
 					},
 					"sources": [
 						{
-							"fileName": "node_modules/.pnpm/axios@1.2.2_debug@4.3.4/node_modules/axios/index.d.ts",
-							"line": 291,
+							"fileName": "node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts",
+							"line": 307,
 							"character": 2
 						}
 					],
@@ -2485,7 +2502,7 @@
 					},
 					"inheritedFrom": {
 						"type": "reference",
-						"name": "AxiosRequestConfig.transformResponse"
+						"name": "InternalAxiosRequestConfig.transformResponse"
 					}
 				},
 				{
@@ -2499,8 +2516,8 @@
 					},
 					"sources": [
 						{
-							"fileName": "node_modules/.pnpm/axios@1.2.2_debug@4.3.4/node_modules/axios/index.d.ts",
-							"line": 319,
+							"fileName": "node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts",
+							"line": 335,
 							"character": 2
 						}
 					],
@@ -2512,7 +2529,7 @@
 					},
 					"inheritedFrom": {
 						"type": "reference",
-						"name": "AxiosRequestConfig.transitional"
+						"name": "InternalAxiosRequestConfig.transitional"
 					}
 				},
 				{
@@ -2528,7 +2545,7 @@
 							"fileName": "src/index.ts",
 							"line": 37,
 							"character": 1,
-							"url": "https://github.com/saqqdy/axios-ex/blob/62a5905/src/index.ts#L37"
+							"url": "https://github.com/saqqdy/axios-ex/blob/99f1fa6/src/index.ts#L37"
 						}
 					],
 					"type": {
@@ -2549,7 +2566,7 @@
 							"fileName": "src/index.ts",
 							"line": 33,
 							"character": 1,
-							"url": "https://github.com/saqqdy/axios-ex/blob/62a5905/src/index.ts#L33"
+							"url": "https://github.com/saqqdy/axios-ex/blob/99f1fa6/src/index.ts#L33"
 						}
 					],
 					"type": {
@@ -2558,7 +2575,7 @@
 					}
 				},
 				{
-					"id": 36,
+					"id": 37,
 					"name": "url",
 					"kind": 1024,
 					"kindString": "Property",
@@ -2568,8 +2585,8 @@
 					},
 					"sources": [
 						{
-							"fileName": "node_modules/.pnpm/axios@1.2.2_debug@4.3.4/node_modules/axios/index.d.ts",
-							"line": 287,
+							"fileName": "node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts",
+							"line": 303,
 							"character": 2
 						}
 					],
@@ -2579,7 +2596,7 @@
 					},
 					"inheritedFrom": {
 						"type": "reference",
-						"name": "AxiosRequestConfig.url"
+						"name": "InternalAxiosRequestConfig.url"
 					}
 				},
 				{
@@ -2593,8 +2610,8 @@
 					},
 					"sources": [
 						{
-							"fileName": "node_modules/.pnpm/axios@1.2.2_debug@4.3.4/node_modules/axios/index.d.ts",
-							"line": 308,
+							"fileName": "node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts",
+							"line": 324,
 							"character": 2
 						}
 					],
@@ -2612,11 +2629,13 @@
 									"name": "__type",
 									"kind": 65536,
 									"kindString": "Type literal",
-									"flags": {},
+									"flags": {
+										"isExternal": true
+									},
 									"sources": [
 										{
-											"fileName": "node_modules/.pnpm/axios@1.2.2_debug@4.3.4/node_modules/axios/index.d.ts",
-											"line": 308,
+											"fileName": "node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts",
+											"line": 324,
 											"character": 20
 										}
 									],
@@ -2626,14 +2645,18 @@
 											"name": "__type",
 											"kind": 4096,
 											"kindString": "Call signature",
-											"flags": {},
+											"flags": {
+												"isExternal": true
+											},
 											"parameters": [
 												{
 													"id": 66,
 													"name": "status",
 													"kind": 32768,
 													"kindString": "Parameter",
-													"flags": {},
+													"flags": {
+														"isExternal": true
+													},
 													"type": {
 														"type": "intrinsic",
 														"name": "number"
@@ -2652,7 +2675,7 @@
 					},
 					"inheritedFrom": {
 						"type": "reference",
-						"name": "AxiosRequestConfig.validateStatus"
+						"name": "InternalAxiosRequestConfig.validateStatus"
 					}
 				},
 				{
@@ -2666,8 +2689,8 @@
 					},
 					"sources": [
 						{
-							"fileName": "node_modules/.pnpm/axios@1.2.2_debug@4.3.4/node_modules/axios/index.d.ts",
-							"line": 298,
+							"fileName": "node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts",
+							"line": 314,
 							"character": 2
 						}
 					],
@@ -2677,7 +2700,7 @@
 					},
 					"inheritedFrom": {
 						"type": "reference",
-						"name": "AxiosRequestConfig.withCredentials"
+						"name": "InternalAxiosRequestConfig.withCredentials"
 					}
 				},
 				{
@@ -2691,8 +2714,8 @@
 					},
 					"sources": [
 						{
-							"fileName": "node_modules/.pnpm/axios@1.2.2_debug@4.3.4/node_modules/axios/index.d.ts",
-							"line": 303,
+							"fileName": "node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts",
+							"line": 319,
 							"character": 2
 						}
 					],
@@ -2702,7 +2725,7 @@
 					},
 					"inheritedFrom": {
 						"type": "reference",
-						"name": "AxiosRequestConfig.xsrfCookieName"
+						"name": "InternalAxiosRequestConfig.xsrfCookieName"
 					}
 				},
 				{
@@ -2716,8 +2739,8 @@
 					},
 					"sources": [
 						{
-							"fileName": "node_modules/.pnpm/axios@1.2.2_debug@4.3.4/node_modules/axios/index.d.ts",
-							"line": 304,
+							"fileName": "node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts",
+							"line": 320,
 							"character": 2
 						}
 					],
@@ -2727,7 +2750,7 @@
 					},
 					"inheritedFrom": {
 						"type": "reference",
-						"name": "AxiosRequestConfig.xsrfHeaderName"
+						"name": "InternalAxiosRequestConfig.xsrfHeaderName"
 					}
 				}
 			],
@@ -2735,9 +2758,9 @@
 				{
 					"title": "Properties",
 					"children": [
-						48, 49, 35, 38, 70, 32, 44, 81, 85, 34, 91, 41, 78, 79, 84, 67, 62, 69, 68,
-						37, 58, 54, 30, 42, 43, 80, 31, 51, 50, 83, 77, 45, 46, 39, 40, 82, 33, 29,
-						36, 63, 47, 52, 53
+						48, 49, 35, 39, 70, 32, 44, 81, 85, 34, 91, 36, 78, 79, 84, 67, 62, 69, 68,
+						38, 58, 54, 30, 42, 43, 80, 31, 51, 50, 83, 77, 45, 46, 40, 41, 82, 33, 29,
+						37, 63, 47, 52, 53
 					]
 				}
 			],
@@ -2746,14 +2769,34 @@
 					"fileName": "src/index.ts",
 					"line": 31,
 					"character": 17,
-					"url": "https://github.com/saqqdy/axios-ex/blob/62a5905/src/index.ts#L31"
+					"url": "https://github.com/saqqdy/axios-ex/blob/99f1fa6/src/index.ts#L31"
+				}
+			],
+			"typeParameters": [
+				{
+					"id": 92,
+					"name": "D",
+					"kind": 131072,
+					"kindString": "Type parameter",
+					"flags": {},
+					"default": {
+						"type": "intrinsic",
+						"name": "any"
+					}
 				}
 			],
 			"extendedTypes": [
 				{
 					"type": "reference",
-					"name": "AxiosRequestConfig",
-					"qualifiedName": "AxiosRequestConfig",
+					"typeArguments": [
+						{
+							"type": "reference",
+							"id": 92,
+							"name": "D"
+						}
+					],
+					"name": "InternalAxiosRequestConfig",
+					"qualifiedName": "InternalAxiosRequestConfig",
 					"package": "axios"
 				}
 			]
@@ -2771,7 +2814,7 @@
 					"fileName": "src/index.ts",
 					"line": 14,
 					"character": 13,
-					"url": "https://github.com/saqqdy/axios-ex/blob/62a5905/src/index.ts#L14"
+					"url": "https://github.com/saqqdy/axios-ex/blob/99f1fa6/src/index.ts#L14"
 				}
 			],
 			"type": {
@@ -2791,7 +2834,7 @@
 					"fileName": "src/index.ts",
 					"line": 156,
 					"character": 16,
-					"url": "https://github.com/saqqdy/axios-ex/blob/62a5905/src/index.ts#L156"
+					"url": "https://github.com/saqqdy/axios-ex/blob/99f1fa6/src/index.ts#L156"
 				}
 			],
 			"signatures": [
@@ -2809,7 +2852,7 @@
 								"content": [
 									{
 										"kind": "text",
-										"text": "delay 毫秒"
+										"text": "delay milliseconds"
 									}
 								]
 							}
@@ -2826,7 +2869,7 @@
 								"summary": [
 									{
 										"kind": "text",
-										"text": "默认：0"
+										"text": "default: 0"
 									}
 								]
 							},
@@ -2855,7 +2898,7 @@
 					"fileName": "src/index.ts",
 					"line": 140,
 					"character": 16,
-					"url": "https://github.com/saqqdy/axios-ex/blob/62a5905/src/index.ts#L140"
+					"url": "https://github.com/saqqdy/axios-ex/blob/99f1fa6/src/index.ts#L140"
 				}
 			],
 			"signatures": [
@@ -2890,7 +2933,7 @@
 								"summary": [
 									{
 										"kind": "text",
-										"text": "错误类型"
+										"text": "Error"
 									}
 								]
 							},
@@ -2918,7 +2961,7 @@
 					"fileName": "src/index.ts",
 					"line": 119,
 					"character": 16,
-					"url": "https://github.com/saqqdy/axios-ex/blob/62a5905/src/index.ts#L119"
+					"url": "https://github.com/saqqdy/axios-ex/blob/99f1fa6/src/index.ts#L119"
 				}
 			],
 			"signatures": [
@@ -2953,7 +2996,7 @@
 								"summary": [
 									{
 										"kind": "text",
-										"text": "错误类型"
+										"text": "Error"
 									}
 								]
 							},
@@ -2993,7 +3036,7 @@
 					"fileName": "src/index.ts",
 					"line": 149,
 					"character": 16,
-					"url": "https://github.com/saqqdy/axios-ex/blob/62a5905/src/index.ts#L149"
+					"url": "https://github.com/saqqdy/axios-ex/blob/99f1fa6/src/index.ts#L149"
 				}
 			],
 			"signatures": [
@@ -3028,7 +3071,7 @@
 								"summary": [
 									{
 										"kind": "text",
-										"text": "错误类型"
+										"text": "Error"
 									}
 								]
 							},
@@ -3068,7 +3111,7 @@
 					"fileName": "src/index.ts",
 					"line": 165,
 					"character": 16,
-					"url": "https://github.com/saqqdy/axios-ex/blob/62a5905/src/index.ts#L165"
+					"url": "https://github.com/saqqdy/axios-ex/blob/99f1fa6/src/index.ts#L165"
 				}
 			],
 			"signatures": [
@@ -3103,7 +3146,7 @@
 								"summary": [
 									{
 										"kind": "text",
-										"text": "错误类型"
+										"text": "Error"
 									}
 								]
 							},
@@ -3143,7 +3186,7 @@
 					"fileName": "src/index.ts",
 					"line": 131,
 					"character": 16,
-					"url": "https://github.com/saqqdy/axios-ex/blob/62a5905/src/index.ts#L131"
+					"url": "https://github.com/saqqdy/axios-ex/blob/99f1fa6/src/index.ts#L131"
 				}
 			],
 			"signatures": [
@@ -3178,7 +3221,7 @@
 								"summary": [
 									{
 										"kind": "text",
-										"text": "错误类型"
+										"text": "Error"
 									}
 								]
 							},
@@ -3199,15 +3242,15 @@
 	"groups": [
 		{
 			"title": "References",
-			"children": [146]
+			"children": [147]
 		},
 		{
 			"title": "Classes",
-			"children": [127]
+			"children": [128]
 		},
 		{
 			"title": "Interfaces",
-			"children": [92, 25, 20, 28]
+			"children": [93, 25, 20, 28]
 		},
 		{
 			"title": "Variables",
@@ -3223,7 +3266,7 @@
 			"fileName": "src/index.ts",
 			"line": 1,
 			"character": 0,
-			"url": "https://github.com/saqqdy/axios-ex/blob/62a5905/src/index.ts#L1"
+			"url": "https://github.com/saqqdy/axios-ex/blob/99f1fa6/src/index.ts#L1"
 		}
 	]
 }

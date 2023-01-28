@@ -60,7 +60,7 @@ const options: RollupOptions = {
 		filesize({ reporter })
 	],
 	external(id) {
-		return ['core-js', 'axios', 'js-cool', 'debug', 'regenerator-runtime', '@babel/runtime']
+		return ['core-js', 'axios', 'js-cool', 'regenerator-runtime', '@babel/runtime']
 			.concat(externals)
 			.some(k => new RegExp('^' + k).test(id))
 	}

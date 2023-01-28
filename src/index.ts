@@ -1,10 +1,10 @@
 import type {
 	AxiosError,
 	AxiosInstance,
-	AxiosRequestConfig,
 	AxiosResponse,
 	CancelToken,
-	CancelTokenSource
+	CancelTokenSource,
+	InternalAxiosRequestConfig
 } from 'axios'
 import axios from 'axios'
 import isRetryAllowed from 'is-retry-allowed'
@@ -28,7 +28,7 @@ export interface AxiosExtendCurrentStateType {
 	retryCount: number
 }
 
-export interface AxiosExtendRequestOptions extends AxiosRequestConfig {
+export interface AxiosExtendRequestOptions<D = any> extends InternalAxiosRequestConfig<D> {
 	[namespace]?: any
 	unique?: boolean
 	orderly?: boolean
@@ -48,9 +48,9 @@ export interface AxiosExtendConfig {
 	retryDelay?(retryNumber: number, error: any): number
 	setHeaders?(instance: AxiosInstance): void
 	onRequest?(
-		config: AxiosRequestConfig,
+		config: InternalAxiosRequestConfig,
 		requestOptions: AxiosExtendRequestOptions
-	): AxiosRequestConfig | Promise<AxiosRequestConfig>
+	): InternalAxiosRequestConfig | Promise<InternalAxiosRequestConfig>
 	onRequestError?(error: any): void
 	onResponse?(
 		res: AxiosResponse<any>,
@@ -62,7 +62,7 @@ export interface AxiosExtendConfig {
 }
 
 /**
- * 获取默认延迟时间 毫秒
+ * Get the default delay time in milliseconds
  *
  * @private
  * @returns number - delay in milliseconds, always 0
@@ -71,7 +71,7 @@ function noRetryDelay() {
 	return 0
 }
 /**
- * 初始化和返回用于retry的config
+ * the config for retry when initialize and return
  *
  * @param  config - AxiosExtendRequestOptions
  * @return currentState
@@ -83,7 +83,7 @@ function getCurrentState(config: AxiosExtendRequestOptions): AxiosExtendCurrentS
 	return currentState
 }
 /**
- * 获取请求数据
+ * Get the request data
  *
  * @param  config - AxiosExtendRequestOptions
  * @param  defaultOptions - AxiosExtendConfig
@@ -96,7 +96,7 @@ function getRequestOptions(
 	return Object.assign({}, defaultOptions, config[namespace])
 }
 /**
- * 清理agent防止死循环
+ * Clean up agent to prevent dead loops
  *
  * @param  axios - any
  * @param  config - any
@@ -113,7 +113,7 @@ function fixConfig(axios: any, config: any): void {
 	}
 }
 /**
- * @param error - 错误类型
+ * @param error - Error
  * @return boolean
  */
 export function isNetworkError(error: AxiosError): boolean {
@@ -125,7 +125,7 @@ export function isNetworkError(error: AxiosError): boolean {
 	) // Prevents retrying unsafe errors
 }
 /**
- * @param error - 错误类型
+ * @param error - Error
  * @return boolean
  */
 export function isSafeRequestError(error: any): boolean {
@@ -134,7 +134,7 @@ export function isSafeRequestError(error: any): boolean {
 	return isRetryableError(error) && SAFE_HTTP_METHODS.includes(error.config.method)
 }
 /**
- * @param error - 错误类型
+ * @param error - Error
  * @return boolean
  */
 export function isIdempotentRequestError(error: any): boolean {
@@ -143,15 +143,15 @@ export function isIdempotentRequestError(error: any): boolean {
 	return isRetryableError(error) && IDEMPOTENT_HTTP_METHODS.includes(error.config.method)
 }
 /**
- * @param error - 错误类型
+ * @param error - Error
  * @return boolean
  */
 export function isNetworkOrIdempotentRequestError(error: AxiosError): boolean {
 	return isNetworkError(error) || isIdempotentRequestError(error)
 }
 /**
- * @param retryNumber - 默认：0
- * @return delay 毫秒
+ * @param retryNumber - default: 0
+ * @return delay milliseconds
  */
 export function exponentialDelay(retryNumber = 0) {
 	const delay = Math.pow(2, retryNumber) * 1000
@@ -159,7 +159,7 @@ export function exponentialDelay(retryNumber = 0) {
 	return delay + randomSum
 }
 /**
- * @param error - 错误类型
+ * @param error - Error
  * @return boolean
  */
 export function isRetryableError(error: AxiosError): boolean {
@@ -169,30 +169,18 @@ export function isRetryableError(error: AxiosError): boolean {
 	)
 }
 
-// export interface Instance {
-//     waiting: Array<AxiosExtendObject> // 请求队列
-//     maxConnections: number // 最大连接数，默认：0=不限制
-//     orderly: boolean // 是否有序返回，默认：true
-//     unique: boolean // 是否取消前面的相似请求，默认：false
-//     retries: number // 重试次数，默认：0=不重试
-//     // onCancel // 请求取消时的回调
-//     // constructor(config: AxiosExtendConfig): AxiosExtend
-//     init(defaultOptions: AxiosExtendConfig): void
-//     create(options: AxiosExtendRequestOptions): Promise<any>
-// }
-
 /**
- * axios封装
+ * AxiosExtend class
  *
  * @return Promise
  */
 export class AxiosExtend {
-	waiting: Array<AxiosExtendObject> = [] // 请求队列
-	maxConnections: number // 最大连接数，默认：0=不限制
-	orderly: boolean // 是否有序返回，默认：true
-	unique: boolean // 是否取消前面的相似请求，默认：false
-	retries: number // 重试次数，默认：0=不重试
-	onCancel // 请求取消时的回调
+	waiting: Array<AxiosExtendObject> = [] // Request Queue
+	maxConnections: number // Maximum number of connections, default: 0, no limit
+	orderly: boolean // Whether to return in order, default: true
+	unique: boolean // Whether to cancel the previous similar requests, default: false
+	retries: number // Number of retries, default: 0, no retries
+	onCancel // Callback when request is cancelled
 	constructor({
 		maxConnections,
 		orderly,
@@ -206,26 +194,26 @@ export class AxiosExtend {
 		this.unique = unique ?? false
 		this.retries = retries ?? 0
 		this.onCancel = onCancel ?? null
-		// 初始化方法
+		// Initialization method
 		this.init(defaultOptions)
 		return this
 	}
 
 	/**
-	 * 初始化
+	 * Initialization
 	 */
 	public init(defaultOptions: AxiosExtendConfig): void {
 		const { setHeaders, onRequest, onRequestError, onResponse, onResponseError, onError } =
 			defaultOptions
-		// 设置请求头
+		// Set request headers
 		setHeaders && setHeaders(axios)
-		// 添加一个请求拦截器
+		// Adding a request interceptor
 		onRequest &&
 			axios.interceptors.request.use(
-				config => {
+				(config: InternalAxiosRequestConfig) => {
 					const currentState = getCurrentState(config)
 					currentState.lastRequestTime = Date.now()
-					if (currentState.retryCount > 0) return config // retry重新请求接口不需要再次执行onRequest
+					if (currentState.retryCount > 0) return config // retry re-requests the interface without executing onRequest again
 					return onRequest(config, (config as any).requestOptions)
 				},
 				(err: any) => {
@@ -234,7 +222,7 @@ export class AxiosExtend {
 					return Promise.reject(err)
 				}
 			)
-		// 添加一个响应拦截器
+		// Adding a response interceptor
 		onResponse &&
 			axios.interceptors.response.use(
 				res => {
@@ -242,7 +230,7 @@ export class AxiosExtend {
 				},
 				(err: any): Promise<any> => {
 					const config: any = err.config
-					// 没有请求配置
+					// No request config
 					if (!config) {
 						onResponseError && onResponseError(err)
 						onError && onError(err)
@@ -260,7 +248,7 @@ export class AxiosExtend {
 						currentState.retryCount += 1
 						const delay = retryDelay(currentState.retryCount, err)
 
-						// 清理agent防止死循环
+						// Clean up agent to prevent dead loops
 						fixConfig(axios, config)
 
 						if (!shouldResetTimeout && config.timeout && currentState.lastRequestTime) {
@@ -271,7 +259,7 @@ export class AxiosExtend {
 								1
 							)
 						}
-						// 初始化请求数据
+						// Initialize request data
 						config.transformRequest = [(data: any) => data]
 
 						return new Promise(resolve =>
@@ -286,7 +274,7 @@ export class AxiosExtend {
 	}
 
 	/**
-	 * 创建请求
+	 * Create request
 	 */
 	public create(options: AxiosExtendRequestOptions): Promise<any> {
 		const { unique = this.unique, orderly = this.orderly, url = '' } = options
@@ -296,7 +284,7 @@ export class AxiosExtend {
 		options.cancelToken = source.token
 		// eslint-disable-next-line no-async-promise-executor
 		const promise = new Promise(async (resolve, reject) => {
-			// 接口必须有序返回 或 需要取消url相同请求
+			// Interface must return in order or need to cancel url same request
 			if (unique || orderly) {
 				let len = this.waiting.length
 				while (len > 0) {
@@ -315,7 +303,7 @@ export class AxiosExtend {
 					}
 				}
 			}
-			// 有最大连接数限制，超出了最多可同时请求的数量限制，至少等待执行一条任务
+			// There is a limit to the maximum number of connections, beyond which the maximum number of simultaneous requests can wait for at least one task to be executed
 			if (this.maxConnections > 0 && this.waiting.length >= this.maxConnections) {
 				try {
 					await (this.waiting[0] as AxiosExtendObject).promise
@@ -325,16 +313,16 @@ export class AxiosExtend {
 					console.info('the task has been dropped')
 				}
 			}
-			// 执行
+			// running
 			axios(options)
 				.then((res: any) => {
-					// 成功回调
+					// Request success
 					resolve(res)
 				})
 				.catch((err: any) => {
-					// 请求取消
+					// Request cancelled
 					if (axios.isCancel(err)) this.onCancel && this.onCancel(err)
-					// 失败回调
+					// Request error
 					else reject(err)
 				})
 				.finally(() => {
