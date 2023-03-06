@@ -83,7 +83,7 @@
 		"reinstaller": "^2.1.0",
 		"rimraf": "^4.1.2",
 		"rollup": "^3.11.0",
-		"rollup-plugin-filesize": "^9.1.2",
+		"rollup-plugin-filesize": "^10.0.0",
 		"rollup-plugin-visualizer": "^5.9.0",
 		"terser-webpack-plugin": "^5.3.6",
 		"ts-jest": "^29.0.5",
