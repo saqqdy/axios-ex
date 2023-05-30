@@ -196,6 +196,12 @@ export default options => {
 }
 ```
 
+### 使用 unpkg CDN
+
+```html
+<script src="https://unpkg.com/axios-ex@2.4.0/dist/index.global.prod.js"></script>
+```
+
 ## 问题和支持
 
 Please open an issue [here](https://github.com/saqqdy/axios-ex/issues).
@@ -214,8 +220,8 @@ Please open an issue [here](https://github.com/saqqdy/axios-ex/issues).
 [codecov-url]: https://codecov.io/github/saqqdy/axios-ex?branch=master
 [download-image]: https://img.shields.io/npm/dm/axios-ex.svg?style=flat-square
 [download-url]: https://npmjs.org/package/axios-ex
-[gzip-image]: http://img.badgesize.io/https://unpkg.com/axios-ex/lib/index.js?compression=gzip&label=gzip%20size:%20JS
-[gzip-url]: http://img.badgesize.io/https://unpkg.com/axios-ex/lib/index.js?compression=gzip&label=gzip%20size:%20JS
+[gzip-image]: http://img.badgesize.io/https://unpkg.com/axios-ex/dist/index.global.prod.js?compression=gzip&label=gzip%20size:%20JS
+[gzip-url]: http://img.badgesize.io/https://unpkg.com/axios-ex/dist/index.global.prod.js?compression=gzip&label=gzip%20size:%20JS
 [license-image]: https://img.shields.io/badge/License-MIT-yellow.svg
 [license-url]: LICENSE
 [sonar-image]: https://sonarcloud.io/api/project_badges/quality_gate?project=saqqdy_axios-ex

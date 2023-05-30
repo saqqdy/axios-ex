@@ -1,5 +1,10 @@
 # Changelog
 
+## 2023.03.28 v2.4.0
+
+1. new outputs
+2. upgrade all packages
+
 ## 2023.03.28 v2.3.2
 
 1. fix types
