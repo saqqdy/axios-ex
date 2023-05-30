@@ -102,7 +102,9 @@ function createEntry(config: Config) {
 			exports: 'auto',
 			extend: true,
 			plugins: [],
-			globals: {}
+			globals: {
+				axios: 'axios'
+			}
 		},
 		onwarn: (msg: any, warn) => {
 			if (!/Circular/.test(msg)) {
