@@ -18,7 +18,9 @@ A integration solution of axios for large enterprise projects. Support request c
 
 <div style="text-align: center;" align="center">
 
-## **For API documentation, see: [API Docs](./docs/modules.md)**
+### **[Documentation](https://www.saqqdy.com/axios-ex)** • **[Change Log](./CHANGELOG.md)**
+
+**Read this in other languages: English | [简体中文](./README-zh_CN.md)**
 
 </div>
 
