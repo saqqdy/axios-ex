@@ -35,7 +35,7 @@ export interface AxiosExtendRequestOptions<D = any> extends AxiosRequestConfig<D
 	requestOptions?: AxiosExtendRequestOptions
 	cancelToken?: CancelToken
 	type?: string
-	error?: string
+	error?: boolean
 }
 
 export interface AxiosExtendConfig {

@@ -1,4 +1,4 @@
-[index.md - v2.3.1](../README.md) / [Exports](../modules.md) / AxiosExtend
+[index.md - v2.3.2](../README.md) / [Exports](../modules.md) / AxiosExtend
 
 # Class: AxiosExtend
 
@@ -38,7 +38,7 @@ AxiosExtend class
 
 #### Defined in
 
-[src/index.ts:184](https://github.com/saqqdy/axios-ex/blob/5d9d522/src/index.ts#L184)
+[src/index.ts:184](https://github.com/saqqdy/axios-ex/blob/e01ff9c/src/index.ts#L184)
 
 ## Properties
 
@@ -48,7 +48,7 @@ AxiosExtend class
 
 #### Defined in
 
-[src/index.ts:179](https://github.com/saqqdy/axios-ex/blob/5d9d522/src/index.ts#L179)
+[src/index.ts:179](https://github.com/saqqdy/axios-ex/blob/e01ff9c/src/index.ts#L179)
 
 ___
 
@@ -58,7 +58,7 @@ ___
 
 #### Defined in
 
-[src/index.ts:183](https://github.com/saqqdy/axios-ex/blob/5d9d522/src/index.ts#L183)
+[src/index.ts:183](https://github.com/saqqdy/axios-ex/blob/e01ff9c/src/index.ts#L183)
 
 ___
 
@@ -68,7 +68,7 @@ ___
 
 #### Defined in
 
-[src/index.ts:180](https://github.com/saqqdy/axios-ex/blob/5d9d522/src/index.ts#L180)
+[src/index.ts:180](https://github.com/saqqdy/axios-ex/blob/e01ff9c/src/index.ts#L180)
 
 ___
 
@@ -78,7 +78,7 @@ ___
 
 #### Defined in
 
-[src/index.ts:182](https://github.com/saqqdy/axios-ex/blob/5d9d522/src/index.ts#L182)
+[src/index.ts:182](https://github.com/saqqdy/axios-ex/blob/e01ff9c/src/index.ts#L182)
 
 ___
 
@@ -88,7 +88,7 @@ ___
 
 #### Defined in
 
-[src/index.ts:181](https://github.com/saqqdy/axios-ex/blob/5d9d522/src/index.ts#L181)
+[src/index.ts:181](https://github.com/saqqdy/axios-ex/blob/e01ff9c/src/index.ts#L181)
 
 ___
 
@@ -98,7 +98,7 @@ ___
 
 #### Defined in
 
-[src/index.ts:178](https://github.com/saqqdy/axios-ex/blob/5d9d522/src/index.ts#L178)
+[src/index.ts:178](https://github.com/saqqdy/axios-ex/blob/e01ff9c/src/index.ts#L178)
 
 ## Methods
 
@@ -120,7 +120,7 @@ Create request
 
 #### Defined in
 
-[src/index.ts:279](https://github.com/saqqdy/axios-ex/blob/5d9d522/src/index.ts#L279)
+[src/index.ts:279](https://github.com/saqqdy/axios-ex/blob/e01ff9c/src/index.ts#L279)
 
 ___
 
@@ -142,4 +142,4 @@ Initialization
 
 #### Defined in
 
-[src/index.ts:205](https://github.com/saqqdy/axios-ex/blob/5d9d522/src/index.ts#L205)
+[src/index.ts:205](https://github.com/saqqdy/axios-ex/blob/e01ff9c/src/index.ts#L205)

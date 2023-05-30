@@ -1,7 +1,7 @@
 {
 	"name": "axios-ex",
 	"description": "A integration solution of axios for large enterprise projects",
-	"version": "2.3.1",
+	"version": "2.3.2",
 	"packageManager": "pnpm@7.26.1",
 	"main": "./dist/index.cjs",
 	"module": "./dist/index.mjs",
