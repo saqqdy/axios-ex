@@ -17,7 +17,7 @@
 					"fileName": "src/index.ts",
 					"line": 343,
 					"character": 24,
-					"url": "https://github.com/saqqdy/axios-ex/blob/e01ff9c/src/index.ts#L343"
+					"url": "https://github.com/saqqdy/axios-ex/blob/96c0ded/src/index.ts#L343"
 				}
 			],
 			"target": 129
@@ -59,7 +59,7 @@
 							"fileName": "src/index.ts",
 							"line": 184,
 							"character": 1,
-							"url": "https://github.com/saqqdy/axios-ex/blob/e01ff9c/src/index.ts#L184"
+							"url": "https://github.com/saqqdy/axios-ex/blob/96c0ded/src/index.ts#L184"
 						}
 					],
 					"signatures": [
@@ -102,7 +102,7 @@
 							"fileName": "src/index.ts",
 							"line": 179,
 							"character": 1,
-							"url": "https://github.com/saqqdy/axios-ex/blob/e01ff9c/src/index.ts#L179"
+							"url": "https://github.com/saqqdy/axios-ex/blob/96c0ded/src/index.ts#L179"
 						}
 					],
 					"type": {
@@ -121,7 +121,7 @@
 							"fileName": "src/index.ts",
 							"line": 183,
 							"character": 1,
-							"url": "https://github.com/saqqdy/axios-ex/blob/e01ff9c/src/index.ts#L183"
+							"url": "https://github.com/saqqdy/axios-ex/blob/96c0ded/src/index.ts#L183"
 						}
 					],
 					"type": {
@@ -144,7 +144,7 @@
 											"fileName": "src/index.ts",
 											"line": 61,
 											"character": 1,
-											"url": "https://github.com/saqqdy/axios-ex/blob/e01ff9c/src/index.ts#L61"
+											"url": "https://github.com/saqqdy/axios-ex/blob/96c0ded/src/index.ts#L61"
 										}
 									],
 									"signatures": [
@@ -189,7 +189,7 @@
 							"fileName": "src/index.ts",
 							"line": 180,
 							"character": 1,
-							"url": "https://github.com/saqqdy/axios-ex/blob/e01ff9c/src/index.ts#L180"
+							"url": "https://github.com/saqqdy/axios-ex/blob/96c0ded/src/index.ts#L180"
 						}
 					],
 					"type": {
@@ -208,7 +208,7 @@
 							"fileName": "src/index.ts",
 							"line": 182,
 							"character": 1,
-							"url": "https://github.com/saqqdy/axios-ex/blob/e01ff9c/src/index.ts#L182"
+							"url": "https://github.com/saqqdy/axios-ex/blob/96c0ded/src/index.ts#L182"
 						}
 					],
 					"type": {
@@ -227,7 +227,7 @@
 							"fileName": "src/index.ts",
 							"line": 181,
 							"character": 1,
-							"url": "https://github.com/saqqdy/axios-ex/blob/e01ff9c/src/index.ts#L181"
+							"url": "https://github.com/saqqdy/axios-ex/blob/96c0ded/src/index.ts#L181"
 						}
 					],
 					"type": {
@@ -246,7 +246,7 @@
 							"fileName": "src/index.ts",
 							"line": 178,
 							"character": 1,
-							"url": "https://github.com/saqqdy/axios-ex/blob/e01ff9c/src/index.ts#L178"
+							"url": "https://github.com/saqqdy/axios-ex/blob/96c0ded/src/index.ts#L178"
 						}
 					],
 					"type": {
@@ -272,7 +272,7 @@
 							"fileName": "src/index.ts",
 							"line": 279,
 							"character": 8,
-							"url": "https://github.com/saqqdy/axios-ex/blob/e01ff9c/src/index.ts#L279"
+							"url": "https://github.com/saqqdy/axios-ex/blob/96c0ded/src/index.ts#L279"
 						}
 					],
 					"signatures": [
@@ -338,7 +338,7 @@
 							"fileName": "src/index.ts",
 							"line": 205,
 							"character": 8,
-							"url": "https://github.com/saqqdy/axios-ex/blob/e01ff9c/src/index.ts#L205"
+							"url": "https://github.com/saqqdy/axios-ex/blob/96c0ded/src/index.ts#L205"
 						}
 					],
 					"signatures": [
@@ -409,7 +409,7 @@
 					"fileName": "src/index.ts",
 					"line": 177,
 					"character": 13,
-					"url": "https://github.com/saqqdy/axios-ex/blob/e01ff9c/src/index.ts#L177"
+					"url": "https://github.com/saqqdy/axios-ex/blob/96c0ded/src/index.ts#L177"
 				}
 			]
 		},
@@ -433,7 +433,7 @@
 							"fileName": "src/index.ts",
 							"line": 42,
 							"character": 1,
-							"url": "https://github.com/saqqdy/axios-ex/blob/e01ff9c/src/index.ts#L42"
+							"url": "https://github.com/saqqdy/axios-ex/blob/96c0ded/src/index.ts#L42"
 						}
 					],
 					"type": {
@@ -454,7 +454,7 @@
 							"fileName": "src/index.ts",
 							"line": 45,
 							"character": 1,
-							"url": "https://github.com/saqqdy/axios-ex/blob/e01ff9c/src/index.ts#L45"
+							"url": "https://github.com/saqqdy/axios-ex/blob/96c0ded/src/index.ts#L45"
 						}
 					],
 					"type": {
@@ -475,7 +475,7 @@
 							"fileName": "src/index.ts",
 							"line": 44,
 							"character": 1,
-							"url": "https://github.com/saqqdy/axios-ex/blob/e01ff9c/src/index.ts#L44"
+							"url": "https://github.com/saqqdy/axios-ex/blob/96c0ded/src/index.ts#L44"
 						}
 					],
 					"type": {
@@ -496,7 +496,7 @@
 							"fileName": "src/index.ts",
 							"line": 46,
 							"character": 1,
-							"url": "https://github.com/saqqdy/axios-ex/blob/e01ff9c/src/index.ts#L46"
+							"url": "https://github.com/saqqdy/axios-ex/blob/96c0ded/src/index.ts#L46"
 						}
 					],
 					"type": {
@@ -517,7 +517,7 @@
 							"fileName": "src/index.ts",
 							"line": 43,
 							"character": 1,
-							"url": "https://github.com/saqqdy/axios-ex/blob/e01ff9c/src/index.ts#L43"
+							"url": "https://github.com/saqqdy/axios-ex/blob/96c0ded/src/index.ts#L43"
 						}
 					],
 					"type": {
@@ -538,7 +538,7 @@
 							"fileName": "src/index.ts",
 							"line": 61,
 							"character": 1,
-							"url": "https://github.com/saqqdy/axios-ex/blob/e01ff9c/src/index.ts#L61"
+							"url": "https://github.com/saqqdy/axios-ex/blob/96c0ded/src/index.ts#L61"
 						}
 					],
 					"signatures": [
@@ -581,7 +581,7 @@
 							"fileName": "src/index.ts",
 							"line": 60,
 							"character": 1,
-							"url": "https://github.com/saqqdy/axios-ex/blob/e01ff9c/src/index.ts#L60"
+							"url": "https://github.com/saqqdy/axios-ex/blob/96c0ded/src/index.ts#L60"
 						}
 					],
 					"signatures": [
@@ -624,7 +624,7 @@
 							"fileName": "src/index.ts",
 							"line": 50,
 							"character": 1,
-							"url": "https://github.com/saqqdy/axios-ex/blob/e01ff9c/src/index.ts#L50"
+							"url": "https://github.com/saqqdy/axios-ex/blob/96c0ded/src/index.ts#L50"
 						}
 					],
 					"signatures": [
@@ -726,7 +726,7 @@
 							"fileName": "src/index.ts",
 							"line": 54,
 							"character": 1,
-							"url": "https://github.com/saqqdy/axios-ex/blob/e01ff9c/src/index.ts#L54"
+							"url": "https://github.com/saqqdy/axios-ex/blob/96c0ded/src/index.ts#L54"
 						}
 					],
 					"signatures": [
@@ -769,7 +769,7 @@
 							"fileName": "src/index.ts",
 							"line": 55,
 							"character": 1,
-							"url": "https://github.com/saqqdy/axios-ex/blob/e01ff9c/src/index.ts#L55"
+							"url": "https://github.com/saqqdy/axios-ex/blob/96c0ded/src/index.ts#L55"
 						}
 					],
 					"signatures": [
@@ -883,7 +883,7 @@
 							"fileName": "src/index.ts",
 							"line": 59,
 							"character": 1,
-							"url": "https://github.com/saqqdy/axios-ex/blob/e01ff9c/src/index.ts#L59"
+							"url": "https://github.com/saqqdy/axios-ex/blob/96c0ded/src/index.ts#L59"
 						}
 					],
 					"signatures": [
@@ -926,7 +926,7 @@
 							"fileName": "src/index.ts",
 							"line": 47,
 							"character": 1,
-							"url": "https://github.com/saqqdy/axios-ex/blob/e01ff9c/src/index.ts#L47"
+							"url": "https://github.com/saqqdy/axios-ex/blob/96c0ded/src/index.ts#L47"
 						}
 					],
 					"signatures": [
@@ -956,7 +956,7 @@
 							"fileName": "src/index.ts",
 							"line": 48,
 							"character": 1,
-							"url": "https://github.com/saqqdy/axios-ex/blob/e01ff9c/src/index.ts#L48"
+							"url": "https://github.com/saqqdy/axios-ex/blob/96c0ded/src/index.ts#L48"
 						}
 					],
 					"signatures": [
@@ -1010,7 +1010,7 @@
 							"fileName": "src/index.ts",
 							"line": 49,
 							"character": 1,
-							"url": "https://github.com/saqqdy/axios-ex/blob/e01ff9c/src/index.ts#L49"
+							"url": "https://github.com/saqqdy/axios-ex/blob/96c0ded/src/index.ts#L49"
 						}
 					],
 					"signatures": [
@@ -1074,7 +1074,7 @@
 					"fileName": "src/index.ts",
 					"line": 41,
 					"character": 17,
-					"url": "https://github.com/saqqdy/axios-ex/blob/e01ff9c/src/index.ts#L41"
+					"url": "https://github.com/saqqdy/axios-ex/blob/96c0ded/src/index.ts#L41"
 				}
 			]
 		},
@@ -1096,7 +1096,7 @@
 							"fileName": "src/index.ts",
 							"line": 27,
 							"character": 1,
-							"url": "https://github.com/saqqdy/axios-ex/blob/e01ff9c/src/index.ts#L27"
+							"url": "https://github.com/saqqdy/axios-ex/blob/96c0ded/src/index.ts#L27"
 						}
 					],
 					"type": {
@@ -1115,7 +1115,7 @@
 							"fileName": "src/index.ts",
 							"line": 28,
 							"character": 1,
-							"url": "https://github.com/saqqdy/axios-ex/blob/e01ff9c/src/index.ts#L28"
+							"url": "https://github.com/saqqdy/axios-ex/blob/96c0ded/src/index.ts#L28"
 						}
 					],
 					"type": {
@@ -1138,7 +1138,7 @@
 					"fileName": "src/index.ts",
 					"line": 26,
 					"character": 17,
-					"url": "https://github.com/saqqdy/axios-ex/blob/e01ff9c/src/index.ts#L26"
+					"url": "https://github.com/saqqdy/axios-ex/blob/96c0ded/src/index.ts#L26"
 				}
 			]
 		},
@@ -1160,7 +1160,7 @@
 							"fileName": "src/index.ts",
 							"line": 22,
 							"character": 1,
-							"url": "https://github.com/saqqdy/axios-ex/blob/e01ff9c/src/index.ts#L22"
+							"url": "https://github.com/saqqdy/axios-ex/blob/96c0ded/src/index.ts#L22"
 						}
 					],
 					"type": {
@@ -1187,7 +1187,7 @@
 							"fileName": "src/index.ts",
 							"line": 20,
 							"character": 1,
-							"url": "https://github.com/saqqdy/axios-ex/blob/e01ff9c/src/index.ts#L20"
+							"url": "https://github.com/saqqdy/axios-ex/blob/96c0ded/src/index.ts#L20"
 						}
 					],
 					"type": {
@@ -1206,7 +1206,7 @@
 							"fileName": "src/index.ts",
 							"line": 23,
 							"character": 1,
-							"url": "https://github.com/saqqdy/axios-ex/blob/e01ff9c/src/index.ts#L23"
+							"url": "https://github.com/saqqdy/axios-ex/blob/96c0ded/src/index.ts#L23"
 						}
 					],
 					"type": {
@@ -1227,7 +1227,7 @@
 							"fileName": "src/index.ts",
 							"line": 21,
 							"character": 1,
-							"url": "https://github.com/saqqdy/axios-ex/blob/e01ff9c/src/index.ts#L21"
+							"url": "https://github.com/saqqdy/axios-ex/blob/96c0ded/src/index.ts#L21"
 						}
 					],
 					"type": {
@@ -1252,7 +1252,7 @@
 					"fileName": "src/index.ts",
 					"line": 19,
 					"character": 17,
-					"url": "https://github.com/saqqdy/axios-ex/blob/e01ff9c/src/index.ts#L19"
+					"url": "https://github.com/saqqdy/axios-ex/blob/96c0ded/src/index.ts#L19"
 				}
 			]
 		},
@@ -1330,7 +1330,7 @@
 							"fileName": "src/index.ts",
 							"line": 32,
 							"character": 1,
-							"url": "https://github.com/saqqdy/axios-ex/blob/e01ff9c/src/index.ts#L32"
+							"url": "https://github.com/saqqdy/axios-ex/blob/96c0ded/src/index.ts#L32"
 						}
 					],
 					"type": {
@@ -1528,7 +1528,7 @@
 							"fileName": "src/index.ts",
 							"line": 36,
 							"character": 1,
-							"url": "https://github.com/saqqdy/axios-ex/blob/e01ff9c/src/index.ts#L36"
+							"url": "https://github.com/saqqdy/axios-ex/blob/96c0ded/src/index.ts#L36"
 						}
 					],
 					"type": {
@@ -1726,7 +1726,7 @@
 							"fileName": "src/index.ts",
 							"line": 38,
 							"character": 1,
-							"url": "https://github.com/saqqdy/axios-ex/blob/e01ff9c/src/index.ts#L38"
+							"url": "https://github.com/saqqdy/axios-ex/blob/96c0ded/src/index.ts#L38"
 						}
 					],
 					"type": {
@@ -2089,7 +2089,7 @@
 							"fileName": "src/index.ts",
 							"line": 34,
 							"character": 1,
-							"url": "https://github.com/saqqdy/axios-ex/blob/e01ff9c/src/index.ts#L34"
+							"url": "https://github.com/saqqdy/axios-ex/blob/96c0ded/src/index.ts#L34"
 						}
 					],
 					"type": {
@@ -2241,7 +2241,7 @@
 							"fileName": "src/index.ts",
 							"line": 35,
 							"character": 1,
-							"url": "https://github.com/saqqdy/axios-ex/blob/e01ff9c/src/index.ts#L35"
+							"url": "https://github.com/saqqdy/axios-ex/blob/96c0ded/src/index.ts#L35"
 						}
 					],
 					"type": {
@@ -2541,7 +2541,7 @@
 							"fileName": "src/index.ts",
 							"line": 37,
 							"character": 1,
-							"url": "https://github.com/saqqdy/axios-ex/blob/e01ff9c/src/index.ts#L37"
+							"url": "https://github.com/saqqdy/axios-ex/blob/96c0ded/src/index.ts#L37"
 						}
 					],
 					"type": {
@@ -2562,7 +2562,7 @@
 							"fileName": "src/index.ts",
 							"line": 33,
 							"character": 1,
-							"url": "https://github.com/saqqdy/axios-ex/blob/e01ff9c/src/index.ts#L33"
+							"url": "https://github.com/saqqdy/axios-ex/blob/96c0ded/src/index.ts#L33"
 						}
 					],
 					"type": {
@@ -2803,7 +2803,7 @@
 					"fileName": "src/index.ts",
 					"line": 31,
 					"character": 17,
-					"url": "https://github.com/saqqdy/axios-ex/blob/e01ff9c/src/index.ts#L31"
+					"url": "https://github.com/saqqdy/axios-ex/blob/96c0ded/src/index.ts#L31"
 				}
 			],
 			"typeParameters": [
@@ -2848,7 +2848,7 @@
 					"fileName": "src/index.ts",
 					"line": 14,
 					"character": 13,
-					"url": "https://github.com/saqqdy/axios-ex/blob/e01ff9c/src/index.ts#L14"
+					"url": "https://github.com/saqqdy/axios-ex/blob/96c0ded/src/index.ts#L14"
 				}
 			],
 			"type": {
@@ -2868,7 +2868,7 @@
 					"fileName": "src/index.ts",
 					"line": 156,
 					"character": 16,
-					"url": "https://github.com/saqqdy/axios-ex/blob/e01ff9c/src/index.ts#L156"
+					"url": "https://github.com/saqqdy/axios-ex/blob/96c0ded/src/index.ts#L156"
 				}
 			],
 			"signatures": [
@@ -2932,7 +2932,7 @@
 					"fileName": "src/index.ts",
 					"line": 140,
 					"character": 16,
-					"url": "https://github.com/saqqdy/axios-ex/blob/e01ff9c/src/index.ts#L140"
+					"url": "https://github.com/saqqdy/axios-ex/blob/96c0ded/src/index.ts#L140"
 				}
 			],
 			"signatures": [
@@ -2995,7 +2995,7 @@
 					"fileName": "src/index.ts",
 					"line": 119,
 					"character": 16,
-					"url": "https://github.com/saqqdy/axios-ex/blob/e01ff9c/src/index.ts#L119"
+					"url": "https://github.com/saqqdy/axios-ex/blob/96c0ded/src/index.ts#L119"
 				}
 			],
 			"signatures": [
@@ -3070,7 +3070,7 @@
 					"fileName": "src/index.ts",
 					"line": 149,
 					"character": 16,
-					"url": "https://github.com/saqqdy/axios-ex/blob/e01ff9c/src/index.ts#L149"
+					"url": "https://github.com/saqqdy/axios-ex/blob/96c0ded/src/index.ts#L149"
 				}
 			],
 			"signatures": [
@@ -3145,7 +3145,7 @@
 					"fileName": "src/index.ts",
 					"line": 165,
 					"character": 16,
-					"url": "https://github.com/saqqdy/axios-ex/blob/e01ff9c/src/index.ts#L165"
+					"url": "https://github.com/saqqdy/axios-ex/blob/96c0ded/src/index.ts#L165"
 				}
 			],
 			"signatures": [
@@ -3220,7 +3220,7 @@
 					"fileName": "src/index.ts",
 					"line": 131,
 					"character": 16,
-					"url": "https://github.com/saqqdy/axios-ex/blob/e01ff9c/src/index.ts#L131"
+					"url": "https://github.com/saqqdy/axios-ex/blob/96c0ded/src/index.ts#L131"
 				}
 			],
 			"signatures": [
@@ -3318,7 +3318,7 @@
 			"fileName": "src/index.ts",
 			"line": 1,
 			"character": 0,
-			"url": "https://github.com/saqqdy/axios-ex/blob/e01ff9c/src/index.ts#L1"
+			"url": "https://github.com/saqqdy/axios-ex/blob/96c0ded/src/index.ts#L1"
 		}
 	]
 }

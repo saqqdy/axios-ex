@@ -1,5 +1,9 @@
 # Changelog
 
+## 2023.03.28 v2.3.2
+
+1. fix types
+
 ## 2023.01.28 v2.3.1
 
 1. improve TS type
