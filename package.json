@@ -44,7 +44,7 @@
 		"prettier": "prettier --write \"**/*.{js,ts,jsx,tsx,yml,json,md}\""
 	},
 	"dependencies": {
-		"axios": "^0.27.2",
+		"axios": "^1.4.0",
 		"is-retry-allowed": "^3.0.0",
 		"js-cool": "^4.4.0"
 	},
