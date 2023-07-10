@@ -46,7 +46,7 @@
 	"dependencies": {
 		"axios": "^0.27.2",
 		"is-retry-allowed": "^3.0.0",
-		"js-cool": "^4.4.0"
+		"js-cool": "^5.1.0"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.22.1",
