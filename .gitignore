@@ -5,6 +5,7 @@ node_modules/
 dist/
 es/
 lib/
+docs/
 npm-debug.log
 yarn-error.log
 /test/unit/coverage/

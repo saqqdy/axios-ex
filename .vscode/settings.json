@@ -7,6 +7,7 @@
 		"instanceof",
 		"jsdelivr",
 		"lcov",
+		"onwarn",
 		"pnpm",
 		"reinstaller",
 		"Retryable",

@@ -1,6 +1,7 @@
 import type {
 	AxiosError,
 	AxiosInstance,
+	AxiosRequestConfig,
 	AxiosResponse,
 	CancelToken,
 	CancelTokenSource,
@@ -8,38 +9,27 @@ import type {
 } from 'axios'
 import axios from 'axios'
 import isRetryAllowed from 'is-retry-allowed'
-import extend from 'js-cool/lib/extend'
-import getRandomStr from 'js-cool/lib/getRandomStr'
-
-export const namespace = 'axios-extend'
+import { extend } from 'js-cool'
 
 const SAFE_HTTP_METHODS = ['get', 'head', 'options']
 const IDEMPOTENT_HTTP_METHODS = SAFE_HTTP_METHODS.concat(['put', 'delete'])
-
-export interface AxiosExtendObject {
-	promiseKey: string
-	url: string
-	promise: Promise<any>
-	source: CancelTokenSource
-}
 
 export interface AxiosExtendCurrentStateType {
 	lastRequestTime: number
 	retryCount: number
 }
 
-export interface AxiosExtendRequestOptions<D = any> extends InternalAxiosRequestConfig<D> {
-	[namespace]?: any
+export interface AxiosExtendRequestOptions<D = any> extends AxiosRequestConfig<D> {
+	['axios-extend']?: any
 	unique?: boolean
 	orderly?: boolean
 	requestOptions?: AxiosExtendRequestOptions
 	cancelToken?: CancelToken
 	type?: string
-	error?: string
+	error?: boolean
 }
 
-export interface AxiosExtendConfig {
-	maxConnections?: number
+export interface AxiosExtendConfig<D = any> extends InternalAxiosRequestConfig<D> {
 	unique?: boolean
 	retries?: number
 	orderly?: boolean
@@ -48,9 +38,9 @@ export interface AxiosExtendConfig {
 	retryDelay?(retryNumber: number, error: any): number
 	setHeaders?(instance: AxiosInstance): void
 	onRequest?(
-		config: InternalAxiosRequestConfig,
+		config: AxiosRequestConfig,
 		requestOptions: AxiosExtendRequestOptions
-	): InternalAxiosRequestConfig | Promise<InternalAxiosRequestConfig>
+	): AxiosRequestConfig | Promise<AxiosRequestConfig>
 	onRequestError?(error: any): void
 	onResponse?(
 		res: AxiosResponse<any>,
@@ -60,6 +50,16 @@ export interface AxiosExtendConfig {
 	onError?(error: any): void
 	onCancel?(error: any): void
 }
+
+export interface WaitingItem {
+	promiseKey: symbol
+	url: string
+	promise: Promise<any>
+	source: CancelTokenSource
+	abortController: AbortController
+}
+
+export type WaitingList = Record<string, WaitingItem[]>
 
 /**
  * Get the default delay time in milliseconds
@@ -77,9 +77,9 @@ function noRetryDelay() {
  * @return currentState
  */
 function getCurrentState(config: AxiosExtendRequestOptions): AxiosExtendCurrentStateType {
-	const currentState = config[namespace] || {}
+	const currentState = config['axios-extend'] || {}
 	currentState.retryCount = currentState.retryCount || 0
-	config[namespace] = currentState
+	config['axios-extend'] = currentState
 	return currentState
 }
 /**
@@ -93,7 +93,7 @@ function getRequestOptions(
 	config: AxiosExtendRequestOptions,
 	defaultOptions: AxiosExtendConfig
 ): AxiosExtendConfig {
-	return Object.assign({}, defaultOptions, config[namespace])
+	return Object.assign({}, defaultOptions, config['axios-extend'])
 }
 /**
  * Clean up agent to prevent dead loops
@@ -175,21 +175,13 @@ export function isRetryableError(error: AxiosError): boolean {
  * @return Promise
  */
 export class AxiosExtend {
-	waiting: Array<AxiosExtendObject> = [] // Request Queue
-	maxConnections: number // Maximum number of connections, default: 0, no limit
-	orderly: boolean // Whether to return in order, default: true
-	unique: boolean // Whether to cancel the previous similar requests, default: false
+	axiosInstance: AxiosInstance = null as unknown as AxiosInstance
+	waiting: WaitingList = {} // Request Queue
 	retries: number // Number of retries, default: 0, no retries
-	onCancel // Callback when request is cancelled
-	constructor({
-		maxConnections,
-		orderly,
-		unique,
-		retries,
-		onCancel,
-		...defaultOptions
-	}: AxiosExtendConfig) {
-		this.maxConnections = maxConnections ?? 0
+	unique: AxiosExtendConfig['unique'] = false // Whether to cancel the previous similar requests, default: false
+	orderly: AxiosExtendConfig['orderly'] = true // Whether to return in order, default: true
+	onCancel: AxiosExtendConfig['onCancel'] | null = null // Callback when request is cancelled
+	constructor({ orderly, unique, retries, onCancel, ...defaultOptions }: AxiosExtendConfig) {
 		this.orderly = orderly ?? true
 		this.unique = unique ?? false
 		this.retries = retries ?? 0
@@ -203,14 +195,22 @@ export class AxiosExtend {
 	 * Initialization
 	 */
 	public init(defaultOptions: AxiosExtendConfig): void {
-		const { setHeaders, onRequest, onRequestError, onResponse, onResponseError, onError } =
-			defaultOptions
+		const {
+			setHeaders,
+			onRequest,
+			onRequestError,
+			onResponse,
+			onResponseError,
+			onError,
+			...options
+		} = defaultOptions
+		if (!this.axiosInstance) this.axiosInstance = axios.create(options)
 		// Set request headers
 		setHeaders && setHeaders(axios)
 		// Adding a request interceptor
 		onRequest &&
 			axios.interceptors.request.use(
-				(config: InternalAxiosRequestConfig) => {
+				(config: AxiosRequestConfig) => {
 					const currentState = getCurrentState(config)
 					currentState.lastRequestTime = Date.now()
 					if (currentState.retryCount > 0) return config // retry re-requests the interface without executing onRequest again
@@ -276,48 +276,29 @@ export class AxiosExtend {
 	/**
 	 * Create request
 	 */
-	public create(options: AxiosExtendRequestOptions): Promise<any> {
-		const { unique = this.unique, orderly = this.orderly, url = '' } = options
-		const promiseKey = getRandomStr(6) + '_' + Date.now()
+	public create<T = any, R = AxiosResponse<T>, D = any>(
+		// url: string | AxiosExtendRequestOptions<D>,
+		config: AxiosExtendRequestOptions<D>
+	): Promise<R> {
+		const { unique = this.unique, orderly = this.orderly, url = '' } = config
+		const promiseKey = Symbol('promiseKey')
+		const abortController = new AbortController()
 		const source: CancelTokenSource = axios.CancelToken.source()
-		options.requestOptions = extend(true, {}, options) as unknown as AxiosExtendRequestOptions
-		options.cancelToken = source.token
-		// eslint-disable-next-line no-async-promise-executor
-		const promise = new Promise(async (resolve, reject) => {
-			// Interface must return in order or need to cancel url same request
-			if (unique || orderly) {
-				let len = this.waiting.length
-				while (len > 0) {
-					len--
-					if (this.waiting[len].url === url) {
-						if (unique) this.waiting.splice(len, 1)[0].source.cancel('request canceled')
-						else {
-							try {
-								await this.waiting[len]
-								// await this.waiting.splice(len, 1)[0].promise
-							} catch {
-								this.waiting.splice(len, 1)
-								console.info('the task has been dropped')
-							}
-						}
-					}
-				}
-			}
-			// There is a limit to the maximum number of connections, beyond which the maximum number of simultaneous requests can wait for at least one task to be executed
-			if (this.maxConnections > 0 && this.waiting.length >= this.maxConnections) {
-				try {
-					await (this.waiting[0] as AxiosExtendObject).promise
-					// await (this.waiting.shift() as AxiosExtendObject).promise
-				} catch {
-					this.waiting.shift()
-					console.info('the task has been dropped')
-				}
-			}
-			// running
-			axios(options)
-				.then((res: any) => {
-					// Request success
-					resolve(res)
+		config.requestOptions = extend(true, {}, config) as unknown as AxiosExtendRequestOptions
+		config.cancelToken = source.token
+		config.signal = abortController.signal
+
+		// Interface must return in order or need to cancel url same request
+		unique && this.clear(url)
+
+		const promise = new Promise((resolve, reject) => {
+			axios(config)
+				.then(res => {
+					if (!orderly) resolve(res)
+					else
+						this.wait(url, promiseKey).then(() => {
+							resolve(res)
+						})
 				})
 				.catch((err: any) => {
 					// Request cancelled
@@ -326,17 +307,78 @@ export class AxiosExtend {
 					else reject(err)
 				})
 				.finally(() => {
-					const index = this.waiting.findIndex((el: any) => el.promiseKey === promiseKey)
-					index > -1 && this.waiting.splice(index, 1)
+					const index = this.waiting[url].findIndex(el => el.promiseKey === promiseKey)
+					index > -1 && this.waiting[url].splice(index, 1)
 				})
 		})
-		this.waiting.push({
+		this.add(url, {
 			promiseKey,
 			url,
 			promise,
-			source
+			source,
+			abortController
 		})
-		return promise
+		return promise as Promise<R>
+	}
+
+	/**
+	 * Drop all un-need requests
+	 *
+	 * @param key - the key of waiting line, usually to be the request url
+	 */
+	public clear(key?: string) {
+		for (const url in this.waiting) {
+			// no key => clean all
+			if (!key || url === key) {
+				const waitingList = this.waiting[url] || []
+
+				for (const item of waitingList) {
+					item.source.cancel('request canceled')
+					item.abortController.abort()
+				}
+				this.waiting[url] = []
+			}
+		}
+	}
+
+	/**
+	 * Waiting to resolve the item before this request
+	 *
+	 * @param key - the key of waiting line, usually to be the request url
+	 * @param promiseKey - the unique promise key
+	 * @returns - Promise<void>
+	 */
+	private async wait(key: string, promiseKey: symbol) {
+		if (!this.orderly) return Promise.resolve()
+
+		const waitingList = this.waiting[key] || []
+		let index = waitingList.findIndex(item => item.promiseKey === promiseKey)
+
+		while (index > 0) {
+			index--
+			// do not waiting self
+			if (waitingList[index] && waitingList[index].promiseKey !== promiseKey) {
+				try {
+					await waitingList[index].promise
+					// await waitingList.splice(index, 1)[0].promise
+				} catch {
+					console.info('The task has been dropped')
+				}
+				waitingList.splice(index, 1)
+			}
+		}
+	}
+
+	/**
+	 * set item to waiting list
+	 *
+	 * @param key - the key of waiting line, usually to be the request url
+	 * @param item - waiting object
+	 */
+	private add(key: string, item: WaitingItem) {
+		if (!(key in this.waiting)) this.waiting[key] = []
+
+		this.waiting[key].push(item)
 	}
 }
 
