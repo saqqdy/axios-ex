@@ -1,5 +1,11 @@
 # Changelog
 
+## 2023.07.15 v2.5.0
+
+1. Improved request control execution timing
+2. drop option of maxConnections
+3. upgrade all packages
+
 ## 2023.03.28 v2.4.0
 
 1. new outputs
