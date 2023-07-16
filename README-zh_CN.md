@@ -110,7 +110,6 @@ function onCancel(err) {
 
 // 实例化
 const axiosEx = new AxiosExtend({
-  maxConnections: 30, // 最大同时请求数，默认：0=不限制
   unique: true, // 是否取消前面的相似请求，默认：false
   retries: 0, // 重试次数，默认：0=不重试
   orderly: false, // 是否有序返回，默认：true

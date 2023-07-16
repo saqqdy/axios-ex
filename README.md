@@ -112,7 +112,6 @@ function onCancel(err) {
 
 // Instantiation
 const axiosEx = new AxiosExtend({
-  maxConnections: 30, // Maximum number of connections, default: 0, no limit
   unique: true, // Whether to cancel the previous similar requests, default: false
   retries: 0, // Number of retries, default: 0, no retries
   orderly: false, // Whether to return in order, default: true
