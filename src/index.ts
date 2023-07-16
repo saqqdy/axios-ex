@@ -4,8 +4,7 @@ import type {
 	AxiosRequestConfig,
 	AxiosResponse,
 	CancelToken,
-	CancelTokenSource,
-	InternalAxiosRequestConfig
+	CancelTokenSource
 } from 'axios'
 import axios from 'axios'
 import isRetryAllowed from 'is-retry-allowed'
@@ -29,7 +28,7 @@ export interface AxiosExtendRequestOptions<D = any> extends AxiosRequestConfig<D
 	error?: boolean
 }
 
-export interface AxiosExtendConfig<D = any> extends InternalAxiosRequestConfig<D> {
+export interface AxiosExtendConfig<D = any> extends AxiosRequestConfig<D> {
 	unique?: boolean
 	retries?: number
 	orderly?: boolean
