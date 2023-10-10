@@ -1,5 +1,10 @@
 # Changelog
 
+## 2023.10.10 v2.6.0
+
+1. Compatible with scenarios that do not support `AbortController`
+2. upgrade all packages
+
 ## 2023.07.15 v2.5.0
 
 1. Improved request control execution timing

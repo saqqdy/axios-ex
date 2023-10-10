@@ -55,7 +55,7 @@ export interface WaitingItem {
 	url: string
 	promise: Promise<any>
 	source: CancelTokenSource
-	abortController: AbortController
+	abortController?: AbortController
 }
 
 export type WaitingList = Record<string, WaitingItem[]>
@@ -281,11 +281,14 @@ export class AxiosExtend {
 	): Promise<R> {
 		const { unique = this.unique, orderly = this.orderly, url = '' } = config
 		const promiseKey = Symbol('promiseKey')
-		const abortController = new AbortController()
 		const source: CancelTokenSource = axios.CancelToken.source()
+		let abortController
 		config.requestOptions = extend(true, {}, config) as unknown as AxiosExtendRequestOptions
 		config.cancelToken = source.token
-		config.signal = abortController.signal
+		if (typeof AbortController === 'function') {
+			abortController = new AbortController()
+			config.signal = abortController.signal
+		}
 
 		// Interface must return in order or need to cancel url same request
 		unique && this.clear(url)
@@ -333,7 +336,7 @@ export class AxiosExtend {
 
 				for (const item of waitingList) {
 					item.source.cancel('request canceled')
-					item.abortController.abort()
+					item.abortController && item.abortController.abort()
 				}
 				this.waiting[url] = []
 			}
